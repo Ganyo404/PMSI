@@ -1,3 +1,16 @@
+﻿---
+id: WAW-002
+title: "Jawaban_Wawancara (2)"
+type: interview
+project: MSI
+status: verified
+source_type: field
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - wawancara
+---
 **HASIL WAWANCARA / ANALISIS KEBUTUHAN**   
 **Pengelolaan Data Perpustakaan Fakultas Teknik (FT) UNY**   
 *Narasumber: Pustakawan/Pengelola Perpustakaan FT UNY (Layanan Sirkulasi, Referensi, dan Digital Library)*   
@@ -73,7 +86,7 @@ Penyebab utama yang teridentifikasi antara lain keterbatasan sumber daya manusia
 
 Mengingat pengelolaan perpustakaan FT UNY dilakukan oleh satu orang, struktur organisasinya bersifat sederhana, yaitu: 
 
-1. Kepala/Pengelola Perpustakaan Fakultas Teknik — merangkap sebagai pustakawan tunggal yang menangani seluruh layanan sirkulasi, referensi, dan *digital library*. 
+1. Kepala/Pengelola Perpustakaan Fakultas Teknik â€” merangkap sebagai pustakawan tunggal yang menangani seluruh layanan sirkulasi, referensi, dan *digital library*. 
 
    2. Bertanggung jawab dan melapor secara struktural kepada Wakil Dekan bidang akademik/kemahasiswaan atau sarana-prasarana di tingkat fakultas. 
 

@@ -1,3 +1,16 @@
+﻿---
+id: CAT-002
+title: "catatan_2"
+type: note
+project: MSI
+status: draft
+source_type: class
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - catatan
+---
 I
 
 asalamualaikum warahmatullahi wabarakatuh. Waalaikumsalam tiga ee dari organisasi F n di sini ada masalah yang identifikasi ada pembaruan data perustangan terus dari data pemus data perpusakaan daftar tidak sesuai dengan pencarian dan verifikasi data dan
@@ -29,4 +42,5 @@ Itu yang terjadi karena enggak pernah memperdalam menggali. Karena orang bekerja
 Iya.
 
 Pindah mulai dari awal lagi. Pindah lagi. Mulai dari awal lagi. Bisa naik tadi telat. Orang sudah punya mobil kita masih punya motor. Pi. Nah, belajar ini memperdalam. Jadi, tidak ada sekedar pernyataan membawa data sering terlambat. Dampaknya apa? Kaitannya di organisasi apa? Unit yang terpengaruh di yang mana? Ya, jadi satu contoh dengan sudah ada dua kelompok yang presentasi saya enggak ngulang yang lainnya sesuai tadi. Sudah ya sudah itu aja. Karena kalau di nanti bosen aja ya sudah ya cukup ya berarti kalau 3 empat lalu selesaikan ya makin ke
+
 
