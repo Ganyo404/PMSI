@@ -1,4 +1,4 @@
-﻿---
+---
 id: MOD-007
 title: "Modul 7"
 type: module
