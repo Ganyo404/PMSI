@@ -1,3 +1,16 @@
+﻿---
+id: LAP-003
+title: "Praktikum_3_Kelompok_3_Revisi"
+type: report
+project: MSI
+status: draft
+source_type: academic
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - laporan
+---
     **LAPORAN PRAKTIKUM MINGGUAN**
 
 ***Manajemen Sistem Informasi (PTF60234)  Pertemuan 3***
@@ -61,7 +74,7 @@
 | Daftar Masalah Teridentifikasi | **Pemutakhiran status dan kondisi koleksi sering terlambat.** Proses pembaruan tidak selalu dilakukan segera setelah informasi mengenai perubahan kondisi koleksi diterima karena pengelola harus membagi waktu antara pelayanan dan pengelolaan informasi.  **Informasi pada sistem berpotensi tidak sesuai dengan kondisi fisik terbaru.** Keterlambatan pemutakhiran menyebabkan data pada SLiMS dapat belum mencerminkan kondisi fisik koleksi yang sebenarnya.  **Pencatatan dan verifikasi informasi masih membutuhkan proses manual dan belum terpusat.** Informasi dapat diterima melalui penyampaian langsung, WhatsApp, maupun temuan pustakawan, sedangkan pencatatan awal dapat menggunakan kertas, buku, WhatsApp, atau spreadsheet sederhana.  **Belum terdapat SOP tertulis dan jadwal rutin untuk pemutakhiran status dan kondisi koleksi.** Proses pemutakhiran masih dilakukan berdasarkan kebiasaan dan kebutuhan serta menyesuaikan ketersediaan waktu pengelola.  |  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY, 8 September 2026, diperkuat wawancara lanjutan.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  |
 | Masalah Terpilih untuk Analisis Akar | Masalah yang dipilih: Pembaruan data perpustakaan sering terlambat sehingga informasi yang tersedia tidak selalu sesuai dengan kondisi terbaru.Alasan pemilihan: Masalah ini dipilih karena memiliki hubungan langsung dengan kualitas informasi perpustakaan. Keterlambatan pemutakhiran dapat menyebabkan status atau informasi koleksi pada SLiMS belum sesuai dengan kondisi fisik terbaru. Selain itu, masalah ini memiliki akar penyebab yang dapat ditelusuri melalui aspek tata kelola proses, khususnya belum adanya SOP tertulis dan jadwal rutin untuk pemutakhiran informasi.  | Diskusi kelompok berdasarkan hasil wawancara dan evidence yang telah diidentifikasi. |
 | Hasil Analisis Akar Masalah (5-Why) | Masalah: pembaruan data sering terlambat.Why 1: proses input dilakukan bertahap menyesuaikan waktu pelayanan.Why 2: satu orang pengelola menangani tiga layanan sekaligus.Why 3: struktur pengelolaan hanya memiliki satu pustakawan utama.Why 4: beban kerja membuat input dan pemutakhiran data tidak selalu tepat waktu. | Teknik 5-Why ditelusuri dari jawaban wawancara dengan pengelola perpustakaan. |
-| Matriks Prioritas Masalah | 1\. Pembaruan data sering terlambat — Impact 5, Effort 3, Prioritas 12\. Data tidak sesuai kondisi sebenarnya — Impact 5, Effort 4, Prioritas 23\. Pencarian/verifikasi data manual — Impact 4, Effort 3, Prioritas 34\. Data belum sepenuhnya terintegrasi — Impact 4, Effort 5, Prioritas 4 | Penilaian kelompok berdasarkan dampak (impact) dan upaya (effort) penyelesaian masalah. |
+| Matriks Prioritas Masalah | 1\. Pembaruan data sering terlambat â€” Impact 5, Effort 3, Prioritas 12\. Data tidak sesuai kondisi sebenarnya â€” Impact 5, Effort 4, Prioritas 23\. Pencarian/verifikasi data manual â€” Impact 4, Effort 3, Prioritas 34\. Data belum sepenuhnya terintegrasi â€” Impact 4, Effort 5, Prioritas 4 | Penilaian kelompok berdasarkan dampak (impact) dan upaya (effort) penyelesaian masalah. |
 | Pernyataan Masalah Prioritas Akhir | Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu memerlukan pengecekan atau verifikasi manual.  | Sintesis kelompok dari seluruh tahapan analisis. |
 
 | Tahap | Pertanyaan | Jawaban |
@@ -78,10 +91,10 @@
 
 | Masalah | Impact | Effort | Posisi | Prioritas |
 | ----- | ----- | ----- | ----- | ----- |
-| Pembaruan data perpustakaan sering terlambat  | 5 | 3 | Dampak tinggi – upaya sedang | 1 |
-| Data perpustakaan tidak sesuai dengan kondisi sebenarnya  | 5 | 4 | Dampak tinggi – upaya tinggi | 2 |
-| Pencarian dan verifikasi data masih membutuhkan proses manual  | 4 | 3 | Dampak tinggi – upaya sedang | 3 |
-| Mekanisme pemutakhiran data belum sepenuhnya terstruktur  | 4 | 5 | Dampak tinggi – upaya tinggi | 4 |
+| Pembaruan data perpustakaan sering terlambat  | 5 | 3 | Dampak tinggi â€“ upaya sedang | 1 |
+| Data perpustakaan tidak sesuai dengan kondisi sebenarnya  | 5 | 4 | Dampak tinggi â€“ upaya tinggi | 2 |
+| Pencarian dan verifikasi data masih membutuhkan proses manual  | 4 | 3 | Dampak tinggi â€“ upaya sedang | 3 |
+| Mekanisme pemutakhiran data belum sepenuhnya terstruktur  | 4 | 5 | Dampak tinggi â€“ upaya tinggi | 4 |
 
 | ![][image2] |
 | :---- |

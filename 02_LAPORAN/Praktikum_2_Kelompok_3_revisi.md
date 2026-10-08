@@ -1,3 +1,16 @@
+﻿---
+id: LAP-002
+title: "Praktikum_2_Kelompok_3_revisi"
+type: report
+project: MSI
+status: draft
+source_type: academic
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - laporan
+---
 **LAPORAN PRAKTIKUM MINGGUAN**
 
 *Manajemen Sistem Informasi (PTF60234)  Pertemuan 2*
@@ -65,8 +78,8 @@ Power-Interest Grid disusun berdasarkan pengaruh terhadap keputusan dan tata kel
 
 |  | INTEREST RENDAH | INTEREST TINGGI |
 | :---- | :---- | :---- |
-| **POWER TINGGI** | KEEP SATISFIED• Pimpinan Fakultas• Program Studi/Koordinator Prodi | MANAGE CLOSELY• Pustakawan Utama FT UNY• Kepala UPT Perpustakaan Pusat UNY |
-| **POWER RENDAH / SEDANG** | MONITOR• Mahasiswa Magang/PKL | KEEP INFORMED• Dosen FT UNY• Mahasiswa FT UNY |
+| **POWER TINGGI** | KEEP SATISFIEDâ€¢ Pimpinan Fakultasâ€¢ Program Studi/Koordinator Prodi | MANAGE CLOSELYâ€¢ Pustakawan Utama FT UNYâ€¢ Kepala UPT Perpustakaan Pusat UNY |
+| **POWER RENDAH / SEDANG** | MONITORâ€¢ Mahasiswa Magang/PKL | KEEP INFORMEDâ€¢ Dosen FT UNYâ€¢ Mahasiswa FT UNY |
 
 Catatan: Program Studi ditempatkan pada Keep Satisfied karena memiliki pengaruh pada kebutuhan informasi yang berkaitan dengan pelaporan dan akreditasi, meskipun tidak menjalankan operasional perpustakaan sehari-hari.
 

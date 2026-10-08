@@ -1,3 +1,16 @@
+﻿---
+id: LAP-005
+title: "Praktikum_5_Kelompok3"
+type: report
+project: MSI
+status: draft
+source_type: academic
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - laporan
+---
 **LAPORAN PRAKTIKUM MINGGUAN**
 
 *Manajemen Sistem Informasi (PTF60234)  Pertemuan 5*
@@ -188,7 +201,7 @@ Secara keseluruhan, Praktikum 5 memberikan dasar yang lebih terstruktur bagi kel
 
 Laudon, K. C., & Laudon, J. P. (2014). *Management Information Systems: Managing the Digital Firm* (13th ed.). Pearson.
 
-Project Management Institute. (2021). *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)* (7th ed.). Project Management Institute.
+Project Management Institute. (2021). *A Guide to the Project Management Body of Knowledge (PMBOKÂ® Guide)* (7th ed.). Project Management Institute.
 
 Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game*. Scrum.org.
 

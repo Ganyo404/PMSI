@@ -1,3 +1,16 @@
+﻿---
+id: WAW-001
+title: "Jawaban3_Final"
+type: interview
+project: MSI
+status: verified
+source_type: field
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - wawancara
+---
 **1\. Alur Aktual Pemutakhiran**  
 Setelah perubahan kondisi suatu koleksi diketahui, bagaimana urutan proses yang benar-benar dilakukan sampai informasi/status koleksi tersebut diperbarui?  
 *Pendalaman: siapa yang menerima informasi, siapa yang memeriksa, siapa yang melakukan pembaruan, dan bagaimana proses dinyatakan selesai?*
@@ -36,7 +49,7 @@ Menurut Bapak/Ibu, informasi apa saja yang wajib dicantumkan dalam laporan kondi
 
 **10\. Alur Tindak Lanjut**  
 Setelah laporan kondisi koleksi diterima, seperti apa alur tindak lanjut yang paling praktis sampai laporan tersebut dinyatakan selesai?  
-*Pendalaman: penerimaan → pemeriksaan → verifikasi → pembaruan → pencatatan hasil → penutupan laporan.*
+*Pendalaman: penerimaan â†’ pemeriksaan â†’ verifikasi â†’ pembaruan â†’ pencatatan hasil â†’ penutupan laporan.*
 
 **11\. Kebutuhan Monitoring**  
 Informasi apa yang perlu dilihat pustakawan untuk mengetahui laporan mana yang sudah diproses, masih menunggu verifikasi, atau belum ditindaklanjuti?  
@@ -55,7 +68,7 @@ Rekap seperti apa yang paling dibutuhkan pustakawan dari data laporan tersebut?
 5. Status diperbarui di SLiMS. Saya mengubah status eksemplar (misalnya menjadi Hilang, Rusak, atau Dalam Perbaikan) atau mengoreksi lokasi dan data lain yang berubah.  
 6. Proses dinyatakan selesai. Proses dianggap selesai bila fisik koleksi sudah sesuai dengan keadaan sebenarnya dan status di SLiMS sudah sama dengan kondisi fisik tersebut.
 
-Yang menerima, memeriksa, dan memperbarui adalah orang yang sama, yaitu pustakawan. Belum ada penanda penyelesaian yang formal; saat ini “selesai” ditentukan oleh pustakawan sendiri, dan belum ada bukti tertulis yang dapat ditelusuri kembali.
+Yang menerima, memeriksa, dan memperbarui adalah orang yang sama, yaitu pustakawan. Belum ada penanda penyelesaian yang formal; saat ini â€œselesaiâ€ ditentukan oleh pustakawan sendiri, dan belum ada bukti tertulis yang dapat ditelusuri kembali.
 
 2. Keterlambatan paling sering terjadi pada tahap setelah informasi diterima dan sebelum data diperbarui di SLiMS, bukan pada proses verifikasi itu sendiri. Penyebab utamanya:  
 1. Sebelum verifikasi: informasi sering datang saat saya sedang melayani sirkulasi, sehingga laporan baru dicek di waktu senggang. Informasi lisan juga mudah terlupa bila tidak langsung dicatat.  
@@ -70,7 +83,7 @@ Karena sumber dayanya hanya satu orang, jeda tersebut bukan karena prosesnya rum
 
 Menurut saya, aturan yang paling realistis untuk perpustakaan dengan satu pustakawan adalah:
 
-1. Jadwal rutin mingguan: satu slot tetap, misalnya 30–60 menit pada hari dan jam yang relatif sepi (contoh: Jumat pagi) untuk memeriksa laporan yang masuk dan memperbarui SLiMS.  
+1. Jadwal rutin mingguan: satu slot tetap, misalnya 30â€“60 menit pada hari dan jam yang relatif sepi (contoh: Jumat pagi) untuk memeriksa laporan yang masuk dan memperbarui SLiMS.  
 2. Batas waktu respons: laporan diperiksa maksimal 3 hari kerja sejak masuk, dan status SLiMS diperbarui maksimal 7 hari kerja setelah verifikasi.  
 3. Pengecualian: kondisi yang memengaruhi layanan (misalnya buku yang sedang dipinjam dan dilaporkan rusak berat, atau koleksi yang sering dicari) diproses lebih cepat.  
 4. Rekonsiliasi berkala: pemeriksaan menyeluruh (stock opname sebagian) satu atau dua kali per semester untuk mencocokkan data SLiMS dengan kondisi fisik.  
@@ -141,12 +154,12 @@ Alur yang saya ketahui secara umum: pustakawan mengajukan permohonan/usulan dise
 Isian wajib dibatasi agar pelapor tidak enggan mengisi, sementara informasi yang diperlukan untuk verifikasi tetap tersedia.
 
 10. Tindak lanjut yang paling praktis  
-1. Penerimaan: laporan masuk ke daftar/tabel dengan status “Baru”.  
-2. Pemeriksaan awal: pustakawan membaca laporan dan memastikan identitas koleksi jelas (status “Dicek”). Bila tidak jelas, hubungi pelapor atau tandai “Perlu info tambahan”.  
-3. Verifikasi: pemeriksaan fisik koleksi dan data SLiMS, lalu hasilnya dicatat: benar, tidak benar, atau tidak ditemukan (status “Terverifikasi”).  
+1. Penerimaan: laporan masuk ke daftar/tabel dengan status â€œBaruâ€.  
+2. Pemeriksaan awal: pustakawan membaca laporan dan memastikan identitas koleksi jelas (status â€œDicekâ€). Bila tidak jelas, hubungi pelapor atau tandai â€œPerlu info tambahanâ€.  
+3. Verifikasi: pemeriksaan fisik koleksi dan data SLiMS, lalu hasilnya dicatat: benar, tidak benar, atau tidak ditemukan (status â€œTerverifikasiâ€).  
 4. Pembaruan: status/data di SLiMS diubah sesuai hasil verifikasi, dan koleksi ditangani secara fisik (diperbaiki, dipindah, dipisahkan).  
 5. Pencatatan hasil: catat tindakan yang dilakukan, tanggal, dan keterangan singkat pada laporan.  
-6. Penutupan: laporan diberi status “Selesai” setelah SLiMS sesuai dengan kondisi fisik. Bila membutuhkan pihak lain (misalnya penghapusan inventaris), status “Diteruskan” sampai ada keputusan.
+6. Penutupan: laporan diberi status â€œSelesaiâ€ setelah SLiMS sesuai dengan kondisi fisik. Bila membutuhkan pihak lain (misalnya penghapusan inventaris), status â€œDiteruskanâ€ sampai ada keputusan.
 
 Alur ini sengaja dibuat pendek dan dijalankan dalam satu sesi kerja mingguan agar realistis bagi satu pustakawan.
 
@@ -176,4 +189,5 @@ Tampilan yang paling membantu adalah daftar yang dapat disaring (filter) berdasa
    
 
 Rekap ini juga berguna sebagai bahan laporan kinerja perpustakaan dan dasar pengambilan keputusan pengembangan koleksi.
+
 

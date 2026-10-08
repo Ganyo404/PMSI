@@ -1,3 +1,16 @@
+﻿---
+id: CAT-001
+title: "catatan_1"
+type: note
+project: MSI
+status: draft
+source_type: class
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - catatan
+---
 sistem ee perpustakaan fakultas teknik UNI berarti struktur organisasinya sudah tahu
 
 ada ada
@@ -91,4 +104,5 @@ Perbaik. I ini perbaiki dulu mode dua baru bisa atau mode Bu.
 Silakan kerjakan perbaikan dulu sebelum nanti jadi mekanismenya buat begitu biar Anda juga paham memahami sistem itu gak gampang Bu. Benar gak
 
 bisa. Makanya kalau Anda gampang menyalahkan orangnya Anda enggak
+
 

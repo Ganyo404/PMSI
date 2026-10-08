@@ -1,3 +1,16 @@
+﻿---
+id: LAP-004
+title: "Praktikum_4_Kelompok3_revisi"
+type: report
+project: MSI
+status: draft
+source_type: academic
+source_refs: []
+related_modules: []
+tags:
+  - msi
+  - laporan
+---
 **LAPORAN PRAKTIKUM MINGGUAN**
 
 *Manajemen Sistem Informasi (PTF60234)  Pertemuan 4*
@@ -42,7 +55,7 @@ Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji
 
 **a. Pernyataan Masalah Prioritas (dari Pertemuan 3\)**
 
-“Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu memerlukan pengecekan atau verifikasi manual.”
+â€œPerpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu memerlukan pengecekan atau verifikasi manual.â€
 
 **b. Tujuan Proyek (Analisis Kriteria SMART)**
 
@@ -59,7 +72,7 @@ Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji
 
 | No. | Deliverable/Batasan Pekerjaan (In-Scope) | Alasan & Keterkaitan |
 | ----- | ----- | ----- |
-| 1 | **Draf SOP Pemutakhiran Data Berkala & Jadwal Terfokus (Quiet Hour/Micro-Batching) 15–30 menit per hari.** | Menjawab langsung akar masalah berupa belum adanya SOP atau jadwal baku yang mengatur waktu, proses, dan tanggung jawab pemutakhiran data. |
+| 1 | **Draf SOP Pemutakhiran Data Berkala & Jadwal Terfokus (Quiet Hour/Micro-Batching) 15â€“30 menit per hari.** | Menjawab langsung akar masalah berupa belum adanya SOP atau jadwal baku yang mengatur waktu, proses, dan tanggung jawab pemutakhiran data. |
 | 2 | **Panduan Perancangan Alur Fisik & Penanda Visual (Signage) Rak Transit Pengembalian.** | Mendukung proses identifikasi dan pemutakhiran status ketersediaan koleksi secara lebih terstruktur tanpa memerlukan perubahan sistem atau penambahan tenaga kerja. |
 | 3 | **Prototipe Google Form QR Code Laporan Mandiri Koleksi Rusak/Hilang beserta Dashboard Spreadsheet Rekap.** | Mendukung mekanisme pelaporan kondisi koleksi agar informasi perubahan kondisi koleksi dapat diterima pengelola secara lebih cepat dan mengurangi pencatatan manual. |
 | 4 | **Template Ekstraksi Data Sirkulasi SLiMS & Panduan Laporan Akreditasi Program Studi (LAM-INFOKOM).** | Mendukung pemanfaatan data operasional untuk kebutuhan pelaporan tanpa mengubah database SLiMS pusat. |
@@ -85,7 +98,7 @@ Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji
 
 | No. | Deliverable Utama | Deskripsi Hasil Kerja | Kriteria Penerimaan (Acceptance Criteria) |
 | ----- | ----- | ----- | ----- |
-| 1 | **Draft SOP Pemutakhiran Data & Jadwal Quiet Hour** | Dokumen SOP tertulis yang mengatur waktu 15–30 menit per hari untuk verifikasi dan pemutakhiran status koleksi. | SOP memuat jadwal pemutakhiran, urutan prioritas data, prosedur pelaksanaan, dan pembagian tanggung jawab serta telah diserahkan untuk digunakan sebagai acuan kerja. |
+| 1 | **Draft SOP Pemutakhiran Data & Jadwal Quiet Hour** | Dokumen SOP tertulis yang mengatur waktu 15â€“30 menit per hari untuk verifikasi dan pemutakhiran status koleksi. | SOP memuat jadwal pemutakhiran, urutan prioritas data, prosedur pelaksanaan, dan pembagian tanggung jawab serta telah diserahkan untuk digunakan sebagai acuan kerja. |
 | 2 | **Panduan Alur Fisik & Signage Rak Transit** | Dokumen rancangan alur penempatan rak transit pengembalian beserta desain penanda visual. | Tersedia minimal satu rancangan alur fisik dan satu contoh desain signage yang siap diterapkan. |
 | 3 | **Prototipe Google Form QR Code & Dashboard Rekap** | Formulir daring yang dapat diakses melalui QR Code dengan rekap otomatis pada spreadsheet. | Form telah diuji minimal pada tiga skenario input: koleksi rusak, hilang, dan kondisi lainnya; hasil input tercatat pada spreadsheet. |
 | 4 | **Template Ekstraksi Data Sirkulasi SLiMS & Panduan Laporan Akreditasi** | Template spreadsheet dan panduan langkah ekstraksi data dari fitur yang tersedia pada SLiMS. | Template dapat menghasilkan rekapitulasi data sirkulasi sesuai periode yang ditentukan dan dapat digunakan sebagai bahan pelaporan. |
@@ -94,7 +107,7 @@ Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji
 
 | Kategori Asumsi | Spesifik | Alasan & Keterkaitan |
 | ----- | ----- | ----- |
-| **Ketersediaan Waktu Pustakawan** | Diasumsikan pustakawan dapat mengalokasikan sekitar 15–30 menit per hari untuk pemutakhiran data sesuai jadwal yang dirancang. | Mendukung keberlanjutan pemutakhiran data tanpa menambah SDM. |
+| **Ketersediaan Waktu Pustakawan** | Diasumsikan pustakawan dapat mengalokasikan sekitar 15â€“30 menit per hari untuk pemutakhiran data sesuai jadwal yang dirancang. | Mendukung keberlanjutan pemutakhiran data tanpa menambah SDM. |
 | **Kepatuhan Pengguna terhadap QR Form** | Diasumsikan pemustaka bersedia menggunakan Google Form QR Code untuk melaporkan kondisi koleksi secara mandiri. | Mendukung penyampaian informasi kondisi koleksi secara lebih cepat kepada pengelola. |
 | **Kompatibilitas Data SLiMS** | Diasumsikan fitur ekspor data yang tersedia pada SLiMS dapat digunakan untuk menghasilkan data yang diperlukan tanpa modifikasi kode. | Mendukung penyusunan template ekstraksi tanpa mengubah database pusat. |
 | **Dukungan Kebijakan Pimpinan Fakultas** | Diasumsikan pimpinan bersedia mempertimbangkan informasi hasil rekap sebagai salah satu bahan pendukung pengambilan keputusan. | Mendukung pemanfaatan hasil proyek pada tingkat manajerial dan strategis. |
