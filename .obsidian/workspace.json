@@ -11,10 +11,14 @@
             "id": "0ae8d87f5d68c29e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Jawaban3_Final"
             }
           }
         ]
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,8 +190,12 @@
   },
   "active": "0ae8d87f5d68c29e",
   "lastOpenFiles": [
-    "00_DASHBOARD/Dashboard.md",
+    "02_LAPORAN/Praktikum_6_Kelompok3.md",
+    "02_LAPORAN/Praktikum_5_Kelompok3.md",
+    "02_LAPORAN/Praktikum_4_Kelompok3_revisi.md",
+    "02_LAPORAN/Praktikum_3_Kelompok_3_Revisi.md",
     "02_LAPORAN/Praktikum_7_Kelompok3.md",
+    "00_DASHBOARD/Dashboard.md",
     "04_MODUL-DAN-MATERI/Modul 7.md",
     "04_MODUL-DAN-MATERI/Modul 1.md",
     "04_MODUL-DAN-MATERI/Modul 1.pdf",
@@ -193,7 +204,6 @@
     "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
     "03_DATA-LAPANGAN/Temuan/Analisis Komparatif MSI Sekolah-FT UNY.md",
     "03_DATA-LAPANGAN/Temuan/Analisis Revisi Tata Kelola.md",
-    "02_LAPORAN/Praktikum_6_Kelompok3.md",
     "CONTEXT_INDEX.md",
     "CONTRIBUTING.md",
     "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
@@ -207,9 +217,6 @@
     "04_MODUL-DAN-MATERI/Modul 2.md",
     "05_REFERENSI/Glosarium_Perpustakaan.md",
     "05_REFERENSI/Data_Perpustakaan_FT_UNY.md",
-    "09_SOURCE-FILES/SOURCE_INVENTORY.md",
-    "02_LAPORAN/Praktikum_2_Kelompok_3_revisi.md",
-    "06_CATATAN-KELAS/catatan_1.md",
     "04_MODUL-DAN-MATERI/Modul 6.pdf",
     "04_MODUL-DAN-MATERI/Modul 4.pdf",
     "04_MODUL-DAN-MATERI/Modul 3.pdf",
