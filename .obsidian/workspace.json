@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "419fa6ffef7dd1b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "42bcd12d85a24ad9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ae8d87f5d68c29e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laporan_Praktikum_Pertemuan_1_Kelompok 3"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "57fc9b45a7e48eb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "51670c0eead91de1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ad4bc095615c2f5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "305b13137cfa8de8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "97a793060b7c500a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e606b4f2cce6b411",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5974ea00c995d00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "425d7e7194965277",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a61a98cd6e330f3a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "c5a7090db616f674",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "61a8de4e3dc1cd61",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b1af0d3aa6864b7a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6ad4bc095615c2f5",
+  "lastOpenFiles": [
+    "09_SOURCE-FILES/SOURCE_INVENTORY.md",
+    "02_LAPORAN/Praktikum_2_Kelompok_3_revisi.md",
+    "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+    "06_CATATAN-KELAS/catatan_1.md",
+    "06_CATATAN-KELAS/catatan_2.md",
+    "06_CATATAN-KELAS/catatan_3.md",
+    "06_CATATAN-KELAS/catatan_4.md",
+    "04_MODUL-DAN-MATERI/Modul 6.pdf",
+    "04_MODUL-DAN-MATERI/Modul 4.pdf",
+    "04_MODUL-DAN-MATERI/Modul 3.pdf",
+    "04_MODUL-DAN-MATERI/Modul 2.pdf",
+    "04_MODUL-DAN-MATERI/Modul 1.pdf",
+    "04_MODUL-DAN-MATERI/Modul (1).pdf",
+    "04_MODUL-DAN-MATERI/Modul 2 (1).pdf",
+    "04_MODUL-DAN-MATERI/Modul 3 (3).pdf",
+    "04_MODUL-DAN-MATERI/Modul 4 (2).pdf",
+    "04_MODUL-DAN-MATERI/Modul 5.pdf",
+    "03_DATA-LAPANGAN/Temuan/Analisis Komparatif MSI Sekolah-FT UNY.md",
+    "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
+    "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan FT.md",
+    "03_DATA-LAPANGAN/Temuan/Panduan SOP Manajemen Sistem.md",
+    "03_DATA-LAPANGAN/Temuan/Integrasi Portal Perpustakaan FT.md",
+    "03_DATA-LAPANGAN/Temuan/Rancang SOP Sistem Informasi.md",
+    "03_DATA-LAPANGAN/Temuan/Esensi Manajemen Sistem Informasi.md",
+    "03_DATA-LAPANGAN/Temuan/Manajemen Ruang Lingkup TI.md",
+    "03_DATA-LAPANGAN/Temuan/Analisis Revisi Tata Kelola.md",
+    "03_DATA-LAPANGAN/Temuan/Revisi Analisis Masalah P3.md",
+    "03_DATA-LAPANGAN/Temuan/Revisi Tata Kelola Data.md",
+    "03_DATA-LAPANGAN/Temuan/Revisi Analisis Stakeholder.md",
+    "03_DATA-LAPANGAN/Wawancara/Jawaban_Wawancara (2).md",
+    "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
+    "02_LAPORAN/Praktikum_3_Kelompok_3_Revisi.md",
+    "02_LAPORAN/Praktikum_4_Kelompok3_revisi.md",
+    "02_LAPORAN/Praktikum_5_Kelompok3.md",
+    "02_LAPORAN/Praktikum_6_Kelompok3.md",
+    "00_DASHBOARD/Dashboard.md"
+  ]
+}
