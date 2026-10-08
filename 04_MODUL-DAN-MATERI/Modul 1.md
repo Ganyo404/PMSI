@@ -1,4 +1,4 @@
-﻿---
+---
 id: MOD-001
 title: "Modul 1"
 type: module

@@ -1,7 +1,7 @@
 # Dashboard Project Manajemen Sistem Informasi (MSI)
 
 ## 1. Project Status
-- **Status Laporan**: Tersusun dalam 6 Praktikum (Inisialisasi hingga Solusi Tata Kelola).
+- **Status Laporan**: Tersusun dalam 7 Praktikum (Inisialisasi hingga Penjadwalan Proyek).
 - **Jumlah Modul**: 7 (Ekstrak Markdown Selesai).
 - **Jumlah Wawancara**: 2 (WAW-001, WAW-002).
 - **Jumlah Temuan**: 12 (Ide AI & Brainstorming).
@@ -14,16 +14,17 @@
 - **Belum Diverifikasi**: -
 
 ## 3. Progress
-- **Pekerjaan Selesai (Semua Fase 1 - 5)**: 
-  - `Phase 1 & 2`: Ekstraksi PDF (markitdown), Injeksi YAML Metadata (ID unik) ke `LAP-`, `WAW-`, `FIND-`, `CAT-`, `MOD-`. Repositori Git diinisialisasi.
-  - `Phase 3`: Menyusun `PROJECT_TIMELINE.md` untuk mengunci kronologi data dan aturan validitas (*Source of Truth*).
-  - `Phase 4`: Pemetaan *Theory to Evidence Matrix* (Hubungan modul teori ke implementasi lapangan).
-  - `Phase 5`: Pembuatan Arsitektur Utama (Mermaid `KNOWLEDGE_GRAPH.md` dan `CONTEXT_INDEX.md` sebagai *entry point*).
+- **Pekerjaan Selesai (Fase 1 - 5)**: 
+  - `Phase 1 & 2`: Ekstraksi PDF, Injeksi YAML, Git Init.
+  - `Phase 3`: Menyusun `PROJECT_TIMELINE.md` (*Source of Truth*).
+  - `Phase 4`: Pemetaan *Theory to Evidence Matrix*.
+  - `Phase 5`: Pembuatan Arsitektur Utama (`KNOWLEDGE_GRAPH.md` dan `CONTEXT_INDEX.md`).
+- **Pekerjaan Saat Ini**: Penyusunan **Laporan Praktikum 7** mengenai Penjadwalan (Gantt Chart & PERT Chart).
 - **Pekerjaan Belum Dimulai (Phase 6 & 7)**: Validasi Akhir dan Pelaporan.
 
 ## 4. Recent Changes
-- [2026-10-08] Menyelesaikan `CONTEXT_INDEX.md`, `THEORY_TO_EVIDENCE_MATRIX.md`, dan `KNOWLEDGE_GRAPH.md` untuk arsitektur pemanggilan memori AI (*Retrieval*).
-- [2026-10-08] Git Commit & Push ke branch main.
+- [2026-10-08] Membuat draf `LAP-007` (Laporan Praktikum 7) terkait PERT Chart dan Gantt Chart.
+- [2026-10-08] Menyelesaikan perbaikan encoding seluruh file data lapangan agar tabel dan ascii render kembali normal.
 
 ## 5. Issues
 - `VISUAL EXTRACTION LIMITATION`: Tabel/bagan pada PDF belum dikonversi secara grafis. Teks berhasil diekstrak, namun relasi visual mungkin terlewat.
@@ -33,6 +34,5 @@
 - [[PROJECT_TIMELINE.md]]
 - [[KNOWLEDGE_GRAPH.md]]
 - [[09_SOURCE-FILES/THEORY_TO_EVIDENCE_MATRIX.md]]
+- [[02_LAPORAN/Praktikum_7_Kelompok3.md]] (Laporan Terbaru)
 - [[00_DASHBOARD/]]
-- [[02_LAPORAN/]]
-- [[04_MODUL-DAN-MATERI/]]
