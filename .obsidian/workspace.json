@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "file": "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laporan_Praktikum_Pertemuan_1_Kelompok 3"
+              "title": "Ekosistem Informasi Perpustakaan"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "file": "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "file": "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
+                "file": "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,9 +188,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "6ad4bc095615c2f5",
+  "active": "0ae8d87f5d68c29e",
   "lastOpenFiles": [
+    "03_DATA-LAPANGAN/Temuan/Analisis Revisi Tata Kelola.md",
+    "03_DATA-LAPANGAN/Temuan/Analisis Komparatif MSI Sekolah-FT UNY.md",
+    "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
+    "03_DATA-LAPANGAN/Wawancara/Jawaban_Wawancara (2).md",
+    "03_DATA-LAPANGAN/Wawancara/Jawaban3_Final.md",
+    "02_LAPORAN/Praktikum_6_Kelompok3.md",
+    "00_DASHBOARD/Dashboard.md",
     "CONTEXT_INDEX.md",
+    "CONTRIBUTING.md",
+    "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
     "09_SOURCE-FILES/KNOWLEDGE_GRAPH.md",
     "09_SOURCE-FILES/THEORY_TO_EVIDENCE_MATRIX.md",
     "09_SOURCE-FILES/PROJECT_TIMELINE.md",
@@ -203,14 +212,10 @@
     "04_MODUL-DAN-MATERI/Modul 1.md",
     "05_REFERENSI/Glosarium_Perpustakaan.md",
     "05_REFERENSI/Data_Perpustakaan_FT_UNY.md",
-    "CONTRIBUTING.md",
     "09_SOURCE-FILES/SOURCE_INVENTORY.md",
     "02_LAPORAN/Praktikum_2_Kelompok_3_revisi.md",
-    "02_LAPORAN/Laporan_Praktikum_Pertemuan_1_Kelompok 3.md",
     "06_CATATAN-KELAS/catatan_1.md",
     "06_CATATAN-KELAS/catatan_2.md",
-    "06_CATATAN-KELAS/catatan_3.md",
-    "06_CATATAN-KELAS/catatan_4.md",
     "04_MODUL-DAN-MATERI/Modul 6.pdf",
     "04_MODUL-DAN-MATERI/Modul 4.pdf",
     "04_MODUL-DAN-MATERI/Modul 3.pdf",
@@ -220,11 +225,6 @@
     "04_MODUL-DAN-MATERI/Modul 2 (1).pdf",
     "04_MODUL-DAN-MATERI/Modul 3 (3).pdf",
     "04_MODUL-DAN-MATERI/Modul 4 (2).pdf",
-    "04_MODUL-DAN-MATERI/Modul 5.pdf",
-    "03_DATA-LAPANGAN/Temuan/Analisis Komparatif MSI Sekolah-FT UNY.md",
-    "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan.md",
-    "03_DATA-LAPANGAN/Temuan/Ekosistem Informasi Perpustakaan FT.md",
-    "03_DATA-LAPANGAN/Temuan/Panduan SOP Manajemen Sistem.md",
-    "03_DATA-LAPANGAN/Temuan/Integrasi Portal Perpustakaan FT.md"
+    "04_MODUL-DAN-MATERI/Modul 5.pdf"
   ]
 }

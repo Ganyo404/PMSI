@@ -1,6 +1,6 @@
-﻿---
+---
 id: FIND-011
-title: "Revisi Analisis Stakeholder"
+title: 'Revisi Analisis Stakeholder'
 type: finding
 project: MSI
 status: draft
@@ -17,6 +17,7 @@ tags:
   - finding
   - brainstorming
 ---
+
 Saya telah memperbarui **Laporan Praktikum Pertemuan 2 (Analisis Stakeholder dan Lingkungan Bisnis)** sesuai dengan arahan dan masukan dari dosen pengampu (Dr. Ratna Wardani) serta data empiris terbaru dari hasil wawancara di lapangan (*Jawaban2.docx*).  
 Dokumen Word yang sudah diperbarui total kini telah tersedia dan diterbitkan di panel **Studio** di sebelah kanan Anda dengan nama **laporan-praktikum-pertemuan-2-revisi.docx**.
 
@@ -46,5 +47,4 @@ Dokumen Word yang sudah diperbarui total kini telah tersedia dan diterbitkan di 
 * Menjelaskan proses koreksi dari asumsi teoretis menjadi analisis berbasis bukti (*evidence-based*) serta pemahaman pentingnya melihat ketergantungan vertikal organisasi sebelum merancang sistem informasi.
 
 Dokumen **laporan-praktikum-pertemuan-2-revisi.docx** di panel Studio siap diunduh dan digunakan.  
-ðŸ’¡ **Apakah ada bagian tertentu dari Laporan Pertemuan 2 ini yang ingin Anda tinjau lagi, atau kita siap melanjutkan ke persiapan penyusunan Laporan Pertemuan 4 (*Project Scope Statement*)?**  
-
+💡 **Apakah ada bagian tertentu dari Laporan Pertemuan 2 ini yang ingin Anda tinjau lagi, atau kita siap melanjutkan ke persiapan penyusunan Laporan Pertemuan 4 (*Project Scope Statement*)?**  

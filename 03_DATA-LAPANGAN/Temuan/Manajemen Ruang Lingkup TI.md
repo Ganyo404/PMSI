@@ -1,6 +1,6 @@
-﻿---
+---
 id: FIND-007
-title: "Manajemen Ruang Lingkup TI"
+title: 'Manajemen Ruang Lingkup TI'
 type: finding
 project: MSI
 status: draft
@@ -17,6 +17,7 @@ tags:
   - finding
   - brainstorming
 ---
+
 **Modul 4 Praktikum Manajemen Sistem Informasi (MSI)** berfokus pada **Perencanaan Proyek TI: *Project Scope Statement* (Ruang Lingkup, Tujuan, dan *Deliverables*)**.  
 Pada modul ini, Anda dan kelompok menerjemahkan **Pernyataan Masalah Prioritas dari Pertemuan 3** menjadi **rencana kerja yang konkret dan terstruktur** untuk dikerjakan selama satu semester.
 
@@ -25,7 +26,7 @@ Pada modul ini, Anda dan kelompok menerjemahkan **Pernyataan Masalah Prioritas d
 Modul 4 menekankan perbedaan mendasar antara *Scope* dalam Manajemen Sistem Informasi (MSI) dengan Manajemen Proyek Perangkat Lunak biasa:
 
 * **Proyek Software Biasa:** *Scope* biasanya berisi **daftar fitur teknis/koding aplikasi** (misal: *"membuat fitur notifikasi"*, *"membuat dashboard baru"*).  
-* **Proyek MSI:** *Scope* difokuskan pada **Scope Kebutuhan Informasi & Tata Kelola**â€”yaitu data apa yang dikelola, keputusan organisasi apa yang didukung, proses bisnis apa yang diperbaiki, serta aturan/SOP apa yang diterapkan (misal: *"menyediakan mekanisme tata kelola dan SOP yang memastikan status ketersediaan buku di SLiMS OPAC diperbarui konsisten"*).
+* **Proyek MSI:** *Scope* difokuskan pada **Scope Kebutuhan Informasi & Tata Kelola**—yaitu data apa yang dikelola, keputusan organisasi apa yang didukung, proses bisnis apa yang diperbaiki, serta aturan/SOP apa yang diterapkan (misal: *"menyediakan mekanisme tata kelola dan SOP yang memastikan status ketersediaan buku di SLiMS OPAC diperbarui konsisten"*).
 
 ### 2\. Alur Penetapan *Project Scope Statement*
 
@@ -43,5 +44,4 @@ Berikut 5 komponen utama yang wajib diisi dalam *Project Scope Statement*:
 * *Asumsi:* Hal-hal yang dianggap benar sejak awal (misal: data beban kerja wawancara dianggap representatif).  
 * *Batasan:* Faktor pembatas ruang gerak proyek (misal: alokasi waktu 1 semester, *zero budget*, dan ketiadaan hak akses administrator SLiMS pusat).
 
-ðŸ’¡ **Apakah penjelasan konsep Modul 4 ini sudah cukup jelas, atau ada komponen tertentu yang ingin kita bahas lebih rinci?**  
-
+💡 **Apakah penjelasan konsep Modul 4 ini sudah cukup jelas, atau ada komponen tertentu yang ingin kita bahas lebih rinci?**  

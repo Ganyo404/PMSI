@@ -1,6 +1,6 @@
-﻿---
+---
 id: FIND-006
-title: "Integrasi Portal Perpustakaan FT"
+title: 'Integrasi Portal Perpustakaan FT'
 type: finding
 project: MSI
 status: draft
@@ -17,6 +17,7 @@ tags:
   - finding
   - brainstorming
 ---
+
 Berikut adalah rincian pembagian isi web portal terintegrasi beserta masalah spesifik yang diselesaikan untuk masing-masing dari 4 entitas/unit kerja:
 
 ### 1\. Perpustakaan FT UNY (Pustakawan Tunggal / Pengelola Operasional)
@@ -59,6 +60,5 @@ Berikut adalah rincian pembagian isi web portal terintegrasi beserta masalah spe
 * **Penyiapan Data Akreditasi Secara Mendadak**: Tim akreditasi prodi tidak perlu lagi meminta laporan manual secara berulang kali kepada pustakawan FT saat siklus akreditasi tiba 12, 23, 27\.  
 * **Keraguan Validitas Data Asesor**: Menjamin bukti fisik sarana-prasarana perpustakaan yang diserahkan kepada tim asesor akreditasi bersifat valid, terukur, dan bersumber langsung dari transaksi sistem yang sah 23, 27, 29, 30\.
 
-ðŸ’¡ **Kesimpulan Alur Solusi**:Dengan pembagian fitur di atas, **Pustakawan FT** terbantu secara operasional, **UPT Pusat/IT** memegang kendali sinkronisasi data, **Dekanat** mendapatkan laporan keputusan anggaran, dan **Tim Akreditasi** dapat mengunduh bukti fisik secara mandiri tanpa membebani pengelola 12, 19, 21, 23, 29\.  
+💡 **Kesimpulan Alur Solusi**:Dengan pembagian fitur di atas, **Pustakawan FT** terbantu secara operasional, **UPT Pusat/IT** memegang kendali sinkronisasi data, **Dekanat** mendapatkan laporan keputusan anggaran, dan **Tim Akreditasi** dapat mengunduh bukti fisik secara mandiri tanpa membebani pengelola 12, 19, 21, 23, 29\.  
 Apakah penjelasan pembagian fitur dan masalah untuk 4 entitas ini sudah pas untuk dimasukkan ke laporan praktikum kelompok Anda?  
-

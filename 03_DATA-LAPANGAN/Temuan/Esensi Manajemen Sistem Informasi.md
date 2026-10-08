@@ -1,6 +1,6 @@
-﻿---
+---
 id: FIND-005
-title: "Esensi Manajemen Sistem Informasi"
+title: 'Esensi Manajemen Sistem Informasi'
 type: finding
 project: MSI
 status: draft
@@ -17,12 +17,13 @@ tags:
   - finding
   - brainstorming
 ---
+
 **Ya, betul sekali\!** Dalam konteks mata kuliah Manajemen Sistem Informasi (MSI) ini, langsung mengusulkan untuk **"bikin website/aplikasi baru" justru dianggap sebagai sebuah masalah atau kesalahan pendekatan**.  
 Di dalam studi kasus MSI, hal ini biasanya disebut sebagai **tiga jebakan utama**:
 
 ### 1\. Jebakan *Solution Fixation* (Fokus ke Solusi Teknis)
 
-* **Masalahnya:** Dosen (Dr. Ratna Wardani) sangat mewanti-wanti agar mahasiswa tidak terjebak *solution fixation*â€”yaitu kebiasaan anak IT yang kalau melihat masalah di lapangan, refleksnya langsung *"bikin web/aplikasi baru aja\!"*.  
+* **Masalahnya:** Dosen (Dr. Ratna Wardani) sangat mewanti-wanti agar mahasiswa tidak terjebak *solution fixation*—yaitu kebiasaan anak IT yang kalau melihat masalah di lapangan, refleksnya langsung *"bikin web/aplikasi baru aja\!"*.  
 * **Alasan:** Akar masalah di Perpustakaan FT UNY adalah **tata kelola dan SOP** (pustakawan tunggal yang tidak punya jadwal rutin *update* data). Kalau Anda buatkan web baru sekalipun, web tersebut akan tetap terbengkalai dan datanya tidak akurat jika SOP pemutakhirannya tidak diperbaiki.
 
 ### 2\. Redundansi Sistem (Sistem Jadi Tumpang-Tindih)
@@ -44,5 +45,4 @@ Web boleh dipakai **HANYA jika bentuknya adalah media pendukung yang sangat sede
 ### Kesimpulan
 
 Jadi, keputusan kelompok Anda untuk **TIDAK membuat website baru** dan berfokus pada **perbaikan SOP, rak transit, dan Google Form QR Code** sudah sangat tepat dan sesuai dengan arah penilaian dosen\!  
-ðŸ’¡ Apakah kelompok Anda perlu bantuan menyusun argumen ini jika nanti ditanya oleh dosen saat presentasi *Project Scope Statement*?  
-
+💡 Apakah kelompok Anda perlu bantuan menyusun argumen ini jika nanti ditanya oleh dosen saat presentasi *Project Scope Statement*?  
