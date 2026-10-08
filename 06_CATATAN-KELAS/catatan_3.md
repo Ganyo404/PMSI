@@ -1,6 +1,6 @@
-﻿---
+---
 id: CAT-003
-title: "catatan_3"
+title: 'catatan_3'
 type: note
 project: MSI
 status: draft
@@ -11,6 +11,7 @@ tags:
   - msi
   - catatan
 ---
+
 tidak ada ee asumsi ya, asumsi gitu ya. Jadi kalau memang perlu observasi silakan observasi tidak ada fik ya data fikih informasi fikih enggak ada di perbesar besar ya. Silakan jelaskan warahmatullahi wabarakatuh. Ee kami dari mempresentasikan tentang ee bermasalah itu beberapa aktivitas operasional dan ee ee berib kehadan ee pada masjid besar hikmah yang kami temukan ee sudah berjalan dengan lancar seperti ketersediaan perangkat komputer komputer meja di kantor sekretariat ee penerimaan infak biak jumat dan biorisasi yang aktif penyelenggaraan salat jumat dan penurunan yang pada jemaah serta ee pengurusan takmir yang memiliki legislasi ee resmi SK nomor 5\. Namun demikian ee terdapat masalah terka ASI dan satu ee hipotesis kerja yang kami identifikasi dalam tata kelola sistem informasi. Nah, yang pertama itu ee keterangan keretaan penyimpanan ee tunggal bilangnya 70% data organisasi yang terverifikasi ee akibat visi yang besar pada ee tanggal eh bulan Februari 2026\.
 
 Stop itu ini program organisasinya. Gimana? Yang lain juga perhatikan. Identifikasimu sejenis kayak gini gak? Problem problem organisasinya gimana? Kalau materiannya berarti tidak belum adanya SP yang dari tingkat misal atau yang itu ee SP yang terkait ee ya di juga stop di situ yang harus ditulis yang barusan SOP penyimpanan data ada enggak di organisasi itu saya tanya kan Anda observasi ada enggak ini kaitannya dengan penyimpanan data ada masalah ada kejadi Kejadian faktanya enggak kejadian datanya ngomong kerentanan itu artinya harus ada datanya pernah enggak kejadian. Nah, stop ya. Sudah ada kejadian berapa kali kejadian dari catatannya yang paling besar itu satu kali yang besar. Tapi
@@ -36,5 +37,4 @@ nah struktur organisasinya itu yang penting terus alur misalnya alur dari Anda h
 Baik, sekian dari kami mohon maaf. Asalamualaikum warahmatullahi wabarakatuh. Silakan ada yang mau ditanyakan atau mau ditampilkan atau sudah cukup mandiri silakan saja.
 
 Karena esensinya yang harus betul ya. I Terima kasih. Terima kasih. Terima kasih.
-
 

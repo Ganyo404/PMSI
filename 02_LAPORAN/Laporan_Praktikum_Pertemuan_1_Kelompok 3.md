@@ -1,6 +1,6 @@
-﻿---
+---
 id: LAP-001
-title: "Laporan_Praktikum_Pertemuan_1_Kelompok 3"
+title: 'Laporan_Praktikum_Pertemuan_1_Kelompok 3'
 type: report
 project: MSI
 status: draft
@@ -11,6 +11,7 @@ tags:
   - msi
   - laporan
 ---
+
 **LAPORAN PRAKTIKUM MINGGUAN**
 
 *Manajemen Sistem Informasi (PTF60234)  Pertemuan 1*

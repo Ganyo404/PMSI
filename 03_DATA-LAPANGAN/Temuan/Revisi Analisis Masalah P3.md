@@ -1,6 +1,6 @@
-﻿---
+---
 id: FIND-010
-title: "Revisi Analisis Masalah P3"
+title: 'Revisi Analisis Masalah P3'
 type: finding
 project: MSI
 status: draft
@@ -17,6 +17,7 @@ tags:
   - finding
   - brainstorming
 ---
+
 Berikut adalah rincian lengkap mengenai **seluruh poin yang telah diperbarui dan direvisi pada Laporan Praktikum Pertemuan 3** (file **laporan-praktikum-pertemuan-3-revisi-v3.docx**) 1:
 
 ### 1\. Bagian 1: Judul dan Identitas Laporan
@@ -55,5 +56,4 @@ Berikut adalah rincian lengkap mengenai **seluruh poin yang telah diperbarui dan
 * **Refleksi Kritis:** Membahas pentingnya menghindari *solution fixation* (keinginan terburu-buru membuat aplikasi baru) 12 serta memahami bahwa aplikasi SLiMS tidak otomatis menjamin kualitas informasi jika tidak didukung oleh SOP dan alur kerja yang terintegrasi.  
 * **Kesimpulan:** Menegaskan rumusan Pernyataan Masalah Prioritas Akhir sebagai pijakan awal untuk melangkah ke tahap penyusunan *Project Scope Statement* pada Pertemuan 4 13, 14\.
 
-ðŸ’¡ *Seluruh poin pembaruan di atas sudah tersimpan rapi dan dapat Anda unduh dalam file **laporan-praktikum-pertemuan-3-revisi-v3.docx** di panel Studio sebelah kanan.*  
-
+💡 *Seluruh poin pembaruan di atas sudah tersimpan rapi dan dapat Anda unduh dalam file **laporan-praktikum-pertemuan-3-revisi-v3.docx** di panel Studio sebelah kanan.*  
