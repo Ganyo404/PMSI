@@ -3,61 +3,42 @@
 Berikut adalah keahlian (skill) yang dapat digunakan oleh AI Agent dalam project ini:
 
 ### Academic Skill
-Digunakan untuk penulisan laporan akademik.
+Digunakan untuk penulisan laporan akademik. (Sudah diubah menjadi *Native Antigravity Skill* di `.agents/skills/academic-skill/SKILL.md`)
 Ketentuan:
-- Bahasa Indonesia akademik tetapi natural.
-- Tidak terlalu kaku; tidak bertele-tele.
-- Memperhatikan kohesi dan koherensi.
-- Menggunakan kalimat efektif.
-- Tidak menggunakan em dash (—).
-- Tidak membuat klaim tanpa sumber.
-- Mempertahankan makna dari data asli.
+- Bahasa Indonesia akademik tetapi natural, merujuk pada 7 Aspek MSI Bu Ratna.
+- Tidak terlalu kaku; tidak bertele-tele (Anti-AI Writing, tanpa kata *slop* dan *em-dash*).
+- Mempertahankan solusi *Pure Governance* (tanpa memaksakan koding baru).
+- Mengacu pada integrasi SLiMS, Pustakawan Tunggal, dan Dekanat FT UNY.
 
-### Source Tracking Skill
+### Source Tracking / Revisi Skill
+(Sudah diubah menjadi *Native Antigravity Skill* di `.agents/skills/revisi/SKILL.md`)
 Digunakan untuk:
-- Melacak sumber.
-- Membuat hubungan antar-sumber.
-- Memastikan setiap temuan memiliki sumber.
-- Mendeteksi indikator `SOURCE MISSING`.
-
-### Revision Skill
-Digunakan untuk:
-- Mencatat perubahan.
-- Mempertahankan data lama.
-- Tidak menghapus informasi penting.
+- Melacak sumber dan tidak membabat habis paragraf lama saat revisi.
+- Memastikan tidak ada jebakan "karena belum ada aplikasi".
 - Membuat histori revisi di folder `07_REVISI/`.
 
-### Self Audit Skill
+### Self Audit Skill (QA/QC)
+(Sudah diubah menjadi *Native Antigravity Skill* di `.agents/skills/self-audit/SKILL.md`)
 Digunakan untuk:
-- Memeriksa laporan.
-- Membandingkan laporan dengan data asli.
-- Memeriksa kelengkapan sumber.
-- Menemukan informasi yang belum didukung sumber.
-- Membuat daftar perbaikan.
+- Memeriksa laporan dan mewajibkan standar Diagram `mermaid`.
+- Protokol *Push-Back*: Menolak instruksi yang menyalahi pakem MSI atau menebak angka fiktif.
+- Memeriksa kelengkapan 7 Bagian wajib Laporan Praktikum.
+
+### Modul Generator Skill
+(Sudah diubah menjadi *Native Antigravity Skill* di `.agents/skills/buat-modul/SKILL.md`)
+Digunakan untuk:
+- Memandu tata cara pembuatan Laporan Modul baru.
+- Mewajibkan *Implementation Plan* sebelum menulis kode utuh.
 
 ### Dashboard Skill
 Digunakan untuk:
 - Memperbarui status project.
-- Memperbarui jumlah data dan dokumen.
 - Memperbarui daftar pekerjaan (progress).
-- Memeriksa *broken links* (tautan rusak).
-- Menampilkan kondisi project secara ringkas.
 
 ### Context / Retrieval Skill
 Digunakan untuk:
-- Mencari file yang relevan berdasarkan pekerjaan.
-- Mengambil konteks dari modul, wawancara, temuan, dan referensi.
-- Tidak memasukkan seluruh data jika tidak relevan (efisiensi konteks).
-- Mempertahankan hubungan antar-file.
+- Mulai membaca dari `CONTEXT_INDEX.md`.
+- Mengambil konteks dari modul, wawancara, temuan, dan referensi tanpa menghabiskan *context window*.
 
 ### Self-Healing Skill
-Digunakan untuk perbaikan otomatis dengan syarat **tidak boleh mengarang atau membuat data baru**. 
-Self-healing hanya boleh:
-- Mendeteksi *broken link*.
-- Mendeteksi file yang hilang.
-- Mendeteksi metadata yang kosong.
-- Mendeteksi sumber yang belum tersedia.
-- Mendeteksi ID duplikat.
-- Mendeteksi inkonsistensi struktur.
-- Memberikan rekomendasi perbaikan.
-- Melakukan perbaikan struktural yang aman.
+Digunakan untuk perbaikan otomatis (misalnya perbaikan *encoding* UTF-8 markdown).
