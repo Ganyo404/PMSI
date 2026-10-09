@@ -46,7 +46,7 @@ Mahasiswa mampu menyusun struktur tim proyek, menetapkan pembagian peran dan tan
 
 Dasar pembentukan **RACI Matrix** dalam perencanaan proyek ini berangkat dari prinsip tata kelola sistem informasi yang menempatkan kejelasan peran, tanggung jawab, dan akuntabilitas terhadap informasi sebagai bagian penting dalam pengelolaan sistem informasi. RACI (*Responsible, Accountable, Consulted, Informed*) digunakan untuk memperjelas pihak yang melaksanakan pekerjaan, pihak yang memiliki tanggung jawab akhir, pihak yang memberikan masukan, serta pihak yang perlu mengetahui perkembangan suatu aktivitas. Mengacu pada *Project Management Body of Knowledge (PMBOK Guide)* oleh Project Management Institute (2021) serta konsep *Management Information Systems* oleh Laudon & Laudon (2014), kejelasan pembagian tanggung jawab diperlukan agar proses pengelolaan informasi tidak mengalami tumpang tindih kewenangan maupun kekosongan tanggung jawab.
 
-Dalam praktikum ini, pembentukan struktur tim dan RACI Matrix diselaraskan dengan hasil **Analisis Masalah Prioritas pada Praktikum 3** dan **Project Scope Statement pada Praktikum 4**. Permasalahan utama yang menjadi dasar adalah **keterlambatan pemutakhiran data perpustakaan** akibat waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut dapat menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu masih memerlukan proses pengecekan atau verifikasi manual.
+Dalam praktikum ini, pembentukan struktur tim dan RACI Matrix diselaraskan dengan hasil **Analisis Masalah Prioritas pada Praktikum 3** ([[Praktikum_3_Kelompok3.md|LAP-003]]) dan **Project Scope Statement pada Praktikum 4** ([[Praktikum_4_Kelompok3_revisi.md|LAP-004]]). Permasalahan utama yang menjadi dasar adalah **keterlambatan pemutakhiran data perpustakaan** akibat waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut dapat menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu masih memerlukan proses pengecekan atau verifikasi manual (merujuk pada kondisi lapangan di [[Jawaban3_Final.md|Wawancara 3]]). Selain itu, perancangan ini juga bertujuan untuk memastikan bahwa keterlambatan aliran informasi tidak memberikan dampak negatif yang berkelanjutan terhadap tata kelola di tingkat fakultas maupun pelaporan akreditasi, sebagaimana ditekankan pada umpan balik di [[catatan_4.md|Catatan Kelas 4]].
 
 Berdasarkan permasalahan tersebut, kelompok terlebih dahulu menyusun **Grand Design Sistem Informasi Pemutakhiran dan Monitoring Data Koleksi Perpustakaan Fakultas Teknik UNY**. Grand Design digunakan untuk memetakan aliran data dan informasi yang terlibat dalam proses pemutakhiran data, bukan untuk merancang struktur database atau antarmuka aplikasi secara teknis. Pemetaan dilakukan dengan menentukan pihak yang menghasilkan informasi, pihak yang menerima atau menggunakan informasi, jenis data yang berpindah, serta modul atau mekanisme yang mendukung aliran tersebut.
 
@@ -85,8 +85,20 @@ Dengan demikian, pembentukan Grand Design, RACI Matrix, pembagian peran, dan rit
 
    **VISUALISASI**
 
-| ![][image2] |
-| :---- |
+```mermaid
+flowchart TD
+    Pemustaka([Pemustaka])
+    Pustakawan([Pustakawan])
+    SLiMS[(SLiMS)]
+    Kepala([Kepala Perpustakaan])
+    Akreditasi([Tim Akreditasi / Prodi])
+
+    Pemustaka -- Laporan Kondisi Koleksi<br/>(Form Pelaporan) --> Pustakawan
+    Pustakawan -- Data/Status Terverifikasi<br/>(Modul Pemutakhiran) --> SLiMS
+    SLiMS -- Data Ekstraksi Pengecekan<br/>(Modul Ekstraksi) --> Pustakawan
+    Pustakawan -- Rekap Kondisi Koleksi<br/>(Dashboard Monitoring) --> Kepala
+    Pustakawan -- Rekap Data Sirkulasi<br/>(Template Pelaporan) --> Akreditasi
+```
 
    
 

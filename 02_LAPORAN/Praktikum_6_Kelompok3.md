@@ -51,13 +51,13 @@ Analisis Masalah Organisasi dan Prioritas Solusi
    
 
 2. **URAIAN PELAKSANAAN KEGIATAN**  
-   Pelaksanaan praktikum Modul 6 dilakukan dengan mengacu pada hasil analisis dan rancangan yang telah disusun pada Modul 3, Modul 4, dan Modul 5\. Pada Modul 3, kelompok telah mengidentifikasi permasalahan utama pada Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta, yaitu keterlambatan pembaruan data perpustakaan sehingga informasi yang tersedia tidak selalu sesuai dengan kondisi terbaru.  
-   Permasalahan tersebut kemudian dianalisis menggunakan fishbone dan metode 5 Why untuk mengetahui faktor-faktor yang memengaruhi terjadinya keterlambatan pembaruan data. Hasil analisis menunjukkan bahwa salah satu kondisi yang berpengaruh adalah pengelolaan layanan yang dilakukan oleh satu orang pengelola dengan beberapa tanggung jawab layanan sekaligus. Selain itu, proses pembaruan data masih dilakukan secara bertahap mengikuti beban pelayanan, terdapat proses pemeriksaan secara manual, dan belum terdapat mekanisme atau jadwal pembaruan status koleksi yang terstruktur.  
-   Pada Modul 4, hasil identifikasi masalah tersebut kemudian diterjemahkan menjadi rancangan solusi berupa Ekosistem Informasi Terpadu Berbasis Tata Kelola (Governance & Workflow). Rancangan tersebut tidak diarahkan untuk membangun aplikasi baru, tetapi memanfaatkan sistem dan sarana yang telah tersedia. Solusi yang dirancang mencakup pemanfaatan Google Form melalui QR Code untuk pelaporan koleksi rusak atau hilang, proses verifikasi oleh pustakawan, pembaruan status koleksi melalui SLiMS, ekstraksi data sirkulasi, serta pemanfaatan hasil rekap untuk kebutuhan monitoring dan akreditasi.  
+   Pelaksanaan praktikum Modul 6 dilakukan dengan mengacu pada hasil analisis dan rancangan yang telah disusun pada Modul 3, Modul 4, dan Modul 5. Pada Modul 3, kelompok telah mengidentifikasi permasalahan utama pada Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta, yaitu keterlambatan pembaruan data perpustakaan sehingga informasi yang tersedia tidak selalu sesuai dengan kondisi terbaru.  
+   Permasalahan tersebut kemudian dianalisis menggunakan fishbone dan metode 5 Why untuk mengetahui faktor-faktor yang memengaruhi terjadinya keterlambatan pembaruan data. Hasil analisis menunjukkan bahwa salah satu kondisi yang berpengaruh adalah pengelolaan layanan yang dilakukan oleh satu orang pengelola (merujuk fakta di [[Jawaban3_Final.md|Wawancara 3]]) dengan beberapa tanggung jawab layanan sekaligus. Selain itu, proses pembaruan data masih dilakukan secara bertahap mengikuti beban pelayanan, terdapat proses pemeriksaan secara manual, dan belum terdapat mekanisme atau jadwal pembaruan status koleksi yang terstruktur.  
+   Pada Modul 4, hasil identifikasi masalah tersebut kemudian diterjemahkan menjadi rancangan solusi berupa [[Ekosistem Informasi Perpustakaan.md|Ekosistem Informasi Terpadu]] Berbasis Tata Kelola (Governance & Workflow). Rancangan tersebut tidak diarahkan untuk membangun aplikasi baru, tetapi memanfaatkan sistem dan sarana yang telah tersedia. Solusi yang dirancang mencakup pemanfaatan Google Form melalui QR Code untuk pelaporan koleksi rusak atau hilang, proses verifikasi oleh pustakawan, pembaruan status koleksi melalui SLiMS, ekstraksi data sirkulasi, serta pemanfaatan hasil rekap untuk kebutuhan monitoring dan akreditasi LAM-INFOKOM.  
    Pada Modul 5, rancangan tersebut kemudian dituangkan dalam bentuk pembagian tanggung jawab melalui RACI Matrix dan Grand Design. Grand Design menggambarkan hubungan antara pemustaka, pustakawan, Google Form/QR Code, SLiMS, proses ekstraksi data, rekapitulasi, serta pihak yang menggunakan informasi tersebut untuk kebutuhan monitoring dan akreditasi. Berdasarkan rancangan tersebut, Modul 6 dilakukan dengan menganalisis bagaimana solusi dapat diterapkan secara realistis pada lingkungan perpustakaan. Analisis meliputi arsitektur sistem informasi berlapis, pemilihan strategi implementasi, potensi resistensi perubahan, serta strategi komunikasi dan pelatihan.  
      
 3. **HASIL DAN ARTEFAK PRAKTIKUM**  
-   	Berdasarkan hasil analisis permasalahan pada praktikum sebelumnya, kelompok menyusun rancangan implementasi untuk mendukung penerapan solusi pada Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta. Rancangan implementasi pada praktikum ini disusun dengan mempertimbangkan kondisi pengelolaan perpustakaan, penggunaan SLiMS yang telah berjalan, keterbatasan sumber daya manusia, serta solusi yang telah dituangkan dalam Grand Design pada Modul 5\.  
+   	Berdasarkan hasil analisis permasalahan pada praktikum sebelumnya, kelompok menyusun rancangan implementasi untuk mendukung penerapan solusi pada Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta. Rancangan implementasi pada praktikum ini disusun dengan mempertimbangkan kondisi pengelolaan perpustakaan, penggunaan SLiMS yang telah berjalan, keterbatasan sumber daya manusia, serta solusi yang telah dituangkan dalam Grand Design pada Modul 5.  
    Hasil yang disusun pada tahap ini meliputi rancangan arsitektur sistem informasi berlapis, analisis strategi implementasi, penentuan strategi implementasi secara keseluruhan, identifikasi potensi resistensi terhadap perubahan, serta rancangan manajemen perubahan. Seluruh rancangan tersebut digunakan untuk memastikan bahwa solusi yang telah dibuat sebelumnya dapat diterapkan secara realistis tanpa mengharuskan perpustakaan membangun sistem baru.  
    1. **Arsitektur Sistem Informasi Berlapis**
 
@@ -79,20 +79,28 @@ Analisis Masalah Organisasi dan Prioritas Solusi
       4. **Lapisan Integrasi**  
          Lapisan integrasi menggambarkan hubungan antarproses dan komponen yang digunakan dalam rancangan. Integrasi pada solusi ini lebih menekankan pada keterhubungan alur informasi dan workflow, bukan pengembangan integrasi teknis baru.  
          Hubungan antarkomponen dapat digambarkan melalui alur:  
-         ![][image2]  
+         ```mermaid
+         flowchart LR
+             M([Pemustaka]) -- "Laporan via QR Code" --> GF[Google Form]
+             GF -- "Daftar Laporan Masuk" --> P([Pustakawan Tunggal])
+             P -- "Verifikasi Manual (SOP Quiet Hour)" --> S[(SLiMS)]
+             
+             style GF fill:#f9f9f9,stroke:#333
+             style S fill:#f9f9f9,stroke:#333
+         ```  
          Pada alur tersebut, Google Form berfungsi sebagai media penerimaan laporan, sedangkan SLiMS tetap digunakan sebagai sistem pengelolaan data perpustakaan. Tidak terdapat proses otomatis yang secara langsung mengirimkan data dari Google Form ke database SLiMS. Dengan rancangan tersebut, implementasi dapat dilakukan dengan memanfaatkan sistem dan fasilitas yang telah tersedia tanpa melakukan perubahan terhadap database utama SLiMS.  
    2. **Matriks Strategi Implementasi**  
       Setelah arsitektur sistem ditentukan, setiap bagian dari rancangan dianalisis berdasarkan karakteristik kebutuhan dan cara penerapannya. Analisis ini dilakukan untuk menentukan pendekatan implementasi yang sesuai, yaitu Waterfall, Agile, atau Hybrid. 
 
 | No. | Komponen yang Diimplementasikan | Karakteristik Implementasi | Strategi |
 | ----- | ----- | ----- | ----- |
-| 1\. | SOP pembaruan status koleksi | Prosedur dapat ditentukan dan disusun terlebih dahulu | Waterfall |
-| 2\. | Rak Transit Pengembalian | Bentuk dan fungsi sudah dapat ditentukan sejak awal | Waterfall |
-| 3\. | Google Form dan QR Code | Kebutuhan sederhana dan dapat dipersiapkan sebelum digunakan | Waterfall |
-| 4\. | Template rekapitulasi | Format kebutuhan dapat ditentukan berdasarkan kebutuhan informasi | Waterfall |
-| 5\. | Ekstraksi data SLiMS | Menggunakan fitur yang telah tersedia pada sistem | Waterfall |
-| 6\. | Sosialisasi dan pelatihan | Membutuhkan penyesuaian berdasarkan respons pengguna | Agile |
-| 7\. | Monitoring dan evaluasi workflow | Membutuhkan evaluasi dan perbaikan setelah diterapkan | Hybrid |
+| 1. | SOP Quiet Hour | Prosedur dapat ditentukan dan disusun terlebih dahulu | Waterfall |
+| 2. | Rak Transit Pengembalian | Bentuk dan fungsi sudah dapat ditentukan sejak awal | Waterfall |
+| 3. | Google Form dan QR Code | Kebutuhan sederhana dan dapat dipersiapkan sebelum digunakan | Waterfall |
+| 4. | Template Ekstraksi LAM-INFOKOM | Format kebutuhan dapat ditentukan berdasarkan kebutuhan informasi | Waterfall |
+| 5. | Ekstraksi data SLiMS | Menggunakan fitur yang telah tersedia pada sistem | Waterfall |
+| 6. | Sosialisasi dan pelatihan | Membutuhkan penyesuaian berdasarkan respons pengguna | Agile |
+| 7. | Monitoring dan evaluasi workflow | Membutuhkan evaluasi dan perbaikan setelah diterapkan | Hybrid |
 
       Berdasarkan analisis tersebut, komponen yang bersifat prosedural dan memiliki kebutuhan yang relatif jelas dapat dipersiapkan menggunakan pendekatan Waterfall. Contohnya adalah penyusunan SOP, penyediaan Rak Transit, pembuatan Google Form dan QR Code, serta penyusunan template rekapitulasi.
 
@@ -102,7 +110,27 @@ Analisis Masalah Organisasi dan Prioritas Solusi
       Berdasarkan hasil analisis terhadap setiap komponen, strategi implementasi keseluruhan menggunakan pendekatan Hybrid. Pendekatan ini digunakan karena solusi yang dirancang memiliki beberapa bagian yang dapat dipersiapkan secara terstruktur, tetapi pada saat yang sama terdapat bagian yang memerlukan penyesuaian berdasarkan pengalaman pengguna ketika solusi mulai diterapkan.  
       Implementasi diawali dengan tahap persiapan. Pada tahap ini dilakukan finalisasi SOP, penyiapan Rak Transit Pengembalian, pembuatan Google Form dan QR Code, serta penyiapan template rekapitulasi. Tahap persiapan dilakukan agar komponen yang dibutuhkan telah tersedia sebelum workflow diterapkan. Setelah persiapan selesai, dilakukan sosialisasi kepada pihak yang berkaitan dengan proses tersebut. Pemustaka diberikan informasi mengenai penggunaan QR Code dan Google Form, sedangkan pustakawan diberikan pemahaman mengenai alur pemeriksaan laporan dan pembaruan data.  
       Tahap berikutnya adalah penerapan workflow dalam kegiatan perpustakaan. Laporan yang diterima melalui Google Form diperiksa oleh pustakawan. Apabila laporan telah diverifikasi, pustakawan melakukan pembaruan status koleksi melalui SLiMS sesuai prosedur yang telah ditetapkan. Setelah workflow berjalan, dilakukan monitoring untuk mengetahui kesesuaian antara rancangan dengan kondisi pelaksanaan. Hasil monitoring kemudian digunakan sebagai bahan evaluasi. Apabila ditemukan bagian yang kurang sesuai, prosedur dapat diperbaiki tanpa harus mengubah keseluruhan rancangan sistem. Dengan demikian, strategi implementasi keseluruhan dapat digambarkan sebagai berikut:  
-      ![][image3]  
+      ```mermaid
+      flowchart TD
+          subgraph Tahap Persiapan (Waterfall)
+              A[Penyiapan SOP Quiet Hour]
+              B[Rak Transit & QR Code]
+              C[Template Ekstraksi LAM-INFOKOM]
+          end
+          
+          subgraph Tahap Implementasi & Adaptasi (Agile/Hybrid)
+              D[Sosialisasi & Pelatihan]
+              E[Penerapan Workflow Laporan]
+              F[Monitoring & Evaluasi]
+          end
+
+          A --> D
+          B --> D
+          C --> D
+          D --> E
+          E --> F
+          F -. "Perbaikan SOP/Alur" .-> E
+      ```  
         
    4. **Analisis Potensi Resistensi Perubahan**  
       Penerapan workflow baru dapat menyebabkan perubahan terhadap kebiasaan kerja dan cara pengguna berinteraksi dengan layanan perpustakaan. Oleh karena itu, potensi resistensi perlu dipertimbangkan agar proses implementasi dapat berjalan dengan baik. Potensi perubahan terbesar terdapat pada pustakawan karena terdapat penyesuaian pada proses penerimaan laporan dan pembaruan status koleksi. Sebelumnya, informasi mengenai kondisi koleksi dapat disampaikan secara langsung, sedangkan dalam rancangan baru informasi dapat diterima melalui Google Form. Perubahan tersebut membutuhkan penyesuaian terhadap alur kerja yang dilakukan oleh pustakawan.  
@@ -150,7 +178,7 @@ Analisis Masalah Organisasi dan Prioritas Solusi
 6. **KESIMPULAN**  
    Berdasarkan hasil praktikum Modul 6, dapat disimpulkan bahwa strategi implementasi sistem informasi pada Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta perlu disesuaikan dengan kondisi organisasi, sumber daya manusia, sistem yang telah tersedia, serta karakteristik solusi yang dirancang. Arsitektur sistem informasi disusun menggunakan empat lapisan, yaitu Interface Layer, Application/Logic Layer, Data Layer, dan Integration Layer. Arsitektur tersebut menggambarkan hubungan antara pemustaka, Google Form/QR Code, pustakawan, SLiMS, proses ekstraksi data, dan rekapitulasi informasi.  
    Berdasarkan karakteristik setiap komponen, pendekatan implementasi dapat menggunakan kombinasi strategi terstruktur dan evaluasi bertahap. Oleh karena itu, strategi keseluruhan diarahkan menggunakan pendekatan Hybrid, terutama karena sebagian besar komponen memiliki kebutuhan yang cukup jelas, sementara proses sosialisasi, penggunaan, monitoring, dan evaluasi tetap membutuhkan penyesuaian berdasarkan kondisi di lapangan. Selain aspek teknis, implementasi juga perlu memperhatikan potensi resistensi perubahan dari pustakawan, pemustaka, pihak program studi atau tim akreditasi, serta pihak pengelola. Strategi komunikasi, sosialisasi, pelatihan, monitoring, dan evaluasi diperlukan agar perubahan dapat diterapkan secara bertahap.  
-   Dengan demikian, hasil Modul 6 melengkapi hasil Modul 3, Modul 4, dan Modul 5\. Modul 3 menghasilkan identifikasi dan prioritas masalah, Modul 4 menghasilkan rancangan solusi dan tujuan proyek, Modul 5 menghasilkan pembagian tanggung jawab serta Grand Design, sedangkan Modul 6 memberikan rancangan strategi implementasi dan manajemen perubahan terhadap solusi tersebut.  
+   Dengan demikian, hasil Modul 6 melengkapi hasil Modul 3, Modul 4, dan Modul 5. Modul 3 menghasilkan identifikasi dan prioritas masalah, Modul 4 menghasilkan rancangan solusi dan tujuan proyek, Modul 5 menghasilkan pembagian tanggung jawab serta Grand Design, sedangkan Modul 6 memberikan rancangan strategi implementasi dan manajemen perubahan terhadap solusi tersebut.  
 7. **DAFTAR PUSTAKA**  
 * Laudon, K. C., & Laudon, J. P. (2014). Management Information Systems: Managing the Digital Firm (13th ed.). Pearson.  
 * Project Management Institute. (2021). A Guide to the Project Management Body of Knowledge (PMBOK® Guide) (7th ed.). Project Management Institute.  
