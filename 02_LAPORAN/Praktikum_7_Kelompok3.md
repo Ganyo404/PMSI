@@ -40,7 +40,7 @@ Pembuatan Gantt Chart dan PERT Chart
 ---
 
 ### 2. TUJUAN KEGIATAN  
-Praktikum pada pertemuan ketujuh bertujuan untuk menyusun penjadwalan proyek berdasarkan [[Analisis Komparatif MSI Sekolah-FT UNY|solusi tata kelola (Pure Governance)]] yang telah dirancang pada [[Praktikum_6_Kelompok3|Pertemuan 6]]. Penjadwalan ini secara khusus menyoroti **ketergantungan informasi**, di mana suatu aktivitas tidak dapat dieksekusi sebelum keputusan mengenai format atau kesepakatan data dari aktivitas sebelumnya selesai dilakukan.
+Praktikum pada pertemuan ketujuh bertujuan untuk menyusun penjadwalan proyek berdasarkan [[Ekosistem Informasi Perpustakaan.md|solusi tata kelola (Pure Governance)]] yang telah dirancang pada [[Praktikum_6_Kelompok3.md|Pertemuan 6]]. Penjadwalan ini secara khusus menyoroti **ketergantungan informasi**, di mana suatu aktivitas tidak dapat dieksekusi sebelum keputusan mengenai format atau kesepakatan data dari aktivitas sebelumnya selesai dilakukan.
 Secara khusus, kegiatan ini bertujuan untuk:
 1. Menyusun **Gantt Chart** implementasi tata kelola Perpustakaan FT UNY.
 2. Memetakan ketergantungan antar-aktivitas ke dalam jaringan **PERT Chart**.
@@ -49,7 +49,7 @@ Secara khusus, kegiatan ini bertujuan untuk:
 ---
 
 ### 3. URAIAN PELAKSANAAN KEGIATAN  
-Berdasarkan hasil analisis dari [[Praktikum_6_Kelompok3|Modul 6 (Arsitektur dan Matriks Implementasi)]], Kelompok 3 tidak merancang *software* baru, melainkan mengandalkan optimalisasi SLiMS OPAC yang sudah ada melalui pendirian SOP *Quiet Hour*, Rak Transit, Google Form QR Code, dan Template LAM-INFOKOM.
+Berdasarkan hasil analisis dari [[Praktikum_6_Kelompok3.md|Modul 6 (Arsitektur dan Matriks Implementasi)]] dan batasan sumber daya di [[Jawaban3_Final.md|Wawancara 3]] mengenai kondisi Pustakawan Tunggal, Kelompok 3 tidak merancang *software* baru. Implementasi lebih berfokus mengandalkan optimalisasi SLiMS yang sudah ada, melalui pendekatan [[Ekosistem Informasi Perpustakaan.md|Ekosistem Informasi]]: pendirian SOP *Quiet Hour*, Rak Transit, Google Form QR Code, dan Template LAM-INFOKOM.
 
 Dalam menyusun penjadwalan proyek ini, kami memecah tahapan implementasi menjadi 7 aktivitas utama (B hingga H). Penjadwalan ini sangat menekankan **Aspek Tata Kelola dan Kualitas Informasi (Aspek 2)** dari MSI. Misalnya, *Pembuatan Google Form (Aktivitas C)* tidak boleh dimulai sebelum *Perumusan SOP (Aktivitas B)* disepakati. Hal ini karena *field* pertanyaan di Google Form sepenuhnya bergantung pada kebutuhan informasi yang didikte oleh SOP. Jika form dibuat mendahului SOP (ketergantungan informasi dilanggar), maka akan terjadi risiko pendataan ulang yang membuang waktu.
 
