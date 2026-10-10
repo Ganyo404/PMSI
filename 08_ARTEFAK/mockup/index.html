@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mockup Interaktif Sistem Pelaporan Mandiri Koleksi Terpadu (SIMPEL-KOLEKSI FT) Perpustakaan Fakultas Teknik UNY. Prototipe High-Fidelity untuk presentasi praktikum MSI.">
+  <title>SIMPEL-KOLEKSI FT | Perpustakaan Fakultas Teknik UNY</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       GLOBAL HEADER & ROLE SWITCHER
+       ═══════════════════════════════════════════════════ -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <span class="brand-logo">📚</span>
+        <div>
+          <div class="brand-title">
+            SIMPEL-KOLEKSI FT
+            <span class="badge-tag">Prototipe v1.0</span>
+          </div>
+          <div class="brand-subtitle">Perpustakaan Fakultas Teknik UNY</div>
+        </div>
+      </div>
+
+      <nav class="role-nav" id="roleNav">
+        <button class="nav-tab active" data-view="student" id="tabStudent">
+          📱 Pemustaka <span class="tab-sub">Mobile Form</span>
+        </button>
+        <button class="nav-tab" data-view="librarian" id="tabLibrarian">
+          🖥️ Pustakawan <span class="tab-sub">Workspace</span>
+          <span class="badge-count" id="libBadgeCount">3</span>
+        </button>
+        <button class="nav-tab" data-view="executive" id="tabExecutive">
+          📊 Dekanat <span class="tab-sub">Executive</span>
+        </button>
+        <button class="nav-tab" data-view="spatial" id="tabSpatial">
+          🗺️ Denah <span class="tab-sub">Tata Ruang</span>
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-chip" id="systemStatus">
+          <span class="status-dot"></span>
+          <span id="statusLabel">SLiMS Online</span>
+        </div>
+        <span class="time-chip" id="liveClock">18:52 WIB</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+       MAIN CONTENT AREA
+       ═══════════════════════════════════════════════════ -->
+  <main class="main-content">
+
+    <!-- ─── VIEW 1: PORTAL PEMUSTAKA ─────────────────── -->
+    <section class="role-view active" id="viewStudent">
+
+      <!-- Sub-Toolbar: Mode Tampilan Web vs Simulator HP -->
+      <div class="view-mode-bar">
+        <div class="mode-info">
+          <span class="mode-badge">🌐 Web Responsif</span>
+          <span class="mode-text">SIMPEL-KOLEKSI FT &mdash; Layanan Mandiri Berbasis Web (Akses Fleksibel Desktop, Laptop &amp; Smartphone)</span>
+        </div>
+        <div class="mode-toggle-group">
+          <button type="button" class="btn-mode active" id="btnModeWeb" onclick="setStudentViewMode('web')" title="Tampilan Web Responsif Penuh (Desktop & Mobile)">
+            🖥️ Tampilan Web Desktop (Default)
+          </button>
+          <button type="button" class="btn-mode" id="btnModeSimulator" onclick="setStudentViewMode('simulator')" title="Simulasi Layar HP 390px (untuk presentasi demo)">
+            📱 Simulator Layar HP
+          </button>
+        </div>
+      </div>
+
+      <div class="student-wrapper" id="studentWrapper">
+
+        <!-- Main Form Container -->
+        <div class="phone-frame" id="studentContainer">
+          <div class="phone-notch" id="phoneNotch">
+            <span class="notch-camera"></span>
+            <span class="notch-speaker"></span>
+          </div>
+          <div class="phone-screen" id="phoneScreen">
+            <!-- App Bar / Breadcrumb -->
+            <div class="mobile-appbar">
+              <span><span class="dot-online"></span> Perpustakaan FT UNY &middot; Layanan Mandiri</span>
+              <span id="mobileTime">19:10</span>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="mobile-hero">
+              <span class="hero-badge">📋 Formulir Layanan Mandiri Pemustaka</span>
+              <h2>Laporan Kondisi Koleksi Buku</h2>
+              <p>Laporkan buku rusak, hilang, atau salah letak di rak secara mandiri untuk membantu pemutakhiran katalog SLiMS.</p>
+            </div>
+
+            <!-- Quick Fill Chips -->
+            <div class="quick-fill-bar">
+              <span class="quick-title">Cepat:</span>
+              <button type="button" class="btn-chip" onclick="quickFill('halaman-rusak')">📕 Halaman Rusak</button>
+              <button type="button" class="btn-chip" onclick="quickFill('salah-rak')">🔍 Salah Rak</button>
+              <button type="button" class="btn-chip" onclick="quickFill('hilang')">❓ Hilang</button>
+            </div>
+
+            <!-- Form Section -->
+            <form class="mobile-form" id="formLaporan" onsubmit="submitLaporan(event)">
+              <!-- Field 1: Identitas -->
+              <div class="form-group">
+                <label>👤 Identitas Mahasiswa Pelapor</label>
+                <div class="input-twin">
+                  <input type="text" id="inputNIM" placeholder="NIM (cth: 24050530038)" required oninput="updateLiveTicketPreview()">
+                  <input type="text" id="inputNama" placeholder="Nama Lengkap Mahasiswa" required oninput="updateLiveTicketPreview()">
+                </div>
+              </div>
+
+              <!-- Field 2: Data Buku -->
+              <div class="form-group">
+                <label>📖 Data Koleksi Buku</label>
+                <div class="input-with-action">
+                  <input type="text" id="inputBarcode" placeholder="Barcode / Eksemplar (cth: FT-INF-2024-001)" oninput="updateLiveTicketPreview()">
+                  <button type="button" class="btn-scan" onclick="simulateScan()">📷 Scan Barcode</button>
+                </div>
+                <input type="text" id="inputJudul" placeholder="Judul Buku yang Dilaporkan" required oninput="updateLiveTicketPreview()">
+              </div>
+
+              <!-- Field 3: Kategori Masalah -->
+              <div class="form-group">
+                <label>⚠️ Jenis Kerusakan / Masalah Koleksi</label>
+                <div class="category-grid">
+                  <label class="cat-card">
+                    <input type="radio" name="kategori" value="Halaman Robek / Rusak Fisik" required onchange="updateLiveTicketPreview()">
+                    <div class="cat-content">
+                      <span class="cat-icon">📕</span>
+                      <span class="cat-name">Halaman Robek</span>
+                    </div>
+                  </label>
+                  <label class="cat-card">
+                    <input type="radio" name="kategori" value="Halaman Hilang Sebagian" onchange="updateLiveTicketPreview()">
+                    <div class="cat-content">
+                      <span class="cat-icon">📑</span>
+                      <span class="cat-name">Halaman Hilang</span>
+                    </div>
+                  </label>
+                  <label class="cat-card">
+                    <input type="radio" name="kategori" value="Buku Salah Letak / Tidak Sesuai OPAC" onchange="updateLiveTicketPreview()">
+                    <div class="cat-content">
+                      <span class="cat-icon">🔍</span>
+                      <span class="cat-name">Salah Letak</span>
+                    </div>
+                  </label>
+                  <label class="cat-card">
+                    <input type="radio" name="kategori" value="Koleksi Hilang Fisik" onchange="updateLiveTicketPreview()">
+                    <div class="cat-content">
+                      <span class="cat-icon">❓</span>
+                      <span class="cat-name">Hilang Fisik</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Field 4: Bukti Foto -->
+              <div class="form-group">
+                <label>📷 Bukti Foto Kondisi Buku (Wajib untuk Rusak/Robek)</label>
+                <div class="photo-uploader" id="photoUploader" onclick="simulatePhoto()">
+                  <div class="upload-placeholder" id="uploadPlaceholder">
+                    <span>📸 Ketuk / Klik untuk Ambil Foto Bukti Kerusakan</span>
+                    <small>atau pilih file foto dari komputer / galeri HP</small>
+                  </div>
+                  <div class="preview-active" id="previewActive" style="display:none;">
+                    <img id="previewImg" src="" alt="Bukti foto kerusakan buku">
+                    <span class="preview-badge">✅ Foto bukti berhasil diunggah</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Catatan -->
+              <div class="form-group">
+                <label>📝 Catatan Tambahan (Opsional)</label>
+                <textarea id="inputCatatan" rows="2" placeholder="Contoh: Halaman 45-50 hilang, sampul depan sobek, ditemukan di rak DDC 600"></textarea>
+              </div>
+
+              <!-- Transit Notice -->
+              <div class="transit-notice">
+                <span class="notice-icon">🛒</span>
+                <span class="notice-text">Setelah mengirim laporan, letakkan fisik buku pada <strong>Rak Transit Tingkat 2 (RACK-001)</strong> di samping pintu masuk.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-primary-mobile" id="btnSubmit">
+                📤 Kirim Laporan &amp; Letakkan Buku di Rak Transit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Aside Context & Live Ticket Cards -->
+        <div class="student-context-aside">
+
+          <!-- Acrylic QR Stand Physical Display Card -->
+          <div class="context-card acrylic-stand-card">
+            <div class="acrylic-header">
+              <span class="acrylic-tag">🏷️ SENTUH FISIK / TOUCHPOINT EMPIRIS</span>
+              <h4>Stand Akrilik QR Code Meja &amp; Rak Transit (RACK-001)</h4>
+            </div>
+            <p class="acrylic-desc">Dicetak dan ditempatkan pada 12 meja baca serta Rak Transit untuk memicu partisipasi pemustaka tanpa aplikasi tambahan:</p>
+            
+            <div class="acrylic-mockup-frame">
+              <div class="acrylic-stand-glass">
+                <div class="acrylic-poster">
+                  <div class="poster-brand">
+                    <span class="poster-icon">🏛️</span>
+                    <div>
+                      <strong>PERPUSTAKAAN FT UNY</strong>
+                      <small>Sistem Pelaporan Mandiri SIMPEL-KOLEKSI</small>
+                    </div>
+                  </div>
+
+                  <div class="poster-qr-wrapper">
+                    <!-- SVG QR Code Vector -->
+                    <svg class="qr-svg" viewBox="0 0 100 100" width="130" height="130">
+                      <!-- Background -->
+                      <rect width="100" height="100" fill="#ffffff" rx="8"/>
+                      <!-- Corner Top Left -->
+                      <rect x="10" y="10" width="26" height="26" fill="#0f2b5c" rx="4"/>
+                      <rect x="14" y="14" width="18" height="18" fill="#ffffff" rx="2"/>
+                      <rect x="18" y="18" width="10" height="10" fill="#0f2b5c" rx="1"/>
+                      <!-- Corner Top Right -->
+                      <rect x="64" y="10" width="26" height="26" fill="#0f2b5c" rx="4"/>
+                      <rect x="68" y="14" width="18" height="18" fill="#ffffff" rx="2"/>
+                      <rect x="72" y="18" width="10" height="10" fill="#0f2b5c" rx="1"/>
+                      <!-- Corner Bottom Left -->
+                      <rect x="10" y="64" width="26" height="26" fill="#0f2b5c" rx="4"/>
+                      <rect x="14" y="68" width="18" height="18" fill="#ffffff" rx="2"/>
+                      <rect x="18" y="72" width="10" height="10" fill="#0f2b5c" rx="1"/>
+                      <!-- Pattern Dots -->
+                      <rect x="42" y="12" width="6" height="6" fill="#0284c7"/>
+                      <rect x="52" y="12" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="42" y="24" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="52" y="24" width="6" height="6" fill="#0284c7"/>
+                      <rect x="12" y="42" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="24" y="42" width="6" height="6" fill="#0284c7"/>
+                      <rect x="12" y="52" width="6" height="6" fill="#0284c7"/>
+                      <rect x="24" y="52" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="40" y="40" width="20" height="20" fill="#0f2b5c" rx="3"/>
+                      <rect x="45" y="45" width="10" height="10" fill="#38bdf8"/>
+                      <rect x="64" y="42" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="76" y="42" width="6" height="6" fill="#0284c7"/>
+                      <rect x="64" y="52" width="6" height="6" fill="#0284c7"/>
+                      <rect x="82" y="52" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="42" y="64" width="6" height="6" fill="#0284c7"/>
+                      <rect x="52" y="64" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="42" y="76" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="52" y="76" width="6" height="6" fill="#0284c7"/>
+                      <rect x="64" y="64" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="76" y="64" width="6" height="6" fill="#0f2b5c"/>
+                      <rect x="64" y="76" width="6" height="6" fill="#0284c7"/>
+                      <rect x="76" y="76" width="6" height="6" fill="#0f2b5c"/>
+                    </svg>
+                    <div class="qr-target-badge">
+                      <span>🔗 https://perpus.ft.uny.ac.id/lapor</span>
+                    </div>
+                  </div>
+
+                  <div class="poster-callout">
+                    <div class="callout-badge">3 LANGKAH MUDAH:</div>
+                    <ol class="poster-steps">
+                      <li><strong>Scan QR</strong> via kamera smartphone / Google Lens</li>
+                      <li><strong>Isi Form 4-Field</strong> &amp; foto bagian buku yang rusak</li>
+                      <li><strong>Taruh Buku Fisik</strong> di Rak Transit <code>RACK-001</code></li>
+                    </ol>
+                  </div>
+                  <div class="poster-footer">
+                    <span>*Tidak perlu instalasi aplikasi &middot; Bebas biaya &middot; Terhubung langsung ke Pustakawan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="acrylic-base"></div>
+            </div>
+          </div>
+
+          <!-- Live Ticket Preview Card -->
+          <div class="context-card live-ticket-card">
+            <div class="card-head-live">
+              <span class="live-dot"></span>
+              <h4>Pratinjau Tiket Digital (Real-Time)</h4>
+            </div>
+            <p class="live-tip">Tiket ini ter-generate otomatis saat Anda mengisi formulir di samping:</p>
+            <div class="ticket-preview-box live-box">
+              <div class="tkt-badge-row">
+                <span class="tkt-badge-status green" id="liveTicketSlaBadge">SLA: 3 Hari Kerja</span>
+                <span class="tkt-badge-rack">🛒 Rak Transit RACK-001</span>
+              </div>
+              <div class="ticket-number" id="liveTicketIdPreview">TKT-202610-013</div>
+              <div class="ticket-meta-grid">
+                <div class="meta-item">
+                  <span class="m-lbl">Pelapor:</span>
+                  <strong class="m-val" id="liveReporterName">Mahasiswa FT UNY</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="m-lbl">NIM:</span>
+                  <span class="m-val mono" id="liveReporterNIM">240505300XX</span>
+                </div>
+                <div class="meta-item full">
+                  <span class="m-lbl">Judul Buku:</span>
+                  <strong class="m-val" id="liveBookTitle">Judul Buku yang Dilaporkan</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="m-lbl">Barcode:</span>
+                  <span class="m-val mono" id="liveBookBarcode">FT-INF-2024-XXX</span>
+                </div>
+                <div class="meta-item">
+                  <span class="m-lbl">Kategori Masalah:</span>
+                  <span class="m-val tag-issue" id="liveIssueCategory">Belum Dipilih</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ConOps Protocol Card -->
+          <div class="context-card protocol-card">
+            <h4>🛒 Alur Penyerahan Fisik (ConOps BP-MSI-001)</h4>
+            <div class="step-list">
+              <div class="step-item">
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Kirim Laporan Form</strong>
+                  <p>Isi form melalui laptop/HP untuk menerbitkan nomor tiket resmi.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-num">2</span>
+                <div>
+                  <strong>Letakkan di Rak Transit</strong>
+                  <p>Taruh buku di <em>Rak Transit Tingkat 2 (RACK-001)</em> dekat pintu masuk.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Pustakawan Verifikasi Fisik</strong>
+                  <p>Pustakawan memverifikasi pada jadwal <em>Quiet Hour</em> tanpa mengganggu antrean meja sirkulasi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Context Card -->
+          <div class="context-card">
+            <h3>📱 Konsep Layanan Mandiri</h3>
+            <p>Sistem ini dirancang berbasis <em>Pure Governance</em> untuk mengatasi kendala pustakawan tunggal tanpa menambah personel baru:</p>
+            <ul>
+              <li><strong>Desentralisasi pelaporan:</strong> Mahasiswa berperan aktif sebagai sensor penemu kerusakan koleksi.</li>
+              <li><strong>Buffer zone Rak Transit:</strong> Memutus tumpukan fisik di counter sirkulasi.</li>
+              <li><strong>Sinkronisasi SLiMS:</strong> Status eksemplar di-update saat sesi Quiet Hour.</li>
+            </ul>
+          </div>
+
+          <!-- SLA Metric Card -->
+          <div class="context-card metric-card">
+            <h4>📈 Kinerja SLA Layanan Pelaporan</h4>
+            <div class="sla-split">
+              <div>
+                <span class="sla-num" id="asideTotalTickets">12</span>
+                <span class="sla-lbl">Total Tiket Masuk</span>
+              </div>
+              <div>
+                <span class="sla-num">3</span>
+                <span class="sla-lbl">Hari SLA Maks</span>
+              </div>
+              <div>
+                <span class="sla-num">94%</span>
+                <span class="sla-lbl">Tepat Waktu</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── VIEW 2: WORKSPACE PUSTAKAWAN ─────────────── -->
+    <section class="role-view" id="viewLibrarian">
+      <div class="librarian-container">
+
+        <!-- Quiet Hour Top Bar -->
+        <div class="librarian-topbar">
+          <div class="quiet-hour-box">
+            <div class="qh-status">
+              <span class="qh-icon">🔕</span>
+              <div>
+                <div class="qh-title">Quiet Hour Mode</div>
+                <div class="qh-desc">Sesi Pemutakhiran Data SLiMS (Jumat 08.00 - 09.00 WIB)</div>
+              </div>
+            </div>
+            <div class="qh-controls">
+              <span class="timer-display" id="qhTimer">60:00</span>
+              <button class="btn-qh" id="btnQH" onclick="toggleQuietHour()">▶ Mulai Quiet Hour</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">📥 Total Laporan Masuk</div>
+            <div class="kpi-value" id="kpiTotal">12</div>
+            <div class="kpi-foot">Minggu ini (7 - 10 Okt 2026)</div>
+          </div>
+          <div class="kpi-card kpi-pending">
+            <div class="kpi-label">⏳ Menunggu Verifikasi</div>
+            <div class="kpi-value" id="kpiPending">3</div>
+            <div class="kpi-foot">Perlu pemeriksaan Rak Transit</div>
+          </div>
+          <div class="kpi-card kpi-warning">
+            <div class="kpi-label">⚠️ Mendekati Batas SLA</div>
+            <div class="kpi-value" id="kpiWarning">1</div>
+            <div class="kpi-foot">Lebih dari 3 hari menunggu</div>
+          </div>
+          <div class="kpi-card kpi-success">
+            <div class="kpi-label">✅ Terupdate ke SLiMS</div>
+            <div class="kpi-value" id="kpiResolved">8</div>
+            <div class="kpi-foot">Eksemplar selesai diverifikasi</div>
+          </div>
+        </div>
+
+        <!-- Queue Table -->
+        <div class="table-container">
+          <div class="table-header">
+            <div class="table-title-group">
+              <h3>📋 Antrean Tiket Verifikasi Koleksi</h3>
+              <p>Klik tombol Verifikasi untuk membuka panel pemeriksaan checklist SLiMS</p>
+            </div>
+            <div class="table-actions">
+              <div class="filter-group">
+                <button class="btn-filter active" onclick="filterTable('all', this)">Semua</button>
+                <button class="btn-filter" onclick="filterTable('pending', this)">Pending</button>
+                <button class="btn-filter" onclick="filterTable('resolved', this)">Resolved</button>
+              </div>
+              <button class="btn-secondary" onclick="exportCSV()">📥 Ekspor CSV</button>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="ticketTable">
+              <thead>
+                <tr>
+                  <th>No. Tiket</th>
+                  <th>Tanggal</th>
+                  <th>Barcode</th>
+                  <th>Judul Koleksi</th>
+                  <th>Kategori</th>
+                  <th>Status SLA</th>
+                  <th>SLiMS</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="ticketTableBody">
+                <!-- Data rows populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── VIEW 3: DASHBOARD EKSEKUTIF ──────────────── -->
+    <section class="role-view" id="viewExecutive">
+      <div class="executive-container">
+
+        <!-- Executive Header -->
+        <div class="executive-header">
+          <div>
+            <h2>📊 Dashboard Eksekutif Perpustakaan FT UNY</h2>
+            <p>Ringkasan kondisi koleksi, tren sirkulasi, dan rekomendasi pengadaan berbasis data untuk periode akreditasi LAM-INFOKOM.</p>
+          </div>
+          <div class="exec-actions">
+            <button class="btn-primary" onclick="downloadBorang()">📥 Download Borang Kriteria 5</button>
+            <button class="btn-outline" onclick="showToast('📄 Ringkasan eksekutif berhasil diunduh.', 'success')">🖨️ Cetak Ringkasan</button>
+          </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="exec-stats-grid">
+          <div class="exec-card">
+            <div class="exec-card-title">Total Koleksi Teregistrasi</div>
+            <div class="exec-card-num">4.287</div>
+            <span class="exec-card-badge success">+127 judul baru 2026</span>
+            <p>Terdaftar dalam katalog SLiMS Perpustakaan FT UNY</p>
+          </div>
+          <div class="exec-card">
+            <div class="exec-card-title">Frekuensi Peminjaman (Triwulan)</div>
+            <div class="exec-card-num">1.842</div>
+            <span class="exec-card-badge info">↑ 12% dari triwulan sebelumnya</span>
+            <p>Transaksi sirkulasi aktif di 5 program studi</p>
+          </div>
+          <div class="exec-card">
+            <div class="exec-card-title">Rasio Koleksi Rusak / Diperbaiki</div>
+            <div class="exec-card-num">6.2%</div>
+            <span class="exec-card-badge success">Turun 1.8% setelah SIMPEL-KOLEKSI</span>
+            <p>265 eksemplar dalam status Rusak / Perbaikan</p>
+          </div>
+        </div>
+
+        <!-- Bar Chart: Peminjaman per Prodi -->
+        <div class="content-panel">
+          <div class="panel-header">
+            <div>
+              <h3>📊 Peminjaman per Program Studi (Triwulan III 2026)</h3>
+              <p>Distribusi frekuensi transaksi sirkulasi aktif per program studi Fakultas Teknik</p>
+            </div>
+            <span class="badge-accreditation">LAM-INFOKOM Kriteria 5</span>
+          </div>
+          <div class="chart-bars" id="barChart">
+            <div class="chart-bar-col">
+              <span class="chart-bar-val">487</span>
+              <div class="chart-bar bar-pti" style="height: 85%;"></div>
+              <span class="chart-bar-lbl">P. T. Informatika</span>
+            </div>
+            <div class="chart-bar-col">
+              <span class="chart-bar-val">412</span>
+              <div class="chart-bar bar-pte" style="height: 72%;"></div>
+              <span class="chart-bar-lbl">P. T. Elektro</span>
+            </div>
+            <div class="chart-bar-col">
+              <span class="chart-bar-val">378</span>
+              <div class="chart-bar bar-mesin" style="height: 66%;"></div>
+              <span class="chart-bar-lbl">P. T. Mesin</span>
+            </div>
+            <div class="chart-bar-col">
+              <span class="chart-bar-val">341</span>
+              <div class="chart-bar bar-sipil" style="height: 60%;"></div>
+              <span class="chart-bar-lbl">P. T. Sipil &amp; Perenc.</span>
+            </div>
+            <div class="chart-bar-col">
+              <span class="chart-bar-val">224</span>
+              <div class="chart-bar bar-elko" style="height: 39%;"></div>
+              <span class="chart-bar-lbl">P. T. Elektronika</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Donut Chart: Kondisi Koleksi -->
+        <div class="content-panel">
+          <div class="panel-header">
+            <div>
+              <h3>🍩 Rasio Kondisi Koleksi Perpustakaan</h3>
+              <p>Perbandingan eksemplar prima vs koleksi dalam status rusak atau sedang diperbaiki</p>
+            </div>
+          </div>
+          <div class="donut-wrapper">
+            <div class="donut-chart" id="donutChart" style="background: conic-gradient(#10b981 0% 93.8%, #f59e0b 93.8% 97.5%, #ef4444 97.5% 100%);">
+              <div class="donut-center">
+                <span class="donut-pct">93.8%</span>
+                <span class="donut-pct-lbl">Koleksi Prima</span>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div class="legend-item">
+                <span class="legend-dot" style="background: #10b981;"></span>
+                Koleksi Prima (4.022 eksemplar)
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot" style="background: #f59e0b;"></span>
+                Sedang Diperbaiki (157 eksemplar)
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot" style="background: #ef4444;"></span>
+                Rusak Berat / Hilang (108 eksemplar)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Table per Prodi -->
+        <div class="content-panel">
+          <div class="panel-header">
+            <div>
+              <h3>📈 Keterpakaian Koleksi per Program Studi</h3>
+              <p>Rasio judul yang pernah dipinjam dari total koleksi relevan per prodi</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Program Studi</th>
+                  <th>Total Judul</th>
+                  <th>Judul Terpinjam</th>
+                  <th>Rasio Terpakai</th>
+                  <th>Rekomendasi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pend. Teknik Informatika</strong></td>
+                  <td>812</td>
+                  <td>764</td>
+                  <td><span class="meter-bar high">94.1%</span></td>
+                  <td><span class="tag-rec urgent">Prioritas Pengadaan</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pend. Teknik Elektro</strong></td>
+                  <td>687</td>
+                  <td>598</td>
+                  <td><span class="meter-bar high">87.0%</span></td>
+                  <td><span class="tag-rec moderate">Tambah Referensi</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pend. Teknik Mesin</strong></td>
+                  <td>743</td>
+                  <td>612</td>
+                  <td><span class="meter-bar med">82.4%</span></td>
+                  <td><span class="tag-rec moderate">Evaluasi Relevansi</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pend. Teknik Sipil &amp; Perencanaan</strong></td>
+                  <td>658</td>
+                  <td>498</td>
+                  <td><span class="meter-bar med">75.7%</span></td>
+                  <td><span class="tag-rec normal">Cukup Memadai</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pend. Teknik Elektronika</strong></td>
+                  <td>487</td>
+                  <td>341</td>
+                  <td><span class="meter-bar normal">70.0%</span></td>
+                  <td><span class="tag-rec normal">Cukup Memadai</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Procurement Recommendation Card -->
+        <div class="procurement-card">
+          <span class="proc-icon">💡</span>
+          <div class="proc-content">
+            <h4>Rekomendasi Alokasi Anggaran Pengadaan Buku Tahun 2027</h4>
+            <p>Berdasarkan rasio keterpakaian 94,1% pada Program Studi Pendidikan Teknik Informatika dan tingginya laporan kerusakan buku kecerdasan buatan serta pemrograman, direkomendasikan alokasi <strong>35% anggaran pengadaan buku tahun depan</strong> diprioritaskan pada pembaruan buku referensi informatika.</p>
+            <div class="recommendation-badge-box">
+              📊 <strong>Evidence-Based Procurement:</strong> Data rekapitulasi sirkulasi SLiMS triwulan III 2026 menunjukkan kebutuhan mendesak pada koleksi referensi bidang kecerdasan buatan, jaringan komputer, dan basis data untuk Prodi PTI.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── VIEW 4: DENAH TATA RUANG ─────────────────── -->
+    <section class="role-view" id="viewSpatial">
+      <div class="spatial-container">
+        <div class="spatial-header">
+          <h2>🗺️ Blueprint Tata Ruang Perpustakaan FT UNY</h2>
+          <p>Denah interaktif penempatan fasilitas fisik pendukung ekosistem SIMPEL-KOLEKSI: Rak Transit, QR Signage, Counter Sirkulasi, dan Meja Baca.</p>
+        </div>
+
+        <div class="spatial-layout-box">
+          <!-- Interactive Map -->
+          <div class="spatial-map">
+            <!-- Zone 1: Entrance -->
+            <div class="map-zone">
+              <span class="zone-badge">🚪 Zona Pintu Masuk</span>
+              <div class="node-signage" onclick="showToast('📋 Stiker QR Code mengarahkan ke form pelaporan mandiri SIMPEL-KOLEKSI FT.', 'info')">
+                <strong>📋 Stand Akrilik QR Code</strong>
+                <small style="color:#94a3b8;">Petunjuk Alur Pengembalian &amp; Laporan</small>
+              </div>
+              <div class="rack-shelves">
+                <div class="shelf" onclick="showToast('📦 Rak Transit Tingkat 1: Buku kembali normal, siap shelving oleh pustakawan.', 'info')">
+                  <span class="shelf-tag">T1</span>
+                  Buku Kembali Normal (Siap Shelving)
+                </div>
+                <div class="shelf" onclick="showToast('⚠️ Rak Transit Tingkat 2: Buku laporan rusak/hilang dari formulir QR Code.', 'warning')">
+                  <span class="shelf-tag alert">T2</span>
+                  Laporan Rusak / Hilang (QR Form)
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 2: Counter -->
+            <div class="map-zone">
+              <span class="zone-badge">🖥️ Zona Counter Sirkulasi</span>
+              <div class="counter-desk" onclick="showToast('🖥️ PC Counter menjalankan SLiMS 9 Bulian + Dashboard SIMPEL-KOLEKSI.', 'info')">
+                <strong>💻 PC All-in-One Pustakawan</strong>
+                <small style="color:#94a3b8;">SLiMS 9 Bulian + SIMPEL-KOLEKSI Dashboard</small>
+              </div>
+              <div class="counter-desk" onclick="showToast('📠 Barcode Scanner USB untuk verifikasi fisik eksemplar dari Rak Transit.', 'info')">
+                <strong>📠 Barcode Scanner USB</strong>
+                <small style="color:#94a3b8;">Verifikasi Eksemplar Fisik</small>
+              </div>
+              <div class="counter-desk" onclick="showToast('✨ Area pelayanan prima tanpa tumpukan buku pengembalian.', 'success')">
+                <strong>✨ Area Pelayanan Prima</strong>
+                <small style="color:#94a3b8;">Bebas Tumpukan (Setelah SIMPEL-KOLEKSI)</small>
+              </div>
+            </div>
+
+            <!-- Zone 3: Koleksi -->
+            <div class="map-zone">
+              <span class="zone-badge">📚 Zona Rak Koleksi Utama</span>
+              <div class="shelf" onclick="showToast('📚 Rak Koleksi DDC 000-300: Karya Umum, Filsafat, Ilmu Sosial.', 'info')">
+                <span class="shelf-tag">R1</span>
+                DDC 000-300 (Karya Umum, Sosial)
+              </div>
+              <div class="shelf" onclick="showToast('📚 Rak Koleksi DDC 600: Ilmu Terapan, Teknik, Informatika.', 'info')">
+                <span class="shelf-tag">R2</span>
+                DDC 600 (Ilmu Terapan &amp; Teknik)
+              </div>
+              <div class="shelf" onclick="showToast('📚 Rak Koleksi DDC 700-900: Kesenian, Sastra, Sejarah.', 'info')">
+                <span class="shelf-tag">R3</span>
+                DDC 700-900 (Kesenian, Sejarah)
+              </div>
+            </div>
+
+            <!-- Zone 4: Reading Area -->
+            <div class="map-zone">
+              <span class="zone-badge">📖 Zona Meja Baca</span>
+              <div class="tables-grid">
+                <div class="reading-table">Meja Baca 1 (4 kursi)</div>
+                <div class="reading-table">Meja Baca 2 (4 kursi)</div>
+                <div class="reading-table">Meja Baca 3 (6 kursi)</div>
+                <div class="reading-table">Meja Referensi Digital (2 PC)</div>
+              </div>
+              <div class="node-signage" style="margin-top:0.5rem;" onclick="showToast('📱 QR Code di meja baca untuk akses cepat form pelaporan.', 'info')">
+                <strong>📱 QR Code Meja Baca</strong>
+                <small style="color:#94a3b8;">Akses Cepat Form Pelaporan</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detail Card -->
+          <div class="spatial-detail-card">
+            <h3>🛒 Rak Transit (RACK-001)</h3>
+            <p>Rak transit 2 tingkat ditempatkan di sebelah pintu masuk perpustakaan sebagai <strong>buffer zone</strong> antara pemustaka dan pustakawan. Pemustaka meletakkan buku yang dilaporkan setelah mengisi formulir QR Code, sehingga pustakawan dapat memverifikasi fisik buku pada jadwal Quiet Hour tanpa mengganggu layanan sirkulasi.</p>
+
+            <div class="spatial-chips">
+              <span class="chip-item">📦 Tingkat 1: Pengembalian Normal</span>
+              <span class="chip-item">⚠️ Tingkat 2: Buku Rusak / Hilang</span>
+              <span class="chip-item">📋 Terintegrasi dengan Form QR</span>
+              <span class="chip-item">🕐 Diproses saat Quiet Hour</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       MODALS
+       ═══════════════════════════════════════════════════ -->
+
+  <!-- Success Modal (after form submit) -->
+  <div class="modal-overlay" id="modalSuccess">
+    <div class="modal-card">
+      <div class="modal-icon-success">✅</div>
+      <h3>Laporan Berhasil Dikirim!</h3>
+      <p>Terima kasih telah membantu menjaga kualitas koleksi Perpustakaan FT UNY.</p>
+      <div class="ticket-preview-box">
+        <span class="ticket-label">Nomor Tiket Anda</span>
+        <div class="ticket-number" id="generatedTicketId">TKT-202610-013</div>
+        <div class="ticket-meta">
+          <span id="modalBookTitle">Judul: -</span>
+          <span id="modalCategory">Kategori: -</span>
+          <span>Estimasi SLA: Verifikasi fisik maks. 3 hari kerja</span>
+        </div>
+      </div>
+      <div class="modal-instruction">
+        <p>🛒 <strong>Langkah selanjutnya:</strong> Letakkan buku pada <strong>Rak Transit Tingkat 2</strong> (RACK-001) di sebelah pintu masuk perpustakaan. Pustakawan akan memverifikasi pada jadwal Quiet Hour berikutnya.</p>
+      </div>
+      <button class="btn-primary-mobile" onclick="closeModal('modalSuccess')">Mengerti, Terima Kasih</button>
+    </div>
+  </div>
+
+  <!-- Verify Modal (Pustakawan) -->
+  <div class="modal-overlay" id="modalVerify">
+    <div class="modal-card modal-verify-card">
+      <div class="modal-header-action">
+        <h3>🔍 Verifikasi Tiket <span id="verifyTicketId">TKT-XXXX</span></h3>
+        <button class="btn-close" onclick="closeModal('modalVerify')">✕</button>
+      </div>
+
+      <div class="verify-details" id="verifyDetails">
+        <div class="detail-row"><span>Pelapor</span><strong id="vName">-</strong></div>
+        <div class="detail-row"><span>NIM</span><strong id="vNIM">-</strong></div>
+        <div class="detail-row"><span>Barcode</span><strong id="vBarcode">-</strong></div>
+        <div class="detail-row"><span>Kategori</span><strong id="vCategory">-</strong></div>
+      </div>
+
+      <div class="verify-photo-box">
+        <label>📷 Bukti Foto dari Pemustaka</label>
+        <div class="v-photo-wrapper">
+          <div style="padding:1rem; color:var(--text-muted); font-size:0.82rem;">📸 Foto bukti kerusakan buku terlampir</div>
+        </div>
+      </div>
+
+      <div class="verify-checklist">
+        <h4>✅ Checklist Verifikasi Pustakawan</h4>
+        <label class="check-item">
+          <input type="checkbox" id="check1"> Fisik buku telah diambil dari Rak Transit dan diperiksa kondisinya
+        </label>
+        <label class="check-item">
+          <input type="checkbox" id="check2"> Status eksemplar di SLiMS 9 Bulian telah diubah (RUSAK / PERBAIKAN / HILANG)
+        </label>
+      </div>
+
+      <div class="modal-footer-action">
+        <button class="btn-secondary" onclick="closeModal('modalVerify')">Tutup</button>
+        <button class="btn-success" id="btnResolve" onclick="resolveTicket()">✅ Selesaikan Tiket (Resolve)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════ -->
+  <footer class="app-footer">
+    <strong>SIMPEL-KOLEKSI FT</strong> &middot; Prototipe Mockup Interaktif &middot; Praktikum Manajemen Sistem Informasi &middot; Kelompok 3 &middot; FT UNY 2026
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
