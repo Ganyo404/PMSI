@@ -64,6 +64,7 @@ Fakta operasional riil dari Pustakawan Perpustakaan FT UNY:
 ## 💡 6. Dokumen Temuan, Solusi & Tata Kelola (03_DATA-LAPANGAN/Temuan)
 Analisis mendalam, formulasi SOP, dan arsitektur tata kelola:
 - **Ekosistem & Solusi:**
+  - [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT|Blueprint BP-MSI-001: Cetak Biru Ekosistem SIMPEL-KOLEKSI FT UNY]]
   - [[Ekosistem Informasi Perpustakaan FT|Ekosistem Informasi Perpustakaan FT (3 Level Manajemen)]]
   - [[Ekosistem Informasi Perpustakaan|Ekosistem Informasi Perpustakaan Terpadu]]
   - [[Integrasi Portal Perpustakaan FT|Integrasi Portal Perpustakaan FT (Visi Jangka Panjang)]]
@@ -115,6 +116,7 @@ Pusat kapabilitas kecerdasan agen dalam tata kelola, arsitektur, visualisasi, da
   - [[fact-checker|Fact-Checker Skill: Triangulasi Bukti & Anti-Halusinasi Data]]
   - [[academic-skill|Academic Skill: Doktrin 7 Aspek MSI & Pure Governance]]
 - **Pilar Tata Kelola, Arsitektur & Cetak Biru:**
+  - [[mockup-design|Mockup-Design Skill: High-Fidelity UI/UX, Dynamic Simulation & Device Framing]]
   - [[system-blueprint|System-Blueprint Skill: Cetak Biru ConOps, Data Flow & Tata Ruang Fisik]]
   - [[enterprise-architecture|Enterprise Architecture Skill: Pemodelan 4-Layer & Integrasi SLiMS]]
   - [[change-management|Change Management Skill: Mitigasi Resistensi ADKAR & RACI]]
