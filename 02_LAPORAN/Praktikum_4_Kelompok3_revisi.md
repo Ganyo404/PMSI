@@ -29,7 +29,7 @@ Analisis Masalah Organisasi dan Prioritas Solusi
 **UNIVERSITAS NEGERI YOGYAKARTA**  
 **2026**
 
-**1\. Identitas Laporan**
+1. **Identitas Laporan**
 
 | Nama Kelompok | Kelompok 3 |
 | :---- | :---- |
@@ -38,11 +38,11 @@ Analisis Masalah Organisasi dan Prioritas Solusi
 | **Tanggal Pelaksanaan** | 15 September 2026 |
 | **Organisasi/Kasus yang Digunakan** | Perpustakaan Fakultas Teknik, Universitas Negeri Yogyakarta (FT UNY) |
 
-**2\. Tujuan Kegiatan**
+2. **Tujuan Kegiatan**
 
 Mahasiswa mampu menyusun ruang lingkup, tujuan, dan deliverables proyek sistem informasi berdasarkan masalah prioritas yang telah ditetapkan pada pertemuan sebelumnya, sebagai perwujudan capaian CPMK 2, yaitu kemampuan membuat rencana proyek, menetapkan tujuan, menetapkan peran tim, serta merancang strategi implementasi sistem informasi yang sesuai dengan visi dan misi organisasi.
 
-**3\. Uraian Pelaksanaan Kegiatan**
+3. **Uraian Pelaksanaan Kegiatan**
 
 Pelaksanaan Pertemuan 4 melanjutkan hasil analisis pada Pertemuan 3, yaitu pernyataan masalah prioritas bahwa Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena proses pengelolaan informasi masih bergantung pada waktu 1 (satu) orang pustakawan yang harus melayani rata-rata 52 pemustaka per hari sekaligus merangkap tiga layanan (sirkulasi, referensi, dan digital library), dan belum sepenuhnya didukung mekanisme pengelolaan data yang terintegrasi. Berdasarkan pernyataan masalah tersebut, kelompok merumuskan tujuan proyek menggunakan kriteria SMART, kemudian menetapkan ruang lingkup pekerjaan (in-scope) beserta batasannya (out-of-scope) agar proyek tidak mengalami scope creep, dan menyusun daftar deliverables beserta kriteria penerimaannya.
 
@@ -50,7 +50,7 @@ Mengikuti arahan dosen pengampu agar solusi menjangkau seluruh tingkatan organis
 
 Seluruh solusi dirancang agar dapat langsung diterapkan tanpa memerlukan koding, tanpa biaya tambahan (zero budget), tanpa mengubah database SLiMS pusat, dan tanpa menambah sumber daya manusia, sehingga realistis dikerjakan oleh pustakawan tunggal dalam batasan waktu satu semester akademik.
 
-**4\. Hasil/Artefak Praktikum**
+4. **Hasil/Artefak Praktikum**
 
 Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji secara terstruktur pada bagian berikut.
 
@@ -123,23 +123,23 @@ Hasil analisis kelompok dituangkan ke dalam Project Scope Statement yang tersaji
 | **Batasan Sumber Daya Manusia (Resource Constraint)** | Hanya terdapat 1 (satu) pustakawan tunggal sebagai pelaksana operasional di lapangan. | Solusi dirancang agar beban tambahan terpusat pada satu slot mingguan (SOP Quiet Hour) sehingga realistis dijalankan tanpa penambahan staf. |
 | **Batasan Ruang Lingkup Sistem (Scope Constraint)** | Solusi tidak mengubah source code PHP maupun database SLiMS pusat. | Mencegah scope creep dan menghindari tumpang tindih kewenangan dengan Perpustakaan Pusat yang mengelola sistem otomasi secara terintegrasi. |
 
-**5\. Kendala dan Solusi**
+5. **Kendala dan Solusi**
 
 Kendala pertama muncul pada tahap awal diskusi, ketika kelompok cenderung mengalami solution fixation, yaitu dorongan untuk segera merancang Web Portal Terintegrasi Perpustakaan FT sebagai solusi utama karena dianggap paling komprehensif. Setelah meninjau kembali kerangka Scope Management pada Modul 4, kelompok menyadari bahwa rumusan tersebut masih berorientasi pada teknologi/produk, bukan pada kebutuhan informasi dan proses organisasi yang sebenarnya ingin didukung. Kelompok kemudian kembali menelusuri pernyataan masalah prioritas Pertemuan 3 dan mempertimbangkan batasan waktu satu semester, kapasitas tim tiga anggota, serta skema tanpa anggaran (zero budget), sehingga solusi web portal dipindahkan menjadi rekomendasi strategis jangka panjang pada bagian out-of-scope, sementara proyek semester ini difokuskan pada penguatan tata kelola dan alur kerja yang dapat langsung diterapkan.
 
 Kendala kedua terkait keterbatasan kewenangan kelompok terhadap beberapa aspek yang semula ingin dimasukkan ke dalam ruang lingkup, seperti penambahan SDM pustakawan dan modifikasi sistem SLiMS pusat. Berdasarkan hasil wawancara, kedua hal tersebut sepenuhnya berada pada kewenangan pimpinan fakultas dan tim IT Perpustakaan Pusat UNY. Kelompok mengatasi kendala ini dengan menempatkan kedua aspek tersebut secara eksplisit ke dalam out-of-scope, dan mengalihkan fokus proyek pada intervensi yang benar-benar dapat dikendalikan oleh tim, yaitu penyusunan SOP, alur fisik, formulir pelaporan mandiri, dan template pelaporan berbasis fitur yang sudah tersedia.
 
-**6\. Refleksi Pembelajaran**
+6. **Refleksi Pembelajaran**
 
 Melalui Pertemuan 4, kelompok memahami bahwa Scope Management dalam Manajemen Sistem Informasi berbeda secara mendasar dari manajemen proyek perangkat lunak pada umumnya. Jika proyek software engineering biasa membatasi ruang lingkup berdasarkan daftar fitur aplikasi yang akan dibangun, scope dalam MSI membatasi ruang lingkup kebutuhan informasi, yaitu data apa yang akan dikelola, keputusan organisasi apa yang akan didukung, dan laporan apa yang akan dihasilkan oleh sistem. Perbedaan penekanan ini penting karena scope yang hanya berisi daftar fitur teknis berisiko menghasilkan solusi yang berfungsi tetapi tidak benar-benar menjawab kebutuhan informasi organisasi.
 
 Kelompok juga menyadari pentingnya menyambungkan seluruh tingkatan organisasi, bukan hanya menyelesaikan masalah di tingkat operasional. Dengan merancang solusi yang menghubungkan tingkat operasional, manajerial, dan strategis secara harmonis, keselarasan strategis (strategic alignment) antara sistem informasi dan tujuan organisasi dapat tercapai, sebagaimana ditekankan pada kerangka tujuh aspek pengelolaan sistem informasi. Tanpa batasan in-scope dan out-of-scope yang eksplisit, proyek berisiko mengalami scope creep yang dapat membebani tim dengan sumber daya yang terbatas dalam satu semester.
 
-**7\. Kesimpulan**
+7. **Kesimpulan**
 
 Penyusunan Project Scope Statement pada Pertemuan 4 berhasil menerjemahkan masalah prioritas Pertemuan 3, yaitu keterlambatan pemutakhiran data perpustakaan, menjadi tujuan proyek yang SMART serta ruang lingkup kerja yang jelas melalui pemisahan in-scope dan out-of-scope. Ruang lingkup proyek difokuskan pada penyusunan mekanisme tata kelola pemutakhiran informasi berupa SOP, jadwal pemutakhiran, alur pelaporan kondisi koleksi, serta panduan pengelolaan dan ekstraksi data dengan memanfaatkan fasilitas yang telah tersedia. Batasan berupa waktu satu semester, keterbatasan sumber daya manusia, akses terhadap database pusat, dan tidak adanya anggaran tambahan juga telah diperhitungkan agar solusi tetap realistis. Dengan scope yang telah ditetapkan, kelompok siap melanjutkan ke Pertemuan 5 untuk menyusun struktur tim proyek dan pembagian peran berdasarkan deliverable yang telah ditetapkan.
 
-**Referensi**
+### **DAFTAR PUSTAKA / REFERENSI**
 
 Laudon, K. C., & Laudon, J. P. (2014). Management information systems: Managing the digital firm (13th ed.). Pearson Education.
 

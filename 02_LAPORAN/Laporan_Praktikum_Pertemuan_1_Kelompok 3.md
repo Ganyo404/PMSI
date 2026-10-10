@@ -22,23 +22,25 @@ Program Studi Pendidikan Teknik Informatika, Fakultas Teknik, Universitas Negeri
 
 **![][image1]**
 
+1. **Identitas Laporan**
+
 | Nama Kelompok | 3 |
 | :---- | :---- |
-| **Anggota (NIM/Nama)** | Gantar Abimanyu (24050530042) Ganendra Pradipa (24050530038) M Fadlan Dirmansyah (24050530034) |
+| **Anggota (NIM/Nama)** | Gantar Abimanyu (24050530042)<br>Ganendra Pradipa (24050530038)<br>M Fadlan Dirmansyah (24050530034) |
 | **Pertemuan ke-** | 1 |
 | **Tanggal Pelaksanaan** | 24/08/2026 |
-| **Organisasi/Kasus yang Digunakan** | Perpustakaan Fakultas UNY |
+| **Organisasi/Kasus yang Digunakan** | Perpustakaan Fakultas Teknik UNY |
 
 **PROGRAM PENDIDIKAN TEKNIK INFORMATIKA**  
 **FAKULTAS TEKNIK**  
 **UNIVERSITAS NEGERI YOGYAKARTA**  
 **2026**
 
-**2\. Tujuan Kegiatan**
+2. **Tujuan Kegiatan**
 
 Mahasiswa mampu menjelaskan peran sistem informasi manajemen dalam organisasi serta memilih dan menetapkan organisasi/kasus yang akan menjadi objek proyek sepanjang satu semester.
 
-# **3\. Uraian Pelaksanaan Kegiatan**
+3. **Uraian Pelaksanaan Kegiatan**
 
 Kegiatan diawali dengan sesi brainstorming kandidat organisasi oleh seluruh anggota kelompok. Beberapa kandidat yang diusulkan antara lain bengkel, lab kesehatan, dan  perpustakaan fakultas. Kelompok kemudian menilai setiap kandidat berdasarkan tiga kriteria yang ditetapkan pada modul, yaitu memiliki minimal dua unit kerja, memiliki masalah pengelolaan informasi yang dapat diamati, dan dapat dipahami tanpa pengetahuan domain khusus.
 
@@ -46,7 +48,7 @@ Berdasarkan diskusi, kelompok menetapkan Perpustakaan Fakultas sebagai organisas
 
 Setelah organisasi ditetapkan, kelompok mengisi Lembar Profil Organisasi secara lengkap, mengidentifikasi struktur unit kerja, kondisi sistem informasi saat ini, serta area operasional potensial. Sebagai pendalaman tambahan, kelompok juga menyusun analisis kebutuhan informasi pada masing-masing unit kerja berdasarkan tiga level manajemen (operasional, manajerial, dan strategis) sebagaimana kerangka yang dirujuk pada modul (Sousa & Oz, 2014), untuk memahami bagaimana informasi seharusnya mengalir dari level operasional hingga strategis.
 
-# **4\. Hasil/Artefak Praktikum**
+4. **Hasil/Artefak Praktikum**
 
 **4.1 Lembar Profil Organisasi**
 
@@ -78,21 +80,19 @@ Keterkaitan antar level dapat digambarkan sebagai alur berjenjang: data operasio
 | Unit Pengadaan  | Data peminjaman dari Unit Sirkulasi (tren minat judul/topik), usulan dari pengguna/unit lain, data koleksi yang sudah tersedia, informasi anggaran pengadaan  | Daftar usulan pembelian yang telah diprioritaskan, informasi pengadaan koleksi, rekap kebutuhan koleksi  | Kepala Perpustakaan (persetujuan pengadaan), Unit Pengolahan Bahan Pustaka (informasi buku yang akan diproses)  |
 | Kepala Perpustakaan  | Laporan aktivitas Unit Sirkulasi, laporan pengadaan koleksi, laporan progres katalogisasi, informasi anggaran dan kebutuhan perpustakaan  | Keputusan pengadaan koleksi, kebijakan pengelolaan koleksi, evaluasi kinerja dan pemanfaatan koleksi  | Unit Pengadaan, Unit Pengolahan Bahan Pustaka, Unit Sirkulasi  |
 
-# 
-
-# **5\. Kendala dan Solusi**
+5. **Kendala dan Solusi**
 
 Kendala yang dihadapi kelompok adalah adanya beberapa alternatif organisasi yang sama-sama memenuhi kriteria contohnnya bengkel, sehingga diperlukan diskusi untuk menentukan kasus yang paling sesuai dengan tujuan praktikum. Kelompok juga perlu membatasi asumsi mengenai kondisi sistem informasi perpustakaan agar analisis tidak hanya berfokus pada pembuatan aplikasi. Solusi yang dilakukan adalah membandingkan kandidat berdasarkan tiga kriteria pada modul, yaitu jumlah unit kerja, keberadaan masalah pengelolaan informasi yang dapat diamati, dan kemudahan memahami konteks organisasi. Kelompok kemudian memilih Perpustakaan Fakultas dan memfokuskan masalah pada pemanfaatan data peminjaman untuk mendukung keputusan pengadaan koleksi. 
 
-# **6\. Refleksi Pembelajaran**
+6. **Refleksi Pembelajaran**
 
 Melalui kegiatan ini, kelompok memahami bahwa sistem informasi manajemen tidak hanya berkaitan dengan aplikasi yang digunakan oleh organisasi, tetapi juga dengan manusia, proses, data, dan pengambilan keputusan. Kelompok menyadari bahwa tersedianya data transaksi peminjaman secara digital belum otomatis menjadikan sistem informasi efektif apabila data tersebut belum diolah menjadi informasi yang digunakan oleh pihak yang berwenang. Pada kasus Perpustakaan Fakultas, data operasional dari transaksi peminjaman perlu diolah menjadi informasi manajerial dan strategis agar dapat mendukung evaluasi pemanfaatan koleksi dan keputusan pengadaan. Pemahaman ini menjadi dasar bagi kelompok untuk melakukan analisis stakeholder dan kebutuhan informasi pada pertemuan berikutnya. 
 
-# **7\. Kesimpulan**
+7. **Kesimpulan**
 
-Pada Pertemuan 1, kelompok telah memahami konsep dasar Manajemen Sistem Informasi dan menetapkan Perpustakaan Fakultas sebagai organisasi/kasus proyek selama satu semester. Kasus ini memenuhi kriteria pemilihan karena memiliki beberapa unit kerja, memiliki permasalahan pengelolaan informasi yang dapat diamati, serta mudah dipahami dalam konteks mahasiswa Fakultas. Permasalahan utama yang diidentifikasi adalah belum optimalnya pemanfaatan data peminjaman sebagai dasar pengambilan keputusan pengadaan koleksi. Dengan demikian, kasus ini memiliki ruang analisis yang cukup untuk dikembangkan pada Pertemuan 2\.
+Pada Pertemuan 1, kelompok telah memahami konsep dasar Manajemen Sistem Informasi dan menetapkan Perpustakaan Fakultas sebagai organisasi/kasus proyek selama satu semester. Kasus ini memenuhi kriteria pemilihan karena memiliki beberapa unit kerja, memiliki permasalahan pengelolaan informasi yang dapat diamati, serta mudah dipahami dalam konteks mahasiswa Fakultas. Permasalahan utama yang diidentifikasi adalah belum optimalnya pemanfaatan data peminjaman sebagai dasar pengambilan keputusan pengadaan koleksi. Dengan demikian, kasus ini memiliki ruang analisis yang cukup untuk dikembangkan pada Pertemuan 2.
 
-**Referensi**
+### **DAFTAR PUSTAKA / REFERENSI**
 
 Laudon, K. C., & Laudon, J. P. (2014). Management information systems: Managing the digital firm (13th ed.). Pearson Education.
 

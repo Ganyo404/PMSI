@@ -10,6 +10,9 @@ tags:
   - modul
   - materi
 ---
+
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | Laporan Implementasi: [[Praktikum_7_Kelompok3]]
+
 Modul Praktikum MSI - PTF60234
 KEMENTERIAN PENDIDIKAN TINGGI, SAINS, DAN TEKNOLOGI
 UNIVERSITAS NEGERI YOGYAKARTA

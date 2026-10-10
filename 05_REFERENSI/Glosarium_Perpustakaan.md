@@ -9,7 +9,10 @@ tags:
 
 # Glosarium Istilah Perpustakaan
 
+> 🔗 **Navigasi:** [[Dashboard]] | [[CONTEXT_INDEX]] | [[Data_Perpustakaan_FT_UNY]] | [[Esensi Manajemen Sistem Informasi]]
+
 Berlaku untuk konteks lingkungan Perpustakaan FT UNY dan sistem SLiMS:
+
 
 - **OPAC (Online Public Access Catalog)**: Antarmuka daring bagi pengunjung untuk mencari buku berdasarkan berbagai metadata (judul, pengarang, subjek, ISBN).
 - **SLiMS (Senayan Library Management System)**: Sistem manajemen perpustakaan sumber terbuka (*open source*) yang menopang *backend* dan *frontend* perpustakaan FT UNY.

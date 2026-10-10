@@ -22,11 +22,24 @@ Dokumen ini merekonstruksi kronologi waktu (*temporal context*) dari seluruh fil
 
 ### 4. Tahap 4: Perumusan Solusi (Tata Kelola / Governance) (Modul 4-6 / Praktikum 4-6)
 - **Konteks**: Pembentukan solusi berupa Tata Kelola (*SOP Quiet Hour, Rak Transit, Form QR Code, Template Akreditasi*) tanpa pengembangan *coding* web baru (menghindari *technical fix* dan *scope creep*).
-- **Dokumen Utama**: `LAP-004`, `LAP-005`, `LAP-006`.
+- **Dokumen Utama**: `[[Praktikum_4_Kelompok3_revisi]]` (LAP-004), `[[Praktikum_5_Kelompok3]]` (LAP-005), `[[Praktikum_6_Kelompok3]]` (LAP-006).
 - **Diskusi Keputusan Utama**: 
   - `[[Analisis Komparatif MSI Sekolah-FT UNY]]` (FIND-001) - Justifikasi pendekatan *Pure Governance* (Tata Kelola).
   - `[[Rancang SOP Sistem Informasi]]` (FIND-009) dan `[[Panduan SOP Manajemen Sistem]]` (FIND-008).
   - `[[Revisi Tata Kelola Data]]` (FIND-012).
+  - `[[Integrasi Portal Perpustakaan FT]]` (FIND-006) - Cetak biru To-Be 4 entitas jangka panjang.
+
+### 5. Tahap 5: Penjadwalan Proyek & Analisis Jalur Kritis (Modul 7 / Praktikum 7)
+- **Konteks**: Penyusunan WBS bertingkat, Gantt Chart, dan PERT Chart untuk 7 aktivitas implementasi tata kelola dengan pembuktian empiris Jalur Kritis 36 Hari pada kesepakatan sosial dan kesiapan operasional pustakawan.
+- **Dokumen Utama**: `[[Praktikum_7_Kelompok3]]` (LAP-007).
+- **Landasan Modul**: `[[Modul 7]]`.
+
+---
+
+## Integrasi Literatur Ilmiah & Regulasi Eksternal (05_REFERENSI)
+- **SK Menpan 132/2002 & SNI 7329:2009**: Dikuatkan oleh riset Anton Risparyanto (2014) mengenai beban kerja dan motivasi pustakawan.
+- **Servicescape & Lingkungan Fisik**: Dikuatkan oleh riset Dwiatri Kusumaningrum et al. (2016) dan Rina Kusharyanti et al. (2023).
+- **Kontinjensi Komputer & ISO 9001**: Dikuatkan oleh riset Rahman Effendi et al. (2013).
 
 ---
 
@@ -35,3 +48,4 @@ Dokumen ini merekonstruksi kronologi waktu (*temporal context*) dari seluruh fil
 1. **Konflik Data Laporan vs. Temuan AI (Brainstorming)**: Jika terdapat pertentangan antara file `FIND-` (hasil ide NotebookLM/ChatGPT) dengan file `LAP-` (Laporan Praktikum yang sudah direvisi), maka yang dianggap mutakhir dan **Sah (Source of Truth)** adalah **Laporan Praktikum (`LAP-`)**. Ide dari AI hanyalah hipotesis sebelum dimasukkan ke dalam laporan akhir.
 2. **Revisi vs Draf Lama**: File dengan sufiks "revisi" pada judulnya (contoh: `Praktikum_3_Kelompok_3_Revisi.md`) memiliki kedudukan kronologis yang lebih baru dibandingkan draf awal.
 3. **Penggunaan Metadata YAML**: Walaupun atribut `date: null` disematkan pada seluruh dokumen `FIND-`, atribut `estimated_project_phase` telah memandu klasifikasi fase ke dalam tahapan Analisis dan Solusi (berkorelasi kuat dengan Praktikum 3 dan Praktikum 4).
+

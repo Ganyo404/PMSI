@@ -1,4 +1,4 @@
-﻿---
+---
 id: MOD-002
 title: "Modul 2"
 type: module
@@ -10,6 +10,9 @@ tags:
   - modul
   - materi
 ---
+
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | Laporan Implementasi: [[Praktikum_2_Kelompok_3_revisi]]
+
 Modul Praktikum MSI - PTF60234
 KEMENTERIAN PENDIDIKAN TINGGI, SAINS, DAN TEKNOLOGI
 UNIVERSITAS NEGERI YOGYAKARTA

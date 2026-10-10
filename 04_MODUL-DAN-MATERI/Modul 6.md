@@ -1,4 +1,4 @@
-﻿---
+---
 id: MOD-006
 title: "Modul 6"
 type: module
@@ -10,6 +10,9 @@ tags:
   - modul
   - materi
 ---
+
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | Laporan Implementasi: [[Praktikum_6_Kelompok3]]
+
 Modul Praktikum MSI - PTF60234
 KEMENTERIAN PENDIDIKAN TINGGI, SAINS, DAN TEKNOLOGI
 UNIVERSITAS NEGERI YOGYAKARTA

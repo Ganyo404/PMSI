@@ -12,6 +12,8 @@ tags:
   - catatan
 ---
 
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | Tinjauan Laporan Terkait: [[Praktikum_2_Kelompok_3_revisi]] | Modul Teori: [[Modul 2]]
+
 I
 
 asalamualaikum warahmatullahi wabarakatuh. Waalaikumsalam tiga ee dari organisasi F n di sini ada masalah yang identifikasi ada pembaruan data perustangan terus dari data pemus data perpusakaan daftar tidak sesuai dengan pencarian dan verifikasi data dan

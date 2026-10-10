@@ -32,7 +32,7 @@ Analisis Stakeholder dan Lingkungan Bisnis
 **UNIVERSITAS NEGERI YOGYAKARTA**  
 **2026**
 
-1. # **Identitas Laporan**
+1. **Identitas Laporan**
 
 | Nama Kelompok | 3 |
 | :---- | :---- |
@@ -41,11 +41,11 @@ Analisis Stakeholder dan Lingkungan Bisnis
 | **Tanggal Pelaksanaan** | 31/08/2026 |
 | **Organisasi/Kasus yang Digunakan** | Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta (FT UNY) |
 
-2. # **Tujuan Kegiatan**
+2. **Tujuan Kegiatan**
 
 Kegiatan Pertemuan 2 bertujuan untuk mengidentifikasi pihak-pihak yang berkaitan dengan pengelolaan informasi di Perpustakaan Fakultas Teknik UNY, memetakan tingkat pengaruh (power) dan kepentingan (interest) masing-masing stakeholder, serta menganalisis lingkungan bisnis yang memengaruhi kebutuhan informasi perpustakaan. Pemetaan dilakukan dengan Power-Interest Grid dengan fokus pada pengaruh terhadap keputusan informasi dan kebutuhan terhadap informasi, bukan sekadar keterlibatan dalam proyek. Analisis lingkungan bisnis dilakukan melalui empat kategori pada modul, yaitu regulasi dan kepatuhan, benchmark/kompetisi, kapasitas internal, serta tren dan tekanan eksternal.
 
-3. # **Uraian Pelaksanaan Kegiatan**
+3. **Uraian Pelaksanaan Kegiatan**
 
 Kegiatan dimulai dengan meninjau kembali hasil Pertemuan 1 dan menyesuaikannya dengan kondisi Perpustakaan Fakultas Teknik UNY berdasarkan hasil wawancara dengan pustakawan/pengelola. Pada tahap awal, kelompok sebelumnya menggunakan gambaran organisasi yang seolah-olah terdiri dari beberapa unit kerja mandiri, seperti sirkulasi, pengadaan, pengolahan, dan kepala perpustakaan. Hasil wawancara menunjukkan kondisi yang berbeda: operasional perpustakaan secara riil dikelola oleh satu orang pustakawan yang menangani layanan sirkulasi, referensi, dan digital library, dengan bantuan mahasiswa magang atau PKL secara insidental.
 
@@ -59,7 +59,7 @@ Selain stakeholder, kelompok menganalisis lingkungan bisnis berdasarkan empat ka
 
 Dalam diskusi, kelompok juga memetakan dependensi vertikal Perpustakaan FT UNY. Pengelola perpustakaan berkoordinasi dengan UPT Perpustakaan Pusat UNY dalam hal pengadaan e-journal/database, registrasi keanggotaan mahasiswa melalui SIAKAD, dan verifikasi duplikasi data pada SLiMS. Di sisi lain, perpustakaan bergantung kepada Dekanat FT UNY untuk persetujuan anggaran buku fisik dan kebijakan fakultas. Pemetaan ini membantu kelompok membedakan stakeholder yang mempunyai kewenangan di tingkat operasional dengan pihak yang mempunyai kewenangan di tingkat universitas atau fakultas.
 
-4. # **Hasil/Artefak Praktikum**
+4. **Hasil/Artefak Praktikum**
 
 ## **4.1Power-Interest Grid dan Penilaian Stakeholder**
 
@@ -116,7 +116,7 @@ Di dalam proses tersebut, SLiMS menjadi salah satu media utama untuk menyimpan d
 
 Relasinya bersifat dua arah. Kebijakan dan kebutuhan dari tingkat universitas maupun akreditasi memengaruhi jenis informasi yang harus tersedia di perpustakaan. Sebaliknya, kondisi data dan kemampuan pengelolaan di tingkat perpustakaan menjadi bahan bagi pihak fakultas dan universitas dalam melihat kondisi layanan dan menentukan tindak lanjut. Pola ini menunjukkan bahwa pengelolaan sistem informasi di Perpustakaan FT UNY terkait langsung dengan struktur kewenangan, kapasitas organisasi, dan kebutuhan informasi stakeholder.
 
-5. # **Kendala dan Solusi**
+5. **Kendala dan Solusi**
 
 Kendala pertama adalah membedakan power dan interest dalam konteks keputusan informasi dengan sekadar dukungan terhadap proyek. Pada awal pembahasan, kelompok cenderung melihat pihak yang sering berhubungan dengan perpustakaan sebagai stakeholder yang otomatis memiliki power tinggi. Setelah melihat hasil wawancara dan alur ketergantungan organisasi, kelompok mengubah cara penilaian. Power ditentukan dari kewenangan terhadap kebijakan, akses, standar, anggaran, atau keputusan informasi, sedangkan interest ditentukan dari kebutuhan terhadap data dan informasi yang dihasilkan perpustakaan.
 
@@ -126,7 +126,7 @@ Kendala berikutnya adalah memastikan analisis lingkungan bisnis tidak hanya beru
 
 Selain itu, data kuantitatif dari wawancara membantu kelompok memahami bahwa masalah pengelolaan informasi berhubungan dengan beban kerja yang nyata. Satu orang pustakawan melayani rata-rata 52 pemustaka per hari sambil mengelola 2.349 textbook, 499 buku referensi, dan 15 unit PC Digital Library. Data tersebut membuat kelompok tidak lagi melihat keterlambatan pembaruan sebagai masalah yang berdiri sendiri, tetapi sebagai kondisi yang berkaitan dengan kapasitas sumber daya dan proses kerja.
 
-6. # **Refleksi Pembelajaran**
+6. **Refleksi Pembelajaran**
 
 Melalui kegiatan Pertemuan 2, kelompok memahami bahwa sistem informasi dalam organisasi tidak cukup dilihat dari aplikasi yang digunakan. Hasil wawancara menunjukkan bahwa Perpustakaan FT UNY sudah menggunakan SLiMS, tetapi pengelolaan informasi tetap dipengaruhi oleh jumlah sumber daya manusia, beban pelayanan, proses pemutakhiran, dan penggunaan media lain sebagai cadangan atau sarana komunikasi. Artinya, keberadaan aplikasi belum otomatis membuat pengelolaan informasi berjalan baik.
 
@@ -134,9 +134,9 @@ Kelompok juga belajar bahwa stakeholder perlu dilihat berdasarkan perannya terha
 
 Hal lain yang menjadi pembelajaran adalah pentingnya melihat keterkaitan vertikal dalam organisasi. Sebagian kebutuhan perpustakaan tidak dapat diselesaikan hanya pada tingkat fakultas karena ada hubungan dengan UPT Perpustakaan Pusat UNY dan kebijakan universitas. Dengan memahami batas kewenangan tersebut, analisis sistem informasi menjadi lebih realistis dan tidak menempatkan semua persoalan seolah-olah dapat diselesaikan oleh pengelola perpustakaan sendiri.
 
-Dari analisis lingkungan bisnis, kelompok memahami bahwa kebutuhan informasi dipengaruhi oleh regulasi, kapasitas internal, perkembangan teknologi, dan kebutuhan pengguna. Karena itu, pengelolaan sistem informasi tidak hanya soal menambah fitur, tetapi juga tentang bagaimana data dikumpulkan, diperbarui, diperiksa, dan digunakan untuk mendukung pelayanan, pelaporan, dan pengambilan keputusan. Pemahaman ini menjadi dasar kelompok untuk melanjutkan analisis masalah pada Pertemuan 3\.
+Dari analisis lingkungan bisnis, kelompok memahami bahwa kebutuhan informasi dipengaruhi oleh regulasi, kapasitas internal, perkembangan teknologi, dan kebutuhan pengguna. Karena itu, pengelolaan sistem informasi tidak hanya soal menambah fitur, tetapi juga tentang bagaimana data dikumpulkan, diperbarui, diperiksa, dan digunakan untuk mendukung pelayanan, pelaporan, dan pengambilan keputusan. Pemahaman ini menjadi dasar kelompok untuk melanjutkan analisis masalah pada Pertemuan 3.
 
-7. # **Kesimpulan**
+7. **Kesimpulan**
 
 Pada Pertemuan 2, kelompok telah melakukan identifikasi dan pemetaan stakeholder Perpustakaan Fakultas Teknik UNY menggunakan Power-Interest Grid serta menganalisis lingkungan bisnis berdasarkan empat kategori, yaitu regulasi dan kepatuhan, benchmark/kompetisi, kapasitas internal, serta tren dan tekanan eksternal.
 
@@ -146,7 +146,7 @@ Dalam pemetaan stakeholder, Pustakawan Utama FT UNY dan Kepala UPT Perpustakaan 
 
 Analisis lingkungan bisnis menunjukkan bahwa kebutuhan informasi perpustakaan dipengaruhi oleh regulasi dan kebutuhan akreditasi, perkembangan layanan digital, keterbatasan sumber daya internal, serta meningkatnya kebutuhan terhadap e-journal, database internasional, dan e-books. Dengan demikian, langkah selanjutnya pada Pertemuan 3 dapat difokuskan pada identifikasi masalah pengelolaan informasi yang paling penting berdasarkan kondisi nyata dan bukti yang telah diperoleh.
 
-# **8\. Referensi**
+### **DAFTAR PUSTAKA / REFERENSI**
 
 Laudon, K. C., & Laudon, J. P. (2014). Management Information Systems: Managing the Digital Firm (13th ed.). Pearson Education.
 

@@ -12,9 +12,11 @@ tags:
   - laporan
 ---
 
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | [[CONTEXT_INDEX]] | Landasan Teori: [[Modul 7]] | Laporan Sebelumnya: [[Praktikum_6_Kelompok3]]
+
 **LAPORAN PRAKTIKUM MINGGUAN**
 
-*Manajemen Sistem Informasi (PTF60234)  Pertemuan 7* 
+*Manajemen Sistem Informasi (PTF60234) : Pertemuan 7* 
 
 Pembuatan Gantt Chart dan PERT Chart 
 
@@ -28,7 +30,7 @@ Pembuatan Gantt Chart dan PERT Chart
 
 ---
 
-### 1. Identitas Laporan
+1. **Identitas Laporan**
 
 | Nama Kelompok | Kelompok 3 |
 | :---- | :---- |
@@ -39,7 +41,7 @@ Pembuatan Gantt Chart dan PERT Chart
 
 ---
 
-### 2. TUJUAN KEGIATAN  
+2. **Tujuan Kegiatan**
 Praktikum pada pertemuan ketujuh bertujuan untuk menyusun penjadwalan proyek berdasarkan [[Ekosistem Informasi Perpustakaan.md|solusi tata kelola (Pure Governance)]] yang telah dirancang pada [[Praktikum_6_Kelompok3.md|Pertemuan 6]]. Penjadwalan ini secara khusus menyoroti **ketergantungan informasi**, di mana suatu aktivitas tidak dapat dieksekusi sebelum keputusan mengenai format atau kesepakatan data dari aktivitas sebelumnya selesai dilakukan.
 Secara khusus, kegiatan ini bertujuan untuk:
 1. Menyusun **Gantt Chart** implementasi tata kelola Perpustakaan FT UNY.
@@ -48,14 +50,14 @@ Secara khusus, kegiatan ini bertujuan untuk:
 
 ---
 
-### 3. URAIAN PELAKSANAAN KEGIATAN  
+3. **Uraian Pelaksanaan Kegiatan**
 Berdasarkan hasil analisis dari [[Praktikum_6_Kelompok3.md|Modul 6 (Arsitektur dan Matriks Implementasi)]] dan batasan sumber daya di [[Jawaban3_Final.md|Wawancara 3]] mengenai kondisi Pustakawan Tunggal, Kelompok 3 tidak merancang *software* baru. Implementasi lebih berfokus mengandalkan optimalisasi SLiMS yang sudah ada, melalui pendekatan [[Ekosistem Informasi Perpustakaan.md|Ekosistem Informasi]]: pendirian SOP *Quiet Hour*, Rak Transit, Google Form QR Code, dan Template LAM-INFOKOM.
 
 Dalam menyusun penjadwalan proyek ini, kami memecah tahapan implementasi menjadi 7 aktivitas utama (B hingga H). Penjadwalan ini sangat menekankan **Aspek Tata Kelola dan Kualitas Informasi (Aspek 2)** dari MSI. Misalnya, *Pembuatan Google Form (Aktivitas C)* tidak boleh dimulai sebelum *Perumusan SOP (Aktivitas B)* disepakati. Hal ini karena *field* pertanyaan di Google Form sepenuhnya bergantung pada kebutuhan informasi yang didikte oleh SOP. Jika form dibuat mendahului SOP (ketergantungan informasi dilanggar), maka akan terjadi risiko pendataan ulang yang membuang waktu.
 
 ---
 
-### 4. HASIL DAN ARTEFAK PRAKTIKUM  
+4. **Hasil/Artefak Praktikum**
 
 #### A. Daftar Aktivitas dan Estimasi Durasi
 Berikut adalah rincian aktivitas beserta ketergantungan informasinya:
@@ -119,7 +121,7 @@ Jika *Perumusan SOP* terlambat disepakati oleh Pustakawan Utama, maka keseluruha
 
 ---
 
-### 5. KENDALA DAN SOLUSI  
+5. **Kendala dan Solusi**
 **Kendala:**  
 Selama penyusunan jadwal implementasi, kami sempat kesulitan dalam menentukan batas durasi yang realistis untuk sosialisasi SOP kepada pemustaka, mengingat jumlah kunjungan mahasiswa yang fluktuatif di perpustakaan FT UNY. Selain itu, sinkronisasi waktu luang antara Pustakawan Tunggal dan Tim Akreditasi LAM-INFOKOM dalam merumuskan *Template* berpotensi molor dari estimasi 5 hari.  
 **Solusi:**  
@@ -127,14 +129,14 @@ Kami memberikan kelonggaran waktu (*buffer time*) pada Jalur Kritis dengan memat
 
 ---
 
-### 6. REFLEKSI PEMBELAJARAN  
+6. **Refleksi Pembelajaran**
 Pembelajaran utama dari praktikum penyusunan penjadwalan ini adalah pemahaman mendalam tentang **Ketergantungan Informasi**. Kami menyadari bahwa dalam Manajemen Sistem Informasi, kelancaran proyek tidak selalu ditentukan oleh cepatnya sistem aplikasi dibuat, tetapi lebih kepada kejelasan wewenang (RACI) dan standar format data (SOP). Keterlambatan dalam mengambil keputusan organisasi dapat menjadi penghalang (*bottleneck*) terbesar yang menggeser *Critical Path* proyek. Hal ini mengonfirmasi prinsip **Adopsi dan Perilaku Organisasi (Aspek 7 MSI)** bahwa membangun komitmen Pustakawan dan Pemustaka jauh lebih kritis ketimbang sekadar meluncurkan Google Form.
 
 ---
 
-### 7. KESIMPULAN  
+7. **Kesimpulan**
 Praktikum Modul 7 berhasil memetakan penjadwalan solusi tata kelola Perpustakaan FT UNY. Melalui analisis **PERT Chart**, ditemukan bahwa **Jalur Kritis** memakan waktu **36 Hari**, yang didominasi oleh lintasan operasional (SOP, Sosialisasi, dan Implementasi). Penjadwalan ini membuktikan bahwa keberhasilan penyelesaian masalah keterlambatan sinkronisasi data SLiMS sangat bergantung pada fase kesepakatan sosial dan kejelasan tata kelola, bukan semata pada penambahan infrastruktur teknis komputasi.
 
-**Referensi:**
+### **DAFTAR PUSTAKA / REFERENSI**
 - Wardani, R. (2026). *[[Modul 7|Modul 7 Praktikum Manajemen Sistem Informasi]]*. Universitas Negeri Yogyakarta.
 - Markus, M. L. (1983). *Power, politics, and MIS implementation*.
