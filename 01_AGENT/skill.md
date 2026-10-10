@@ -166,3 +166,14 @@ Digunakan untuk:
 - Penerapan aturan *Anti-Crash Syntax Mermaid* (petik ganda pada karakter reserved dan `<br/>`).
 - Perancangan matriks Markdown visual dengan indikator status terstandarisasi.
 
+---
+
+### 19. Mockup Design Skill
+*(Native Antigravity Skill di `.agents/skills/mockup-design/SKILL.md`)*
+Digunakan untuk:
+- Merancang prototipe antarmuka sistem interaktif tingkat tinggi (High-Fidelity) dengan estetika modern (*The WOW Factor*).
+- Menegakkan palet warna institusional UNY (Deep Navy, Tech Cyan, Emerald SLA, Warm Amber).
+- Mengintegrasikan device frame responsive (Mobile Frame Pemustaka, Desktop Dashboard Pustakawan, Executive Suite Dekanat).
+- Menjalankan simulasi data interaktif lintas peran (Live Queue, Timer Quiet Hour, 1-Click LAM-INFOKOM Converter).
+
+
