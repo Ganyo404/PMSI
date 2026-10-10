@@ -67,6 +67,16 @@ Berikut adalah daftar pertanyaan jebakan yang sering diajukan dosen pengampu bes
 > **Tangkisan Argumen Resmi**:
 > *"Jalur kritis proyek kami berada pada rangkaian: **Penyusunan & Pengesahan SOP Quiet Hour -> Uji Coba Rak Transit & Formulir QR -> Rekonsiliasi Data Pertama di SLiMS**. Jalur ini tidak memiliki toleransi keterlambatan (slack time = 0) karena efektivitas ekstraksi data borang akreditasi sepenuhnya bergantung pada terlaksananya pemutakhiran sirkulasi secara disiplin sejak tahap uji coba awal."*
 
+---
+
+### Q9: "Kenapa hanya pakai QR Code akrilik dan Google Form? Kenapa kalian tidak koding aplikasi web portal atau sistem scanner baru saja?"
+> **Tangkisan Argumen Resmi (Rasionalisasi Pure Governance)**:
+> *"Berdasarkan doktrin Bu Ratna di kelas, masalah perpustakaan FT UNY adalah **masalah tata kelola beban kerja pustakawan tunggal**, bukan ketiadaan aplikasi. SLiMS 9 Bulian sudah menjadi sistem otomasi katalog resmi perpustakaan universitas. Jika kami membuat aplikasi web/database baru:*
+> 1. *Akan terjadi **duplikasi database** yang memicu inkonsistensi data.*
+> 2. *Menambah beban pemeliharaan (server, hosting, bug maintenance) yang mustahil ditangani 1 orang pustakawan non-IT.*
+> 3. *QR Code akrilik di meja baca dan Rak Transit (`RACK-001`) bersifat **Zero-Cost & Zero-Friction** bagi 52 pemustaka per hari, langsung masuk ke Spreadsheet log tanpa instalasi aplikasi, sementara SLiMS tetap menjadi **Single Source of Truth**.*
+
+
 
 ---
 
