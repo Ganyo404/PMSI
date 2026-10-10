@@ -176,4 +176,30 @@ Digunakan untuk:
 - Mengintegrasikan device frame responsive (Mobile Frame Pemustaka, Desktop Dashboard Pustakawan, Executive Suite Dekanat).
 - Menjalankan simulasi data interaktif lintas peran (Live Queue, Timer Quiet Hour, 1-Click LAM-INFOKOM Converter).
 
+---
+
+### 20. Hyperframes Video & Animation Engine Skills
+*(Native Antigravity Skills di `.agents/skills/hyperframes*` dan `.agents/skills/media-use/`)*
+Digunakan untuk pembuatan aset presentasi visual, motion graphics, video terprogram, dan video demo:
+- **`hyperframes`**: Fondasi framework pembuatan video terprogram dan rendering animasi.
+- **`hyperframes-animation`**: Desain motion graphics, kurva easing, dan orkestrasi transisi visual.
+- **`hyperframes-creative`**: Arahan kreatif, storyboard, estetika tipografi video, dan komposisi frame.
+- **`hyperframes-keyframes`**: Kontrol penentuan waktu (timings), properti keyframe, dan interpolasi gerak.
+- **`hyperframes-core`**: Core runtime, arsitektur data frame, dan pipeline rendering utama.
+- **`hyperframes-studio`**: Manajemen environment studio dan workspace visual preview.
+- **`hyperframes-cli`**: Eksekusi perintah command-line untuk render, build, dan inspect aset Hyperframes.
+- **`media-use`**: Integrasi dan utilisasi aset multimedia (video klip, audio, gambar, dan elemen grafis).
+- **`hyperframes-audio`**: Sinkronisasi audio latar, voiceover, sound effect, dan waveform ke timeline.
+
+---
+
+### 21. Uizze Modern UI/UX & Anti-Slop Skills
+*(Native Antigravity Skills di `.agents/skills/ui-*` dan `.agents/skills/anti-ui-slop/`)*
+Digunakan untuk perancangan antarmuka premium, anti-slop, dan audit standar desain:
+- **`ui-design`**: Perancangan antarmuka aplikasi modern, token desain, state management visual (loading, error, empty).
+- **`anti-ui-slop`**: Eliminasi layout generik, penguatan hierarki informasi, dan penanganan kontrol inert / status mentah.
+- **`ui-radar`**: Investigasi keputusan UI dan benchmarking visual terhadap referensi antarmuka kelas dunia.
+- **`image-to-ui`**: Rekonstruksi gambar atau wireframe menjadi komponen antarmuka yang presisi dan interaktif.
+
+
 
