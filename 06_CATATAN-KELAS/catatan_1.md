@@ -12,6 +12,8 @@ tags:
   - catatan
 ---
 
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | Tinjauan Laporan Terkait: [[Laporan_Praktikum_Pertemuan_1_Kelompok 3]] | Modul Teori: [[Modul 1]]
+
 sistem ee perpustakaan fakultas teknik UNI berarti struktur organisasinya sudah tahu
 
 ada ada

@@ -11,7 +11,10 @@ tags:
 
 # Profil Perpustakaan Fakultas Teknik UNY
 
+> 🔗 **Navigasi:** [[Dashboard]] | [[CONTEXT_INDEX]] | [[Ekosistem Informasi Perpustakaan FT]] | [[Glosarium_Perpustakaan]]
+
 ## Informasi Dasar
+
 - **Nama**: Perpustakaan Fakultas Teknik, Universitas Negeri Yogyakarta (FT UNY)
 - **Sistem Manajemen**: SLiMS (Senayan Library Management System)
 - **URL Utama**: [https://library.ft.uny.ac.id/index.php](https://library.ft.uny.ac.id/index.php)

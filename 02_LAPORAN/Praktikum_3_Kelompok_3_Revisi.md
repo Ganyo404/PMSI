@@ -22,25 +22,25 @@ tags:
 
 **Disusun Oleh :**
 
+1. **Identitas Laporan**
+
 | Nama Kelompok | 3 |
 | :---- | :---- |
-| **Anggota (NIM/Nama)** | Gantar Abimanyu (24050530042) Ganendra Pradipa (24050530038) M Fadlan Dirmansyah (24050530034) |
+| **Anggota (NIM/Nama)** | Gantar Abimanyu (24050530042)<br>Ganendra Pradipa (24050530038)<br>M Fadlan Dirmansyah (24050530034) |
 | **Pertemuan ke-** | 3 |
-| **Tanggal Pelaksanaan** | 8/09/2026 |
-| **Org anisasi/Kasus yang Digunakan** | Perpustakaan Fakultas  |
+| **Tanggal Pelaksanaan** | 08 September 2026 |
+| **Organisasi/Kasus yang Digunakan** | Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta (FT UNY) |
 
 **PROGRAM PENDIDIKAN TEKNIK INFORMATIKA**  
 **FAKULTAS TEKNIK**  
 **UNIVERSITAS NEGERI YOGYAKARTA**  
 **2026**
 
-1. **Tujuan Kegiatan**
+2. **Tujuan Kegiatan**
 
    Mahasiswa mampu mengidentifikasi akar masalah pengelolaan sistem informasi pada organisasi kasus dan menentukan prioritas solusi. 
 
-   
-
-2. **Uraian Pelaksanaan Kegiatan**
+3. **Uraian Pelaksanaan Kegiatan**
 
    Kegiatan identifikasi masalah pada Pertemuan 3 didasarkan pada hasil wawancara langsung yang dilakukan kelompok terhadap Pustakawan/Pengelola Perpustakaan Fakultas Teknik UNY. Hasil pengumpulan data empiris menunjukkan bahwa operasional Perpustakaan Fakultas Teknik UNY dikelola oleh satu orang pustakawan utama yang menangani beberapa fungsi layanan, yaitu sirkulasi, referensi, dan digital library, dengan bantuan sistem otomasi SLiMS (Senayan Library Management System).
 
@@ -68,14 +68,14 @@ tags:
 
    
 
-3. **Hasil/Artefak Praktikum**
+4. **Hasil/Artefak Praktikum**
 
 | Bagian | Isian | Sumber/Metode Perolehan Data |
 | :---- | :---- | :---- |
 | Daftar Masalah Teridentifikasi | **Pemutakhiran status dan kondisi koleksi sering terlambat.** Proses pembaruan tidak selalu dilakukan segera setelah informasi mengenai perubahan kondisi koleksi diterima karena pengelola harus membagi waktu antara pelayanan dan pengelolaan informasi.  **Informasi pada sistem berpotensi tidak sesuai dengan kondisi fisik terbaru.** Keterlambatan pemutakhiran menyebabkan data pada SLiMS dapat belum mencerminkan kondisi fisik koleksi yang sebenarnya.  **Pencatatan dan verifikasi informasi masih membutuhkan proses manual dan belum terpusat.** Informasi dapat diterima melalui penyampaian langsung, WhatsApp, maupun temuan pustakawan, sedangkan pencatatan awal dapat menggunakan kertas, buku, WhatsApp, atau spreadsheet sederhana.  **Belum terdapat SOP tertulis dan jadwal rutin untuk pemutakhiran status dan kondisi koleksi.** Proses pemutakhiran masih dilakukan berdasarkan kebiasaan dan kebutuhan serta menyesuaikan ketersediaan waktu pengelola.  |  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY, 8 September 2026, diperkuat wawancara lanjutan.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  |
 | Masalah Terpilih untuk Analisis Akar | Masalah yang dipilih: Pembaruan data perpustakaan sering terlambat sehingga informasi yang tersedia tidak selalu sesuai dengan kondisi terbaru.Alasan pemilihan: Masalah ini dipilih karena memiliki hubungan langsung dengan kualitas informasi perpustakaan. Keterlambatan pemutakhiran dapat menyebabkan status atau informasi koleksi pada SLiMS belum sesuai dengan kondisi fisik terbaru. Selain itu, masalah ini memiliki akar penyebab yang dapat ditelusuri melalui aspek tata kelola proses, khususnya belum adanya SOP tertulis dan jadwal rutin untuk pemutakhiran informasi.  | Diskusi kelompok berdasarkan hasil wawancara dan evidence yang telah diidentifikasi. |
 | Hasil Analisis Akar Masalah (5-Why) | Masalah: pembaruan data sering terlambat.Why 1: proses input dilakukan bertahap menyesuaikan waktu pelayanan.Why 2: satu orang pengelola menangani tiga layanan sekaligus.Why 3: struktur pengelolaan hanya memiliki satu pustakawan utama.Why 4: beban kerja membuat input dan pemutakhiran data tidak selalu tepat waktu. | Teknik 5-Why ditelusuri dari jawaban wawancara dengan pengelola perpustakaan. |
-| Matriks Prioritas Masalah | 1\. Pembaruan data sering terlambat — Impact 5, Effort 3, Prioritas 12\. Data tidak sesuai kondisi sebenarnya — Impact 5, Effort 4, Prioritas 23\. Pencarian/verifikasi data manual — Impact 4, Effort 3, Prioritas 34\. Data belum sepenuhnya terintegrasi — Impact 4, Effort 5, Prioritas 4 | Penilaian kelompok berdasarkan dampak (impact) dan upaya (effort) penyelesaian masalah. |
+| Matriks Prioritas Masalah | 1\. Pembaruan data sering terlambat : Impact 5, Effort 3, Prioritas 12\. Data tidak sesuai kondisi sebenarnya : Impact 5, Effort 4, Prioritas 23\. Pencarian/verifikasi data manual : Impact 4, Effort 3, Prioritas 34\. Data belum sepenuhnya terintegrasi : Impact 4, Effort 5, Prioritas 4 | Penilaian kelompok berdasarkan dampak (impact) dan upaya (effort) penyelesaian masalah. |
 | Pernyataan Masalah Prioritas Akhir | Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu memerlukan pengecekan atau verifikasi manual.  | Sintesis kelompok dari seluruh tahapan analisis. |
 
 | Tahap | Pertanyaan | Jawaban |
@@ -109,7 +109,7 @@ Perpustakaan Fakultas Teknik UNY mengalami keterlambatan dalam pemutakhiran stat
 | ![][image3] |
 | :---- |
 
-4. **Kendala dan Solusi**
+5. **Kendala dan Solusi**
 
 1. Kendala 1: Kesulitan membedakan Gejala (Symptom), Masalah (Problem), dan Akar Masalah (Root Cause)
 
@@ -126,7 +126,7 @@ Perpustakaan Fakultas Teknik UNY mengalami keterlambatan dalam pemutakhiran stat
 
    
 
-5. **Refleksi Pembelajaran**
+6. **Refleksi Pembelajaran**
 
    Melalui Pertemuan 3, kelompok memahami bahwa masalah dalam sistem informasi tidak selalu sama dengan gejala yang terlihat secara langsung. Keterlambatan pemutakhiran atau ketidaksesuaian informasi koleksi perlu ditelusuri lebih lanjut untuk mengetahui penyebab yang mendasarinya.
 
@@ -162,7 +162,7 @@ Perpustakaan Fakultas Teknik UNY mengalami keterlambatan dalam pemutakhiran stat
 
    
 
-6. **Kesimpulan**
+7. **Kesimpulan**
 
    Berdasarkan hasil analisis, kelompok mengidentifikasi empat masalah utama dalam pengelolaan informasi Perpustakaan Fakultas Teknik UNY, yaitu keterlambatan pemutakhiran status dan kondisi koleksi, potensi ketidaksesuaian informasi pada sistem dengan kondisi fisik terbaru, proses pencatatan dan verifikasi yang masih membutuhkan proses manual dan belum terpusat, serta belum adanya SOP dan jadwal rutin untuk pemutakhiran informasi koleksi.
 
@@ -180,7 +180,7 @@ Perpustakaan Fakultas Teknik UNY mengalami keterlambatan dalam pemutakhiran stat
 
    Dengan demikian, akar masalah utama yang menjadi dasar perancangan solusi pada tahap berikutnya adalah belum adanya SOP tertulis dan jadwal rutin yang mengatur proses pemutakhiran status dan kondisi koleksi secara terstruktur.
 
-7.  **Referensi**
+### **DAFTAR PUSTAKA / REFERENSI**
 
    Laudon, K. C., & Laudon, J. P. (2014). Management Information Systems: Managing the Digital Firm (13th ed.). Pearson Education.
 

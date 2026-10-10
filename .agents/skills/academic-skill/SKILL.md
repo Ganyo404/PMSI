@@ -1,38 +1,65 @@
 ---
 name: academic-skill
-description: Skill berisi pedoman standar akademik, filosofi 7 Aspek MSI Bu Ratna, anti-AI writing, dan rasionalisasi arsitektur (Khusus MSI Perpustakaan FT UNY).
+description: Skill pedoman standar akademik, filosofi 7 Aspek MSI Bu Ratna, anti-AI writing, rasionalisasi tata kelola (Pure Governance), dan vertical alignment 3 tingkatan organisasi (MSI Perpustakaan FT UNY).
 ---
 
-# Academic Skill & Anti-Slop (Proyek MSI Perpustakaan)
+# Academic Skill & Anti-Slop (MSI Perpustakaan FT UNY)
 
-Skill ini memastikan kedalaman teoretis dan kualitas prosa laporan memenuhi standar akademis Bu Ratna (Dosen MSI).
+Skill ini memastikan kedalaman teoretis, kepatuhan substansi organisasi, dan kualitas prosa laporan memenuhi standar akademis Dr. Ratna Wardani (Dosen Pengampu MSI).
 
-## 🧠 7 ASPEK MSI (Selalu Jadikan Pijakan)
-Setiap laporan WAJIB mencerminkan minimal salah satu aspek ini:
-1. **Keselarasan Strategis**: Sistem pelaporan sirkulasi terhubung ke anggaran pengadaan koleksi oleh Dekanat FT UNY.
-2. **Tata Kelola & Kualitas Informasi**: Siapa berwenang atas data sirkulasi SLiMS, pemustaka, akreditasi? (RACI).
-3. **Dukungan Pengambilan Keputusan**: 3 level (Operasional/Pemustaka & Pustakawan - Manajerial/Tim Akreditasi LAM-INFOKOM - Strategis/Dekan).
-4. **Kebutuhan Informasi Stakeholder**: Beda pihak beda butuh data.
-5. **Nilai Informasi**: Akurasi koleksi = kepuasan pemustaka = anggaran fakultas akurat.
-6. **Integrasi Proses Bisnis**: Keterhubungan pelaporan pemustaka via QR Form ke *update* SLiMS.
-7. **Adopsi & Perilaku Organisasi**: Change management untuk Pustakawan Tunggal yang *overload* (Multi-tasking) agar mematuhi jadwal SOP *Quiet Hour*.
+---
 
-## 💡 RASIONALISASI MSI VS KOMPUTERISASI LANGSUNG
-* **Kritik Dosen:** "Pencatatan manual tidak selalu solusinya computerize. Kadang membuat web portal baru malah bikin beban ganda (*double entry*)."
-* **Teori:** *Task-Technology Fit* (Goodhue, 1995) & *Technology Acceptance Model* (Davis, 1989).
-* **Solusi Hibrid:** *Pure Governance*. Pustakawan tetap pakai SLiMS, pemustaka lapor pakai Google Form QR, dan ada rak fisik Transit. Tidak perlu koding web baru!
+## 🏛️ VERTICAL ALIGNMENT (3 TINGKATAN MANAJEMEN)
+Setiap analisis dan perancangan sistem informasi WAJIB menyambungkan 3 tingkatan organisasi:
+1. **Tingkat Strategis (Dekan & Wakil Dekan FT UNY):**
+   - *Kebutuhan Informasi:* Laporan tren pemanfaatan koleksi dan rasio ketersediaan buku per program studi.
+   - *Keputusan yang Didukung:* Alokasi anggaran pengadaan koleksi baru tahunan berbasis data (*evidence-based procurement*) dan evaluasi kinerja fakultas.
+2. **Tingkat Manajerial (Kepala Perpustakaan & Tim Akreditasi Prodi):**
+   - *Kebutuhan Informasi:* Rekapitulasi data sirkulasi, inventarisasi koleksi rusak/hilang, dan rasio kecukupan pustaka.
+   - *Keputusan yang Didukung:* Pemenuhan bukti fisik Borang Akreditasi LAM-INFOKOM/BAN-PT secara mandiri tanpa membebani layanan harian.
+3. **Tingkat Operasional (Pustakawan Tunggal & Pemustaka/Mahasiswa):**
+   - *Kebutuhan Informasi:* Status ketersediaan eksemplar di rak secara riil, pencatatan transaksi sirkulasi, dan pelaporan kerusakan/kehilangan koleksi.
+   - *Keputusan yang Didukung:* Pembaruan status eksemplar di SLiMS, pemisahan fisik buku di Rak Transit, dan jadwal verifikasi berkala (*Quiet Hour*).
 
-## ✍️ ANTI-AI WRITING (WAJIB DITERAPKAN DI SEMUA PROSA)
-- ❌ **DILARANG:** *Em-dash* (`-` / `--`). Ganti dengan titik atau koma.
-- ❌ **DILARANG:** Kata kosong/AI-slop (*unlock, elevate, empower, delve, showcase, robust, seamless, cutting-edge, revolutionizing*).
-- ❌ **DILARANG:** Penutup generik-positif ("Ke depan, tata kelola perpustakaan akan semakin baik...").
-- ❌ **DILARANG:** Signposting ("Berikut adalah paparan dari...").
-- ❌ **DILARANG:** Pasif tanpa pelaku ("Data SLiMS tidak diupdate"). **WAJIB:** "Pustakawan tidak melakukan pembaruan SLiMS secara *real-time*".
-- ✅ **WAJIB:** Spesifisitas dari data lapangan (gunakan nama, angka nyata dari Memori/Wawancara).
-- ✅ **WAJIB:** Bold hanya 2-3 kali per paragraf untuk penekanan substansial.
+---
 
-## 📚 REFERENSI BAKU
-Gunakan kutipan ini jika relevan untuk justifikasi teoretis:
-- Romney, M. B., & Steinbart, P. J. (2018). *Accounting information systems*. (Konsep Internal Control & Segregation of Duties).
-- Markus, M. L. (1983). *Power, politics, and MIS implementation*.
-- Undang-Undang No 43 Tahun 2007 tentang Perpustakaan (Standar operasional).
+## 🧠 7 ASPEK PENGELOLAAN MSI BU RATNA (PIJAKAN WAJIB)
+Setiap laporan praktikum harus secara eksplisit mencerminkan aspek-aspek berikut:
+1. **Keselarasan Strategis (Strategic Alignment):** Sistem sirkulasi terhubung ke anggaran pengadaan koleksi Dekanat FT UNY.
+2. **Tata Kelola & Kualitas Informasi (Governance & Data Quality):** Kejelasan akuntabilitas (RACI), validitas data sirkulasi, dan akurasi status koleksi di SLiMS OPAC.
+3. **Dukungan Pengambilan Keputusan (Decision Support):** Menghubungkan keputusan 3 level (Operasional $\rightarrow$ Manajerial $\rightarrow$ Strategis).
+4. **Kebutuhan Informasi Stakeholder:** Menyesuaikan data yang disajikan dengan profil pengguna (Mahasiswa butuh status rak; Tim Akreditasi butuh rekap tahunan; Dekan butuh tren anggaran).
+5. **Nilai Informasi (Information Value):** Nilai diukur dari peningkatan akurasi data sirkulasi dan efisiensi pelaporan akreditasi, bukan semata efisiensi koding.
+6. **Integrasi Proses Bisnis (Business Process Integration):** Keterhubungan pelaporan mandiri pemustaka via QR Code $\rightarrow$ verifikasi fisik $\rightarrow$ pembaruan SLiMS $\rightarrow$ ekstraksi pelaporan.
+7. **Adopsi & Perilaku Organisasi (Change Management & Behavioral Adoption):** Manajemen perubahan bagi Pustakawan Tunggal agar terbiasa mengalokasikan waktu di *SOP Quiet Hour* tanpa merasa terbebani *double entry*.
+
+---
+
+## 💡 PRINSIP "PURE GOVERNANCE" VS KOMPUTERISASI LANGSUNG
+* **Kritik Utama Dosen:** *"Pencatatan manual tidak selalu solusinya membuat aplikasi baru. Membangun web portal baru seringkali justru memicu beban ganda (double entry) dan mangkrak."*
+* **Landasan Teori:**
+  - *Task-Technology Fit* (Goodhue & Thompson, 1995): Kesesuaian alat dengan karakteristik tugas dan kapasitas sumber daya manusia.
+  - *Technology Acceptance Model* (Davis, 1989): Persepsi kemudahan penggunaan (*perceived ease of use*) dan persepsi kegunaan (*perceived usefulness*).
+  - *Internal Control & Segregation of Duties* (Romney & Steinbart, 2018): Penataan wewenang verifikasi dan pemutakhiran data.
+* **Solusi Terpilih (Zero-Budget Governance):**
+  - Tidak membuat web portal baru atau mengubah *source code* / database SLiMS pusat.
+  - Mengoptimalkan sistem yang sudah berjalan (SLiMS bawaan) dipadukan dengan instrumen tata kelola: **SOP Quiet Hour**, **Rak Transit Pengembalian**, **Google Form QR Code**, dan **Template Ekstraksi Spreadsheet**.
+
+---
+
+## 📌 BATASAN FAKTA LAPANGAN (GROUND TRUTH)
+Gunakan angka dan kondisi faktual berikut dari dokumen wawancara `[Jawaban3_Final]`:
+- **SDM:** Hanya 1 orang pengelola utama (*sole librarian*) di tingkat perpustakaan fakultas. Penambahan staf berada di luar wewenang praktikum.
+- **Waktu Terfokus (*Quiet Hour*):** Sesi rutin mingguan 30–60 menit pada jam lengang (contoh: Jumat pagi) untuk verifikasi laporan dan *update* SLiMS.
+- **Formulir QR Code:** 4 kolom isian wajib minimum (Identitas koleksi, Jenis masalah, Lokasi rak, Keterangan singkat) agar tidak membebani pemustaka.
+- **Kewenangan SLiMS:** Pustakawan memiliki hak akses pengelola lokal (ubah status eksemplar, koreksi bibliografi, sirkulasi), tetapi penghapusan aset (*weeding*) dan konfigurasi server memerlukan persetujuan Perpustakaan Pusat / Pimpinan Fakultas.
+
+---
+
+## ✍️ STANDAR ANTI-AI WRITING
+- ❌ **DILARANG:** Penggunaan tanda *Em-dash* (`—` atau `--`). Ganti dengan tanda titik, koma, atau tanda kurung.
+- ❌ **DILARANG:** Kosakata AI-slop (*unlock, elevate, empower, delve, showcase, robust, seamless, cutting-edge, revolutionizing, tapestry, pivotal*).
+- ❌ **DILARANG:** Penutup generik-positif klise ("Ke depan, diharapkan sistem ini akan membawa dampak positif...").
+- ❌ **DILARANG:** Kalimat pasif tanpa subjek yang jelas ("Data tidak diupdate"). **WAJIB:** "Pustakawan menunda pemutakhiran data SLiMS karena melayani transaksi peminjaman di meja sirkulasi."
+- ✅ **WAJIB:** Penekanan bold maksimal 2–3 frasa substantif per paragraf.
+
