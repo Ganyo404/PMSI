@@ -136,8 +136,13 @@ Pusat kapabilitas kecerdasan agen dalam tata kelola, arsitektur, visualisasi, da
 - **Pilar Pertahanan & Penutupan Eksekutif:**
   - [[defense-prep|Defense-Prep Skill: Bank Pertanyaan Kritis Bu Ratna & Simulasi Responsi]]
   - [[executive-synthesis|Executive-Synthesis Skill: Portofolio Akhir & 1-Page Summary Dekanat]]
+- **Pilar Visual & Multimodal Intelligence:**
+  - [[vision|Vision Skill: Delegated Image Understanding & OCR]]
+  - [[vision-multimodal|Vision-Multimodal Skill: Document/PDF & Visual Reasoning]]
+  - [[qianwen-vision|Qianwen-Vision Skill: Qwen VL/QVQ Visual Intelligence & OCR]]
 - **Regulasi & Doktrin Operasional:**
   - [[agent|Aturan Utama AI Agent (01_AGENT/agent.md)]]
   - [[skill|Daftar Katalog Skill AI Agent (01_AGENT/skill.md)]]
   - [[TRAINING_PLAYBOOK|Master Training Playbook & Cognitive Simulation (01_AGENT/TRAINING_PLAYBOOK.md)]]
+
 

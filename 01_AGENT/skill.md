@@ -201,5 +201,15 @@ Digunakan untuk perancangan antarmuka premium, anti-slop, dan audit standar desa
 - **`ui-radar`**: Investigasi keputusan UI dan benchmarking visual terhadap referensi antarmuka kelas dunia.
 - **`image-to-ui`**: Rekonstruksi gambar atau wireframe menjadi komponen antarmuka yang presisi dan interaktif.
 
+---
+
+### 22. Vision & Multimodal Understanding Skills
+*(Native Antigravity Skills di `.agents/skills/vision/`, `.agents/skills/vision-multimodal/`, dan `.agents/skills/qianwen-vision/`)*
+Digunakan untuk analisis gambar, dokumen/PDF, denah tata ruang, tangkapan layar antarmuka SLiMS, OCR teks, dan penalaran multimodal:
+- **`vision`** (`.agents/skills/vision/SKILL.md`): Delegasi pemahaman visual (OpenAI-compatible) via script `see.py` untuk inspeksi gambar, diagram sistem, dan tangkapan layar.
+- **`vision-multimodal`** (`.agents/skills/vision-multimodal/SKILL.md`): Analisis dokumen/PDF, perbandingan multi-gambar, ekstraksi tabel/teks, dan interpretasi visual berbasis Claude multimodal.
+- **`qianwen-vision`** (`.agents/skills/qianwen-vision/SKILL.md`): Pemahaman visual mendalam dan ekstraksi teks berpresisi tinggi berbasis model Qwen VL / QVQ (`analyze.py`, `reason.py`, `ocr.py`) untuk analisis visual, video, dan penalaran bertahap (chain-of-thought).
+
+
 
 

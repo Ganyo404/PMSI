@@ -30,5 +30,7 @@ Sebagai AI Agent dalam project Manajemen Sistem Informasi (MSI), Anda harus sela
 26. **Pertahankan Single Source of Truth Fisik & SLiMS**: Ketika terjadi disparitas antara respon Google Form dan fisik buku, otoritas kebenaran mutlak selalu dipegang oleh pemindaian fisik barcode langsung ke database lokal SLiMS 9 Bulian.
 27. **Integrasikan Animasi & Motion Graphics Terprogram (*Hyperframes*)**: Gunakan ekosistem skill `hyperframes` (animation, creative, keyframes, core, audio, studio, cli, media-use) saat merancang demonstrasi visual interaktif, simulasi alur sistem, maupun materi presentasi video responsi praktikum.
 28. **Tegakkan Desain Antarmuka Anti-Slop (*Uizze UI/UX*)**: Terapkan standar skill `ui-design`, `anti-ui-slop`, `ui-radar`, dan `image-to-ui` untuk membasmi elemen antarmuka generik, memperkuat hierarki visual, serta memastikan seluruh state kontrol antarmuka terdefinisi secara matang.
+29. **Utilisasi Penglihatan & Pemrosesan Multimodal (*Vision & Multimodal*)**: Gunakan skill `vision`, `vision-multimodal`, dan `qianwen-vision` ketika menganalisis dokumen fisik perpustakaan, tangkapan layar antarmuka SLiMS, denah tata ruang sirkulasi, formulir transit, diagram arsitektur, atau bukti fisik lapangan lainnya melalui OCR dan penalaran visual.
+
 
 
