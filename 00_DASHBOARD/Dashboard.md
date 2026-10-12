@@ -30,6 +30,8 @@ Materi, panduan, dan CPMK perkuliahan dari Dr. Ratna Wardani:
 - **Modul 5:** [[Modul 5|Modul 5: Penetapan Peran Tim & Model Kolaborasi (RACI)]]
 - **Modul 6:** [[Modul 6|Modul 6: Strategi Implementasi SI & Manajemen Perubahan]]
 - **Modul 7:** [[Modul 7|Modul 7: Penjadwalan Proyek (WBS, Gantt & PERT Chart)]]
+- **Modul 8:** [[Modul 8|Modul 8: Perancangan Alur Pengguna dan Wireframe Sistem Informasi]]
+- **Modul 9:** [[Modul 9|Modul 9: Penyusunan Mockup Interaktif Sistem Informasi]]
 
 ---
 
@@ -42,6 +44,8 @@ Artefak resmi akumulatif Kelompok 3 (Gantar, Ganendra, Fadlan):
 - **Pertemuan 5:** [[Praktikum_5_Kelompok3|Laporan 5: Grand Design & Matriks RACI Alur Informasi]]
 - **Pertemuan 6:** [[Praktikum_6_Kelompok3|Laporan 6: Arsitektur 4 Layer & Strategi Implementasi Hybrid]]
 - **Pertemuan 7:** [[Praktikum_7_Kelompok3|Laporan 7: WBS, Gantt Chart & Analisis Jalur Kritis (PERT)]]
+- **Pertemuan 8:** [[Praktikum_8_Kelompok3|Laporan 8: Alur Pengguna & Wireframe Sistem Informasi]]
+- **Pertemuan 9:** [[Praktikum_9_Kelompok3|Laporan 9: Mockup Interaktif Berfidelitas Tinggi]]
 
 ---
 
