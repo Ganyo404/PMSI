@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "qianwen-vision": {
+      "source": "qianwen-ai/qianwen-ai",
+      "sourceType": "github",
+      "skillPath": "skills/vision/qianwen-vision/SKILL.md",
+      "computedHash": "8b524f4eba669e0d8bdb08185d70777ad92651b684e982a33ac116f5d442854c"
+    },
+    "vision": {
+      "source": "kotot/vision",
+      "sourceType": "github",
+      "skillPath": "vision/SKILL.md",
+      "computedHash": "3ff0bf6adbaccca4bfc25ce795c252fcd683b795f248d138249e34ede3aa4a7f"
+    },
+    "vision-multimodal": {
+      "source": "thelobbi/claude",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vision-multimodal/SKILL.md",
+      "computedHash": "443b51281d1e17e27dda5b26b9928c84671f2c80b1c40a4d63afb0c2160a7347"
+    }
+  }
+}
