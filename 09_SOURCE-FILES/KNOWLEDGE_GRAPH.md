@@ -40,11 +40,25 @@ graph TD
     REF2["[[Glosarium_Perpustakaan]]"]
     AGN["[[TRAINING_PLAYBOOK]]"]
 
-    %% Literatur Ilmiah Eksternal
-    J1["Anton Risparyanto 2014<br/>(SK Menpan 132/2002)"]
-    J2["Dwiatri Kusumaningrum 2016<br/>(Lingkungan Kerja & Kepuasan)"]
-    J3["Rina Kusharyanti 2023<br/>(Kepemimpinan & Kinerja)"]
-    J4["Rahman Effendi 2013<br/>(Kontinjensi & ISO 9001)"]
+    %% Modul Pembelajaran Teori MSI (Dr. Ratna Wardani)
+    TB1["[[Bab_1_Manajemen_Sistem_Informasi_dalam_Organisasi|Bab 1 Teori: Sosio-Teknis & Peran CIO]]"]
+    TB2["[[Bab_2_Data_dan_Pengambilan_Keputusan|Bab 2 Teori: Fitness for Use & Lineage]]"]
+    TB3["[[Bab_3_Proses_Bisnis_Stakeholder_dan_Nilai_Organisasi|Bab 3 Teori: End-to-End & Value Stream]]"]
+    TB4["[[Bab_4_Evaluasi_Alternatif_Solusi_dan_Keputusan_Investasi_SI|Bab 4 Teori: Build-Buy-Configure & TELOS]]"]
+    TB5["[[Bab_5_Tata_Kelola_Sistem_Informasi|Bab 5 Teori: 5 Domain & Archetypes]]"]
+    TB6["[[Bab_6_Kerangka_Governance_TI_ISO_dan_COBIT|Bab 6 Teori: ISO 38500 & COBIT 2019]]"]
+    TM7["[[Modul_7_Penjadwalan_Proyek_WBS_Gantt_PERT|Modul 7 Teori: WBS, Gantt & PERT]]"]
+
+    %% Studi Kasus & Kurikulum
+    CS1["[[Studi_Kasus_UPS_DIAD_IV|Kasus UPS: DIAD IV & Smart Labels]]"]
+    CS2["[[Studi_Kasus_NBA_Akamai|Kasus NBA: Akamai EdgeNetwork CDN]]"]
+    KUR["[[Dasar_Pengembangan_Kurikulum_Vokasional_Informatika|Kurikulum PTI: Paradigma OBE]]"]
+
+    %% Literatur Ilmiah Terakreditasi
+    J1["[[Jurnal_Motivasi_Pustakawan_UII_Risparyanto|Jurnal Risparyanto 2014 (SK Menpan 132/2002)]]"]
+    J2["[[Jurnal_Kepuasan_Kerja_Pustakawan_LIPI_Kusumaningrum|Jurnal Kusumaningrum 2016 (Lingkungan & Motivasi)]]"]
+    J3["[[Jurnal_Kepemimpinan_Lingkungan_Kinerja_Kusharyanti|Jurnal Kusharyanti 2023 (SmartPLS 3)]]"]
+    J4["[[Jurnal_Motivasi_Komputer_Trouble_ISO9001_Effendi|Jurnal Effendi 2013 (Komputer Trouble & ISO 9001)]]"]
 
     %% Findings
     F1["[[Ekosistem Informasi Perpustakaan FT]]"]
@@ -54,6 +68,9 @@ graph TD
     %% Relasi Dashboard
     DB --> L1 & L2 & L3 & L4 & L5 & L6 & L7
     DB --> M1 & M2 & M3 & M4 & M5 & M6 & M7
+    DB --> TB1 & TB2 & TB3 & TB4 & TB5 & TB6 & TM7
+    DB --> CS1 & CS2 & KUR
+    DB --> J1 & J2 & J3 & J4
     DB --> REF1 & REF2 & AGN
 
     %% Relationships Teori ke Laporan
@@ -64,6 +81,15 @@ graph TD
     M5 --> L5
     M6 --> L6
     M7 --> L7
+
+    %% Teori Perkuliahan ke Laporan
+    TB1 -.-> L1
+    TB2 -.-> L2
+    TB3 -.-> L3
+    TB4 -.-> L4
+    TB5 -.-> L5
+    TB6 -.-> L6
+    TM7 -.-> L7
 
     %% Relationships Alur Laporan Kumulatif
     L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
