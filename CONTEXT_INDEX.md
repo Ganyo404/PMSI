@@ -10,6 +10,7 @@ Gunakan file ini sebagai **Pintu Masuk (Entry Point)** untuk memahami keseluruha
 - **Timeline Proyek:** [[PROJECT_TIMELINE]]
 - **Peta Teori & Bukti:** [[THEORY_TO_EVIDENCE_MATRIX]]
 - **Peta Visual Relasi:** [[KNOWLEDGE_GRAPH]]
+- **Modul Teori MSI (Bab 1 s.d. 6):** [[Bab_1_Manajemen_Sistem_Informasi_dalam_Organisasi|Bab 1]] s.d. [[Bab_6_Kerangka_Governance_TI_ISO_dan_COBIT|Bab 6]]
 - **Data Perpustakaan SLiMS:** [[Data_Perpustakaan_FT_UNY]]
 - **Glosarium MSI:** [[Glosarium_Perpustakaan]]
 - **Master Training Playbook:** [[TRAINING_PLAYBOOK]]
@@ -30,6 +31,7 @@ Bagi Anda (dan subagent) yang sedang bertugas, patuhi aturan pembacaan berikut:
 1. **Jangan Scan Direktori Sembarangan**: Mulailah selalu dari `CONTEXT_INDEX.md` ini atau [[Dashboard]].
 2. **Telusuri Sesuai Kebutuhan (Progressive Disclosure)**: 
    - Jika ingin membahas solusi/SOP, baca [[Rancang SOP Sistem Informasi|FIND-009]] atau Laporan tahap akhir ([[Praktikum_5_Kelompok3]], [[Praktikum_6_Kelompok3]]). 
-   - Jika ingin mengetahui teori modul, baca [[Modul 1]] s.d. [[Modul 7]].
+   - Jika ingin mengetahui teori modul praktikum, baca [[Modul 1]] s.d. [[Modul 7]].
+   - Jika ingin mendalami kerangka teoretis kuliah dosen, baca [[Bab_1_Manajemen_Sistem_Informasi_dalam_Organisasi]] s.d. [[Bab_6_Kerangka_Governance_TI_ISO_dan_COBIT]].
    - Jika ingin melihat arahan dosen, baca [[catatan_1]] s.d. [[catatan_4]].
 3. **Prioritaskan Hasil Observasi Riil**: Gunakan file wawancara [[Jawaban3_Final|WAW-001]] dan [[Jawaban_Wawancara (2)|WAW-002]] sebagai argumen faktual empiris.

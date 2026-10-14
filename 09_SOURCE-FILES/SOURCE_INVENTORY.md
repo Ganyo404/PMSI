@@ -59,13 +59,23 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 
 ---
 
-## 05_REFERENSI (Profil SLiMS, Glosarium & 4 Jurnal Ilmiah Terakreditasi - 6 Berkas)
+## 05_REFERENSI (Profil SLiMS, Glosarium, Modul Teori, Kasus & Jurnal - 16 Berkas)
 - [x] **SRC-REF-01**: [[Data_Perpustakaan_FT_UNY]] (Profil SLiMS Web Portal Perpustakaan FT UNY, OPAC & Klasifikasi DDC)
 - [x] **SRC-REF-02**: [[Glosarium_Perpustakaan]] (Glosarium Terminologi SLiMS, Sirkulasi, Bibliografi & Tata Kelola)
-- [x] **SRC-REF-03**: `12665-Article Text-23765-28464-10-20190523.pdf` (Risparyanto, 2014: *Pengaruh Jabatan Fungsional Terhadap Motivasi Kerja Pustakawan: Studi Kasus di UII*, SK Menpan 132/2002 & SNI 7329:2009)
-- [x] **SRC-REF-04**: `273-559-1-SM.pdf` (Kusumaningrum, Yudhanto, & Yoganingrum, 2016: *Korelasi Antarfaktor Kepuasan Kerja Pustakawan: Studi Kasus LIPI*, Analisis Lingkungan Kerja Fisik/Non-Fisik)
-- [x] **SRC-REF-05**: `27_nij-review-assignment-27-Article+Text-38_93-102.pdf` (Kusharyanti, Ridwan, & Sofiansyah, 2023: *Pengaruh Kepemimpinan dan Lingkungan Kerja Terhadap Kinerja Pegawai BPSDM*, Evaluasi Kinerja Robbins)
-- [x] **SRC-REF-06**: `2997-5578-1-SM.pdf` (Effendi, Murtiningsih, & Rohmiyati, 2013: *Motivasi Kerja Pustakawan di Badan Perpustakaan Kaltim*, Mitigasi Gangguan Komputer & Standar ISO 9001)
+- [x] **SRC-REF-03**: [[Bab_1_Manajemen_Sistem_Informasi_dalam_Organisasi]] | `Presentation #1.pdf` (Dr. Ratna Wardani: Bab 1 Teori MSI, Sistem Sosio-Teknis & Peran CIO)
+- [x] **SRC-REF-04**: [[Bab_2_Data_dan_Pengambilan_Keputusan]] | `Data dan Pengambilan Keputusan.pdf` (Dr. Ratna Wardani: Bab 2 Teori MSI, Fitness for Use & Focal Decision)
+- [x] **SRC-REF-05**: [[Bab_3_Proses_Bisnis_Stakeholder_dan_Nilai_Organisasi]] | `Bab 3.pdf` (Dr. Ratna Wardani: Bab 3 Teori MSI, End-to-End Process & Value Stream)
+- [x] **SRC-REF-06**: [[Bab_4_Evaluasi_Alternatif_Solusi_dan_Keputusan_Investasi_SI]] | `Bab 4.pdf` (Dr. Ratna Wardani: Bab 4 Teori MSI, Build-Buy-Configure, TELOS & TCO)
+- [x] **SRC-REF-07**: [[Bab_5_Tata_Kelola_Sistem_Informasi]] | `Bab 5.pdf` (Dr. Ratna Wardani: Bab 5 Teori MSI, 5 Domain Weill & Ross & Archetypes)
+- [x] **SRC-REF-08**: [[Bab_6_Kerangka_Governance_TI_ISO_dan_COBIT]] | `ISO dan COBIT.pdf` (Dr. Ratna Wardani: Bab 6 Teori MSI, ISO/IEC 38500:2024 & COBIT 2019)
+- [x] **SRC-REF-09**: [[Modul_7_Penjadwalan_Proyek_WBS_Gantt_PERT]] | `Modul 7.pdf` (Dr. Ratna Wardani: Modul 7 Penjadwalan Proyek, WBS, Gantt & PERT)
+- [x] **SRC-REF-10**: [[Studi_Kasus_UPS_DIAD_IV]] | `Ch1_Case1.pdf` (Laudon & Laudon: Kasus UPS Global Operations with the DIAD IV)
+- [x] **SRC-REF-11**: [[Studi_Kasus_NBA_Akamai]] | `Ch3_Case1.pdf` (Laudon & Laudon: Kasus NBA Global Streaming Delivery with Akamai OS)
+- [x] **SRC-REF-12**: [[Dasar_Pengembangan_Kurikulum_Vokasional_Informatika]] | `Dasar_Pengembangan_Kurikulum_Vokasional_Informatika.pdf` (Ponco Walipranoto: Kurikulum Vokasional PTI FT UNY, Paradigma OBE & 148 SKS)
+- [x] **SRC-REF-13**: [[Jurnal_Motivasi_Pustakawan_UII_Risparyanto]] | `12665-...pdf` (Risparyanto, 2014: *Pengaruh Jabatan Fungsional Terhadap Motivasi Kerja Pustakawan UII*)
+- [x] **SRC-REF-14**: [[Jurnal_Kepuasan_Kerja_Pustakawan_LIPI_Kusumaningrum]] | `273-...pdf` (Kusumaningrum et al., 2016: *Korelasi Antarfaktor Kepuasan Kerja Pustakawan LIPI*)
+- [x] **SRC-REF-15**: [[Jurnal_Kepemimpinan_Lingkungan_Kinerja_Kusharyanti]] | `27_nij-...pdf` (Kusharyanti et al., 2023: *Pengaruh Kepemimpinan dan Lingkungan Kerja terhadap Kinerja Pegawai*)
+- [x] **SRC-REF-16**: [[Jurnal_Motivasi_Komputer_Trouble_ISO9001_Effendi]] | `2997-...pdf` (Effendi et al., 2013: *Motivasi Pustakawan Menghadapi Komputer Trouble & Standar ISO 9001*)
 
 ---
 

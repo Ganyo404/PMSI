@@ -89,13 +89,28 @@ Analisis mendalam, formulasi SOP, dan arsitektur tata kelola:
 ---
 
 ## 📖 7. Data Profil & Referensi Eksternal (05_REFERENSI)
-Data pendukung profil web, glosarium, dan literatur ilmiah terakreditasi:
-- **Profil Web SLiMS:** [[Data_Perpustakaan_FT_UNY|Data Profil Perpustakaan FT UNY (SLiMS Web, OPAC & DDC)]]
-- **Glosarium:** [[Glosarium_Perpustakaan|Glosarium Terminologi Perpustakaan, OPAC & SLiMS]]
-- **Jurnal Ilmiah 1 (SDM & Fungsional):** `12665-...pdf` (Anton Risparyanto, 2014: *Motivasi Kerja Pustakawan, SK Menpan 132/2002 & SNI 7329:2009*)
-- **Jurnal Ilmiah 2 (Lingkungan Kerja & Kepuasan):** `273-...pdf` (Dwiatri Kusumaningrum et al., 2016: *Korelasi Lingkungan Kerja Fisik/Non-Fisik & Kepuasan Pustakawan LIPI*)
-- **Jurnal Ilmiah 3 (Kepemimpinan & Kinerja):** `27_nij-...pdf` (Rina Kusharyanti et al., 2023: *Pengaruh Kepemimpinan Struktural & Servicescape terhadap Kinerja*)
-- **Jurnal Ilmiah 4 (Kontinjensi Komputer & ISO):** `2997-...pdf` (Rahman Effendi et al., 2013: *Motivasi Pustakawan Menghadapi Komputer Trouble & ISO 9001*)
+Data pendukung profil web, glosarium, modul teori dosen, studi kasus internasional, dan literatur ilmiah terakreditasi:
+- **Profil Web & Glosarium:**
+  - [[Data_Perpustakaan_FT_UNY|Data Profil Perpustakaan FT UNY (SLiMS Web, OPAC & DDC)]]
+  - [[Glosarium_Perpustakaan|Glosarium Terminologi Perpustakaan, OPAC & SLiMS]]
+- **Modul Pembelajaran Teori MSI (Dr. Ratna Wardani):**
+  - [[Bab_1_Manajemen_Sistem_Informasi_dalam_Organisasi|Bab 1: Manajemen Sistem Informasi dalam Organisasi (Sosio-Teknis, Nilai SI & Peran CIO)]]
+  - [[Bab_2_Data_dan_Pengambilan_Keputusan|Bab 2: Data, Informasi, Pengetahuan, dan Keputusan (Fitness for Use, Lineage & Focal Decision)]]
+  - [[Bab_3_Proses_Bisnis_Stakeholder_dan_Nilai_Organisasi|Bab 3: Proses Bisnis, Stakeholder, dan Nilai Organisasi (End-to-End, Handoff & Value Chain)]]
+  - [[Bab_4_Evaluasi_Alternatif_Solusi_dan_Keputusan_Investasi_SI|Bab 4: Evaluasi Alternatif Solusi & Investasi SI (Build-Buy-Configure, TELOS Feasibility & TCO)]]
+  - [[Bab_5_Tata_Kelola_Sistem_Informasi|Bab 5: Tata Kelola Sistem Informasi (5 Domain Weill & Ross, Archetype, Decision Rights & Accountability)]]
+  - [[Bab_6_Kerangka_Governance_TI_ISO_dan_COBIT|Bab 6: Kerangka Governance TI: ISO/IEC 38500:2024 (6 Prinsip, Siklus EDM) & COBIT 2019]]
+  - [[Modul_7_Penjadwalan_Proyek_WBS_Gantt_PERT|Modul 7: Penjadwalan Proyek Sistem Informasi (WBS, Gantt Chart & Analisis Jalur Kritis PERT)]]
+- **Studi Kasus Internasional (Kenneth C. Laudon & Jane P. Laudon):**
+  - [[Studi_Kasus_UPS_DIAD_IV|Studi Kasus UPS: Operasi Global dengan DIAD IV & Smart Labels]]
+  - [[Studi_Kasus_NBA_Akamai|Studi Kasus NBA: Bersaing melalui Pengiriman Konten Global dengan Akamai OS Streaming]]
+- **Kurikulum Pendidikan Vokasional Informatika FT UNY (Ponco Walipranoto):**
+  - [[Dasar_Pengembangan_Kurikulum_Vokasional_Informatika|Dasar Pengembangan Kurikulum Pendidikan Vokasional Informatika FT UNY (OBE, CPL & Struktur 148 SKS)]]
+- **Literatur Ilmiah Terakreditasi (Pustakawan, Lingkungan Kerja & Standar Mutu):**
+  - [[Jurnal_Motivasi_Pustakawan_UII_Risparyanto|Jurnal Ilmiah 1: Pengaruh Jabatan Fungsional Terhadap Motivasi Pustakawan UII (Risparyanto, 2014)]]
+  - [[Jurnal_Kepuasan_Kerja_Pustakawan_LIPI_Kusumaningrum|Jurnal Ilmiah 2: Korelasi Antarfaktor Kepuasan Kerja Pustakawan LIPI (Kusumaningrum et al., 2016)]]
+  - [[Jurnal_Kepemimpinan_Lingkungan_Kinerja_Kusharyanti|Jurnal Ilmiah 3: Pengaruh Kepemimpinan dan Lingkungan Kerja terhadap Kinerja Pegawai (Kusharyanti et al., 2023)]]
+  - [[Jurnal_Motivasi_Komputer_Trouble_ISO9001_Effendi|Jurnal Ilmiah 4: Motivasi Kerja Pustakawan Menghadapi Komputer Trouble & Standar ISO 9001 (Effendi et al., 2013)]]
 
 
 ---
