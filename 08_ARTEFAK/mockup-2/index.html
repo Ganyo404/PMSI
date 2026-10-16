@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPEL-KOLEKSI FT UNY | Tata Kelola Pemutakhiran Koleksi</title>
+  <meta name="description" content="Layanan mandiri pemutakhiran koleksi perpustakaan FT UNY: lapor buku rusak tanpa antre, meja kerja pustakawan, dan laporan mutu sumber belajar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Topbar Header -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">FT</span>
+      <div>
+        <h1 class="brand-name">SIMPEL-KOLEKSI</h1>
+        <p class="brand-sub">Perpustakaan Fakultas Teknik UNY</p>
+      </div>
+    </div>
+
+    <!-- Role Switcher (Simple & Human-Friendly) -->
+    <nav class="role-switch" aria-label="Menu Utama">
+      <button type="button" class="role-btn is-active" data-view="slip" id="navSlip" aria-pressed="true">
+        <span>📖 Lapor Buku</span>
+      </button>
+      <button type="button" class="role-btn" data-view="workbench" id="navWorkbench" aria-pressed="false">
+        <span>📋 Meja Kerja Pustakawan</span>
+        <span class="count" id="navPending">0</span>
+      </button>
+      <button type="button" class="role-btn" data-view="pimpinan" id="navPimpinan" aria-pressed="false">
+        <span>📊 Laporan Mutu</span>
+      </button>
+      <button type="button" class="role-btn" data-view="signage" id="navSignage" aria-pressed="false">
+        <span>📍 Petunjuk Rak</span>
+      </button>
+    </nav>
+
+    <div class="proto-note">
+      <span>Layanan Mandiri Bebas Antrean Loket</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ VIEW 1: FORM LAPOR PEMUSTAKA (SUPER CLEAN CENTERED) ============ -->
+    <section class="view is-active" id="view-slip" aria-labelledby="slipTitle">
+      <div class="slip-centered-wrap">
+
+        <!-- Clean Header -->
+        <div class="slip-header">
+          <div class="slip-badge">
+            <span class="slip-badge-dot"></span>
+            <span>Layanan Cepat Tanpa Antre di Loket</span>
+          </div>
+          <h2 id="slipTitle">Lapor Buku Bermasalah</h2>
+          <p>
+            Menemukan buku rusak, sobek, halaman hilang, atau salah tempat? Laporkan dalam waktu kurang dari 1 menit. Buku cukup ditaruh di rak penampungan tanpa perlu antre di meja sirkulasi.
+          </p>
+        </div>
+
+        <!-- The Focused Form Card -->
+        <form class="slip-card" id="slipForm" novalidate>
+          
+          <!-- Unified Smart Book Input -->
+          <div class="form-group">
+            <label for="fBookInput" class="form-label">
+              <span>Buku yang Dilaporkan</span>
+              <small>Ketik barcode stiker atau judul buku</small>
+            </label>
+            <div class="input-with-icon">
+              <span class="input-icon">🔍</span>
+              <input type="text" id="fBookInput" placeholder="cth. B004125 atau Rangkaian Listrik..." autocomplete="off">
+            </div>
+            
+            <!-- Quick Chips for Testing Demo -->
+            <div class="demo-chips">
+              <span>Coba cepat:</span>
+              <button type="button" class="demo-chip-btn" data-fill="B004125">B004125 (Java)</button>
+              <button type="button" class="demo-chip-btn" data-fill="B003318">B003318 (Listrik)</button>
+              <button type="button" class="demo-chip-btn" data-fill="Kalkulus Edisi 9">Kalkulus Edisi 9</button>
+            </div>
+            
+            <!-- Hidden backward-compat fields -->
+            <input type="hidden" id="fBarcode">
+            <input type="hidden" id="fJudul">
+            <p class="field-error" id="errBook" hidden>⚠️ Mohon isi nomor barcode stiker atau judul buku.</p>
+          </div>
+
+          <!-- Issue Choices (2x2 Compact Grid) -->
+          <div class="form-group">
+            <label class="form-label">
+              <span>Apa Kendala yang Ditemukan?</span>
+              <small>Pilih salah satu kendala di bawah</small>
+            </label>
+            
+            <div class="issue-grid-2x2">
+              <label class="issue">
+                <input type="radio" name="issue" value="robek">
+                <span class="issue-body">
+                  <span class="issue-indicator"></span>
+                  <span class="issue-text">
+                    <span class="issue-title">📖 Halaman Sobek / Sampul</span>
+                    <span class="issue-hint">Perlu perbaikan fisik</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="issue">
+                <input type="radio" name="issue" value="halaman">
+                <span class="issue-body">
+                  <span class="issue-indicator"></span>
+                  <span class="issue-text">
+                    <span class="issue-title">📄 Ada Halaman Hilang</span>
+                    <span class="issue-hint">Halaman lepas / hilang</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="issue">
+                <input type="radio" name="issue" value="salahrak">
+                <span class="issue-body">
+                  <span class="issue-indicator"></span>
+                  <span class="issue-text">
+                    <span class="issue-title">🔀 Buku di Rak yang Salah</span>
+                    <span class="issue-hint">Nomor panggil salah lorong</span>
+                  </span>
+                </span>
+              </label>
+
+              <label class="issue">
+                <input type="radio" name="issue" value="tidakada">
+                <span class="issue-body">
+                  <span class="issue-indicator"></span>
+                  <span class="issue-text">
+                    <span class="issue-title">🔍 Tidak Ada di Rak (Kosong)</span>
+                    <span class="issue-hint">Tercatat ada, tapi fisik nihil</span>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <p class="field-error" id="errIssue" hidden>⚠️ Mohon pilih salah satu kendala buku.</p>
+          </div>
+
+          <!-- Location & Photo in One Compact Row -->
+          <div class="form-row-duo">
+            <div class="form-col">
+              <label for="fLokasi" class="form-label-compact">Lokasi Ditemukan <em>(Opsional)</em></label>
+              <input type="text" id="fLokasi" placeholder="cth. Meja baca dekat jendela">
+            </div>
+
+            <div class="form-col">
+              <label class="form-label-compact">Foto Kondisi Buku <em>(Opsional)</em></label>
+              <label for="fFoto" class="custom-file-upload-compact">
+                <span id="fileUploadStatus">📸 Pilih Foto</span>
+              </label>
+              <input type="file" id="fFoto" accept="image/*" class="file-input">
+            </div>
+          </div>
+
+          <!-- Optional Collapsible Identity -->
+          <details class="identity-compact">
+            <summary>+ Tambahkan Nama / NIM <em>(Opsional — Boleh Dikosongkan)</em></summary>
+            <div class="identity-fields">
+              <input type="text" id="fNim" placeholder="NIM Pemustaka" inputmode="numeric" autocomplete="off">
+              <input type="text" id="fNama" placeholder="Nama Lengkap" autocomplete="off">
+            </div>
+            <p class="identity-note">
+              ℹ️ Identitas hanya untuk klarifikasi letak buku jika dibutuhkan. Anda tidak akan dikenakan sanksi/denda atas kerusakan.
+            </p>
+          </details>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-primary btn-submit-full" id="btnKirim">
+            Kirim Laporan &amp; Dapatkan Arahan Rak 🚀
+          </button>
+        </form>
+
+        <!-- Generated Drop Pass (Success State) -->
+        <article class="drop-pass" id="dropPass" hidden aria-live="polite">
+          <div class="pass-stamp">
+            <span>✓ Laporan Berhasil Dikirim!</span>
+            <span id="passDate"></span>
+          </div>
+
+          <p class="pass-label">Nomor Tiket Anda</p>
+          <p class="pass-id" id="passId">TKT-0000</p>
+          <p class="pass-book" id="passBook"></p>
+
+          <div class="pass-instruction" id="passWithBook">
+            <svg class="rack-mini" viewBox="0 0 160 120" role="img" aria-label="Diagram Rak Penampungan">
+              <rect x="10" y="8" width="140" height="104" fill="none" stroke="currentColor" stroke-width="3"/>
+              <line x1="10" y1="60" x2="150" y2="60" stroke="currentColor" stroke-width="3"/>
+              <rect x="14" y="14" width="132" height="42" class="rack-hl"/>
+              <text x="80" y="38" text-anchor="middle" class="rack-txt strong">Tingkat 2 (Atas): Taruh di Sini</text>
+              <text x="80" y="90" text-anchor="middle" class="rack-txt">Tingkat 1 (Bawah): Selesai Dibaca</text>
+            </svg>
+            <p>
+              Silakan letakkan buku di <strong>Rak Penampungan (Tingkat 2 / Rak Atas)</strong> di dekat pintu masuk perpustakaan. Anda tidak perlu mengantre di meja sirkulasi.
+            </p>
+          </div>
+
+          <div class="pass-instruction" id="passNoBook" hidden>
+            <p>
+              ✓ <strong>Tidak ada buku fisik yang perlu dibawa.</strong> Laporan stok kosong sudah masuk ke antrean pengecekan pustakawan.
+            </p>
+          </div>
+
+          <p class="pass-sla">⏱️ Pustakawan akan mengecek fisik maksimal 3 hari kerja dan memperbarui status katalog maksimal 7 hari kerja.</p>
+          <button type="button" class="btn-ghost" id="btnLaporLagi">Lapor Buku Lain</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ VIEW 2: MEJA KERJA PUSTAKAWAN (FULL-WIDTH CLEAN DASHBOARD) ============ -->
+    <section class="view" id="view-workbench" aria-labelledby="wbTitle">
+      
+      <!-- Top Action Bar (Horizontal Toolbar Eliminating Cluttered Left Sidebar) -->
+      <div class="wb-toolbar">
+        
+        <!-- Left: Quiet Hour Sesi Timer -->
+        <div class="wb-toolbar-group">
+          <div class="qh-toolbar-widget" id="qhCard">
+            <span class="qh-icon">⏱️</span>
+            <div class="qh-text-wrap">
+              <span class="qh-label-mini">Sesi Verifikasi (Jumat)</span>
+              <span class="qh-timer-mini" id="qhTimer">60:00</span>
+            </div>
+            <button type="button" class="btn-qh-mini" id="btnQH">Mulai Sesi</button>
+          </div>
+        </div>
+
+        <!-- Center: Kapasitas Rak Penampungan -->
+        <div class="wb-toolbar-group">
+          <div class="rack-pill" title="Koleksi bermasalah yang menunggu pengecekan fisik">
+            <span>📦 Rak Atas (Perlu Cek):</span>
+            <strong id="tier2Count">0</strong>
+          </div>
+          <div class="rack-pill" title="Koleksi normal selesai dibaca yang siap dikembalikan ke rak utama">
+            <span>📥 Rak Bawah (Normal):</span>
+            <strong id="tier1Count">7</strong>
+          </div>
+        </div>
+
+        <!-- Right: Filter Kategori DDC -->
+        <div class="wb-toolbar-group">
+          <div class="chip-row" id="ddcChips">
+            <button type="button" class="chip is-on" data-ddc="all">Semua</button>
+            <button type="button" class="chip" data-ddc="000">000 Komputer</button>
+            <button type="button" class="chip" data-ddc="500">500 Sains</button>
+            <button type="button" class="chip" data-ddc="600">600 Teknik</button>
+            <button type="button" class="chip" data-ddc="370">370 Vokasi</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full-Width Kanban Board (3 Spacious Columns) -->
+      <div class="wb-board-full">
+
+        <!-- Column 1: Rak Penampungan -->
+        <div class="board-col">
+          <header class="col-head">
+            <h3>
+              <span>1. Perlu Cek Fisik</span>
+              <span class="col-count" id="countRak">0</span>
+            </h3>
+            <p>Periksa buku di rak penampungan (Target: 3 hari)</p>
+          </header>
+          <div class="col-list" id="listRak"></div>
+        </div>
+
+        <!-- Column 2: Menunggu Update SLiMS -->
+        <div class="board-col">
+          <header class="col-head">
+            <h3>
+              <span>2. Perlu Update SLiMS</span>
+              <span class="col-count" id="countSlims">0</span>
+            </h3>
+            <p>Fisik cocok, ubah status di katalog (Target: 7 hari)</p>
+          </header>
+          <div class="col-list" id="listSlims"></div>
+        </div>
+
+        <!-- Column 3: Selesai -->
+        <div class="board-col is-done">
+          <header class="col-head">
+            <h3>
+              <span>3. Selesai (Sinkron)</span>
+              <span class="col-count" id="countDone">0</span>
+            </h3>
+            <p>Status di SLiMS dan kondisi fisik sudah sesuai</p>
+          </header>
+          <div class="col-list" id="listDone"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Slide-Over Drawer Modal for Ticket Details & Actions -->
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true">
+      <aside class="wb-drawer" id="wbDrawer" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+        
+        <header class="drawer-header">
+          <div>
+            <span class="dock-id" id="dId">TKT-XXXX</span>
+            <span class="drawer-subtitle" id="dSubtitle">Detail Laporan Koleksi</span>
+          </div>
+          <button type="button" class="drawer-close" id="drawerClose" aria-label="Tutup Detail">✕</button>
+        </header>
+
+        <div class="drawer-content">
+          <h3 class="dock-title" id="dTitle">Judul Buku</h3>
+
+          <dl class="dock-meta">
+            <div><dt>Barcode</dt><dd class="mono" id="dBarcode"></dd></div>
+            <div><dt>No. Panggil</dt><dd class="mono" id="dCall"></dd></div>
+            <div><dt>Kendala</dt><dd id="dIssue"></dd></div>
+            <div><dt>Lokasi Ditemukan</dt><dd id="dLokasi"></dd></div>
+            <div><dt>Pelapor</dt><dd id="dReporter"></dd></div>
+          </dl>
+
+          <!-- Step 1: Verification -->
+          <div class="dock-step" id="stepFisik">
+            <p class="step-title">Langkah 1: Verifikasi Fisik Buku</p>
+            <label class="check">
+              <input type="checkbox" id="cFound">
+              <span>Buku ditemukan di rak atas (atau rak diperiksa untuk laporan nihil)</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" id="cMatch">
+              <span>Kondisi fisik buku sesuai dengan laporan pemustaka</span>
+            </label>
+            <button type="button" class="btn-primary small" id="btnFisik" disabled>Tandai Fisik Sudah Dicek ✓</button>
+          </div>
+
+          <!-- Step 2: SLiMS Update -->
+          <div class="dock-step" id="stepSlims" hidden>
+            <p class="step-title">Langkah 2: Sinkronisasi Status di SLiMS</p>
+            <button type="button" class="btn-ghost small" id="btnCopy" style="margin-bottom: 10px;">📋 Salin Barcode Buku</button>
+            
+            <label for="dStatus" style="font-size: 11.5px; font-weight: 700; color: var(--text-muted); display: block;">Ubah Status Eksemplar di SLiMS Menjadi:</label>
+            <select id="dStatus">
+              <option value="Repair">Dalam Perbaikan (Repair)</option>
+              <option value="Missing">Hilang (Missing)</option>
+              <option value="Available">Tersedia, Sudah Dikembalikan ke Rak</option>
+              <option value="Weeding">Usulan Penghapusan (Weeding)</option>
+            </select>
+            <button type="button" class="btn-primary small" id="btnSlims">Simpan Status SLiMS ✓</button>
+          </div>
+
+          <!-- Finished Status Message -->
+          <div class="dock-done" id="stepDone" hidden>
+            <p>✓ Laporan Selesai. Status katalog SLiMS dan kondisi fisik buku sudah 100% selaras.</p>
+          </div>
+
+          <!-- Audit Trail Log -->
+          <div class="dock-log">
+            <p class="step-title">Riwayat Pengerjaan (Audit Trail)</p>
+            <ol id="dLog"></ol>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- ============ VIEW 3: LAPORAN MUTU KOLEKSI (PIMPINAN & AKREDITASI) ============ -->
+    <section class="view" id="view-pimpinan" aria-labelledby="pimTitle">
+      <div class="report">
+
+        <!-- Report Header -->
+        <header class="report-head">
+          <div>
+            <p class="report-kicker">Evaluasi Mutu Sumber Belajar &amp; Kesiapan Akreditasi</p>
+            <h2 id="pimTitle">Laporan Pemutakhiran Koleksi Semester Gasal 2026/2027</h2>
+          </div>
+          <div class="report-actions">
+            <button type="button" class="btn-ghost" id="btnExportLog">📥 Unduh Riwayat Laporan (CSV)</button>
+            <button type="button" class="btn-primary" id="btnExportProdi">📊 Unduh Data per Prodi (CSV)</button>
+          </div>
+        </header>
+
+        <!-- Executive KPI Grid (4 High-Level Cards) -->
+        <div class="kpi-grid">
+          <div class="kpi-card kpi-success">
+            <p class="kpi-title">Kepatuhan Waktu Penyelesaian</p>
+            <p class="kpi-value"><span id="kpiSlaPct">86</span>%</p>
+            <p class="kpi-sub">Target Standar Mutu: &ge; 85% Selesai &lt; 7 Hari</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-title">Rata-Rata Waktu Penanganan</p>
+            <p class="kpi-value"><span id="kpiSlaAvg">4.8</span> <small style="font-size: 16px; font-weight: 600;">Hari</small></p>
+            <p class="kpi-sub">Standar Maksimal: 7 Hari Kerja</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-title">Buku Selesai Dipulihkan</p>
+            <p class="kpi-value"><span id="kpiDoneCount">7</span></p>
+            <p class="kpi-sub">Data Kembali Akurat di Katalog</p>
+          </div>
+
+          <div class="kpi-card">
+            <p class="kpi-title">Rasio Eksemplar / Judul</p>
+            <p class="kpi-value">2.34 <small style="font-size: 16px; font-weight: 600;">eks/judul</small></p>
+            <p class="kpi-sub">Standar Borang Akreditasi LAM-INFOKOM</p>
+          </div>
+        </div>
+
+        <!-- SLA Progress Bar Block -->
+        <section class="report-block sla-block" aria-labelledby="slaTitle">
+          <div class="sla-text">
+            <h3 id="slaTitle">Kepatuhan Standar Waktu Penanganan Buku</h3>
+            <p class="sla-big"><span id="slaPct">0</span>% Laporan Tuntas Tepat Waktu</p>
+            <p class="sla-sub">
+              Dihitung dari <span id="slaN">0</span> laporan yang telah selesai diproses. Rata-rata durasi penyelesaian adalah <span id="slaAvg">0</span> hari kerja dari batas maksimal 7 hari kerja.
+            </p>
+          </div>
+          <div class="sla-meter" aria-hidden="true">
+            <div class="meter-track">
+              <div class="meter-fill" id="meterFill"></div>
+              <div class="meter-target" style="left:85%"><span>Target Akreditasi 85%</span></div>
+            </div>
+            <div class="meter-scale"><span>0%</span><span>50%</span><span>100%</span></div>
+          </div>
+        </section>
+
+        <!-- Borang LAM-INFOKOM Kriteria 5 Table -->
+        <section class="report-block" aria-labelledby="prodiTitle">
+          <div class="block-head">
+            <h3 id="prodiTitle">Data Koleksi per Program Studi (Standar LAM-INFOKOM Kriteria 5)</h3>
+            <p>Data sumber belajar terakreditasi diolah langsung dari metadata sirkulasi SLiMS tanpa penghitungan manual.</p>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table" id="prodiTable">
+              <thead>
+                <tr>
+                  <th scope="col">Program Studi</th>
+                  <th scope="col" class="num">Judul</th>
+                  <th scope="col" class="num">Eksemplar</th>
+                  <th scope="col" class="num">Peminjaman Semester</th>
+                  <th scope="col">Rasio Eksemplar / Judul</th>
+                  <th scope="col" class="num">Laporan Kerusakan</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Procurement & Issues Breakdown -->
+        <div class="report-split">
+          <section class="report-block" aria-labelledby="procTitle">
+            <div class="block-head">
+              <h3 id="procTitle">Rekomendasi Pemutakhiran Koleksi (Bahan Pimpinan)</h3>
+              <p>Buku dengan frekuensi peminjaman tinggi dan sering dilaporkan rusak sebagai bahan pertimbangan pengadaan di rapat pimpinan fakultas.</p>
+            </div>
+            <ol class="proc-list" id="procList"></ol>
+          </section>
+
+          <section class="report-block" aria-labelledby="issueTitle">
+            <div class="block-head">
+              <h3 id="issueTitle">Jenis Kendala yang Paling Sering Dilaporkan</h3>
+              <p>Berdasarkan laporan pemustaka pada semester berjalan.</p>
+            </div>
+            <ul class="issue-bars" id="issueBars"></ul>
+          </section>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ VIEW 4: PETUNJUK RAK PENAMPUNGAN ============ -->
+    <section class="view" id="view-signage" aria-labelledby="signTitle">
+      <div class="sign-layout">
+
+        <!-- Physical Signage Poster Frame -->
+        <div class="sign-poster" id="poster">
+          <header class="sign-head">
+            <p class="sign-code">PETUNJUK RAK</p>
+            <h2 id="signTitle">Rak Penampungan Buku</h2>
+            <p>Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta</p>
+          </header>
+
+          <div class="sign-tier tier-2">
+            <p class="tier-no">Tingkat 2 (Rak Atas)</p>
+            <div class="tier-2-body">
+              <div>
+                <h3>Khusus Buku Bermasalah</h3>
+                <p>Halaman sobek, sampul lepas, halaman hilang, atau salah lorong rak. Pindai kode QR, isi laporan singkat kurang dari 30 detik, lalu taruh bukunya di tingkat ini.</p>
+              </div>
+              <figure class="qr-box">
+                <svg id="qrSvg" viewBox="0 0 29 29" role="img" aria-label="QR Code Menuju Form Laporan"></svg>
+                <figcaption>Pindai untuk Lapor Buku</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="sign-tier tier-1">
+            <p class="tier-no">Tingkat 1 (Rak Bawah)</p>
+            <div>
+              <h3>Buku Selesai Dibaca di Tempat</h3>
+              <p>Buku kondisi normal yang telah selesai dibaca tanpa dipinjam. Pustakawan akan mengembalikannya ke rak utama saat penyisiran.</p>
+            </div>
+          </div>
+
+          <footer class="sign-foot">
+            Pemeriksaan fisik dilakukan setiap Jumat pagi pada sesi tenang (Quiet Hour). Nama dan NIM pada laporan boleh dikosongkan.
+          </footer>
+        </div>
+
+        <!-- Installation & Print Guide -->
+        <aside class="sign-notes">
+          <h3>Pedoman Pemasangan Fisik</h3>
+          <ul>
+            <li>Cetak ukuran <strong>A3</strong> untuk ditempel di sisi samping rak penampungan.</li>
+            <li>Cetak ukuran <strong>A5 akrilik</strong> untuk diletakkan di setiap meja baca mahasiswa.</li>
+            <li>Memanfaatkan rak buku yang sudah ada di perpustakaan tanpa biaya pengadaan baru.</li>
+            <li>Kode QR mengarah langsung ke formulir pelaporan online perpustakaan.</li>
+          </ul>
+          <button type="button" class="btn-primary" id="btnPrint" style="width: 100%;">🖨️ Cetak Poster Petunjuk Rak</button>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

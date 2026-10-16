@@ -24,12 +24,12 @@ Digunakan untuk:
 
 ---
 
-### 3. Self Audit Skill (QA/QC)
+### 3. Self Audit Skill (QA/QC & Constructive Dialectic)
 *(Native Antigravity Skill di `.agents/skills/self-audit/SKILL.md`)*
 Digunakan untuk:
 - Memeriksa laporan dan mewajibkan standar Diagram `mermaid`.
-- Protokol *Push-Back*: Menolak instruksi yang menyalahi pakem MSI atau menebak angka fiktif.
-- Memeriksa kelengkapan 7 Bagian wajib Laporan Praktikum.
+- Protokol Dialektika Konstruktif: Menelaah deviasi tata kelola secara kritis, mencegah angka fiktif, dan merekomendasikan solusi harmonisasi bersama pengguna tanpa resistensi kaku.
+- Memeriksa kelengkapan 7 Bagian wajib Laporan Praktikum dan rubrik nilai A Bu Ratna.
 
 ---
 
@@ -102,6 +102,7 @@ Digunakan untuk:
 - Menyiapkan tangkisan argumen resmi (*counter-arguments*) terhadap pertanyaan kritis dosen (Bu Ratna).
 - Pembagian peran suara saat presentasi kelompok (Gantar: SOP & Tata Kelola; Ganendra: Form & Pemustaka; Fadlan: SLiMS & Borang).
 - Mode simulasi interaktif responsi (*Grilling / Devil's Advocate Mode*).
+- Mode Sparring Kolaboratif: Brainstorming skenario sanggahan dan simulasi tanya-jawab santai berbobot sebelum masuk ke evaluasi dosen.
 
 ---
 
@@ -210,6 +211,12 @@ Digunakan untuk analisis gambar, dokumen/PDF, denah tata ruang, tangkapan layar 
 - **`vision-multimodal`** (`.agents/skills/vision-multimodal/SKILL.md`): Analisis dokumen/PDF, perbandingan multi-gambar, ekstraksi tabel/teks, dan interpretasi visual berbasis Claude multimodal.
 - **`qianwen-vision`** (`.agents/skills/qianwen-vision/SKILL.md`): Pemahaman visual mendalam dan ekstraksi teks berpresisi tinggi berbasis model Qwen VL / QVQ (`analyze.py`, `reason.py`, `ocr.py`) untuk analisis visual, video, dan penalaran bertahap (chain-of-thought).
 
+---
 
-
-
+### 23. Collaborative Brainstorming & Dynamic Co-Creation Skill
+*(Native Antigravity Skill di `.agents/skills/collaborative-brainstorming/SKILL.md`)*
+Digunakan untuk:
+- Mengubah interaksi agent menjadi mitra berpikir setara (*intellectual sparring partner*) yang aktif, hangat, dan sangat terbuka terhadap masukan pengguna (*radical receptivity*).
+- Menjalankan protokol 5 tahap penerimaan masukan (*Active Ingestion -> Yes-and Expansion -> Reality Calibration -> Multi-Option Menu -> Joint Decision*).
+- Memfasilitasi sesi brainstorming menggunakan metode SCAMPER, 6 Thinking Hats De Bono, Socratic Questioning, dan Reverse Brainstorming.
+- Menghadirkan menu alternatif spektrum (Konservatif, Hybrid Cerdas Rekomendasi, Roadmap Dekanat) saat mengevaluasi ide baru pengguna.

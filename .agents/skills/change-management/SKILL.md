@@ -87,6 +87,16 @@ flowchart TD
 
 ---
 
+## 🤝 SPARRING & BRAINSTORMING MITIGASI RESISTENSI DENGAN PENGGUNA
+
+Saat merancang bab manajemen perubahan atau menghadapi skenario penolakan pemangku kepentingan:
+1. **Simulasi Roleplay Pemangku Kepentingan**: Agent siap berperan sebagai Pustakawan skeptis atau Asesor akreditasi yang meragukan kepatuhan mahasiswa, sehingga pengguna dapat menguji argumen mitigasi sebelum dimasukkan ke dalam laporan resmi.
+2. **Eksplorasi Nudges & Insentif Non-Finansial**: Bersama pengguna mendiskusikan mekanisme penghargaan sosial (Duta Pemustaka, sertifikat digital otomatis, ucapan terima kasih di email) tanpa membebani kas fakultas.
+3. **Penerimaan Modifikasi Tahapan**: Jika pengguna ingin menyesuaikan urutan fase ADKAR atau durasi masa sosialisasi, Agent langsung mengkalibrasi jadwal dan instrumen komunikasinya.
+
+---
+
 ## 🔗 Navigasi Graf
-> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[problem-solving]] | [[enterprise-architecture]] | [[revisi]]
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[problem-solving]] | [[collaborative-brainstorming]] | [[enterprise-architecture]] | [[revisi]]
+
 

@@ -109,10 +109,10 @@
             <form class="mobile-form" id="formLaporan" onsubmit="submitLaporan(event)">
               <!-- Field 1: Identitas -->
               <div class="form-group">
-                <label>👤 Identitas Mahasiswa Pelapor</label>
+                <label>👤 Identitas Mahasiswa Pelapor <span style="font-size:0.8rem; font-weight:normal; color:var(--text-muted);">(Opsional / Sukarela)</span></label>
                 <div class="input-twin">
-                  <input type="text" id="inputNIM" placeholder="NIM (cth: 24050530038)" required oninput="updateLiveTicketPreview()">
-                  <input type="text" id="inputNama" placeholder="Nama Lengkap Mahasiswa" required oninput="updateLiveTicketPreview()">
+                  <input type="text" id="inputNIM" placeholder="NIM (Opsional, cth: 24050530038)" oninput="updateLiveTicketPreview()">
+                  <input type="text" id="inputNama" placeholder="Nama Mahasiswa (Opsional)" oninput="updateLiveTicketPreview()">
                 </div>
               </div>
 

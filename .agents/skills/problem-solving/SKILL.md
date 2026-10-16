@@ -113,5 +113,37 @@ Terapkan dekomposisi logika ini saat menulis Bab Kendala & Solusi pada setiap mo
 
 ---
 
+## 🌪️ 6. KERANGKA DIVERGENT-CONVERGENT DALAM BRAINSTORMING SOLUSI
+
+Saat membedah masalah baru bersama pengguna, Agent memisahkan dua fase berpikir secara tegas:
+
+```mermaid
+flowchart LR
+    subgraph DIVERGENT["1. FASE DIVERGEN (Melebarkan Spektrum)"]
+        D1["Brainstorming Liar"]
+        D2["SCAMPER Adaptations"]
+        D3["Analogi Lintas Sektor"]
+    end
+    subgraph CONVERGENT["2. FASE KONVERGEN (Menyaring & Menentukan)"]
+        C1["Filter Pure Governance"]
+        C2["TELOS Feasibility Test"]
+        C3["Matriks Trade-Off"]
+    end
+    DIVERGENT --> CONVERGENT
+```
+
+1. **Fase Divergen (Eksplorasi Terbuka Tanpa Penghakiman)**:
+   - Bersama pengguna melempar sebanyak mungkin kemungkinan skema perbaikan tata ruang, alur sirkulasi, dan format data.
+   - Tidak ada ide yang langsung dicap 'salah'; semua dicatat dan diperluas.
+2. **Fase Konvergen (Penyaringan Menggunakan TELOS Feasibility)**:
+   - **T (Technical)**: Apakah SLiMS 9 Bulian dan scanner USB mampu mendukungnya?
+   - **E (Economic)**: Apakah biayanya Rp 0,- (*Zero Budget*)?
+   - **L (Legal / Policy)**: Apakah sesuai dengan wewenang fakultas dan SK Dekan?
+   - **O (Operational)**: Apakah 1 pustakawan tunggal sanggup melaksanakannya tanpa stres?
+   - **S (Schedule)**: Apakah bisa diterapkan dalam tempo 1-2 minggu?
+
+---
+
 ## 🔗 Navigasi Graf
-> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[self-audit]] | [[enterprise-architecture]] | [[change-management]]
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[self-audit]] | [[collaborative-brainstorming]] | [[enterprise-architecture]] | [[change-management]]
+

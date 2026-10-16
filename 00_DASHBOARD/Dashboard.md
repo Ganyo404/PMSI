@@ -151,6 +151,8 @@ Pusat kapabilitas kecerdasan agen dalam tata kelola, arsitektur, visualisasi, da
 - **Pilar Pertahanan & Penutupan Eksekutif:**
   - [[defense-prep|Defense-Prep Skill: Bank Pertanyaan Kritis Bu Ratna & Simulasi Responsi]]
   - [[executive-synthesis|Executive-Synthesis Skill: Portofolio Akhir & 1-Page Summary Dekanat]]
+- **Pilar Kemitraan Kognitif & Brainstorming Kolaboratif:**
+  - [[collaborative-brainstorming|Collaborative-Brainstorming Skill: Reseptif Masukan, Socratic Sparring & Brainstorming Co-Pilot]]
 - **Pilar Visual & Multimodal Intelligence:**
   - [[vision|Vision Skill: Delegated Image Understanding & OCR]]
   - [[vision-multimodal|Vision-Multimodal Skill: Document/PDF & Visual Reasoning]]

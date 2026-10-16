@@ -42,143 +42,166 @@ tags:
 
 3. **Uraian Pelaksanaan Kegiatan**
 
-   Kegiatan identifikasi masalah pada Pertemuan 3 didasarkan pada hasil wawancara langsung yang dilakukan kelompok terhadap Pustakawan/Pengelola Perpustakaan Fakultas Teknik UNY. Hasil pengumpulan data empiris menunjukkan bahwa operasional Perpustakaan Fakultas Teknik UNY dikelola oleh satu orang pustakawan utama yang menangani beberapa fungsi layanan, yaitu sirkulasi, referensi, dan digital library, dengan bantuan sistem otomasi SLiMS (Senayan Library Management System).
+   Kegiatan identifikasi masalah pada Pertemuan 3 didasarkan pada hasil investigasi dan wawancara langsung terhadap Pustakawan Pengelola Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta (FT UNY). Hasil pengumpulan data empiris menunjukkan bahwa operasional perpustakaan dikelola oleh satu orang pustakawan utama yang menangani tiga fungsi layanan sekaligus, yaitu sirkulasi, referensi, dan digital library, dengan rata-rata kunjungan mencapai 52 pemustaka per hari, didukung sistem otomasi Senayan Library Management System (SLiMS).
 
-   
+   Dalam proses operasional harian, informasi mengenai kondisi koleksi diterima pustakawan melalui berbagai saluran, seperti laporan pemustaka di meja counter, pesan WhatsApp pribadi, maupun temuan pustakawan saat shelving dan pemeriksaan berkala. Informasi tersebut kemudian diperiksa secara fisik dan dicocokkan dengan data pada SLiMS sebelum pustakawan melakukan pembaruan status, lokasi, atau kondisi eksemplar koleksi.
 
-   Berdasarkan hasil wawancara, proses pemutakhiran informasi koleksi dilakukan ketika terdapat informasi dari pemustaka, temuan pustakawan, kegiatan shelving, pengembalian, maupun kegiatan pemeriksaan koleksi. Informasi tersebut kemudian diperiksa secara fisik dan dicocokkan dengan data pada SLiMS sebelum pustakawan melakukan pembaruan status, lokasi, atau informasi koleksi. 
+   Kelompok melakukan pemilahan konseptual secara tegas antara batasan operasional organisasi dengan akar masalah yang menjadi sasaran intervensi sistem informasi. Keterbatasan sumber daya manusia (satu orang pustakawan) diakui sebagai batasan kapasitas nyata (operational constraint), bukan akar masalah tata kelola. Akar masalah yang menjadi fokus Manajemen Sistem Informasi adalah ketiadaan tata kelola alur kerja dan sistem informasi yang terstandar untuk mengelola pekerjaan secara efektif dalam batasan kapasitas yang ada.
 
-   
+   Untuk menjaga akurasi analisis dan mencegah bias generalisasi, kelompok memetakan status dukungan bukti antara fakta empiris hasil wawancara dan hipotesis analisis kelompok sebagai berikut:
 
-   Kelompok mengidentifikasi bahwa permasalahan utama bukan terletak pada ketiadaan sistem informasi, tetapi pada proses tata kelola pemutakhiran informasi yang belum terstruktur. Berdasarkan hasil wawancara, belum terdapat SOP tertulis maupun jadwal khusus yang mengatur proses pemutakhiran status dan kondisi koleksi secara rutin. Proses pemutakhiran masih dilakukan berdasarkan kebiasaan dan kebutuhan serta harus menyesuaikan dengan kegiatan pelayanan perpustakaan. 
+| Pernyataan Kondisi Operasional | Status Bukti Lapangan | Rujukan Bukti Empiris |
+| :--- | :--- | :--- |
+| Satu pustakawan menangani tiga fungsi layanan sekaligus | Faktual (Didukung Wawancara) | Wawancara 2 & 3 (Q1, Q2) |
+| Belum ada SOP tertulis dan jadwal rutin pemutakhiran SLiMS | Faktual (Didukung Wawancara) | Wawancara 3 (Q3, Q4) |
+| Laporan kondisi koleksi masuk melalui berbagai media informal | Faktual (Didukung Wawancara) | Wawancara 3 (Q5, Q6) |
+| Catatan laporan tersebar di buku, kertas memo, dan WhatsApp | Faktual (Didukung Wawancara) | Wawancara 3 (Q7) |
+| Ketiadaan fasilitas fisik penampungan sementara sebelum shelving | Faktual (Didukung Observasi & Wawancara) | Wawancara 2 & 3 (Q8) |
+| Ketiadaan pencatatan riwayat penyelesaian formal (audit trail) | Faktual (Didukung Wawancara) | Wawancara 3 (Q10) |
+| Pemutakhiran tertunda memicu risiko penumpukan pekerjaan | Hipotesis Analisis Beralasan | Analisis Logika Sistemik Kelompok |
+| Standardisasi alur kerja mampu mengurangi beban kognitif pustakawan | Hipotesis Solusi Teruji | Kerangka Kerja Manajemen Sistem Informasi |
 
-   
+   Berdasarkan pemetaan tersebut, kelompok merumuskan empat masalah operasional utama yang saling berkorelasi dalam ekosistem perpustakaan:
+   1. **Fragmentasi Saluran Pelaporan dan Catatan Tercecer:** Laporan kondisi buku masuk melalui WhatsApp pribadi, penyampaian lisan di meja sirkulasi, serta catatan memo kertas terpisah, sehingga berisiko terlewat atau tidak tertindaklanjuti.
+   2. **Ketiadaan SOP Tertulis dan Jadwal Rutin Pemutakhiran SLiMS:** Proses pembaruan status eksemplar di SLiMS belum memiliki alokasi waktu terfokus dan prosedur baku, sehingga pemutakhiran data sering tertunda saat antrean pemustaka padat.
+   3. **Ketiadaan Fasilitas Fisik Penampungan Sementara (Buffer Zone) Terstandar:** Belum tersedia area atau rak penampungan sementara khusus untuk memisahkan buku yang baru dikembalikan atau bermasalah sebelum diverifikasi, sehingga buku menumpuk di meja counter atau berisiko salah letak di rak koleksi.
+   4. **Ketiadaan Audit Trail dan Rekam Jejak Penyelesaian Formal:** Tidak adanya rekaman terpusat mengenai riwayat laporan dan status tindak lanjut penanganan koleksi, sehingga monitoring operasional sulit dilakukan dan menyulitkan penyusunan laporan akreditasi program studi (LAM-INFOKOM Kriteria 5).
 
-   Selain itu, informasi mengenai kondisi koleksi dapat diterima melalui beberapa media, seperti penyampaian langsung, WhatsApp, maupun temuan pustakawan. Pencatatan awal juga masih dapat menggunakan catatan kertas, buku, WhatsApp, atau spreadsheet sederhana sehingga informasi belum sepenuhnya terpusat. Kondisi tersebut dapat menyebabkan proses pemeriksaan dan pembaruan data tertunda, terutama ketika pengelola harus memprioritaskan pelayanan kepada pemustaka. 
-
-   Berdasarkan kondisi tersebut, kelompok melakukan penelusuran akar masalah menggunakan teknik 5-Why dan memetakan faktor penyebab melalui Fishbone Diagram. Selanjutnya, masalah yang telah diidentifikasi dibandingkan menggunakan Matriks Prioritas berdasarkan Impact dan Effort untuk menentukan masalah yang paling relevan dan realistis dijadikan fokus proyek.
-
-   
-
-   
-
-   
-
-   
-
-   
+   Keempat masalah ini dianalisis menggunakan metode 5-Why untuk menemukan akar penyebab tata kelola, dipetakan menggunakan Fishbone Diagram, dan dinilai menggunakan Matriks Prioritas Impact vs Effort untuk menentukan fokus proyek yang realistis diselesaikan dalam satu semester.
 
 4. **Hasil/Artefak Praktikum**
 
 | Bagian | Isian | Sumber/Metode Perolehan Data |
 | :---- | :---- | :---- |
-| Daftar Masalah Teridentifikasi | **Pemutakhiran status dan kondisi koleksi sering terlambat.** Proses pembaruan tidak selalu dilakukan segera setelah informasi mengenai perubahan kondisi koleksi diterima karena pengelola harus membagi waktu antara pelayanan dan pengelolaan informasi.  **Informasi pada sistem berpotensi tidak sesuai dengan kondisi fisik terbaru.** Keterlambatan pemutakhiran menyebabkan data pada SLiMS dapat belum mencerminkan kondisi fisik koleksi yang sebenarnya.  **Pencatatan dan verifikasi informasi masih membutuhkan proses manual dan belum terpusat.** Informasi dapat diterima melalui penyampaian langsung, WhatsApp, maupun temuan pustakawan, sedangkan pencatatan awal dapat menggunakan kertas, buku, WhatsApp, atau spreadsheet sederhana.  **Belum terdapat SOP tertulis dan jadwal rutin untuk pemutakhiran status dan kondisi koleksi.** Proses pemutakhiran masih dilakukan berdasarkan kebiasaan dan kebutuhan serta menyesuaikan ketersediaan waktu pengelola.  |  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY, 8 September 2026, diperkuat wawancara lanjutan.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  Wawancara dengan pengelola Perpustakaan Fakultas Teknik UNY.  |
-| Masalah Terpilih untuk Analisis Akar | Masalah yang dipilih: Pembaruan data perpustakaan sering terlambat sehingga informasi yang tersedia tidak selalu sesuai dengan kondisi terbaru.Alasan pemilihan: Masalah ini dipilih karena memiliki hubungan langsung dengan kualitas informasi perpustakaan. Keterlambatan pemutakhiran dapat menyebabkan status atau informasi koleksi pada SLiMS belum sesuai dengan kondisi fisik terbaru. Selain itu, masalah ini memiliki akar penyebab yang dapat ditelusuri melalui aspek tata kelola proses, khususnya belum adanya SOP tertulis dan jadwal rutin untuk pemutakhiran informasi.  | Diskusi kelompok berdasarkan hasil wawancara dan evidence yang telah diidentifikasi. |
-| Hasil Analisis Akar Masalah (5-Why) | Masalah: pembaruan data sering terlambat.Why 1: proses input dilakukan bertahap menyesuaikan waktu pelayanan.Why 2: satu orang pengelola menangani tiga layanan sekaligus.Why 3: struktur pengelolaan hanya memiliki satu pustakawan utama.Why 4: beban kerja membuat input dan pemutakhiran data tidak selalu tepat waktu. | Teknik 5-Why ditelusuri dari jawaban wawancara dengan pengelola perpustakaan. |
-| Matriks Prioritas Masalah | 1\. Pembaruan data sering terlambat : Impact 5, Effort 3, Prioritas 12\. Data tidak sesuai kondisi sebenarnya : Impact 5, Effort 4, Prioritas 23\. Pencarian/verifikasi data manual : Impact 4, Effort 3, Prioritas 34\. Data belum sepenuhnya terintegrasi : Impact 4, Effort 5, Prioritas 4 | Penilaian kelompok berdasarkan dampak (impact) dan upaya (effort) penyelesaian masalah. |
-| Pernyataan Masalah Prioritas Akhir | Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran data karena waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu memerlukan pengecekan atau verifikasi manual.  | Sintesis kelompok dari seluruh tahapan analisis. |
+| **Daftar Masalah Teridentifikasi** | 1. **Fragmentasi Saluran Pelaporan dan Catatan Tercecer:** Laporan pemustaka masuk melalui WhatsApp pribadi, lisan di loket, dan memo kertas yang tidak terpusat.<br>2. **Ketiadaan SOP Tertulis dan Jadwal Rutin Pemutakhiran SLiMS:** Pembaruan status koleksi tertunda karena dilakukan secara insidental tanpa alokasi waktu terfokus.<br>3. **Ketiadaan Fasilitas Fisik Penampungan Sementara (Buffer Zone):** Buku kembali dan buku bermasalah menumpuk di meja pustakawan atau salah letak di rak sebelum sempat diverifikasi.<br>4. **Ketiadaan Audit Trail dan Rekam Jejak Penyelesaian Formal:** Status penyelesaian laporan hanya berada pada ingatan pustakawan, tanpa log riwayat untuk pemantauan dan akreditasi. | Wawancara Pustakawan FT UNY (8 September 2026), diperkuat wawancara lanjutan dan observasi alur kerja fisik. |
+| **Masalah Terpilih untuk Analisis Akar** | **Keterlambatan pemutakhiran status dan kondisi koleksi pada SLiMS di tengah batasan kapasitas operasional pustakawan tunggal.**<br>Alasan pemilihan: Masalah ini menjadi simpul ketidaksesuaian data katalog dengan kondisi fisik riil. Masalah ini berdampak langsung pada keandalan informasi perpustakaan bagi pemustaka dan akreditasi, serta memiliki akar masalah pada tata kelola proses kerja. | Diskusi dialektis kelompok berdasarkan analisis data empiris dan prinsip tata kelola sistem informasi. |
+| **Hasil Analisis Akar Masalah (5-Why)** | Masalah: Pemutakhiran status dan kondisi koleksi sering tertunda.<br>Why 1: Informasi kondisi buku masuk secara terfragmentasi dan fisik buku menumpuk tanpa alur transit yang jelas.<br>Why 2: Pustakawan harus membagi fokus melayani sirkulasi tatap muka secara langsung tanpa mekanisme pelaporan mandiri pemustaka.<br>Why 3: Belum terdapat alokasi waktu terfokus (dedicated slot) yang khusus digunakan untuk verifikasi dan input data SLiMS.<br>Why 4: Penanganan koleksi masih bersifat insidental dan mengandalkan catatan informal tanpa instrumen audit trail terpusat.<br>Why 5: **Belum terdapat SOP tertulis dan tata kelola alur kerja terpadu yang memadukan pelaporan mandiri, fasilitas transit fisik, jadwal pemutakhiran terfokus, dan pencatatan riwayat penyelesaian.** | Penelusuran berjenjang 5-Why berbasis fakta lapangan dan teori manajemen operasi layanan. |
+| **Matriks Prioritas Masalah** | 1. Ketiadaan SOP Tertulis dan Jadwal Rutin Pemutakhiran: Impact 5, Effort 3, Prioritas 1 (Strategic Focus).<br>2. Fragmentasi Saluran Pelaporan dan Catatan Tercecer: Impact 5, Effort 3, Prioritas 2 (Core Improvement).<br>3. Ketiadaan Fasilitas Penampungan Sementara (Buffer Zone): Impact 4, Effort 2, Prioritas 3 (Quick Win).<br>4. Ketiadaan Audit Trail Rekam Jejak Penyelesaian: Impact 4, Effort 3, Prioritas 4 (Governance Enabler). | Pembobotan kelompok berdasarkan skala dampak terhadap keandalan informasi dan tingkat upaya realisasi. |
+| **Pernyataan Masalah Prioritas Akhir** | Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran status dan kondisi koleksi pada SLiMS karena saluran pelaporan yang terfragmentasi, ketiadaan fasilitas penampungan sementara, dan ketiadaan rekam jejak penyelesaian formal, di tengah batasan operasional satu orang pustakawan yang melayani tiga fungsi layanan tanpa didukung SOP tertulis dan jadwal pemutakhiran terfokus. Kondisi ini menyebabkan informasi katalog berpotensi tidak mutakhir dan proses verifikasi memerlukan penanganan manual yang berulang. | Sintesis komprehensif dari triangulasi data wawancara, 5-Why, dan matriks prioritas. |
 
-| Tahap | Pertanyaan | Jawaban |
-| ----- | ----- | ----- |
-| **Masalah** | Apa masalah yang dianalisis?  | Pemutakhiran status dan kondisi koleksi sering terlambat sehingga informasi pada sistem tidak selalu mencerminkan kondisi terbaru.  |
-| **Why 1** | Mengapa pemutakhiran status dan kondisi koleksi sering terlambat?  | Karena informasi yang diterima tidak selalu langsung diproses hingga tahap verifikasi dan pembaruan pada SLiMS.  |
-| **Why 2** | Mengapa informasi tidak selalu langsung diproses hingga diperbarui pada SLiMS?  | Karena pustakawan harus membagi waktu antara pelayanan perpustakaan dengan kegiatan pemeriksaan, pencatatan, dan pemutakhiran informasi koleksi.  |
-| **Why 3** | Mengapa pembagian waktu tersebut menyebabkan proses pemutakhiran tertunda?  | Karena belum terdapat alokasi waktu khusus yang secara rutin digunakan untuk memeriksa dan menyelesaikan laporan atau informasi mengenai kondisi koleksi.  |
-| **Why 4** | Mengapa belum terdapat alokasi waktu khusus?  | Karena proses pemutakhiran masih dilakukan berdasarkan kebiasaan dan kebutuhan serta belum memiliki jadwal operasional yang baku.  |
-| **Why 5**  | Mengapa proses pemutakhiran belum memiliki jadwal operasional yang baku?  | Karena **belum terdapat SOP tertulis dan tata kelola yang secara jelas mengatur waktu, tahapan, status, serta mekanisme pemutakhiran informasi koleksi secara berkala.**  |
-| **Akar Masalah**  |  | Belum terdapat SOP tertulis dan jadwal rutin yang terstruktur untuk mengatur proses pemutakhiran status dan kondisi koleksi.  |
+```mermaid
+flowchart TD
+    M["Masalah: Pemutakhiran status dan kondisi koleksi pada SLiMS sering tertunda"]
+    W1["Why 1: Laporan masuk terfragmentasi lewat WA, lisan, memo kertas, dan buku fisik menumpuk tanpa alur transit"]
+    W2["Why 2: Pustakawan terserap penuh melayani sirkulasi tatap muka tanpa mekanisme pelaporan mandiri pemustaka"]
+    W3["Why 3: Belum ada alokasi waktu terfokus (quiet hour) untuk memeriksa dan memperbarui data sistem"]
+    W4["Why 4: Penanganan bersifat insidental dan mengandalkan ingatan tanpa instrumen audit trail terpusat"]
+    W5["Why 5 (Akar Masalah): Belum terdapat SOP tertulis dan tata kelola alur kerja terpadu yang menyinergikan pelaporan mandiri, buffer zone fisik, jadwal pemutakhiran, dan audit trail"]
 
-**Matriks Prioritas Masalah**
+    M --> W1
+    W1 --> W2
+    W2 --> W3
+    W3 --> W4
+    W4 --> W5
+```
 
-| Masalah | Impact | Effort | Posisi | Prioritas |
-| ----- | ----- | ----- | ----- | ----- |
-| Pembaruan data perpustakaan sering terlambat  | 5 | 3 | Dampak tinggi – upaya sedang | 1 |
-| Data perpustakaan tidak sesuai dengan kondisi sebenarnya  | 5 | 4 | Dampak tinggi – upaya tinggi | 2 |
-| Pencarian dan verifikasi data masih membutuhkan proses manual  | 4 | 3 | Dampak tinggi – upaya sedang | 3 |
-| Mekanisme pemutakhiran data belum sepenuhnya terstruktur  | 4 | 5 | Dampak tinggi – upaya tinggi | 4 |
+**Tabel Analisis 5-Why Berjenjang**
+
+| Tahap | Pertanyaan Kritis | Respon Berbasis Data Empiris |
+| :--- | :--- | :--- |
+| **Gejala / Masalah** | Apa permasalahan utama yang teramati pada sistem? | Pemutakhiran status dan kondisi koleksi pada SLiMS sering terlambat sehingga data katalog tidak mencerminkan kondisi fisik terbaru. |
+| **Why 1** | Mengapa pemutakhiran data pada SLiMS sering tertunda? | Karena informasi mengenai buku rusak, salah letak, atau hilang masuk secara terfragmentasi (WhatsApp, lisan, memo kertas) dan tumpukan buku fisik bercampur di meja kerja pengelola. |
+| **Why 2** | Mengapa laporan terfragmentasi dan buku fisik bercampur di meja pengelola? | Karena pustakawan harus melayani rata-rata 52 pemustaka per hari secara langsung, sementara belum ada mekanisme pelaporan mandiri bagi pemustaka dan belum ada rak penyangga penampungan sementara. |
+| **Why 3** | Mengapa tidak ada waktu terfokus untuk verifikasi dan input data ke SLiMS? | Karena pembaruan data hanya dilakukan secara insidental pada saat jam sepi pengunjung di sela pelayanan tiga fungsi perpustakaan. |
+| **Why 4** | Mengapa pemutakhiran data masih mengandalkan waktu luang dan catatan informal? | Karena tidak ada instrumen pencatatan terpusat yang memantau batas waktu penyelesaian (Service Level Agreement) dan merekam riwayat penanganan (audit trail). |
+| **Why 5** | Mengapa instrumen terpusat, jadwal terfokus, dan alur fisik belum diterapkan? | Karena **belum terdapat SOP tertulis dan tata kelola alur kerja terpadu yang mengatur pembagian peran pelaporan mandiri pemustaka, fasilitas penampungan sementara, jadwal pemutakhiran terfokus, dan rekam jejak formal.** |
+| **Akar Masalah** | **Rumusan Akar Masalah Sistemik:** | **Ketiadaan tata kelola alur kerja terpadu (SOP pemutakhiran terfokus, formulir pelaporan terpusat, fasilitas penampungan fisik sementara, dan audit trail operasional) yang adaptif terhadap batasan kapasitas pustakawan tunggal.** |
+
+**Analisis Diagram Tulang Ikan (Fishbone / Ishikawa Diagram)**
+
+Untuk memetakan seluruh faktor penyebab keterlambatan pemutakhiran informasi koleksi, kelompok menyusun diagram tulang ikan yang mencakup empat dimensi utama:
+
+```mermaid
+flowchart LR
+    subgraph MAN["Man (Kapasitas SDM)"]
+        M1["1 Pustakawan merangkap 3 layanan"]
+        M2["Beban pelayanan sirkulasi 52 pemustaka/hari"]
+    end
+
+    subgraph METHOD["Method (Tata Kelola dan Alur Kerja)"]
+        ME1["Belum ada SOP tertulis pemutakhiran data"]
+        ME2["Belum ada jadwal khusus pembaruan SLiMS"]
+        ME3["Belum ada SLA verifikasi dan update"]
+    end
+
+    subgraph MATERIAL["Material dan Environment (Fasilitas Fisik)"]
+        MA1["Catatan tercecer di buku dan kertas memo"]
+        MA2["Tidak ada fasilitas buffer zone penampungan fisik"]
+        MA3["Buku menumpuk di meja counter sirkulasi"]
+    end
+
+    subgraph MACHINE["Machine / System (Teknologi dan Saluran)"]
+        MC1["Saluran pelaporan terfragmentasi (WA pribadi, lisan)"]
+        MC2["Tidak ada audit trail status penyelesaian tiket"]
+        MC3["SLiMS belum terhubung dengan formulir pemustaka"]
+    end
+
+    EFFECT["AKIBAT: Keterlambatan Pemutakhiran Data Koleksi di SLiMS"]
+
+    MAN --> EFFECT
+    METHOD --> EFFECT
+    MATERIAL --> EFFECT
+    MACHINE --> EFFECT
+```
 
 | ![][image2] |
 | :---- |
 
- **Pernyataan Masalah Prioritas Akhir**
+Deskripsi dimensi penyebab pada Fishbone Diagram:
+* **Dimensi Metode (Method):** Ketiadaan SOP tertulis yang mengatur alur verifikasi data dan ketiadaan jadwal rutin terfokus (seperti Quiet Hour mingguan) membuat pembaruan status koleksi berjalan tanpa kepastian batas waktu.
+* **Dimensi Sistem dan Saluran (Machine/System):** Masuknya laporan melalui media pribadi (WhatsApp) dan lisan tanpa sistem pencatatan terpusat menyebabkan laporan mudah terlupakan dan tidak memiliki riwayat audit resmi.
+* **Dimensi Material dan Fasilitas (Material/Environment):** Ketiadaan rak penampungan sementara (buffer zone) membuat buku bermasalah menumpuk di meja sirkulasi atau salah diletakkan kembali oleh mahasiswa ke rak koleksi sebelum statusnya diperbarui.
+* **Dimensi Manusia (Man):** Satu pustakawan tunggal harus menjalankan berbagai fungsi operasional secara simultan, sehingga penanganan administratif sistem informasi selalu tergeser oleh antrean layanan fisik.
 
-**Pernyataan masalah:**
+**Matriks Prioritas Masalah (Impact vs Effort)**
 
-Perpustakaan Fakultas Teknik UNY mengalami keterlambatan dalam pemutakhiran status dan kondisi koleksi karena proses pembaruan masih dilakukan berdasarkan kebutuhan dan ketersediaan waktu pengelola, sementara belum terdapat SOP tertulis dan jadwal rutin yang mengatur proses pemutakhiran secara terstruktur. Kondisi tersebut menyebabkan proses pencatatan, verifikasi, dan pembaruan informasi pada SLiMS dapat tertunda sehingga informasi yang tersedia tidak selalu mencerminkan kondisi fisik koleksi terbaru. 
+Kelompok memetakan keempat masalah ke dalam matriks kuadran untuk menentukan prioritas penanganan:
+
+| Masalah Teridentifikasi | Impact (1-5) | Effort (1-5) | Kuadran / Posisi | Prioritas |
+| :--- | :---: | :---: | :--- | :---: |
+| Ketiadaan SOP Tertulis dan Jadwal Rutin Pemutakhiran SLiMS | 5 | 3 | Kuadran II (High Impact, Medium Effort) | **1** |
+| Fragmentasi Saluran Pelaporan dan Catatan Tercecer | 5 | 3 | Kuadran II (High Impact, Medium Effort) | **2** |
+| Ketiadaan Fasilitas Fisik Penampungan Sementara (Buffer Zone) | 4 | 2 | Kuadran I (High Impact, Low Effort / Quick Win) | **3** |
+| Ketiadaan Audit Trail dan Rekam Jejak Penyelesaian Formal | 4 | 3 | Kuadran II (High Impact, Medium Effort) | **4** |
 
 | ![][image3] |
 | :---- |
 
+Rasionalisasi urutan prioritas:
+1. **Prioritas 1 (Ketiadaan SOP dan Jadwal Rutin):** Menjadi pondasi tata kelola. Tanpa alokasi waktu terfokus dan aturan operasional baku, perbaikan instrumen teknologi tidak akan berjalan secara berkelanjutan.
+2. **Prioritas 2 (Fragmentasi Saluran Pelaporan):** Menstandarkan gerbang masuk data dari pemustaka ke dalam satu formulir daring mandiri terpusat agar tidak ada lagi laporan yang tercecer di WhatsApp pribadi atau kertas memo.
+3. **Prioritas 3 (Ketiadaan Fasilitas Penampungan Sementara):** Merupakan langkah perbaikan fisik berbiaya rendah (quick win) dengan memanfaatkan rak penampungan eksisting untuk mengurai tumpukan buku di meja kerja pengelola.
+4. **Prioritas 4 (Ketiadaan Audit Trail):** Memastikan seluruh data pelaporan yang masuk tercatat status penyelesaiannya secara transparan dan siap diekstrak untuk kebutuhan akreditasi program studi.
+
+**Pernyataan Masalah Prioritas Akhir (Final Problem Statement)**
+
+> “Perpustakaan Fakultas Teknik UNY mengalami keterlambatan pemutakhiran status dan kondisi koleksi pada katalog SLiMS karena saluran pelaporan yang terfragmentasi, ketiadaan fasilitas penampungan sementara, dan ketiadaan rekam jejak penyelesaian formal, di tengah batasan operasional satu orang pustakawan yang menangani tiga layanan sekaligus tanpa didukung SOP tertulis dan jadwal pemutakhiran terfokus. Kondisi tersebut menyebabkan data katalog tidak selalu mencerminkan kondisi fisik terkini dan menghambat efisiensi pelayanan serta pelaporan akreditasi.”
+
 5. **Kendala dan Solusi**
 
-1. Kendala 1: Kesulitan membedakan Gejala (Symptom), Masalah (Problem), dan Akar Masalah (Root Cause)
+1. **Kendala 1: Membedakan Batasan Sumber Daya Organisasi (Constraint) dengan Sasaran Intervensi Sistem Informasi (Root Cause)**
+   Pada awal perumusan, kelompok cenderung menyimpulkan bahwa akar masalah tunggal perpustakaan adalah kekurangan staf pustakawan. Kesimpulan tersebut menimbulkan kebuntuan karena penambahan pegawai berada di luar kendali proyek akademik dan kewenangan fakultas. Melalui telaah kerangka kerja Manajemen Sistem Informasi, kelompok menyadari bahwa keterbatasan SDM merupakan batasan kapasitas operasional riil yang harus diakomodasi dalam perancangan alur kerja.
+   *Solusi:* Kelompok memisahkan antara kondisi keterbatasan SDM sebagai batasan perancangan dengan ketiadaan tata kelola alur kerja sebagai akar masalah yang dapat diintervensi. Fokus perbaikan diarahkan pada standardisasi proses, penjadwalan terfokus, dan pemberdayaan pemustaka melalui pelaporan mandiri agar beban kerja pustakawan dapat terkelola secara optimal.
 
-   
-
-   Pada tahap awal, kelompok masih melihat keterlambatan pembaruan data sebagai masalah utama tanpa membedakan secara jelas antara gejala, masalah, dan akar masalah. Setelah dilakukan analisis menggunakan teknik 5-Why, kelompok menemukan bahwa keterlambatan pemutakhiran bukan hanya berkaitan dengan pembagian waktu pengelola, tetapi juga berkaitan dengan belum adanya SOP tertulis dan jadwal rutin yang mengatur proses pemutakhiran informasi.
-
-   Untuk mengatasinya, kelompok melakukan penelusuran secara bertahap berdasarkan hasil wawancara dan menggunakan teknik 5-Why untuk menghubungkan kondisi yang terlihat dengan penyebab yang lebih mendasar. Dengan demikian, kelompok dapat membedakan antara keterlambatan pemutakhiran sebagai masalah yang terlihat dan ketiadaan SOP serta jadwal rutin sebagai akar masalah.
-
-   
-
-2. Kendala 2: Beberapa masalah yang ditemukan saling berkaitan, seperti keterlambatan pemutakhiran, ketidaksesuaian informasi dengan kondisi fisik, serta belum adanya mekanisme pemutakhiran yang terstruktur. Kondisi tersebut membuat kelompok perlu menentukan masalah yang menjadi fokus utama tanpa menganggap setiap masalah sebagai masalah yang berdiri sendiri.  
-3. Solusi yang dilakukan adalah membandingkan masalah berdasarkan dampaknya terhadap kualitas informasi dan tingkat upaya penyelesaiannya. Berdasarkan hasil analisis, keterlambatan pemutakhiran dipilih sebagai masalah prioritas karena memiliki dampak tinggi dan masih realistis untuk ditangani dalam batasan proyek. Akar masalah berupa belum adanya SOP dan jadwal rutin kemudian dijadikan dasar untuk merancang perbaikan proses pada tahap berikutnya.
-
-   
+2. **Kendala 2: Memilah Fakta Empiris Wawancara dari Asumsi Solusi Teknologi**
+   Kelompok sempat tergoda merumuskan solusi berbasis pengembangan sistem aplikasi baru yang rumit tanpa memeriksa apakah masalah utama bersumber dari teknologi atau dari proses kerja.
+   *Solusi:* Kelompok melakukan triangulasi data hasil wawancara dan menyusun tabel status dukungan bukti. Hasil verifikasi membuktikan bahwa sistem SLiMS eksisting sudah memadai, namun belum didukung oleh alur pelaporan terpusat dan SOP operasional. Dengan demikian, kelompok mengunci arah solusi pada penguatan tata kelola proses kerja (Pure Governance) dan instrumen pendukung berbasis fasilitas yang sudah tersedia.
 
 6. **Refleksi Pembelajaran**
 
-   Melalui Pertemuan 3, kelompok memahami bahwa masalah dalam sistem informasi tidak selalu sama dengan gejala yang terlihat secara langsung. Keterlambatan pemutakhiran atau ketidaksesuaian informasi koleksi perlu ditelusuri lebih lanjut untuk mengetahui penyebab yang mendasarinya.
+   Melalui pelaksanaan kegiatan Pertemuan 3, kelompok memperoleh pemahaman mendalam bahwa keberadaan sistem otomasi perpustakaan seperti SLiMS tidak serta-merta menjamin kualitas dan kemutakhiran informasi. Kualitas data sangat bergantung pada kedisiplinan alur tata kelola operasional, kejelasan pembagian peran, dan keteraturan jadwal kerja pemutakhiran.
 
-   
+   Kelompok juga memahami prinsip mendasar bahwa intervensi Manajemen Sistem Informasi bukan berfokus pada pengadaan teknologi semata atau sekadar menuntut penambahan anggaran dan sumber daya manusia, melainkan bagaimana merancang arsitektur proses kerja dan aliran informasi yang adaptif terhadap batasan sumber daya yang ada.
 
-   Hasil wawancara membantu kelompok memahami bahwa permasalahan pengelolaan informasi sangat berkaitan dengan kondisi organisasi dan tata kelola proses. Dalam kasus Perpustakaan Fakultas Teknik UNY, satu orang pengelola menangani beberapa fungsi layanan sehingga waktu untuk melakukan pemeriksaan dan pemutakhiran informasi harus dibagi dengan pelayanan kepada pemustaka. 
-
-   
-
-   Kelompok juga memahami bahwa keberadaan sistem informasi seperti SLiMS tidak secara otomatis menjamin kualitas informasi. Data tetap membutuhkan proses pencatatan, verifikasi, pembaruan, dan monitoring yang teratur. Apabila proses tersebut belum memiliki SOP dan jadwal yang jelas, pembaruan informasi dapat tertunda meskipun sistem informasi telah tersedia.
-
-   
-
-   Penggunaan teknik 5-Why membantu kelompok menemukan bahwa akar masalah tidak berhenti pada keterbatasan waktu pengelola, tetapi berhubungan dengan belum adanya SOP tertulis dan jadwal rutin untuk pemutakhiran informasi. Sementara itu, Matriks Prioritas membantu kelompok menentukan fokus masalah berdasarkan dampak dan tingkat upaya penyelesaiannya.
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
-
-   
+   Penerapan teknik 5-Why dan Fishbone Diagram membantu kelompok melihat keterkaitan sistemik antara saluran pelaporan, alur fisik buku di ruang perpustakaan, pencatatan log riwayat, dan jadwal kerja pengelola. Hal ini membuktikan bahwa perbaikan tata kelola informasi memerlukan pendekatan terpadu antara dimensi manusia, metode kerja, fasilitas fisik, dan teknologi pendukung.
 
 7. **Kesimpulan**
 
-   Berdasarkan hasil analisis, kelompok mengidentifikasi empat masalah utama dalam pengelolaan informasi Perpustakaan Fakultas Teknik UNY, yaitu keterlambatan pemutakhiran status dan kondisi koleksi, potensi ketidaksesuaian informasi pada sistem dengan kondisi fisik terbaru, proses pencatatan dan verifikasi yang masih membutuhkan proses manual dan belum terpusat, serta belum adanya SOP dan jadwal rutin untuk pemutakhiran informasi koleksi.
+   Berdasarkan hasil analisis masalah pada Pertemuan 3, kelompok berhasil mengidentifikasi empat masalah operasional utama di Perpustakaan FT UNY, yaitu fragmentasi saluran pelaporan, ketiadaan SOP tertulis dan jadwal rutin pemutakhiran SLiMS, ketiadaan fasilitas penampungan sementara (buffer zone), serta ketiadaan audit trail penyelesaian formal.
 
-   
+   Melalui penelusuran 5-Why dan Fishbone Diagram, kelompok menyimpulkan bahwa akar masalah utama bukan ketiadaan sistem otomasi atau keterbatasan staf, melainkan ketiadaan tata kelola alur kerja terpadu yang mengatur alur pelaporan mandiri pemustaka, pemisahan fisik koleksi, alokasi waktu pemutakhiran terfokus, dan pencatatan riwayat penyelesaian.
 
-   Dari keempat masalah tersebut, kelompok memilih keterlambatan pemutakhiran status dan kondisi koleksi sebagai masalah yang dianalisis lebih lanjut karena memiliki dampak terhadap kualitas informasi yang tersedia pada sistem.
-
-   Hasil analisis 5-Why menunjukkan bahwa keterlambatan pemutakhiran berkaitan dengan pembagian waktu pengelola antara pelayanan dan pengelolaan informasi. Penelusuran lebih lanjut menunjukkan bahwa proses pemutakhiran masih dilakukan berdasarkan kebutuhan dan ketersediaan waktu karena belum terdapat SOP tertulis dan jadwal rutin yang mengatur proses pemutakhiran secara terstruktur. 
-
-   
-
-   Berdasarkan Matriks Prioritas, keterlambatan pemutakhiran memperoleh Impact 5 dan Effort 3, sehingga menjadi prioritas pertama. Masalah tersebut masih realistis untuk ditangani melalui perbaikan tata kelola proses, penyusunan SOP dan jadwal pemutakhiran, serta pemanfaatan mekanisme pencatatan dan monitoring yang lebih terstruktur.
-
-   
-
-   Dengan demikian, akar masalah utama yang menjadi dasar perancangan solusi pada tahap berikutnya adalah belum adanya SOP tertulis dan jadwal rutin yang mengatur proses pemutakhiran status dan kondisi koleksi secara terstruktur.
+   Dengan menetapkan rumusan masalah prioritas akhir yang teruji, kelompok memiliki landasan yang kukuh untuk melangkah ke Pertemuan 4 guna menyusun Project Scope Statement, kriteria SMART goals, serta batasan in-scope dan out-of-scope proyek secara terukur dan realistis.
 
 ### **DAFTAR PUSTAKA / REFERENSI**
 
