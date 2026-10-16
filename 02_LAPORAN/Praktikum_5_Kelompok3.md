@@ -48,7 +48,7 @@ Mahasiswa mampu menyusun struktur tim proyek, menetapkan pembagian peran dan tan
 
 Dasar pembentukan **RACI Matrix** dalam perencanaan proyek ini berangkat dari prinsip tata kelola sistem informasi yang menempatkan kejelasan peran, tanggung jawab, dan akuntabilitas terhadap informasi sebagai bagian penting dalam pengelolaan sistem informasi. RACI (*Responsible, Accountable, Consulted, Informed*) digunakan untuk memperjelas pihak yang melaksanakan pekerjaan, pihak yang memiliki tanggung jawab akhir, pihak yang memberikan masukan, serta pihak yang perlu mengetahui perkembangan suatu aktivitas. Mengacu pada *Project Management Body of Knowledge (PMBOK Guide)* oleh Project Management Institute (2021) serta konsep *Management Information Systems* oleh Laudon & Laudon (2014), kejelasan pembagian tanggung jawab diperlukan agar proses pengelolaan informasi tidak mengalami tumpang tindih kewenangan maupun kekosongan tanggung jawab.
 
-Dalam praktikum ini, pembentukan struktur tim dan RACI Matrix diselaraskan dengan hasil **Analisis Masalah Prioritas pada Praktikum 3** ([[Praktikum_3_Kelompok_3_Revisi|LAP-003]]) dan **Project Scope Statement pada Praktikum 4** ([[Praktikum_4_Kelompok3_revisi|LAP-004]]). Permasalahan utama yang menjadi dasar adalah **keterlambatan pemutakhiran data perpustakaan** akibat waktu pengelola harus dibagi antara kegiatan pelayanan dan pengelolaan informasi, sementara belum terdapat SOP atau jadwal baku yang mengatur proses pemutakhiran data secara berkala. Kondisi tersebut dapat menyebabkan informasi tertentu tidak selalu sesuai dengan kondisi terbaru dan pada kondisi tertentu masih memerlukan proses pengecekan atau verifikasi manual (merujuk pada kondisi lapangan di [[Jawaban3_Final|Wawancara 3]]). Selain itu, perancangan ini juga bertujuan untuk memastikan bahwa keterlambatan aliran informasi tidak memberikan dampak negatif yang berkelanjutan terhadap tata kelola di tingkat fakultas maupun pelaporan akreditasi, sebagaimana ditekankan pada umpan balik di [[catatan_4|Catatan Kelas 4]].
+Dalam praktikum ini, pembentukan struktur tim dan RACI Matrix diselaraskan dengan hasil **Analisis Masalah Prioritas pada Praktikum 3** ([[Praktikum_3_Kelompok_3_Revisi|LAP-003]]) dan **Project Scope Statement pada Praktikum 4** ([[Praktikum_4_Kelompok3_revisi|LAP-004]]). Permasalahan utama yang menjadi dasar perancangan adalah **keterlambatan pemutakhiran status dan kondisi koleksi pada katalog SLiMS** yang berakar dari empat masalah operasional saling berkorelasi: (1) fragmentasi saluran pelaporan dan catatan tercecer, (2) ketiadaan SOP tertulis dan jadwal rutin pemutakhiran SLiMS, (3) ketiadaan fasilitas fisik penampungan sementara (buffer zone), serta (4) ketiadaan audit trail dan rekam jejak penyelesaian formal, di tengah batasan kapasitas operasional satu orang pustakawan utama yang melayani tiga fungsi layanan sekaligus (merujuk fakta lapangan di [[Jawaban3_Final|Wawancara 3]]). Selain itu, perancangan ini juga bertujuan untuk memastikan kejelasan akuntabilitas pengelolaan informasi agar tidak memberikan dampak negatif terhadap tata kelola di tingkat fakultas maupun pelaporan akreditasi program studi (LAM-INFOKOM Kriteria 5), sebagaimana ditekankan pada umpan balik di [[catatan_4|Catatan Kelas 4]].
 
 Berdasarkan permasalahan tersebut, kelompok terlebih dahulu menyusun **Grand Design Sistem Informasi Pemutakhiran dan Monitoring Data Koleksi Perpustakaan Fakultas Teknik UNY**. Grand Design digunakan untuk memetakan aliran data dan informasi yang terlibat dalam proses pemutakhiran data, bukan untuk merancang struktur database atau antarmuka aplikasi secara teknis. Pemetaan dilakukan dengan menentukan pihak yang menghasilkan informasi, pihak yang menerima atau menggunakan informasi, jenis data yang berpindah, serta modul atau mekanisme yang mendukung aliran tersebut.
 
@@ -56,7 +56,7 @@ Aliran informasi pada Grand Design dimulai dari **pemustaka kepada pustakawan** 
 
 Hasil pengelolaan dan pemantauan data kemudian direkap oleh pustakawan untuk menghasilkan informasi yang dapat digunakan oleh **Kepala Perpustakaan** dalam melakukan monitoring kondisi dan perubahan data koleksi. Selain itu, data sirkulasi yang diperlukan untuk kebutuhan pelaporan dapat disusun dalam bentuk template ekstraksi dan pelaporan untuk mendukung kebutuhan **Tim Akreditasi/Program Studi**. Dengan demikian, aliran informasi dalam Grand Design menggambarkan proses mulai dari pelaporan kondisi koleksi, verifikasi, pemutakhiran data, ekstraksi, monitoring, hingga pemanfaatan informasi untuk pelaporan.
 
-Dari Grand Design tersebut, kelompok kemudian menurunkan aliran informasi menjadi beberapa aktivitas utama yang dapat dikelola dalam proyek. Aktivitas tersebut meliputi **penyusunan SOP dan jadwal pemutakhiran data, perancangan Form Pelaporan Kondisi Koleksi, perancangan prosedur pemutakhiran data koleksi pada SLiMS, penyusunan Template Ekstraksi Data SLiMS, penyusunan Dashboard/Rekap Monitoring Data Koleksi, penyusunan Template Pelaporan Data Sirkulasi, serta integrasi dan dokumentasi alur pemutakhiran informasi**. Aktivitas tersebut disusun berdasarkan deliverable yang telah ditetapkan dalam scope proyek sehingga pembagian tanggung jawab tetap berada dalam batas proyek.
+Dari Grand Design tersebut, kelompok kemudian menurunkan aliran informasi menjadi beberapa aktivitas utama yang dapat dikelola dalam proyek. Aktivitas tersebut meliputi **penyusunan SOP dan jadwal pemutakhiran data terfokus (SOP-001), perancangan alur fisik rak penampungan sementara / buffer zone (RACK-001), perancangan form pelaporan mandiri kondisi koleksi (FORM-001), perancangan prosedur pemutakhiran data koleksi pada SLiMS, penyusunan template ekstraksi data sirkulasi SLiMS (TMP-001), penyusunan dashboard rekapitulasi data koleksi (DASH-001), penyusunan template pelaporan data sirkulasi akreditasi, serta integrasi dan dokumentasi alur pemutakhiran informasi**. Aktivitas tersebut disusun berdasarkan deliverable yang telah ditetapkan dalam scope proyek sehingga pembagian tanggung jawab tetap berada dalam batas proyek.
 
 Dalam penyusunan RACI Matrix, kelompok menerapkan prinsip bahwa **setiap aktivitas memiliki satu pihak yang Accountable**. Penetapan *Accountable* tidak hanya didasarkan pada siapa yang mengerjakan tugas paling banyak, tetapi pada siapa yang memiliki tanggung jawab akhir untuk memastikan aktivitas tersebut menghasilkan keluaran yang sesuai dengan tujuan proyek. Sementara itu, anggota yang ditetapkan sebagai *Responsible* berperan dalam pelaksanaan aktivitas, *Consulted* memberikan masukan sebelum atau selama proses pengerjaan, dan *Informed* memperoleh informasi mengenai perkembangan maupun hasil aktivitas.
 
@@ -79,12 +79,12 @@ Dengan demikian, pembentukan Grand Design, RACI Matrix, pembagian peran, dan rit
 
 | No. | Dari Unit  | Ke Unit                      | Data/Informasi                                                                                                        | Modul Pendukung                            |
 | :-- | :--------- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :----------------------------------------- |
-| 1   | Pemustaka  | Pustakawan                   | Laporan kondisi koleksi, seperti koleksi rusak atau hilang                                                            | Form Pelaporan Kondisi Koleksi             |
-| 2   | Pustakawan | SLiMS                        | Data dan status koleksi yang telah diverifikasi                                                                       | Modul Pemutakhiran Data Koleksi            |
-| 3   | SLiMS      | Pustakawan                   | Data koleksi dan data sirkulasi untuk pengecekan dan monitoring                                                       | Modul Ekstraksi Data SLiMS                 |
-| 4   | Pustakawan | Kepala Perpustakaan          | Rekap perubahan dan status kondisi koleksi                                                                            | Dashboard/Rekap Monitoring                 |
-| 5   | Pustakawan | Tim Akreditasi/Program Studi | Rekap data sirkulasi yang diperlukan untuk pelaporan                                                                  | Template Ekstraksi dan Pelaporan Data      |
-| 6   | Pustakawan | Dekanat FT UNY (Wakil Dekan) | Laporan tren pemanfaatan koleksi dan rekomendasi alokasi anggaran pengadaan buku tahunan (Evidence-Based Procurement) | Modul Rekapitulasi dan Pelaporan Eksekutif |
+| 1   | Pemustaka  | Pustakawan                   | Laporan kondisi fisik koleksi (rusak/salah letak/hilang) dan peletakan buku fisik di buffer zone                      | Form Pelaporan Mandiri (FORM-001) & Rak Penampungan Sementara (RACK-001) |
+| 2   | Pustakawan | SLiMS                        | Data dan status koleksi yang telah diverifikasi fisik pada sesi Quiet Hour                                            | Prosedur Pemutakhiran Data Koleksi (SOP-001) via Katalog SLiMS |
+| 3   | SLiMS      | Pustakawan                   | Data koleksi dan transaksi sirkulasi mentah untuk pengecekan dan monitoring                                           | Fitur Ekstraksi CSV SLiMS & Template Agregasi (TMP-001) |
+| 4   | Pustakawan | Kepala Perpustakaan          | Rekap perubahan dan status kondisi koleksi fisik perpustakaan                                                         | Dashboard Rekapitulasi Data Koleksi (DASH-001) |
+| 5   | Pustakawan | Tim Akreditasi/Program Studi | Rekap data sirkulasi dan ketersediaan buku per prodi untuk pelaporan borang                                           | Template Ekstraksi & Pelaporan LAM-INFOKOM (TMP-001) |
+| 6   | Pustakawan | Dekanat FT UNY (Wakil Dekan) | Laporan tren pemanfaatan koleksi dan rekomendasi alokasi anggaran pengadaan buku tahunan (Evidence-Based Procurement) | Dashboard Rekapitulasi Eksekutif (DASH-001) |
 
    **VISUALISASI**
 
@@ -125,13 +125,13 @@ flowchart TD
 
 | Aktivitas | Gantar Abimanyu | Ganendra Pradipa | M Fadlan Dirmansyah |
 | :---- | :---- | :---- | :---- |
-| Penyusunan SOP dan Jadwal Pemutakhiran Data | **A** | R | C |
-| Perancangan Alur Fisik Rak Transit Pengembalian (RACK-001) | C | R | **A** |
-| Perancangan Form Pelaporan Kondisi Koleksi | C | **A** | R |
+| Penyusunan Draf SOP Pemutakhiran Data dan Jadwal Quiet Hour (SOP-001) | **A** | R | C |
+| Perancangan Alur Fisik Rak Penampungan Sementara / Buffer Zone (RACK-001) | C | R | **A** |
+| Perancangan Form Pelaporan Mandiri Kondisi Koleksi (FORM-001) | C | **A** | R |
 | Perancangan Prosedur Pemutakhiran Data Koleksi pada SLiMS | R | C | **A** |
-| Penyusunan Template Ekstraksi Data SLiMS | C | **A** | R |
-| Penyusunan Dashboard/Rekap Monitoring Data Koleksi | R | C | **A** |
-| Penyusunan Template Pelaporan Data Sirkulasi | **A** | R | C |
+| Penyusunan Template Ekstraksi Data Sirkulasi SLiMS (TMP-001) | C | **A** | R |
+| Penyusunan Dashboard Rekapitulasi Data Koleksi (DASH-001) | R | C | **A** |
+| Penyusunan Template Pelaporan Data Sirkulasi Akreditasi | **A** | R | C |
 | Integrasi dan Dokumentasi Alur Pemutakhiran Informasi | **A** | R | R |
 
 **Keterangan:**

@@ -143,7 +143,7 @@ function setStudentViewMode(mode) {
 
 /* ── LIVE TICKET PREVIEW SYNCHRONIZATION ─────────────── */
 function updateLiveTicketPreview() {
-  const nim = document.getElementById('inputNIM')?.value.trim() || '240505300XX';
+  const nim = document.getElementById('inputNIM')?.value.trim() || '(Opsional/Anonim)';
   const nama = document.getElementById('inputNama')?.value.trim() || 'Mahasiswa FT UNY';
   const barcode = document.getElementById('inputBarcode')?.value.trim() || 'FT-INF-2024-XXX';
   const judul = document.getElementById('inputJudul')?.value.trim() || 'Judul Buku yang Dilaporkan';
@@ -183,8 +183,10 @@ setInterval(updateClock, 30000);
 function submitLaporan(e) {
   e.preventDefault();
 
-  const nim = document.getElementById('inputNIM').value.trim();
-  const nama = document.getElementById('inputNama').value.trim();
+  const nimInput = document.getElementById('inputNIM').value.trim();
+  const namaInput = document.getElementById('inputNama').value.trim();
+  const nim = nimInput || '-';
+  const nama = namaInput || 'Mahasiswa FT UNY (Sukarela)';
   const barcode = document.getElementById('inputBarcode').value.trim() || 'FT-XXX-0000-000';
   const judul = document.getElementById('inputJudul').value.trim();
   const catatan = document.getElementById('inputCatatan').value.trim();

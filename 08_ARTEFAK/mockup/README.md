@@ -57,8 +57,11 @@ Dapat dijalankan langsung dengan cara:
 ## 4. Keterhubungan Artefak Tata Kelola MSI
 
 Mockup interaktif ini merupakan perwujudan konkret (*systemic artifact output*) dari:
-- [[08_ARTEFAK/Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT.md|Blueprint Ekosistem SIMPEL-KOLEKSI FT (BP-MSI-001)]]
-- [[02_LAPORAN/Modul_1_Peran_Sistem_Informasi.md|Modul 1: Strategi Tata Kelola Informasi]]
-- [[02_LAPORAN/Modul_3_Arsitektur_Sistem_Informasi.md|Modul 3: Arsitektur Enterprise 4-Layer & Aliran Data SLiMS]]
-- [[02_LAPORAN/Modul_5_Siklus_Pengembangan_Sistem.md|Modul 5: SDLC & Spesifikasi Fungsional]]
-- [[02_LAPORAN/Modul_6_Evaluasi_Penerapan_Sistem_Informasi.md|Modul 6: Evaluasi HOT-Fit & Kriteria 5 LAM-INFOKOM]]
+- [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT|Blueprint Ekosistem SIMPEL-KOLEKSI FT (BP-MSI-001)]]
+- [[Laporan_Praktikum_Pertemuan_1_Kelompok 3|Laporan 1: Inisialisasi Proyek & Kasus Perpustakaan FT UNY]]
+- [[Praktikum_3_Kelompok_3_Revisi|Laporan 3: Analisis Akar Masalah (5-Whys & Fishbone)]]
+- [[Praktikum_5_Kelompok3|Laporan 5: Grand Design & Matriks RACI Alur Informasi]]
+- [[Praktikum_6_Kelompok3|Laporan 6: Arsitektur 4 Layer & Strategi Implementasi]]
+- [[Praktikum_8_Kelompok3|Laporan 8: Alur Pengguna & Wireframe Sistem Informasi]]
+- [[Praktikum_9_Kelompok3|Laporan 9: Mockup Interaktif Berfidelitas Tinggi]]
+

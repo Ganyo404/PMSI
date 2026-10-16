@@ -94,3 +94,18 @@ Setiap elemen UI di dalam mockup **wajib memiliki alasan manajerial MSI**:
 - [ ] Responsive dari layar laptop hingga monitor desktop.
 - [ ] Memuat data riil Fakultas Teknik UNY (Pendidikan Teknik Informatika, Elektro, Mesin, Sipil).
 - [ ] Bebas dari placeholder teks kosong (*lorem ipsum*), seluruh label menggunakan terminologi perpustakaan yang presisi.
+
+---
+
+## 🎨 6. ITERASI CEPAT & BRAINSTORMING UI DENGAN PENGGUNA (CO-DESIGN LOOP)
+
+Saat pengguna memberikan masukan perbaikan antarmuka:
+1. **Penerimaan Umpan Balik Visual Cepat**: Jika pengguna meminta penyesuaian kontras warna, tata letak kartu antrean, atau ukuran tombol mobile, Agent langsung memetakan modifikasi CSS/JS tanpa merusak arsitektur zero-dependency.
+2. **Brainstorming Variasi Komponen**: Mendiskusikan ide baru pengguna (misalnya: animasi mikro saat barcode terverifikasi atau mode pratinjau slip pengembalian) dan memberikan alternatif implementasi paling efisien.
+3. **Penyelarasan Manajerial**: Memastikan setiap penambahan fitur visual baru tetap memiliki argumen tata kelola MSI yang dapat dipertahankan di hadapan dosen pengampu (Bu Ratna).
+
+---
+
+## 🔗 Navigasi Graf
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[collaborative-brainstorming]] | [[system-blueprint]] | [[ui-design]] | [[anti-ui-slop]] | [[08_ARTEFAK/mockup/README|Dokumentasi Mockup]]
+

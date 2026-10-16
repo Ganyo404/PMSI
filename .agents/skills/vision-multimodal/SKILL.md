@@ -290,6 +290,7 @@ prompt = """Analyze this chart:
 
 ## See Also
 
-- [[llm-integration]] - API basics
-- [[extended-thinking]] - Complex reasoning
-- [[citations-retrieval]] - Document citations
+- [[systemic-reasoning]] - Complex reasoning & First Principles
+- [[source-retrieval]] - Document citations & Evidence Triangulation
+- [[qianwen-vision]] - Advanced visual analysis and OCR
+

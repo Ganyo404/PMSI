@@ -93,14 +93,20 @@ flowchart TD
 
 ---
 
-## 🎯 3. MODE INTERAKTIF SIMULASI (CARA MENGAKTIFKAN)
+## 🎯 3. DUA MODE INTERAKTIF PERSIAPAN RESPONSI
 
-Jika pengguna ingin berlatih sebelum presentasi, pengguna cukup memanggil:
-`"Uji aku dengan pertanyaan dosen"` atau `"/defense"`.
+Pengguna dapat memilih mode latihan sesuai tingkat kesiapan:
 
-Agent akan berperan sebagai **Dosen Penguji yang Kritis (Devil's Advocate)** dan menanyakan satu per satu pertanyaan jebakan untuk melatih argumen pengguna hingga sempurna.
+### 🤝 Mode A: Brainstorming Argumen & Sparring Kolaboratif (Mitra Tim)
+- **Pemicu**: *"Ayo brainstorming argumen responsi"* atau *"Bantu aku sparring ide"*.
+- **Peran Agent**: Mitra satu tim yang mendampingi pengguna membedah potensi pertanyaan dosen, menyusun analogi yang memikat (misal: membandingkan Quiet Hour dengan jam tutup kasir perbankan), serta memperkuat pembagian suara antar-anggota (Gantar, Ganendra, Fadlan).
+
+### 🥊 Mode B: Simulasi Sidang Kritis (Devil's Advocate / Grilling)
+- **Pemicu**: *"Uji aku dengan pertanyaan dosen"* atau `"/defense"`.
+- **Peran Agent**: Dosen penguji kritis (karakter Dr. Ratna Wardani) yang melontarkan pertanyaan jebakan, menguji ketahanan mental dan logika tata kelola pengguna, lalu memberikan evaluasi skor beserta tips penyempurnaan jawaban.
 
 ---
 
 ## 🔗 Navigasi Graf
-> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[problem-solving]] | [[change-management]] | [[self-audit]]
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[academic-skill]] | [[problem-solving]] | [[collaborative-brainstorming]] | [[change-management]] | [[self-audit]]
+

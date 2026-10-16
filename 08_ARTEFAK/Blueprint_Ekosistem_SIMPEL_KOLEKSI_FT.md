@@ -51,7 +51,11 @@ tags:
 ## 2. LANDASAN FILOSOFIS & RASIONALISASI SISTEMIK
 
 ### 2.1. Refleksi Masalah Lapangan vs Doktrin Bu Ratna
-Berdasarkan hasil investigasi empiris pada [[Jawaban3_Final|Wawancara Lapangan]], Perpustakaan FT UNY dikelola oleh **1 (satu) orang Pustakawan Tunggal** yang melayani rata-rata **52 pengunjung per hari** pada 3 fungsi layanan sekaligus (sirkulasi, referensi, dan digital library). Kondisi ini memicu keterlambatan pemutakhiran data koleksi di katalog otomasi SLiMS (*lagging data*).
+Berdasarkan hasil investigasi empiris pada [[Jawaban3_Final|Wawancara Lapangan]], operasional Perpustakaan FT UNY dikelola oleh **1 (satu) orang Pustakawan Tunggal** yang melayani rata-rata **52 pengunjung per hari** pada tiga fungsi layanan sekaligus (sirkulasi, referensi, dan digital library). Analisis pada [[Praktikum_3_Kelompok_3_Revisi]] mengidentifikasi empat masalah operasional utama yang saling berkorelasi:
+1. **Fragmentasi Saluran Pelaporan & Catatan Tercecer:** Laporan pemustaka masuk melalui WhatsApp pribadi, lisan di meja counter, dan memo kertas terpisah berisiko hilang.
+2. **Ketiadaan SOP Tertulis & Jadwal Rutin Pemutakhiran SLiMS:** Pembaruan status eksemplar di SLiMS tertunda karena dilakukan secara insidental di tengah jam pelayanan tatap muka yang padat.
+3. **Ketiadaan Fasilitas Fisik Penampungan Sementara (Buffer Zone):** Buku kembali dan buku bermasalah menumpuk di meja counter sirkulasi atau salah letak di rak koleksi karena belum ada alur transit fisik sebelum shelving dan verifikasi.
+4. **Ketiadaan Audit Trail & Rekam Jejak Penyelesaian Formal:** Tidak adanya rekaman log terpusat mengenai status penanganan tiket, menyulitkan monitoring operasional dan penyusunan pelaporan akreditasi program studi (LAM-INFOKOM Kriteria 5).
 
 Sebagaimana ditekankan oleh dosen pengampu Bu Ratna dalam [[catatan_3]] dan [[catatan_4]]:
 > *"Solusinya bukan solusi teknis semata, tapi solusi yang sifatnya sistemik. Bukan berarti harus dibuatkan database baru, bukan berarti harus koding web portal baru yang menggantikan sistem pusat. Jika SOP-nya tidak jelas, aplikasi secanggih apa pun tidak akan menyelesaikan masalah. Tata kelola sistem informasi adalah mengelola organisasinya: siapa yang melapor, siapa yang memverifikasi, alur informasinya mengalir ke mana, dan bagaimana pimpinan mengambil keputusan."*
@@ -60,6 +64,7 @@ Sebagaimana ditekankan oleh dosen pengampu Bu Ratna dalam [[catatan_3]] dan [[ca
 1. **SLiMS sebagai *Single Source of Truth*:** Sistem pendukung tidak menduplikasi basis data katalog buku induk. SLiMS bawaan tetap menjadi pemegang otoritas data sirkulasi dan inventarisasi perpustakaan.
 2. **Zero-Budget & Zero-Code Core Modification:** Solusi tidak menuntut pengadaan server mahal, tidak mengubah source code PHP SLiMS pusat (yang merupakan kewenangan Perpustakaan Pusat Rektorat), serta tidak menambah SDM pegawai baru.
 3. **Penyelarasan Tiga Tingkat Organisasi (*Vertical Alignment*):** Menghubungkan secara harmonis tingkat **Operasional** (Pemustaka & Pustakawan), **Manajerial** (Tim Akreditasi Program Studi), dan **Strategis** (Dekan & Wakil Dekan FT UNY).
+4. **Batas Yurisdiksi yang Tegas (Explicit Jurisdiction Boundaries):** Sinkronisasi basis data anggota SIAKAD ke SLiMS dan pemeliharaan/perbaikan perangkat keras 15 unit PC Digital Library berada di luar cakupan proyek (out-of-scope) karena merupakan kewenangan UPT TIK dan UPT Perpustakaan Pusat UNY.
 
 ---
 
@@ -140,8 +145,8 @@ sequenceDiagram
 | Nama Field | Tipe Data | Deskripsi | Sumber Input |
 | :--- | :--- | :--- | :--- |
 | `ticket_id` | String (Auto) | Nomor tiket pelaporan unik (contoh: `TKT-202610-001`) | Sistem |
-| `reporter_nim` | String (11) | Nomor Induk Mahasiswa pelapor | Pemustaka |
-| `reporter_name` | String (100) | Nama lengkap mahasiswa | Pemustaka |
+| `reporter_nim` | String (11) | Nomor Induk Mahasiswa pelapor (Opsional / Sukarela) | Pemustaka |
+| `reporter_name` | String (100) | Nama lengkap mahasiswa (Opsional / Sukarela) | Pemustaka |
 | `item_barcode` | String (20) | Barcode eksemplar buku pada label SLiMS | Pemustaka (Scan/Ketik) |
 | `item_title` | String (255) | Judul buku yang dilaporkan | Pemustaka |
 | `issue_category`| Enum | Pilihan: `Halaman Sobek`, `Halaman Hilang`, `Salah Rak`, `Hilang Fisik` | Pemustaka |
@@ -236,7 +241,7 @@ Mockup sistem **SIMPEL-KOLEKSI FT** dirancang dalam 3 antarmuka terpisah sesuai 
 * **Aksesibilitas:** Dipicu via pemindaian stiker QR Code di meja baca atau Rak Transit.
 * **Elemen Antarmuka:**
   1. **Header:** Identitas resmi *"Perpustakaan FT UNY - Layanan Laporan Mandiri Koleksi"*.
-  2. **Field 1 (Identitas Mahasiswa):** Input NIM dan Nama Lengkap (Otomatis / Input Cepat).
+  2. **Field 1 (Identitas Mahasiswa):** Input NIM dan Nama Lengkap (Opsional / Sukarela agar proses lapor cepat < 30 detik tanpa friksi).
   3. **Field 2 (Data Buku):** Input Barcode Buku (didukung tombol *Scan Barcode Kamera*) dan Judul Buku.
   4. **Field 3 (Jenis Kerusakan / Masalah):** Radio card interaktif:
      - 📕 Halaman Robek / Rusak Fisik

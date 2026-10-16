@@ -57,9 +57,23 @@ Gunakan angka dan kondisi faktual berikut dari dokumen wawancara `[Jawaban3_Fina
 ---
 
 ## ✍️ STANDAR ANTI-AI WRITING
-- ❌ **DILARANG:** Penggunaan tanda *Em-dash* (`—` atau `--`). Ganti dengan tanda titik, koma, atau tanda kurung.
-- ❌ **DILARANG:** Kosakata AI-slop (*unlock, elevate, empower, delve, showcase, robust, seamless, cutting-edge, revolutionizing, tapestry, pivotal*).
+- ❌ **DILARANG:** Penggunaan tanda Em-dash strip panjang. Ganti dengan tanda titik, koma, atau tanda kurung.
+- ❌ **DILARANG:** Kosakata AI-slop (*unlock*, *elevate*, *empower*, *delve*, *showcase*, *robust*, *seamless*, *cutting-edge*, *revolutionizing*, *tapestry*, *pivotal*).
 - ❌ **DILARANG:** Penutup generik-positif klise ("Ke depan, diharapkan sistem ini akan membawa dampak positif...").
 - ❌ **DILARANG:** Kalimat pasif tanpa subjek yang jelas ("Data tidak diupdate"). **WAJIB:** "Pustakawan menunda pemutakhiran data SLiMS karena melayani transaksi peminjaman di meja sirkulasi."
 - ✅ **WAJIB:** Penekanan bold maksimal 2–3 frasa substantif per paragraf.
+
+---
+
+## 🤝 KOLABORASI PENULISAN DENGAN PENGGUNA (CO-DRAFTING & TONE TUNING)
+
+Ketika menyusun atau merevisi laporan bersama pengguna:
+1. **Reseptif Terhadap Gaya yang Diinginkan**: Jika pengguna menginginkan bahasa yang lebih padat, ringkas, atau sebaliknya lebih elaboratif dengan studi pustaka, Agent segera menyesuaikan ritme tulisan.
+2. **Klarifikasi Sebelum Merombak**: Ajukan opsi penyesuaian jika ada dilema antara kepatuhan akademis dan keringkasan naskah.
+3. **Harmonisasi Otomatis**: Pertahankan esensi 7 Aspek Bu Ratna dan bukti riil Wawancara 3 sambil mengadopsi masukan struktur dari pengguna.
+
+---
+
+## 🔗 Navigasi Graf
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[agent]] | [[skill]] | [[collaborative-brainstorming]] | [[TRAINING_PLAYBOOK]] | [[self-audit]] | [[prose-crafting]]
 
