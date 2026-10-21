@@ -35,9 +35,10 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 
 ---
 
-## 03_DATA-LAPANGAN/Wawancara (Transkrip Wawancara Primer - 2 Berkas)
+## 03_DATA-LAPANGAN/Wawancara (Transkrip Wawancara Primer & Benchmarking - 3 Berkas)
 - [x] **SRC-WAW-01**: [[Jawaban3_Final]] (Wawancara 3: Detail Alur Sirkulasi SLiMS, Titik Keterlambatan, Usulan SOP Quiet Hour, Rak Transit & QR Code)
 - [x] **SRC-WAW-02**: [[Jawaban_Wawancara (2)]] (Wawancara 2: Profil 3 Layanan Pustakawan Tunggal, Pelaporan ke Wakil Dekan FT, Standar SNP 2024 & UU 43/2007)
+- [ ] **SRC-WAW-03**: [[wawancara-fisip]] (Instrumen Wawancara Komparasi / Benchmarking: Tata Kelola SLiMS, Beban Kerja SDM, dan Akreditasi Perpustakaan FISHIPOL UNY)
 
 ---
 
