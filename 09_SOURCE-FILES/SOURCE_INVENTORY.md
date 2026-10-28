@@ -16,7 +16,7 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 
 ---
 
-## 04_MODUL-DAN-MATERI (Panduan Kurikulum & Silabus Dosen - 14 Berkas)
+## 04_MODUL-DAN-MATERI (Panduan Kurikulum & Silabus Dosen - 17 Berkas)
 - [x] **SRC-MOD-01**: [[Modul 1]] | `Modul 1.pdf` (Konsep Dasar Sistem Informasi Manajemen & Organisasi)
 - [x] **SRC-MOD-02**: [[Modul 2]] | `Modul 2.pdf` (Analisis Kebutuhan Informasi Pemangku Kepentingan)
 - [x] **SRC-MOD-03**: [[Modul 3]] | `Modul 3.pdf` (Analisis Masalah Organisasi & Prioritas Solusi)
@@ -24,6 +24,9 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 - [x] **SRC-MOD-05**: [[Modul 5]] | `Modul 5.pdf` (Penetapan Peran Tim & Model Kolaborasi RACI)
 - [x] **SRC-MOD-06**: [[Modul 6]] | `Modul 6.pdf` (Strategi Implementasi SI & Manajemen Perubahan)
 - [x] **SRC-MOD-07**: [[Modul 7]] | `Modul 7.pdf` (Penjadwalan Proyek, WBS, Gantt & PERT Chart)
+- [x] **SRC-MOD-08**: [[Modul 8]] | `Wireframe.pdf` (Perancangan Wireframe & Alur Informasi Sistem)
+- [x] **SRC-MOD-09**: [[Modul 9]] | `Mockup.pdf` (Penyusunan Mockup Interaktif Berfidelitas Tinggi & Kondisi Khusus)
+- [x] **SRC-MOD-10**: [[Modul 10]] | `Modul 10.pdf` (Validasi Mockup bersama Pemangku Kepentingan terhadap Masalah dan Keputusan)
 
 ---
 
