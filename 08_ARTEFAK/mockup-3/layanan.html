@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Mandiri Perpustakaan FT UNY | Akses Stiker QR</title>
+  <meta name="description" content="Layanan mandiri pemustaka Perpustakaan FT UNY melalui scan QR: lapor buku rusak dan pengajuan perpanjangan/request koleksi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-public-qr">
+
+  <!-- NOTIFICATION TOAST CONTAINER -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- ========================================================================= -->
+  <!-- PORTAL PEMUSTAKA (HASIL SCAN STIKER QR - MURNI TANPA MENU LOGIN)          -->
+  <!-- ========================================================================= -->
+  <div class="public-app-wrapper">
+    
+    <!-- Topbar Publik Murni (Tanpa Tombol Login Pustakawan) -->
+    <header class="public-topbar">
+      <div class="brand">
+        <div class="brand-badge">FT UNY</div>
+        <div>
+          <h1 class="brand-title">SIMPEL-KOLEKSI</h1>
+          <p class="brand-subtitle">Layanan Mandiri Pemustaka Perpustakaan FT UNY</p>
+        </div>
+      </div>
+
+      <div class="public-actions">
+        <span class="qr-mode-indicator">
+          <span class="live-dot"></span> Akses Meja Baca & Rak
+        </span>
+      </div>
+    </header>
+
+    <main class="public-container">
+
+      <!-- ===================================================================== -->
+      <!-- SUB-VIEW 1: LANDING HERO (2 PILIHAN TOMBOL UTAMA)                     -->
+      <!-- ===================================================================== -->
+      <div id="subViewLanding" class="public-subview is-active">
+        <div class="hero-header">
+          <div class="badge-pill">Layanan Cepat Bebas Antrean Loket</div>
+          <h2>Layanan Mandiri Pemustaka FT UNY</h2>
+          <p>Silakan pilih layanan yang Anda butuhkan melalui opsi di bawah. Laporan Anda langsung tercatat resmi pada sistem meja kerja pustakawan tanpa melalui perantara pesan pribadi.</p>
+        </div>
+
+        <div class="choice-cards-grid">
+          
+          <!-- KARTU 1: LAPOR BUKU BERMASALAH -->
+          <article class="choice-card card-damage" id="cardSelectDamage">
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-card-icon">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <line x1="12" y1="6" x2="16" y2="6"></line>
+                <line x1="12" y1="10" x2="16" y2="10"></line>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag tag-warning">Masalah Fisik & Rak</span>
+              <h3>Lapor Buku Rusak / Hilang</h3>
+              <p>Laporkan buku yang sobek, jilidan lepas, salah letak, atau tidak Anda temukan saat penelusuran di lorong rak koleksi.</p>
+              <div class="card-meta">
+                <span class="meta-item">Penyerahan Fisik: Rak Transit (RACK-001)</span>
+                <span class="meta-item">Pemeriksaan: Sesi Terjadwal Quiet Hour</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary btn-block btn-lg" id="btnOpenDamageForm">
+                <span>Lapor Buku Bermasalah</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- KARTU 2: LAYANAN & REQUEST KOLEKSI (PERPANJANGAN & USULAN REFERENSI) -->
+          <article class="choice-card card-service" id="cardSelectService">
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-card-icon">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag tag-info">Layanan Mandiri Digital</span>
+              <h3>Layanan & Request Koleksi</h3>
+              <p>Ajukan perpanjangan masa pinjam buku tanpa antre loket, atau ajukan permintaan pencarian referensi baru untuk skripsi dan riset.</p>
+              <div class="card-meta">
+                <span class="meta-item">Sirkulasi SLiMS: Perpanjangan +7 Hari</span>
+                <span class="meta-item">Akreditasi: Usulan Pagu Belanja Baru</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-secondary btn-block btn-lg" id="btnOpenServiceForm">
+                <span>Pilih Layanan & Request</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="public-help-box">
+          <div class="help-content">
+            <strong>Informasi Penyerahan Buku Fisik:</strong>
+            <span>Jika Anda melaporkan buku rusak, letakkan buku tersebut pada <strong>Rak Transit Tingkat 2</strong> di samping meja sirkulasi agar dapat diperiksa langsung oleh pustakawan pada jam hening layanan.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- SUB-VIEW 2: FORMULIR LAPOR BUKU RUSAK & HILANG                        -->
+      <!-- ===================================================================== -->
+      <div id="subViewDamageForm" class="public-subview">
+        <div class="subview-nav">
+          <button type="button" class="btn-back-nav" id="btnBackFromDamage">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="nav-chevron">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Kembali ke Pilihan Layanan</span>
+          </button>
+          <span class="subview-breadcrumb">Layanan Mandiri / Lapor Koleksi Bermasalah</span>
+        </div>
+
+        <div class="form-grid-layout">
+          <!-- Kolom Kiri: Formulir Input -->
+          <div class="form-card">
+            <div class="form-card-header">
+              <h3>Identitas Koleksi & Jenis Masalah</h3>
+              <p>Masukkan nomor barcode buku yang Anda temukan bermasalah.</p>
+            </div>
+
+            <form id="formDamageReport" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="dmgReporterName">Nama Pelapor <span class="req">*</span></label>
+                  <input type="text" id="dmgReporterName" class="form-control" placeholder="Contoh: Gantar Abimanyu" required>
+                </div>
+                <div class="form-group">
+                  <label for="dmgReporterNim">NIM Pelapor <span class="req">*</span></label>
+                  <input type="text" id="dmgReporterNim" class="form-control font-mono" placeholder="Contoh: 24050530042" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dmgBarcode">Nomor Barcode / ID Eksemplar <span class="req">*</span></label>
+                <div class="input-with-action">
+                  <input type="text" id="dmgBarcode" class="form-control font-mono" placeholder="Contoh: B004125 atau FT-INF-2024-072" required>
+                  <button type="button" class="btn btn-sm btn-outline" id="btnSimulateScanBarcode">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                    <span>Simulasi Scan</span>
+                  </button>
+                </div>
+                <div class="quick-chips">
+                  <span class="chip-label">Sampel Barcode:</span>
+                  <button type="button" class="chip" data-fill="B004125|Algoritma Pemrograman|005.1 KUN a">B004125</button>
+                  <button type="button" class="chip" data-fill="FT-INF-2024-072|Kecerdasan Buatan Terapan|006.3 RUS k">FT-INF-2024-072</button>
+                  <button type="button" class="chip" data-fill="B001980|Rekayasa Perangkat Lunak|005.1 PRE r">B001980</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dmgBookTitle">Judul Buku <span class="req">*</span></label>
+                <input type="text" id="dmgBookTitle" class="form-control" placeholder="Judul buku sesuai sampul" required>
+              </div>
+
+              <div class="form-group">
+                <label>Kategori Masalah Koleksi <span class="req">*</span></label>
+                <div class="radio-cards-grid">
+                  <label class="radio-card">
+                    <input type="radio" name="dmgType" value="Halaman Sobek / Rusak" checked>
+                    <div class="radio-card-content">
+                      <div class="radio-tag-dot"></div>
+                      <div class="radio-text">
+                        <strong>Halaman Sobek / Rusak</strong>
+                        <small>Tercoret, basah, atau lembar lepas</small>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="radio-card">
+                    <input type="radio" name="dmgType" value="Jilidan Rusak / Sampul Lepas">
+                    <div class="radio-card-content">
+                      <div class="radio-tag-dot"></div>
+                      <div class="radio-text">
+                        <strong>Jilidan Rusak / Sampul</strong>
+                        <small>Punggung buku patah atau jilid lepas</small>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="radio-card">
+                    <input type="radio" name="dmgType" value="Salah Rak / Nyasar">
+                    <div class="radio-card-content">
+                      <div class="radio-tag-dot"></div>
+                      <div class="radio-text">
+                        <strong>Salah Rak / Nyasar</strong>
+                        <small>Buku terselip di klasifikasi lain</small>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="radio-card">
+                    <input type="radio" name="dmgType" value="Koleksi Tidak Ditemukan">
+                    <div class="radio-card-content">
+                      <div class="radio-tag-dot"></div>
+                      <div class="radio-text">
+                        <strong>Tidak Ditemukan di Rak</strong>
+                        <small>Tercatat di katalog namun fisik raib</small>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dmgNotes">Catatan Tambahan Kerusakan (Opsional)</label>
+                <textarea id="dmgNotes" class="form-control" rows="2" placeholder="Contoh: Halaman 45-50 robek bagian tengah"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitDamage">
+                <span>Kirim Laporan & Dapatkan Arahan Rak</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Kolom Kanan: Panduan Rak Transit Fisik (RACK-001) -->
+          <div class="transit-guide-card">
+            <div class="guide-header">
+              <span class="guide-badge">SOP-001 / RACK-001</span>
+              <h4>Panduan Penyerahan Fisik Buku</h4>
+              <p>Setelah mengirim laporan, letakkan buku pada <strong>Rak Transit Fisik (RACK-001)</strong> di dekat meja sirkulasi agar tidak tercecer.</p>
+            </div>
+
+            <!-- Diagram Visual Rak Transit -->
+            <div class="rack-diagram">
+              <div class="rack-tier tier-2">
+                <div class="tier-badge">TINGKAT 2: BUFFER ZONE PEMERIKSAAN</div>
+                <div class="tier-shelf">
+                  <div class="shelf-book damaged">Buku Rusak / Laporan QR</div>
+                  <div class="shelf-arrow">&larr; LETAKKAN DI SINI</div>
+                </div>
+                <small class="tier-note">Khusus buku rusak, sobek, atau bermasalah yang menunggu verifikasi pustakawan.</small>
+              </div>
+
+              <div class="rack-tier tier-1">
+                <div class="tier-badge">TINGKAT 1: PENGEMBALIAN NORMAL</div>
+                <div class="tier-shelf">
+                  <div class="shelf-book normal">Buku Selesai Dibaca Normal</div>
+                </div>
+                <small class="tier-note">Untuk buku utuh yang selesai dibaca di tempat sebelum shelving rutin.</small>
+              </div>
+            </div>
+
+            <div class="guide-steps-list">
+              <div class="g-step">
+                <span class="step-num">1</span>
+                <span>Kirim laporan melalui formulir ini untuk menerbitkan nomor tiket resmi.</span>
+              </div>
+              <div class="g-step">
+                <span class="step-num">2</span>
+                <span>Bawa buku ke <strong>Rak Transit</strong> samping meja loket sirkulasi.</span>
+              </div>
+              <div class="g-step">
+                <span class="step-num">3</span>
+                <span>Letakkan di <strong>Tingkat 2</strong>. Pustakawan memverifikasi fisik saat Quiet Hour.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- SUB-VIEW 3: FORM LAYANAN MANDIRI (PERPANJANGAN & REQUEST REFERENSI)   -->
+      <!-- ===================================================================== -->
+      <div id="subViewServiceForm" class="public-subview">
+        <div class="subview-nav">
+          <button type="button" class="btn-back-nav" id="btnBackFromService">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="nav-chevron">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Kembali ke Pilihan Layanan</span>
+          </button>
+          <span class="subview-breadcrumb">Layanan Mandiri / Perpanjangan & Permintaan Referensi</span>
+        </div>
+
+        <!-- Tab Switcher Antara Perpanjangan vs Usulan Referensi -->
+        <div class="service-tabs">
+          <button type="button" class="service-tab-btn is-active" id="tabBtnExtend" data-target="panelExtend">
+            <span>Perpanjangan Masa Pinjam Buku</span>
+          </button>
+          <button type="button" class="service-tab-btn" id="tabBtnRequest" data-target="panelRequest">
+            <span>Request Referensi & Usulan Buku Baru</span>
+          </button>
+        </div>
+
+        <!-- PANEL A: PERPANJANGAN MASA PINJAM -->
+        <div id="panelExtend" class="service-panel is-active">
+          <div class="panel-intro-box info-blue">
+            <strong>Ketentuan Perpanjangan Mandiri SLiMS:</strong>
+            <span>Perpanjangan berlaku untuk buku yang belum melewati tempo keterlambatan dan tidak sedang dipesan oleh pemustaka lain. Buku <strong>tidak perlu dibawa atau ditaruh di rak transit</strong>.</span>
+          </div>
+
+          <div class="form-card max-w-700">
+            <form id="formExtendLoan" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="extMemberName">Nama Peminjam <span class="req">*</span></label>
+                  <input type="text" id="extMemberName" class="form-control" placeholder="Nama mahasiswa atau dosen" required>
+                </div>
+                <div class="form-group">
+                  <label for="extMemberId">NIM / NIP (ID Anggota) <span class="req">*</span></label>
+                  <input type="text" id="extMemberId" class="form-control font-mono" placeholder="NIM mahasiswa atau NIP dosen" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="extBarcode">Nomor Barcode Buku yang Dipinjam <span class="req">*</span></label>
+                <input type="text" id="extBarcode" class="form-control font-mono" placeholder="Contoh: B003891 (Lihat stiker barcode di belakang buku)" required>
+                <div class="quick-chips">
+                  <span class="chip-label">Sampel Barcode:</span>
+                  <button type="button" class="chip chip-ext" data-fill="B003891|Jaringan Komputer dan Komunikasi Data">B003891</button>
+                  <button type="button" class="chip chip-ext" data-fill="FT-ELE-2023-014|Sistem Kendali Tenaga Listrik">FT-ELE-2023-014</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="extBookTitle">Judul Buku <span class="req">*</span></label>
+                <input type="text" id="extBookTitle" class="form-control" placeholder="Judul buku yang sedang dipinjam" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="extDuration">Tambahan Masa Pinjam</label>
+                  <input type="text" id="extDuration" class="form-control" value="+7 Hari Kerja (Sesuai Konfigurasi SLiMS)" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="extWhatsapp">Nomor WhatsApp Aktif <span class="req">*</span></label>
+                  <input type="tel" id="extWhatsapp" class="form-control font-mono" placeholder="Contoh: 081234567890" required>
+                  <small class="field-hint">Untuk pengiriman konfirmasi status perpanjangan dari petugas.</small>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-secondary btn-block btn-lg" id="btnSubmitExtend">
+                <span>Ajukan Perpanjangan Pinjam SLiMS</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- PANEL B: REQUEST REFERENSI & USULAN BUKU -->
+        <div id="panelRequest" class="service-panel">
+          <div class="panel-intro-box info-emerald">
+            <strong>Dukungan Akreditasi & Koleksi Pemustaka:</strong>
+            <span>Ajukan judul buku atau referensi yang tidak Anda temukan di katalog untuk kebutuhan tugas akhir, riset, atau perkuliahan. Data ini menjadi dasar usulan pengadaan buku baru ke Dekanat (LAM-INFOKOM Kriteria 5).</span>
+          </div>
+
+          <div class="form-card max-w-700">
+            <form id="formRequestRef" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reqRequesterName">Nama Lengkap <span class="req">*</span></label>
+                  <input type="text" id="reqRequesterName" class="form-control" placeholder="Nama mahasiswa atau dosen" required>
+                </div>
+                <div class="form-group">
+                  <label for="reqMemberId">NIM / NIP <span class="req">*</span></label>
+                  <input type="text" id="reqMemberId" class="form-control font-mono" placeholder="NIM atau NIP" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reqRole">Status Pemohon <span class="req">*</span></label>
+                  <select id="reqRole" class="form-control" required>
+                    <option value="Mahasiswa S1">Mahasiswa S1</option>
+                    <option value="Mahasiswa D4/Vokasi">Mahasiswa D4/Vokasi</option>
+                    <option value="Dosen Fakultas Teknik">Dosen Fakultas Teknik</option>
+                    <option value="Tenaga Kependidikan">Tenaga Kependidikan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="reqProdi">Program Studi <span class="req">*</span></label>
+                  <select id="reqProdi" class="form-control" required>
+                    <option value="Pendidikan Teknik Informatika">Pendidikan Teknik Informatika (PTI)</option>
+                    <option value="Teknologi Informasi">Teknologi Informasi (TI)</option>
+                    <option value="Pendidikan Teknik Elektro">Pendidikan Teknik Elektro (PTE)</option>
+                    <option value="Pendidikan Teknik Elektronika">Pendidikan Teknik Elektronika</option>
+                    <option value="Pendidikan Teknik Mesin">Pendidikan Teknik Mesin (PTM)</option>
+                    <option value="Pendidikan Teknik Sipil & Perencanaan">Teknik Sipil & Perencanaan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reqBookTopic">Judul Buku / Topik Referensi yang Dibutuhkan <span class="req">*</span></label>
+                <input type="text" id="reqBookTopic" class="form-control" placeholder="Contoh: Pemrograman Deep Learning dengan PyTorch (Penulis: Zhang, 2024)" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reqPurpose">Keperluan Utama Referensi <span class="req">*</span></label>
+                  <select id="reqPurpose" class="form-control" required>
+                    <option value="Tugas Akhir / Skripsi">Tugas Akhir / Skripsi</option>
+                    <option value="Praktikum & Modul Kuliah">Praktikum & Modul Kuliah</option>
+                    <option value="Riset / Penelitian Dosen">Riset / Penelitian Dosen</option>
+                    <option value="Pengayaan Bahan Bacaan">Pengayaan Bahan Bacaan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="reqWhatsapp">Nomor WhatsApp Aktif <span class="req">*</span></label>
+                  <input type="tel" id="reqWhatsapp" class="form-control font-mono" placeholder="Contoh: 081987654321" required>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-emerald btn-block btn-lg" id="btnSubmitRequest">
+                <span>Kirim Permintaan Referensi</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- SUB-VIEW 4: TIKET SUKSES / DIGITAL DROP PASS                          -->
+      <!-- ===================================================================== -->
+      <div id="subViewTicketSuccess" class="public-subview">
+        <div class="success-card">
+          <div class="success-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-check-icon">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <span class="success-badge" id="successBadgeType">LAPORAN DITERIMA RESMI</span>
+          <h2 id="successTitle">Tiket Berhasil Diterbitkan</h2>
+          <p id="successDesc">Laporan Anda telah tercatat pada pangkalan data antrean pustakawan dan siap diproses.</p>
+
+          <div class="digital-ticket-card">
+            <div class="ticket-header">
+              <span class="ticket-brand">PERPUSTAKAAN FT UNY</span>
+              <span class="ticket-code font-mono" id="ticketCodeDisplay">TKT-202610-099</span>
+            </div>
+            <div class="ticket-body">
+              <div class="t-row">
+                <span class="t-label">Identitas Koleksi:</span>
+                <strong class="t-val" id="ticketBookDisplay">-</strong>
+              </div>
+              <div class="t-row">
+                <span class="t-label">Barcode / Call Number:</span>
+                <span class="t-val font-mono" id="ticketBarcodeDisplay">-</span>
+              </div>
+              <div class="t-row">
+                <span class="t-label">Kategori Layanan:</span>
+                <span class="t-val" id="ticketTypeDisplay">-</span>
+              </div>
+              <div class="t-row">
+                <span class="t-label">Pelapor / Pemohon:</span>
+                <span class="t-val" id="ticketUserDisplay">-</span>
+              </div>
+              <div class="t-row">
+                <span class="t-label">Status Penanganan:</span>
+                <span class="t-val tag-status" id="ticketStatusDisplay">Menunggu Verifikasi</span>
+              </div>
+            </div>
+            <div class="ticket-footer" id="ticketTransitAlert">
+              <div class="transit-alert-box">
+                <strong>Tindak Lanjut Fisik:</strong>
+                <span id="ticketInstructionText">Segera bawa buku fisik ke <strong>Rak Transit Tingkat 2</strong> di samping loket sirkulasi perpustakaan.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="success-actions">
+            <button type="button" class="btn btn-primary" id="btnReturnHome">
+              <span>Kembali ke Menu Utama</span>
+            </button>
+            <button type="button" class="btn btn-outline" id="btnPrintTicket">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span>Cetak Slip Tiket</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

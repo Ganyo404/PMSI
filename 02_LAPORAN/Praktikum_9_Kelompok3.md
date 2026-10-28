@@ -23,7 +23,7 @@ tags:
   - pure-governance
 ---
 
-> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | [[CONTEXT_INDEX]] | Landasan Teori: [[Modul 9]] | Laporan Sebelumnya: [[Praktikum_8_Kelompok3]] | Artefak Blueprint: [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT]] | Berkas Prototipe Web: `08_ARTEFAK/mockup/index.html`
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | [[CONTEXT_INDEX]] | Landasan Teori: [[Modul 9]] | Laporan Sebelumnya: [[Praktikum_8_Kelompok3]] | Artefak Blueprint: [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT]] | Berkas Prototipe Web: `08_ARTEFAK/mockup-2/index.html`
 
 # LAPORAN PRAKTIKUM MINGGUAN
 ## MANAJEMEN SISTEM INFORMASI (PTF60234)
@@ -70,7 +70,7 @@ Merujuk pada silabus CPMK 3 dan panduan akademik [[Modul 9]], kegiatan praktikum
 ## 3. Uraian Pelaksanaan Kegiatan
 
 ### 3.1. Transformasi Wireframe Menjadi Mockup Berfidelitas Tinggi
-Pada Pertemuan 8, Kelompok 3 telah menyusun sketsa struktural kotak abu-abu untuk 5 layar prioritas. Pada Pertemuan 9, seluruh rancangan tersebut diwujudkan ke dalam prototipe berbasis web menggunakan arsitektur HTML5, Vanilla CSS Modern, dan Vanilla JavaScript murni tanpa ketergantungan pihak ketiga (*zero dependency*) yang tersimpan pada direktori `08_ARTEFAK/mockup/`.
+Pada Pertemuan 8, Kelompok 3 telah menyusun sketsa struktural kotak abu-abu untuk 5 layar prioritas. Pada Pertemuan 9, seluruh rancangan tersebut diwujudkan ke dalam prototipe berbasis web menggunakan arsitektur HTML5, Vanilla CSS Modern, dan Vanilla JavaScript murni tanpa ketergantungan pihak ketiga (*zero dependency*) yang tersimpan pada direktori `08_ARTEFAK/mockup-2/`.
 
 Pendekatan ini dipilih agar prototipe dapat dijalankan secara instan pada peramban web (*web browser*) manapun tanpa membutuhkan instalasi server yang rumit, selaras dengan prinsip solusi berbiaya nol (*Zero-Budget Governance*). Prototipe mengadopsi standar estetika profesional:
 1. **Palet Warna Kurasi Institusional:** Memadukan *Primary Brand Academic Navy* (`#0a1931` dan `#0f2b5c`) untuk mencerminkan otoritas akademik UNY, *Secondary Accent SLiMS Cyan* (`#0284c7` dan `#38bdf8`) untuk integrasi otomasi perpustakaan, serta indikator visual kepatuhan batas waktu layanan (*Service Level Agreement* / SLA) menggunakan *Emerald Glow* (`#10b981`), *Warm Amber* (`#f59e0b`), dan *Coral Alert* (`#ef4444`).
@@ -101,9 +101,9 @@ Kelompok 3 merancang tiga varian kondisi khusus pada prototipe:
 ### 4.1. Tautan dan Arsitektur Prototipe Mockup Interaktif
 
 Mockup interaktif sistem *SIMPEL-KOLEKSI FT* telah diimplementasikan secara utuh pada repositori lokal:
-- **Lokasi Berkas Utama:** [`08_ARTEFAK/mockup/index.html`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup/index.html)
-- **Tata Gaya Desain:** [`08_ARTEFAK/mockup/styles.css`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup/styles.css)
-- **Logika & Mesin Simulasi:** [`08_ARTEFAK/mockup/app.js`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup/app.js)
+- **Lokasi Berkas Utama:** [`08_ARTEFAK/mockup-2/index.html`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/index.html)
+- **Tata Gaya Desain:** [`08_ARTEFAK/mockup-2/styles.css`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/styles.css)
+- **Logika & Mesin Simulasi:** [`08_ARTEFAK/mockup-2/app.js`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/app.js)
 
 #### Alur Interaktivitas yang Dapat Diklik (*Interactive Walkthrough*):
 1. **Tab Pemustaka:** Pengguna dapat mengetikkan identitas dan memilih tombol cepat (*quick-fill chips*), memilih jenis kerusakan, dan mengklik tombol *"Kirim Laporan"*. Sistem menerbitkan nomor tiket baru (misal `TKT-202610-013`) dan menampilkan modal sukses berisi panduan meletakkan buku di Rak Transit Tingkat 2. Tiket baru tersebut secara otomatis disuntikkan ke dalam pangkalan data simulasi (*live reactive simulation*).
