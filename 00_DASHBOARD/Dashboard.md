@@ -46,6 +46,7 @@ Artefak resmi akumulatif Kelompok 3 (Gantar, Ganendra, Fadlan):
 - **Pertemuan 7:** [[Praktikum_7_Kelompok3|Laporan 7: WBS, Gantt Chart & Analisis Jalur Kritis (PERT)]]
 - **Pertemuan 8:** [[Praktikum_8_Kelompok3|Laporan 8: Alur Pengguna & Wireframe Sistem Informasi]]
 - **Pertemuan 9:** [[Praktikum_9_Kelompok3|Laporan 9: Mockup Interaktif Berfidelitas Tinggi]]
+- **Pertemuan 10:** [[Praktikum_10_Kelompok3|Laporan 10: Pengujian Pengguna & Evaluasi Solusi Sistem Informasi]]
 
 ---
 

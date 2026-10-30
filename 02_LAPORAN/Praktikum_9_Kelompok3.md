@@ -23,7 +23,7 @@ tags:
   - pure-governance
 ---
 
-> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | [[CONTEXT_INDEX]] | Landasan Teori: [[Modul 9]] | Laporan Sebelumnya: [[Praktikum_8_Kelompok3]] | Artefak Blueprint: [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT]] | Berkas Prototipe Web: `08_ARTEFAK/mockup-2/index.html`
+> 🔗 **Navigasi Vault:** Kembali ke [[Dashboard]] | [[CONTEXT_INDEX]] | Landasan Teori: [[Modul 9]] | Laporan Sebelumnya: [[Praktikum_8_Kelompok3]] | Artefak Blueprint: [[Blueprint_Ekosistem_SIMPEL_KOLEKSI_FT]] | Berkas Prototipe Web: [`08_ARTEFAK/mockup-3/index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html) & [`08_ARTEFAK/mockup-3/layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html)
 
 # LAPORAN PRAKTIKUM MINGGUAN
 ## MANAJEMEN SISTEM INFORMASI (PTF60234)
@@ -52,7 +52,7 @@ UNIVERSITAS NEGERI YOGYAKARTA
 | **Nama Kelompok** | Kelompok 3 |
 | **Anggota (NIM / Nama)** | 1. Gantar Abimanyu (24050530042)<br>2. Ganendra Pradipa (24050530038)<br>3. M. Fadlan Dirmansyah (24050530034) |
 | **Pertemuan ke-** | 9 (Sembilan) |
-| **Tanggal Pelaksanaan** | 23 Oktober 2026 |
+| **Tanggal Pelaksanaan** | 23 Oktober 2026 (Revisi Pemutakhiran Desain Mockup-3: 30 Oktober 2026) |
 | **Organisasi / Kasus yang Digunakan** | Perpustakaan Fakultas Teknik, Universitas Negeri Yogyakarta (FT UNY) |
 
 ---
@@ -60,119 +60,234 @@ UNIVERSITAS NEGERI YOGYAKARTA
 ## 2. Tujuan Kegiatan
 
 Merujuk pada silabus CPMK 3 dan panduan akademik [[Modul 9]], kegiatan praktikum Pertemuan 9 ini bertujuan untuk:
-1. Mengembangkan rancangan *wireframe* berfidelitas rendah dari [[Praktikum_8_Kelompok3]] menjadi **Mockup Interaktif Berfidelitas Tinggi (*High-Fidelity Interactive Prototype*)** yang menyerupai antarmuka operasional nyata sistem pendukung tata kelola *SIMPEL-KOLEKSI FT*.
-2. Menyusun data contoh (*sample data*) yang bersumber secara otentik dari kondisi empiris Perpustakaan FT UNY dan pangkalan data SLiMS, lengkap dengan pencatatan asal perolehan data dan penanggung jawab kebenarannya (*data ownership & accountability*).
-3. Merancang dan mengimplementasikan varian tampilan kondisi khusus (*edge cases*), mencakup kondisi data kosong (*empty state*), kondisi mendekati/melewati batas waktu (*delayed/overdue SLA state*), serta penanganan galat validasi (*form validation/error state*).
-4. Menautkan antarmuka lintas peran pemangku kepentingan (Pemustaka, Pustakawan Tunggal, Dekanat, dan Tata Ruang Fisik) ke dalam satu prototipe interaktif berbasis web yang bebas tautan putus dan siap diujikan kepada pengguna pada Pertemuan 10.
+1. Mengembangkan rancangan *wireframe* berfidelitas rendah dari [[Praktikum_8_Kelompok3]] menjadi **Mockup Interaktif Berfidelitas Tinggi (*High-Fidelity Interactive Prototype*)** generasi terbaru (*Mockup-3*) yang memisahkan kanal pelaporan mandiri pemustaka dengan meja kerja sirkulasi pustakawan secara terpadu.
+2. Menyusun data contoh (*sample data*) yang bersumber secara otentik dari kondisi empiris Perpustakaan FT UNY dan pangkalan data SLiMS 9 Bulian, lengkap dengan pencatatan asal perolehan data dan penanggung jawab kebenarannya (*data ownership & accountability*).
+3. Merancang dan mengimplementasikan varian tampilan kondisi khusus (*edge cases*), mencakup kondisi data kosong (*empty state*), kondisi mendekati batas waktu verifikasi fisik (*delayed/overdue SLA alert*), sesi kerja terfokus (*Quiet Hour timer*), serta penanganan galat validasi (*form validation guard*).
+4. Menautkan antarmuka lintas peran pemangku kepentingan (Pemustaka di lorong rak, Pustakawan Tunggal di meja sirkulasi, dan Pimpinan Fakultas/Dekanat) ke dalam satu ekosistem web terpadu yang siap diujikan kepada pengguna (*usability testing*) pada Pertemuan 10.
 
 ---
 
 ## 3. Uraian Pelaksanaan Kegiatan
 
-### 3.1. Transformasi Wireframe Menjadi Mockup Berfidelitas Tinggi
-Pada Pertemuan 8, Kelompok 3 telah menyusun sketsa struktural kotak abu-abu untuk 5 layar prioritas. Pada Pertemuan 9, seluruh rancangan tersebut diwujudkan ke dalam prototipe berbasis web menggunakan arsitektur HTML5, Vanilla CSS Modern, dan Vanilla JavaScript murni tanpa ketergantungan pihak ketiga (*zero dependency*) yang tersimpan pada direktori `08_ARTEFAK/mockup-2/`.
+### 3.1. Transformasi Wireframe Menjadi Mockup Berfidelitas Tinggi (Mockup-3)
+Pada Pertemuan 8, Kelompok 3 telah menyusun sketsa struktural kotak abu-abu (*low-fidelity wireframe*) berbasis kaidah Balsamiq untuk modul-modul prioritas. Pada Pertemuan 9, seluruh rancangan konseptual tersebut ditingkatkan menjadi **Mockup Interaktif Berfidelitas Tinggi (*High-Fidelity Interactive Prototype*)** generasi terbaru (*Mockup-3*) yang memisahkan kanal pelaporan mandiri pemustaka ([`layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html)) dan meja kerja sirkulasi pustakawan ([`index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html)).
 
-Pendekatan ini dipilih agar prototipe dapat dijalankan secara instan pada peramban web (*web browser*) manapun tanpa membutuhkan instalasi server yang rumit, selaras dengan prinsip solusi berbiaya nol (*Zero-Budget Governance*). Prototipe mengadopsi standar estetika profesional:
-1. **Palet Warna Kurasi Institusional:** Memadukan *Primary Brand Academic Navy* (`#0a1931` dan `#0f2b5c`) untuk mencerminkan otoritas akademik UNY, *Secondary Accent SLiMS Cyan* (`#0284c7` dan `#38bdf8`) untuk integrasi otomasi perpustakaan, serta indikator visual kepatuhan batas waktu layanan (*Service Level Agreement* / SLA) menggunakan *Emerald Glow* (`#10b981`), *Warm Amber* (`#f59e0b`), dan *Coral Alert* (`#ef4444`).
-2. **Tipografi Modern:** Menggunakan jenis huruf *Plus Jakarta Sans* dan *Inter* untuk keterbacaan antarmuka, serta *JetBrains Mono* untuk nomor tiket resmi (`TKT-202610-XXX`) dan nomor barcode eksemplar (`FT-INF-2024-XXX`).
-3. **Multi-Viewport Framing:** Menyediakan tombol alih mode fleksibel (*Role Nav*) di bagian atas, memungkinkan penguji beralih peran secara mulus antara **Portal Pemustaka** (dengan opsi simulator ponsel cerdas 390px dan mode web penuh), **Workspace Pustakawan** (format dasbor desktop dengan bilah *Quiet Hour*), **Dashboard Eksekutif** (analisis grafis agregat sirkulasi), dan **Blueprint Tata Ruang** (denah interaktif penempatan Rak Transit RACK-001).
+Berikut adalah visualisasi perbandingan transformasi struktural dari kerangka *wireframe* kotak abu-abu Pertemuan 8 menuju realisasi *mockup* berfidelitas tinggi Pertemuan 9:
+
+| Modul Layanan | Wireframe Balsamiq (Pertemuan 8) | Mockup Berfidelitas Tinggi (Pertemuan 9) |
+| :--- | :--- | :--- |
+| **Kanal Pemustaka:** Formulir Lapor Koleksi Bermasalah | ![Wireframe Lapor Buku](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/wireframe_lapor_buku_bermasalah.png) | ![Mockup Lapor Buku](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar2_formulir_lapor_rak.png) |
+| **Kanal Pustakawan / Pimpinan:** Pemutakhiran Koleksi & Ekspor | ![Wireframe Laporan Pemutakhiran](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/wireframe_laporan_pemutakhiran_semester.png) | ![Mockup Meja Kerja Pustakawan](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar6_verifikasi_koleksi_rusak.png) |
+
+Berbeda dengan prototipe awal yang menggabungkan seluruh peran ke dalam satu halaman bertab (*single-page tabs*), arsitektur *Mockup-3* menerapkan pemisahan kanal antarmuka (*Separation of Concerns*) sesuai karakteristik lingkungan fisik penggunanya:
+1. **Portal Layanan Mandiri Pemustaka ([`layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html)):**
+   Dirancang untuk diakses oleh mahasiswa dan dosen melalui pemindaian stiker kode QR di meja baca dan lorong rak buku. Antarmuka ini bersifat tanpa hambatan masuk (*frictionless access* tanpa kewajiban *login* akun petugas), berfokus pada kecepatan pengisian formulir lapor buku rusak, serta dilengkapi panduan grafis penyerahan buku ke Rak Transit Fisik (RACK-001).
+2. **Portal Meja Kerja Pustakawan ([`index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html)):**
+   Dirancang khusus untuk komputer operasional meja sirkulasi perpustakaan. Menggunakan tata letak dasbor desktop profesional (*Sidebar Navigation Layout*) beresolusi 1920x1080 piksel yang mencakup ringkasan metrik KPI harian, sistem peringatan dini kepatuhan batas waktu layanan (*SLA Quiet Hour Warning*), tabel verifikasi laporan buku fisik, alat bantu eksekusi perpanjangan SLiMS, dan modul ekspor data usulan belanja buku Dekanat.
+
+Standar desain *Mockup-3* menerapkan *Design Tokens* institusional yang konsisten:
+- **Warna Institusional:** *UNY Academic Navy* (`#0A1931` dan `#061124`) sebagai latar otoritas akademik, *Action Electric Blue* (`#2563EB`) untuk tombol aksi primer dan penanda status aktif, *SLiMS Connected Mint* (`#059669` dan lencana `#ECFDF5`) untuk indikator integrasi katalog, *Warning Amber* (`#F59E0B` dan `#B45309`) untuk kategori kerusakan fisik, serta *Coral Alert* (`#EF4444`) untuk notifikasi tiket kritis.
+- **Tipografi Terkalibrasi:** Jenis huruf *Plus Jakarta Sans* untuk keterbacaan antarmuka modern dan *JetBrains Mono* untuk nomor barcode eksemplar (`B004125`, `FT-INF-2024-072`), nomor tiket pelaporan (`TKT-202610-001`), dan kode SOP (`SOP-001 / RACK-001`).
+- **Nol Ketergantungan Eksternal (*Zero Dependency*):** Dibangun menggunakan HTML5 semantik, CSS murni berbasis variabel, dan Vanilla JavaScript terstruktur. Prototipe dapat dijalankan seketika (*plug-and-play*) secara lokal tanpa memerlukan instalasi server basis data pihak ketiga, menjunjung tinggi prinsip efisiensi biaya (*Zero-Budget Governance*).
+
+```mermaid
+flowchart TD
+    subgraph LANTAI_PERPUSTAKAAN["Tingkat Operasional: Pemustaka & Lorong Rak"]
+        A["Pemustaka Menemukan Buku Rusak / Ingin Perpanjang"] -->|Pindai Stiker QR di Meja Baca| B["Portal Layanan Mandiri (layanan.html)"]
+        B --> C{"Pilih Layanan"}
+        C -->|Jalur 1: Masalah Fisik| D["Formulir Lapor Buku Rusak + Panduan Rak Transit"]
+        C -->|Jalur 2: Layanan Mandiri| E["Form Perpanjangan SLiMS / Usulan Referensi Baru"]
+        D -->|Penyerahan Buku Fisik| F["Rak Transit Tingkat 2 (RACK-001)"]
+    end
+
+    subgraph MEJA_SIRKULASI["Tingkat Operasional & Manajerial: Meja Kerja Pustakawan"]
+        G["Pustakawan Tunggal (index.html)"] --> H["Dashboard Utama: Peringatan SLA & 4 Kartu KPI"]
+        H --> I["Panel 1: Verifikasi Buku Rusak (SOP-001) + Timer Quiet Hour"]
+        H --> J["Panel 2: Salin Barcode & Eksekusi Perpanjangan SLiMS (+7 Hari)"]
+        H --> K["Panel 3: Konsolidasi Usulan Koleksi Riset / Skripsi"]
+        F -.->|Diperiksa saat Quiet Hour| I
+    end
+
+    subgraph DEKANAT["Tingkat Strategis: Dekanat FT UNY"]
+        I -->|Ekspor CSV Buku Rusak| L["Laporan Perawatan & Penghapusan Koleksi"]
+        K -->|Ekspor CSV Usulan Dekanat| M["Justifikasi Alokasi Pagu Belanja Buku Baru"]
+    end
+
+    style LANTAI_PERPUSTAKAAN fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style MEJA_SIRKULASI fill:#f8fafc,stroke:#0a1931,stroke-width:2px
+    style DEKANAT fill:#ecfdf5,stroke:#059669,stroke-width:2px
+```
 
 ### 3.2. Penegakan Tata Kelola Data Contoh (Aspek 2 MSI)
-Sebagaimana ditekankan dalam materi [[Modul 9]], data contoh pada mockup sistem informasi bukanlah sekadar teks pengisi tampilan (*lorem ipsum*). Dari kacamata tata kelola sistem informasi:
-> *"Setiap angka, nama, atau status pada layar mewakili data yang kelak harus tersedia, akurat, dan memiliki pihak yang bertanggung jawab menjaga kebenarannya."*
-
-Kelompok 3 menyusun data contoh berbasis triangulasi data lapangan dari transkrip [[Jawaban3_Final]], profil katalog web SLiMS Perpustakaan FT UNY, dan laporan akreditasi program studi. Sebagai contoh:
-- Angka total koleksi **4.287 judul** dan **1.842 transaksi sirkulasi triwulanan** pada dasbor eksekutif merupakan agregasi dari pangkalan data SLiMS lokal yang berada di bawah wewenang Pustakawan Tunggal.
-- Rasio keterpakaian buku tertinggi sebesar **94,1%** pada Program Studi Pendidikan Teknik Informatika (764 dari 812 judul terpinjam) bersumber dari log sirkulasi riil mahasiswa PTI. Angka ini secara langsung melandasi rekomendasi kebijakan Dekanat untuk memprioritaskan 35% pagu belanja buku baru tahun 2027 pada pengadaan referensi kecerdasan buatan dan pemrograman.
-- Setiap entri tiket pelaporan memuat nama pelapor, NIM riil FT UNY, barcode buku berstandar DDC lokal, kategori kerusakan fisik, serta tautan foto bukti kondisi buku.
+Dalam disiplin Manajemen Sistem Informasi, data contoh pada mockup antarmuka tidak boleh menggunakan teks semu (*lorem ipsum*) tanpa arti. Setiap kolom, nama pemustaka, nomor induk mahasiswa (NIM), nomor barcode, dan judul buku yang tersaji pada antarmuka *Mockup-3* mewakili data empiris Perpustakaan FT UNY:
+- **Identitas Pemustaka:** Menggunakan nama dan NIM mahasiswa aktif Program Studi Pendidikan Teknik Informatika (S1) Fakultas Teknik UNY (contoh: Gantar Abimanyu / 24050530042, Ganendra Pradipa / 24050530038, M. Fadlan Dirmansyah / 24050530034, Farid Hidayat / 24050530015) serta dosen pengampu (Dr. Hendra Kusuma, M.T. / NIP 198503152010121002).
+- **Identitas Bibliografi Koleksi:** Nomor barcode mengikuti standar penomoran koleksi lokal FT UNY (seperti `B004125`, `FT-INF-2024-072`, `B001980`, `B002811`, dan `FT-SIP-2022-009`) dengan nomor panggil (*call number*) berbasis sistem klasifikasi desimal Dewey (DDC).
+- **Akuntabilitas Kepemilikan Data (*Data Ownership*):** Setiap kelompok data memiliki penanggung jawab kebenaran yang tegas. Pustakawan Tunggal (Siti Rahmawati, S.I.Pst) bertanggung jawab atas keabsahan status eksemplar di SLiMS, pemustaka bertanggung jawab atas kejujuran laporan kondisi fisik buku, dan Dekanat memegang hak persetujuan anggaran belanja buku.
 
 ### 3.3. Penanganan Kondisi Khusus untuk Menjamin Adopsi Organisasi (Aspek 7 MSI)
-Kesiapan adopsi sistem informasi oleh pengguna sangat ditentukan oleh bagaimana sistem merespons kondisi anomali. Pengguna yang menjumpai layar kosong tanpa keterangan (*blank screen*) atau mengalami kehilangan data saat terjadi kesalahan pengisian akan kehilangan kepercayaan terhadap sistem dan enggan menggunakannya kembali (*user abandonment*).
-
-Kelompok 3 merancang tiga varian kondisi khusus pada prototipe:
-1. **Kondisi Data Kosong (*Empty State*):** Apabila antrean tiket pada filter tertentu bernilai nol (misal tidak ada tiket berstatus tertunda), workspace pustakawan menampilkan pesan informatif: *"Tidak ada antrean tiket yang menunggu verifikasi fisik. Seluruh laporan telah disinkronisasikan ke SLiMS"*, lengkap dengan penanda tanggal dan jam pembaruan terakhir. Hal ini memastikan pustakawan mengetahui bahwa sistem berfungsi normal, bukan mengalami pemutusan koneksi server.
-2. **Kondisi Mendekati / Melewati Batas Waktu (*Delayed / Overdue SLA State*):** Laporan yang belum diverifikasi selama lebih dari 3 hari ditandai dengan lencana kuning *Peringatan SLA*, dan laporan di atas 7 hari ditandai lencana merah *Kritis*. Pada dasbor pustakawan, kartu ringkasan menampilkan jumlah tiket kritis dan mengurutkannya ke posisi paling atas agar pustakawan segera memeriksa fisik buku di Rak Transit Tingkat 2 pada sesi *Quiet Hour*.
-3. **Kondisi Galat Validasi Formulir (*Validation Error State*):** Jika mahasiswa mengirimkan laporan dengan barcode yang kosong atau belum memilih salah satu kategori kerusakan, formulir menampilkan pesan peringatan langsung (*inline toast error*) di samping bidang terkait tanpa mengosongkan data nama atau NIM yang telah diisi sebelumnya. Hal ini mencegah mahasiswa harus mengulang pengisian dari awal.
+Keberhasilan adopsi sistem informasi oleh staf tunggal sangat bergantung pada bagaimana antarmuka menangani kondisi-kondisi anomali (*edge cases*). Pada *Mockup-3*, Kelompok 3 menyematkan logika proteksi yang teruji:
+1. **Peringatan Ambang Batas Waktu SLA (*Delayed / Overdue SLA Alert*):** Banner peringatan berwarna amber (`#FFFBEB` dengan garis tepi `#FDE68A`) muncul pada bagian atas dasbor pustakawan ketika terdapat tiket yang mendekati batas waktu verifikasi 3 hari di Rak Transit Tingkat 2. Banner ini secara eksplisit mengingatkan pustakawan: *"Terdapat 1 tiket buku rusak mendekati batas waktu verifikasi fisik 3 hari di Rak Transit Tingkat 2. Alokasikan waktu pada sesi Quiet Hour Jumat 08.00–09.00 WIB."*
+2. **Mode Kerja Fokus Sesi Hening (*Active Quiet Hour Bar*):** Pustakawan dapat mengaktifkan bilah sesi *Quiet Hour* 60 menit melalui tombol aksi header. Bilah gelap institusional (`#0A1931`) akan muncul dengan lencana merah berkedip (*live badge*) dan penghitung waktu mundur (*countdown timer*) 60:00 untuk memberikan batasan psikologis fokus kerja verifikasi katalog tanpa interupsi meja loket.
+3. **Penyaringan Data Kosong (*Empty State Handling*):** Ketika pustakawan memilih filter tiket tertentu yang tidak memiliki entri antrean, tabel tidak menampilkan kekosongan misterius yang membingungkan, melainkan menyajikan kartu informatif bersih yang menegaskan bahwa seluruh laporan pada kategori tersebut telah selesai diproses (*zero-inbox reassurance*).
+4. **Pencegahan Data Sampel Galat (*Input Validation Guard*):** Formulir lapor kerusakan pada `layanan.html` mengunci tombol kirim dan memberikan peringatan interaktif jika pemustaka belum mengisi nomor barcode atau belum menentukan salah satu kategori kerusakan koleksi, menjaga integritas pangkalan data dari data rongsok (*garbage data*).
 
 ---
 
-## 4. Hasil/Artefak Praktikum
+## 4. Hasil dan Artefak Praktikum
 
 ### 4.1. Tautan dan Arsitektur Prototipe Mockup Interaktif
 
-Mockup interaktif sistem *SIMPEL-KOLEKSI FT* telah diimplementasikan secara utuh pada repositori lokal:
-- **Lokasi Berkas Utama:** [`08_ARTEFAK/mockup-2/index.html`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/index.html)
-- **Tata Gaya Desain:** [`08_ARTEFAK/mockup-2/styles.css`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/styles.css)
-- **Logika & Mesin Simulasi:** [`08_ARTEFAK/mockup-2/app.js`](file:///c:/Kuliah/Semester%205/Manajemen%20Sistem%20Informasi%20(sms%205)/Praktikum/PMSI-main/08_ARTEFAK/mockup-2/app.js)
+Mockup interaktif sistem *SIMPEL-KOLEKSI FT (Mockup-3)* telah tersusun secara lengkap dan terstruktur pada repositori lokal:
+- **Portal Meja Kerja Pustakawan:** [`08_ARTEFAK/mockup-3/index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html)
+- **Portal Layanan Mandiri Pemustaka:** [`08_ARTEFAK/mockup-3/layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html)
+- **Tata Gaya Desain Modern:** [`08_ARTEFAK/mockup-3/styles.css`](file:///c:/PMSI/08_ARTEFAK/mockup-3/styles.css)
+- **Mesin Simulasi & Logika Data:** [`08_ARTEFAK/mockup-3/app.js`](file:///c:/PMSI/08_ARTEFAK/mockup-3/app.js)
 
-#### Alur Interaktivitas yang Dapat Diklik (*Interactive Walkthrough*):
-1. **Tab Pemustaka:** Pengguna dapat mengetikkan identitas dan memilih tombol cepat (*quick-fill chips*), memilih jenis kerusakan, dan mengklik tombol *"Kirim Laporan"*. Sistem menerbitkan nomor tiket baru (misal `TKT-202610-013`) dan menampilkan modal sukses berisi panduan meletakkan buku di Rak Transit Tingkat 2. Tiket baru tersebut secara otomatis disuntikkan ke dalam pangkalan data simulasi (*live reactive simulation*).
-2. **Tab Pustakawan:** Mengklik tombol *"▶ Mulai Quiet Hour"* akan menjalankan penghitung mundur fokus kerja 60:00 menit. Pada tabel antrean, pustakawan dapat memfilter tiket (Semua/Pending/Resolved) dan mengklik tombol *"Verifikasi"*. Modal verifikasi menampilkan foto bukti, data pemustaka, serta dua kotak periksa (*checklist*). Saat pustakawan mencentang kedua kotak dan menekan *"Selesaikan Tiket"*, tiket langsung berubah status menjadi `RESOLVED`, lencana SLiMS berubah hijau, dan angka kartu KPI berkurang secara riil.
-3. **Tab Dekanat:** Pengguna dapat melihat animasi visual grafik batang keterpakaian koleksi 5 program studi, rasio donat kondisi buku prima 93,8%, serta mengklik tombol *"Download Borang Kriteria 5"* yang secara nyata mengunduh berkas tabel CSV berstandar akreditasi LAM-INFOKOM ke komputer pengguna.
-4. **Tab Denah:** Pengguna dapat mengklik elemen-elemen denah fisik perpustakaan (seperti Stand Akrilik QR, Rak Transit T1/T2, PC Loket Pustakawan, dan Meja Baca) untuk memunculkan notifikasi ringkas mengenai peran fasilitas tersebut dalam tata kelola.
+Berikut adalah galeri tangkapan layar antarmuka *Mockup-3* yang mencerminkan integrasi menyeluruh tata kelola sistem informasi:
+
+---
+
+#### Layar 1: Portal Layanan Mandiri Pemustaka - Beranda Pilihan Layanan (`layanan.html`)
+
+![Gambar 4.1: Beranda Pilihan Layanan Mandiri Pemustaka FT UNY](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar1_beranda_pemustaka.png)
+*Gambar 4.1: Antarmuka Beranda Pilihan Layanan Mandiri Pemustaka SIMPEL-KOLEKSI FT UNY (layanan.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Halaman awal yang dibuka pemustaka saat memindai stiker kode QR di meja baca atau lorong rak. Menyajikan dua pilihan layanan utama tanpa login: kartu kiri untuk *Lapor Buku Rusak/Hilang* (akses penyerahan fisik ke Rak Transit RACK-001) dan kartu kanan untuk *Layanan & Request Koleksi* (perpanjangan masa pinjam mandiri dan usulan buku baru).
+
+---
+
+#### Layar 2: Formulir Lapor Buku Rusak & Panduan Visual Rak Transit RACK-001 (`layanan.html`)
+
+![Gambar 4.2: Formulir Lapor Buku Rusak dan Panduan Rak Transit RACK-001](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar2_formulir_lapor_rak.png)
+*Gambar 4.2: Formulir Pelaporan Kerusakan Buku dan Panduan Spasial Rak Transit RACK-001 Tingkat 2 (layanan.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Menggabungkan formulir input kerusakan koleksi (nama, NIM, nomor barcode, judul buku, kategori kerusakan radio-card) di kolom kiri, dengan **Diagram Visual Rak Transit Fisik (RACK-001)** di kolom kanan. Diagram memandu pemustaka secara visual untuk meletakkan buku rusak khusus di **Tingkat 2 (Buffer Zone Pemeriksaan)**, sementara buku utuh diletakkan di **Tingkat 1 (Pengembalian Normal)**, menegakkan kepatuhan operasional *SOP-001*.
+
+---
+
+#### Layar 3: Layanan Mandiri Digital - Perpanjangan Pinjam & Usulan Referensi (`layanan.html`)
+
+![Gambar 4.3: Layanan Mandiri Digital Perpanjangan Pinjam dan Request Referensi](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar3_layanan_mandiri_digital.png)
+*Gambar 4.3: Antarmuka Layanan Mandiri Digital Perpanjangan Pinjam dan Usulan Koleksi Baru (layanan.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Memfasilitasi pemustaka mengajukan perpanjangan masa pinjam buku (+7 hari) tanpa perlu antre di loket sirkulasi, serta mengajukan usulan pengadaan buku baru untuk mendukung mata kuliah baru dan pengerjaan skripsi. Data yang dikirimkan langsung mengalir secara waktu nyata (*real-time*) ke antrean meja kerja pustakawan.
+
+---
+
+#### Layar 4: Autentikasi Meja Kerja Sirkulasi Pustakawan (`index.html`)
+
+![Gambar 4.4: Halaman Masuk Meja Kerja Pustakawan FT UNY](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar4_login_pustakawan.png)
+*Gambar 4.4: Gerbang Masuk Otorisasi Meja Kerja Sirkulasi Pustakawan (index.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Gerbang otorisasi keamanan operasional untuk komputer meja sirkulasi. Memastikan bahwa hak pemutakhiran katalog SLiMS dan penerimaan tiket fisik hanya dapat diakses oleh petugas resmi perpustakaan fakultas (Siti Rahmawati, S.I.Pst).
+
+---
+
+#### Layar 5: Dashboard Utama & Rangkuman Layanan Pustakawan (`index.html`)
+
+![Gambar 4.5: Dashboard Utama Meja Kerja Pustakawan dan Peringatan SLA](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar5_dashboard_utama.png)
+*Gambar 4.5: Dashboard Utama Meja Kerja Pustakawan dengan Peringatan SLA Quiet Hour dan 4 Kartu Metrik KPI (index.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Pusat kendali operasional pustakawan tunggal. Memuat banner peringatan kepatuhan batas waktu verifikasi fisik *SLA Quiet Hour (SOP-001)*, empat kartu metrik KPI terpadu (Total Masuk Hari Ini, Menunggu Verifikasi Rak, Perpanjangan Diproses, Usulan Referensi Masuk), serta dua tabel rangkuman cepat untuk pemrosesan sirkulasi kilat dan pemantauan buku rusak di Rak Transit Tingkat 2.
+
+---
+
+#### Layar 6: Verifikasi & Pemutakhiran Koleksi Rusak SOP-001 (`index.html`)
+
+![Gambar 4.6: Panel Verifikasi Koleksi Rusak dan Sesi Quiet Hour](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar6_verifikasi_koleksi_rusak.png)
+*Gambar 4.6: Panel Verifikasi Koleksi Rusak, Penghitung Waktu Sesi Quiet Hour 60 Menit, dan Ekspor CSV (index.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Ruang kerja utama pustakawan saat menjalankan sesi hening mingguan. Dilengkapi tombol pemicu hitung mundur *Quiet Hour (60m)*, penyaring status tiket (*Semua, Menunggu Verifikasi, Dalam Perbaikan, Selesai*), tombol interaktif *Verifikasi SLiMS*, serta tombol *Export CSV Buku Rusak* untuk pelaporan berkala kondisi fisik koleksi.
+
+---
+
+#### Layar 7: Manajemen Perpanjangan Masa Pinjam & Salin Eksekusi SLiMS (`index.html`)
+
+![Gambar 4.7: Panel Perpanjangan Pinjam Mandiri dengan Fitur Salin Eksekusi SLiMS](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar7_perpanjangan_slims.png)
+*Gambar 4.7: Panel Manajemen Perpanjangan Pinjam Mandiri dengan Tombol Otomasi Salin Barcode ke SLiMS (index.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Mendukung otomasi tugas pustakawan tunggal melalui kotak panduan operasional dan tombol satu-klik **"Salin & Eksekusi SLiMS"**. Fitur ini otomatis menyalin nomor barcode peminjam ke memori papan klip (*clipboard*), sehingga pustakawan cukup menempelkannya pada modul sirkulasi SLiMS 9 Bulian untuk memperpanjang masa pinjam tanpa mengetik ulang.
+
+---
+
+#### Layar 8: Usulan Referensi Baru & Ekspor CSV Dekanat FT UNY (`index.html`)
+
+![Gambar 4.8: Panel Usulan Referensi Baru dan Ekspor CSV Dekanat](file:///c:/PMSI/08_ARTEFAK/mockup-3/screenshots/layar8_usulan_referensi_dekanat.png)
+*Gambar 4.8: Panel Konsolidasi Usulan Koleksi Baru dan Fasilitas Ekspor CSV Justifikasi Anggaran Dekanat FT UNY (index.html).*
+
+**Deskripsi Tata Kelola & Alur Interaksi:**
+Mewujudkan penyelarasan vertikal ke tingkat pimpinan fakultas (*Strategic Alignment*). Rekapitulasi usulan referensi dari mahasiswa dan dosen dapat diekspor langsung menjadi berkas CSV resmi melalui tombol hijau **"Export CSV Usulan Pengadaan Dekanat"** sebagai lampiran justifikasi anggaran belanja buku pada pimpinan fakultas dan borang akreditasi program studi (LAM-INFOKOM).
 
 ---
 
 ### 4.2. Lembar Kerja Bagian A: Spesifikasi Data Contoh dan Akuntabilitas Kepemilikan Data
 
-Sesuai rubrik penilaian tingkat "Sangat Baik", seluruh data contoh berasal dari minimal dua sumber berbeda, memiliki pihak penanggung jawab kebenaran yang jelas, serta mencantumkan penanda data simulasi apabila diturunkan secara analitis.
+Sesuai rubrik penilaian tingkat "Sangat Baik" pada [[Modul 9]], seluruh data contoh berasal dari minimal dua sumber berbeda, memiliki pihak penanggung jawab kebenaran yang jelas, serta mencantumkan penanda data simulasi apabila diturunkan secara analitis.
 
 | Layar (ID) | Kelompok Data yang Ditampilkan | Rincian Nilai Data Contoh pada Antarmuka | Sumber / Metode Perolehan Data Lapangan | Penanggung Jawab Kebenaran (*Data Owner*) | Kategori Data |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **L1** (Portal Pemustaka) | Identitas Pelapor & Transaksi Mahasiswa | • Nama: Farid Hidayat<br>• NIM: 24050530015<br>• Program Studi: Pendidikan Teknik Informatika | Basis data kemahasiswaan SIAKAD UNY dan verifikasi kartu tanda mahasiswa aktif | Mahasiswa Pelapor / Biro Akademik | Data Faktual Lapangan |
-| **L1** (Portal Pemustaka) | Identitas Eksemplar & Kerusakan Koleksi | • Barcode: `FT-INF-2024-072`<br>• Judul: Kecerdasan Buatan: Teori dan Implementasi<br>• Kategori: Halaman Robek / Rusak Fisik<br>• Catatan: Halaman 45-50 robek bagian tengah | Pangkalan data bibliografi SLiMS Perpustakaan FT UNY dan sampel buku rusak di rak DDC 004 | Pustakawan Tunggal Perpustakaan FT | Data Faktual Lapangan |
-| **L2** (Workspace Pustakawan) | Metrik Beban Kerja & Antrean Tiket Mingguan | • Total Laporan Masuk: 12 tiket<br>• Menunggu Verifikasi: 3 tiket<br>• Mendekati Batas SLA: 1 tiket (kuning)<br>• Terupdate ke SLiMS: 8 eksemplar | Rekapitulasi log antrean formulir Google Sheets hasil implementasi instrumen FORM-001 | Pustakawan Tunggal Perpustakaan FT | Data Faktual Lapangan |
-| **L2** (Workspace Pustakawan) | Jadwal & Parameter Sesi *Quiet Hour* | • Alokasi Waktu: Jumat 08.00–09.00 WIB<br>• Durasi: 60 menit fokus kerja mingguan<br>• Ambang Batas SLA: 3 hari (verifikasi fisik) dan 7 hari (update SLiMS) | Dokumen kesepakatan tata kelola *SOP-001* dan hasil wawancara [[Jawaban3_Final]] | Pustakawan Tunggal & Kepala Perpustakaan | Data Tata Kelola Resmi |
-| **L3** (Modal Verifikasi) | Checklist Verifikasi Lapangan & Status SLiMS | • Verifikasi Fisik: Buku barcode `FT-INF-2024-072` terambil dari Rak Transit Tingkat 2<br>• Status Perubahan SLiMS: Ubah status dari `Tersedia` menjadi `Perbaikan` | Observasi alur fisik buku dan simulasi pencocokan barcode pada aplikasi SLiMS 9 Bulian | Pustakawan Tunggal Perpustakaan FT | Data Operasional Faktual |
-| **L4** (Dashboard Eksekutif) | Agregasi Koleksi & Frekuensi Sirkulasi | • Total Koleksi: 4.287 judul (+127 judul baru)<br>• Transaksi Sirkulasi: 1.842 transaksi triwulan III 2026<br>• Rasio Rusak: 6,2% (265 eksemplar) | Laporan triwulanan perpustakaan dan ekstraksi tabel sirkulasi MySQL SLiMS | Pustakawan Tunggal Perpustakaan FT | Data Agregat Faktual |
-| **L4** (Dashboard Eksekutif) | Distribusi Sirkulasi per Program Studi | • PTI: 487 transaksi (Rasio Terpakai 94,1%)<br>• PTE: 412 transaksi (Rasio Terpakai 87,0%)<br>• Mesin: 378 transaksi (Rasio Terpakai 82,4%)<br>• Sipil: 341 transaksi (Rasio Terpakai 75,7%)<br>• Elko: 224 transaksi (Rasio Terpakai 70,0%) | Ekstraksi log transaksi peminjaman SLiMS yang dipetakan ke data prodi mahasiswa | Tim Akreditasi Program Studi FT UNY | Data Faktual Lapangan |
-| **L4** (Dashboard Eksekutif) | Rekomendasi Alokasi Pagu Anggaran Belanja Buku | Alokasi 35% anggaran pengadaan buku tahun 2027 diprioritaskan pada referensi bidang informatika (AI, Jaringan, Basis Data) | Model simulasi analitis berbasis formula keterpakaian koleksi (*Evidence-Based Procurement*) | Wakil Dekan Bidang Perencanaan & Keuangan FT | **Data Simulasi Kebijakan** *(Ditandai pada Layar)* |
+| **Layar 1 & 2** (`layanan.html`) | Identitas Pelapor & Rekam Jejak Mahasiswa | • Nama: Gantar Abimanyu<br>• NIM: 24050530042<br>• Program Studi: Pendidikan Teknik Informatika | Basis data kemahasiswaan SIAKAD UNY dan verifikasi kartu tanda mahasiswa aktif | Mahasiswa Pelapor / Biro Akademik | Data Faktual Lapangan |
+| **Layar 2** (`layanan.html`) | Identitas Eksemplar & Sampel Barcode Koleksi | • Barcode: `B004125` (Algoritma Pemrograman C++)<br>• Barcode: `FT-INF-2024-072` (Kecerdasan Buatan Terapan)<br>• Barcode: `B001980` (Rekayasa Perangkat Lunak) | Pangkalan data bibliografi SLiMS 9 Bulian Perpustakaan FT UNY dan sampel buku fisik rak DDC 004/005 | Pustakawan Tunggal Perpustakaan FT | Data Faktual Lapangan |
+| **Layar 2** (`layanan.html`) | Spesifikasi Lokasi Fisik Rak Transit | • Nomor Rak: `RACK-001`<br>• Tingkat 2: Buffer Zone Pemeriksaan Buku Bermasalah<br>• Tingkat 1: Pengembalian Normal Buku Utuh | Denah fisik lantai sirkulasi perpustakaan dan rancangan instrumen tata kelola *SOP-001* | Pustakawan Tunggal Perpustakaan FT | Data Tata Kelola Resmi |
+| **Layar 5** (`index.html`) | Metrik Beban Kerja Harian (4 Kartu KPI) | • Total Masuk Hari Ini: 12 tiket<br>• Menunggu Verifikasi Rak: 3 tiket (koleksi rusak)<br>• Perpanjangan Diproses: 2 permintaan<br>• Usulan Referensi Masuk: 4 judul | Rekapitulasi transaksi formulir daring dan log permohonan mandiri pemustaka | Pustakawan Tunggal Perpustakaan FT | Data Operasional Faktual |
+| **Layar 5** (`index.html`) | Peringatan Ambang Batas Waktu SLA | Tiket `TKT-202610-001` (Buku Algoritma Pemrograman) mendekati batas verifikasi 3 hari di Rak Transit Tingkat 2 | Rekam jejak stempel waktu (*timestamp*) pelaporan tiket pemustaka | Pustakawan Tunggal Perpustakaan FT | Data Kontrol Internal |
+| **Layar 6** (`index.html`) | Rekam Jejak Tiket Kerusakan Koleksi Fisik | • Tiket `TKT-202610-001`: Halaman Sobek/Rusak (B004125)<br>• Tiket `TKT-202610-002`: Jilidan Lepas (FT-INF-2024-072)<br>• Tiket `TKT-202610-003`: Salah Rak/Nyasar (B001980)<br>• Tiket `TKT-202610-004`: Dalam Perbaikan (B002811)<br>• Tiket `TKT-202610-005`: Koleksi Selesai Ditemukan (FT-SIP-2022-009) | Sampel observasi fisik kondisi koleksi di rak buku FT UNY dan penelusuran katalog OPAC | Pustakawan Tunggal Perpustakaan FT | Data Operasional Faktual |
+| **Layar 7** (`index.html`) | Transaksi Antrean Perpanjangan SLiMS | • Gantar Abimanyu (24050530042) / Barcode `B003891`<br>• Dr. Hendra Kusuma, M.T. (198503152010121002) / Barcode `FT-ELE-2023-014`<br>• Siti Nur Aini (23502241019) / Barcode `B005112` (Status: Terperbarui) | Pangkalan data sirkulasi peminjaman aktif SLiMS Perpustakaan FT UNY | Pustakawan Tunggal & Pemustaka Peminjam | Data Faktual Lapangan |
+| **Layar 8** (`index.html`) | Agregasi Usulan Pengadaan Referensi Baru | Daftar 4 usulan referensi buku bidang Informatika dan Vokasi Teknik dengan estimasi kebutuhan akreditasi LAM-INFOKOM | Permohonan referensi skripsi mahasiswa dan modul ajar dosen teknik informatika | Wakil Dekan Bidang Akademik & Dekanat FT UNY | **Data Perencanaan Strategis** |
 
 ---
 
 ### 4.3. Lembar Kerja Bagian B: Penanganan Varian Kondisi Khusus (*Edge Cases*)
 
-Sesuai rubrik penilaian, dirancang 3 varian kondisi khusus yang mencakup seluruh alur sistem disertai alasan organisasional yang mendalam bagi penerimaan pengguna.
+Sesuai rubrik penilaian, dirancang varian kondisi khusus yang mencakup alur operasional dan tata kelola sistem informasi:
 
 | Layar (ID) | Nama Varian Kondisi Khusus | Kondisi Pemicu Lapangan (*Trigger*) | Desain Tampilan yang Dirancang pada Prototipe | Alasan Manajerial & Kemanfaatan bagi Pengguna |
 | :--- | :--- | :--- | :--- | :--- |
-| **L1** (Portal Pemustaka) | **Galat Validasi Data Input (*Validation Error State*)** | Mahasiswa lupa mengisi nomor barcode koleksi atau belum mencentang salah satu dari empat pilihan kategori kerusakan, lalu langsung menekan tombol *"Kirim Laporan"*. | Kotak isian barcode berkedip merah halus, muncul pesan peringatan mengambang (*toast notification alert*): *"Silakan isi barcode buku dan pilih jenis kerusakan sebelum mengirim laporan!"*. Data nama dan NIM yang sudah terisi tetap dipertahankan utuh pada formulir. | Mencegah keputusasaan pengguna (*user frustration*). Mahasiswa tidak perlu mengulang pengetikan identitas dari awal, sekaligus mencegah masuknya data sampah (*garbage data*) tanpa barcode ke pangkalan data antrean. |
-| **L2** (Workspace Pustakawan) | **Peringatan Ambang Batas Waktu (*Delayed / Overdue SLA Alert*)** | Laporan tiket masuk (misal `TKT-202610-010`, buku Tata Kota dan Wilayah) belum sempat diverifikasi oleh pustakawan selama lebih dari 3 hari kerja akibat kesibukan layanan loket. | Lencana status tiket berubah dari hijau menjadi kuning/merah bertuliskan *"⚠️ 3 Hari Menunggu (Mendekati Batas SLA)"*. Pada kartu KPI teratas, angka *Mendekati Batas SLA* menyala kuning. Pada tabel, tiket bersangkutan otomatis dinaikkan ke urutan prioritas teratas. | Mencegah buku terbengkalai tanpa kejelasan di Rak Transit. Pustakawan langsung mengetahui tiket prioritas yang harus segera diselesaikan saat jam *Quiet Hour* dibuka, sehingga standar mutu layanan (SLA) perpustakaan tetap terjaga. |
-| **L2** (Workspace Pustakawan) | **Antrean Kosong Terverifikasi (*Empty State*)** | Seluruh tiket laporan telah berhasil diverifikasi oleh pustakawan atau belum ada laporan baru dari pemustaka pada minggu berjalan. | Tabel antrean menampilkan ilustrasi grafis kartu bersih dengan teks: *"Belum Ada Antrean Tiket Menunggu. Seluruh laporan telah diverifikasi dan disinkronisasikan ke SLiMS"*, disertai indikator tanggal dan jam pembaruan terakhir. | Memberikan kepastian psikologis kepada pustakawan bahwa ketiadaan data bukan disebabkan oleh kegagalan koneksi sistem atau server yang mati, melainkan mencerminkan bahwa seluruh kewajiban pemutakhiran data telah tuntas (*zero inbox*). |
-| **L3** (Modal Verifikasi) | **Pencegahan Penyelesaian Prematur (*Unchecked Verification Guard*)** | Pustakawan menekan tombol *"Selesaikan Tiket (Resolve)"* sebelum mencentang kedua daftar periksa verifikasi fisik buku dan pembaruan SLiMS. | Tombol bergetar (*subtle shake animation*) dan memunculkan pesan peringatan tegas: *"Harap konfirmasi pemeriksaan fisik buku di Rak Transit dan pembaruan data di SLiMS terlebih dahulu!"*. Status tiket tidak dapat ditutup. | Menegakkan disiplin tata kelola informasi (*Internal Control*). Menjamin bahwa tiket tidak pernah ditutup secara serampangan tanpa adanya tindakan nyata pencocokan fisik dan pembaruan status pada katalog SLiMS lokal. |
+| **Layar 2** (`layanan.html`) | **Galat Validasi Formulir (*Form Validation Guard*)** | Pemustaka menekan tombol *"Kirim Laporan"* tanpa mengisi nomor barcode atau belum memilih kategori kerusakan buku. | Bidang input yang kosong ditandai garis batas merah, muncul notifikasi mengambang (*toast warning*): *"Silakan lengkapi barcode dan kategori masalah!"*. Data nama dan NIM yang telah diketik tetap tersimpan utuh di formulir. | Mencegah kekecewaan pengguna (*user frustration*). Mahasiswa tidak perlu mengulang pengisian identitas dari awal, sekaligus menjaga basis data dari kiriman data sampah tanpa barcode. |
+| **Layar 5** (`index.html`) | **Peringatan Ambang Batas Waktu SLA (*Overdue SLA Alert*)** | Terdapat laporan buku rusak di Rak Transit Tingkat 2 yang belum diverifikasi selama lebih dari 3 hari kerja akibat kesibukan loket. | Banner peringatan kuning-amber menyala di bagian teratas dasbor pustakawan, memuat instruksi alokasi waktu pada sesi *Quiet Hour* Jumat 08.00–09.00 WIB. Kartu KPI menampilkan lencana merah. | Mencegah buku rusak terbengkalai di rak transit tanpa penanganan fisik. Pustakawan langsung mengetahui prioritas kerja sebelum batas waktu layanan terlampaui. |
+| **Layar 6** (`index.html`) | **Sesi Fokus Hening Aktif (*Active Quiet Hour Session*)** | Pustakawan memulai jam kerja tertutup untuk memverifikasi fisik buku dan memperbarui katalog SLiMS. | Menekan tombol *"Quiet Hour (60m)"* memunculkan bilah horizontal gelap di atas tabel dengan lencana merah berkedip (*live badge*) dan hitung mundur waktu `60:00` menit. | Memberikan perlindungan psikologis dan batasan kerja yang jelas bagi pustakawan tunggal agar dapat memusatkan perhatian tanpa terpecah oleh antrean loket. |
+| **Layar 6 & 7** (`index.html`) | **Antrean Selesai Terverifikasi (*Empty State Reassurance*)** | Seluruh tiket laporan atau antrean perpanjangan pada filter tertentu telah berhasil diproses (*zero-inbox*). | Tabel menampilkan kartu ilustrasi bersih dengan teks penenang: *"Belum ada antrean pada kategori ini. Seluruh data telah tersinkronisasi ke SLiMS"*, lengkap dengan stempel waktu pembaruan terakhir. | Memberikan kepastian operasional kepada petugas bahwa ketiadaan data bukan akibat galat koneksi atau server mati, melainkan menandakan seluruh kewajiban administrasi telah tuntas. |
+| **Layar 7** (`index.html`) | **Otomasi Salin Barcode Sirkulasi (*One-Click SLiMS Sync*)** | Pustakawan memproses perpanjangan pinjam mandiri pemustaka ke modul sirkulasi SLiMS 9 Bulian. | Mengklik tombol *"Salin & Eksekusi SLiMS"* otomatis menyalin nomor barcode ke *clipboard* dan mengubah status tombol menjadi *"Terperbarui"* berwarna hijau. | Mengeliminasi kesalahan pengetikan manual (*typo*) nomor barcode eksemplar dan mempercepat waktu pemrosesan perpanjangan menjadi kurang dari 15 detik per buku. |
 
 ---
 
 ## 5. Kendala dan Solusi
 
 ### 5.1. Kendala yang Dihadapi
-1. **Kesulitan Memperoleh Data Agregat Sirkulasi Historis:** Akses langsung ke pangkalan data produksi SLiMS Perpustakaan FT UNY terbatas karena alasan privasi dan keamanan server universitas. Akibatnya, data transaksi sirkulasi per program studi selama satu tahun penuh tidak dapat diunduh secara bebas.
-2. **Keterbatasan Ruang Layar pada Perangkat Mobile:** Pada antarmuka pemustaka, penggabungan formulir 4 kolom, petunjuk kamera, instruksi Rak Transit, dan pratinjau tiket berpotensi menimbulkan kepadatan visual (*visual clutter*) yang menyulitkan pengisian pada layar ponsel pintar berukuran 390 piksel.
-3. **Risiko Penundaan Tiket di Luar Sesi Quiet Hour:** Karena sesi pemutakhiran data terfokus (*Quiet Hour*) hanya dijadwalkan satu kali dalam seminggu (Jumat pagi), tiket yang masuk pada hari Senin berisiko melewati ambang batas SLA 3 hari kerja sebelum jadwal hening tiba.
+1. **Tantangan Pemisahan Lingkungan Pengguna (*Dual-Environment Dilemma*):** Menggabungkan kebutuhan mahasiswa (antarmuka cepat dan simpel di ponsel saat berada di lorong rak) dengan kebutuhan pustakawan (dasbor komprehensif di komputer sirkulasi) dalam satu tampilan berpotensi membingungkan alur navigasi dan hak akses.
+2. **Keterbatasan Hak Akses Sistem SLiMS Pusat:** Karena server pangkalan data SLiMS berada di bawah kendali UPT Perpustakaan Pusat UNY, integrasi tidak dapat dilakukan dengan mengubah skema tabel basis data atau memasang *webhook* langsung ke server produksi.
+3. **Risiko Penumpukan Buku Fisik Tanpa Label:** Pemustaka yang meletakkan buku rusak di rak penampungan berisiko lupa menyertakan identitas tiket, sehingga menyulitkan pustakawan mencocokkan buku fisik dengan laporan digital.
 
 ### 5.2. Solusi yang Diterapkan
-1. **Penerapan Baseline Simulasi Terkalibrasi (*Calibrated Simulation*):** Kelompok memanfaatkan data triwulan III 2026 yang diperoleh dari hasil wawancara pustakawan pada [[Jawaban3_Final]] sebagai angka dasar (*baseline*), lalu menyusun data simulasi yang proporsional dengan jumlah mahasiswa aktif masing-masing program studi. Sesuai etika tata kelola MSI, seluruh angka hasil permodelan diberi label transparan *"Data Simulasi"* pada antarmuka layar L4.
-2. **Penerapan Tata Letak Hierarkis dan Tombol Cepat (*Quick-Fill Chips*):** Antarmuka pemustaka disederhanakan dengan menyediakan tombol cepat untuk kategori buku informatika, tombol pemicu simulasi kamera yang responsif, serta pemisahan instruksi penyerahan fisik ke dalam modal dialog pasca-submit agar layar input tetap bersih dan terfokus.
-3. **Penyediaan Fitur *Fast-Track Verification* pada Jam Fleksibel:** Pada antarmuka pustakawan, tombol verifikasi tiket dapat diakses kapan saja tanpa harus menunggu hitungan mundur timer *Quiet Hour* berjalan. Jika pada hari kerja biasa pustakawan mendapati meja sirkulasi sedang sepi pengunjung, pustakawan dapat langsung memproses tiket kuning yang mendekati batas waktu secara cepat dalam durasi kurang dari dua menit.
+1. **Penerapan Arsitektur Dua Kanal Terpisah (*Mockup-3 Architecture*):** Sistem dipecah secara fisik menjadi dua berkas mandiri: [`layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html) yang ringan dan diakses tanpa login khusus pemustaka, serta [`index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html) yang dilengkapi sistem autentikasi dan kontrol meja kerja pustakawan.
+2. **Penerapan Strategi *Pure Governance Integration*:** Menjaga keutuhan server SLiMS dengan mengandalkan integrasi operasional: pustakawan memanfaatkan fitur *Salin Barcode Cepat* untuk memperbarui data sirkulasi internal SLiMS, serta fitur *Ekspor CSV* untuk menyusun laporan eksekutif Dekanat tanpa mengutak-atik kode sumber SLiMS.
+3. **Penyediaan Diagram Rak Transit RACK-001 Terzonasi:** Pada halaman pelaporan pemustaka disertakan panduan visual penempatan buku pada **Tingkat 2 (Buffer Zone)** dengan kode tiket digital, didukung penempatan stiker fisik di rak perpustakaan untuk memastikan buku tidak tertukar dengan pengembalian normal.
 
 ---
 
 ## 6. Refleksi Pembelajaran
 
-Praktikum Pertemuan 9 memberikan wawasan mendalam mengenai bagaimana kebutuhan mencatat sumber dan pemilik data secara fundamental mengubah cara tim memandang perancangan antarmuka:
-1. **Perubahan Paradigma dari "Tampilan Visual" ke "Akuntabilitas Informasi":** Sebelum mempelajari tata kelola sistem informasi, kami memandang pembuatan mockup semata-mata sebagai kegiatan menggambar tata letak yang menarik di Figma. Namun, ketika modul mewajibkan setiap baris data dipertanggungjawabkan kepemilikannya, kami menyadari bahwa setiap elemen data di layar menuntut komitmen operasional nyata. Menampilkan status *"Buku Sedang Diperbaiki"* di layar berarti harus ada pustakawan yang meluangkan waktu fisik untuk memeriksa jilidan buku di Rak Transit. Tanpa adanya kejelasan siapa yang memasukkan dan memvalidasi data, dasbor seindah apa pun hanyalah ilusi visual yang menyesatkan organisasi.
-2. **Kondisi Khusus Menentukan Keberhasilan Adopsi Pengguna:** Kami menyadari bahwa antarmuka sistem informasi jarang dinilai dari tampilannya saat kondisi ideal (*happy path*), melainkan dari perilakunya saat menghadapi kondisi kritis (*edge cases*). Mahasiswa yang mendapati formulirnya eror tanpa panduan yang jelas akan kapok dan kembali membiarkan buku rusak tergeletak di rak. Sebaliknya, pesan galat yang ramah dan petunjuk peletakan buku yang presisi menumbuhkan rasa percaya dan partisipasi aktif pemustaka dalam memelihara koleksi bersama.
-3. **Penyelarasan Tiga Tingkat Organisasi (*Vertical Alignment*) Menjadi Nyata:** Melalui prototipe interaktif ini, kami menyaksikan secara konkret bagaimana satu tindakan kecil mahasiswa di lantai perpustakaan (mengisi laporan buku robek di Layar L1) mengalir menjadi tugas operasional pustakawan di meja sirkulasi (Layar L2 dan L3), dan bermuara pada keputusan strategis pimpinan fakultas dalam menentukan prioritas alokasi belanja buku di tingkat Dekanat (Layar L4). Inilah esensi hakiki dari Manajemen Sistem Informasi: menghubungkan teknologi, manusia, dan strategi organisasi.
+Pengembangan prototipe *Mockup-3* pada praktikum Pertemuan 9 memberikan pelajaran berharga mengenai hakikat perancangan antarmuka sistem informasi:
+1. **Desain Sistem Informasi Berakar pada Alur Kerja Nyata, Bukan Estetika Semata:** Perancangan antarmuka yang baik bukan sekadar memilih warna atau membuat tombol animasi yang menarik, melainkan mencerminkan pembagian tugas dan batasan waktu nyata di lapangan. Memasukkan timer *Quiet Hour* dan tombol *Salin Barcode SLiMS* secara langsung meringankan beban mental Pustakawan Tunggal yang selama ini bekerja sendirian di meja sirkulasi.
+2. **Data Bersumber Empiris Membangun Kredibilitas Tata Kelola:** Keberadaan nomor barcode riil (`B004125`, `FT-INF-2024-072`) dan nama mahasiswa asli membuktikan kepada penguji bahwa sistem ini dirancang dengan memahami seluk-beluk operasional Perpustakaan FT UNY, bukan sekadar tugas fiktif yang terlepas dari realitas kampus.
+3. **Penyelarasan Vertikal (*Vertical Alignment*) Terwujud secara Utuh:** Kami melihat secara gamblang bagaimana satu laporan kerusakan buku dari mahasiswa di lorong rak (`layanan.html`) diolah menjadi agenda kerja pembenahan katalog oleh pustakawan (`index.html`), dan pada akhirnya teragregasi menjadi berkas CSV justifikasi pengadaan buku baru untuk Dekanat FT UNY. Inilah perwujudan nyata dari sinergi teknologi, tata kelola, dan manusia dalam Manajemen Sistem Informasi.
 
 ---
 
 ## 7. Kesimpulan
 
-Praktikum Pertemuan 9 berhasil mentransformasikan cetak biru tata kelola *SIMPEL-KOLEKSI FT* menjadi sebuah **Mockup Interaktif Berfidelitas Tinggi (*High-Fidelity*)** yang utuh dan berfungsi penuh:
-1. Prototipe berhasil dibangun menggunakan teknologi web murni berbasis standar estetika modern, responsif lintas ukuran layar, dan menyediakan alur klik terpadu untuk empat perspektif utama (Pemustaka, Pustakawan Tunggal, Dekanat FT UNY, dan Denah Tata Ruang Fisik).
-2. Seluruh data contoh pada antarmuka didasarkan pada fakta empiris Perpustakaan FT UNY dan pangkalan data SLiMS, dengan kepemilikan dan batas wewenang data yang tercatat tegas pada Lembar Kerja Bagian A.
-3. Prototipe telah dilengkapi penanganan varian kondisi khusus (*empty state*, *delayed/overdue SLA alert*, dan *validation error guard*) yang menjamin kemudahan adopsi dan ketahanan operasional sistem.
-4. Artefak prototipe interaktif ini berada dalam status siap uji (*testing-ready*) dan akan diujikan secara langsung bersama pemangku kepentingan perpustakaan pada **Pertemuan 10** untuk mengevaluasi aspek kegunaan dan kecukupan tata kelola informasi.
+Praktikum Pertemuan 9 telah berhasil merealisasikan rancangan konseptual menjadi **Mockup Interaktif Berfidelitas Tinggi Generasi Baru (*Mockup-3*)** yang operasional dan terintegrasi:
+1. Prototipe berhasil dibangun menggunakan arsitektur web murni (*Zero-Dependency Modern Web*) yang memisahkan kanal **Layanan Mandiri Pemustaka** ([`layanan.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/layanan.html)) dan **Meja Kerja Pustakawan** ([`index.html`](file:///c:/PMSI/08_ARTEFAK/mockup-3/index.html)) secara fungsional dan estetis.
+2. Seluruh data contoh pada antarmuka telah diverifikasi akuntabilitas kepemilikannya (*data ownership*) berbasis triangulasi data lapangan Perpustakaan FT UNY dan pangkalan data katalog SLiMS 9 Bulian pada Lembar Kerja Bagian A.
+3. Seluruh varian kondisi khusus (*edge cases*), mencakup peringatan batas waktu SLA, mode hening *Quiet Hour*, penanganan data kosong (*empty state*), dan validasi formulir, telah terpasang secara reaktif pada Lembar Kerja Bagian B.
+4. Artefak prototipe *Mockup-3* ini siap digunakan sebagai instrumen pengujian pengguna (*Usability Testing & Governance Audit*) bersama pemustaka dan pustakawan pada **Pertemuan 10**.
 
 ---
 
