@@ -5,7 +5,7 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 
 ---
 
-## 02_LAPORAN (Laporan Praktikum Mingguan - 7 Berkas)
+## 02_LAPORAN (Laporan Praktikum Mingguan - 10 Berkas)
 - [x] **SRC-LAP-01**: [[Laporan_Praktikum_Pertemuan_1_Kelompok 3]] (Inisialisasi Organisasi & Pustakawan Tunggal FT UNY)
 - [x] **SRC-LAP-02**: [[Praktikum_2_Kelompok_3_revisi]] (Pemetaan Stakeholder & Power-Interest Grid)
 - [x] **SRC-LAP-03**: [[Praktikum_3_Kelompok_3_Revisi]] (Analisis Akar Masalah 5 Why & Diagram Fishbone)
@@ -13,6 +13,15 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 - [x] **SRC-LAP-05**: [[Praktikum_5_Kelompok3]] (Grand Design Alur Informasi 3 Tingkat & RACI Matrix)
 - [x] **SRC-LAP-06**: [[Praktikum_6_Kelompok3]] (Arsitektur SI 4-Layer, Evaluasi Hybrid & Manajemen Perubahan ADKAR)
 - [x] **SRC-LAP-07**: [[Praktikum_7_Kelompok3]] (WBS Bertingkat, Gantt Chart & Analisis Jalur Kritis PERT 36 Hari)
+- [x] **SRC-LAP-08**: [[Praktikum_8_Kelompok3]] (Perancangan Wireframe & Alur Informasi Sistem)
+- [x] **SRC-LAP-09**: [[Praktikum_9_Kelompok3]] (Penyusunan Mockup Interaktif Berfidelitas Tinggi & Kondisi Khusus)
+- [x] **SRC-LAP-10**: [[Praktikum_10_Kelompok3]] (Validasi Mockup bersama Pemangku Kepentingan terhadap Masalah dan Keputusan)
+
+---
+
+## 03_DATA-LAPANGAN/Kuisioner (Instrumen & Hasil Validasi Empiris - 2 Berkas)
+- [x] **SRC-KUI-01**: `Kuisioner untuk SIMPEL-UNY (Jawaban) - Form Responses 1.csv` (Data Mentah Respons Kuesioner Validasi Skenario Keputusan Pustakawan & Pemustaka)
+- [x] **SRC-KUI-02**: `Kuisioner PMSI.pdf` (Salinan Cetak Resmi Formulir Google Forms Kuisioner SIMPEL-UNY)
 
 ---
 

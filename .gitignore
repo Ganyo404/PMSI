@@ -5,3 +5,6 @@ __pycache__/
 # Obsidian UI state (auto-generated, no need to track)
 .obsidian/workspace.json
 .obsidian/graph.json
+
+# Temporary scratch files
+scratch/
