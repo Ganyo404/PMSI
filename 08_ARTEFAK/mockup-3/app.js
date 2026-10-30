@@ -269,10 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast('Selamat datang, Bu Siti Rahmawati (Pustakawan FT UNY)', 'success');
   });
 
-  document.getElementById('btnDemoQuickLogin')?.addEventListener('click', () => {
-    openLibrarianAdmin();
-    showToast('Masuk dengan Akun Demo Pustakawan FT UNY', 'success');
-  });
 
   document.getElementById('btnLogoutAdmin')?.addEventListener('click', logoutLibrarian);
 
