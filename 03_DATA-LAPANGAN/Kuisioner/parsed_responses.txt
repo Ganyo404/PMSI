@@ -1,402 +1,377 @@
-TOTAL RESPONDENTS: 6
+REKAPITULASI KUISIONER SIMPEL-UNY (MODUL 10)
+Total Responden: 7
+Total Kolom: 43
 ================================================================================
 
---- RESPONDENT #1: Saipul (24050530060) ---
-Peran: Mahasiswa Pemustaka FT UNY
-Sifat: Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
-Waktu: 29/10/2026 10:00:00
-
-[PERTANYAAN]: Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
-[JAWABAN]: Sangat memudahkan, alur langsung ke inti masalah.
-
-[PERTANYAAN]: Alasan Responden
-[JAWABAN]: bagus
-
-[PERTANYAAN]: Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
-[JAWABAN]: Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
-
-[PERTANYAAN]: Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
-[JAWABAN]: Ya, sangat membantu mempertahankan data yang sudah diisi.
-
-[PERTANYAAN]: M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
+--- RESPONDEN #1: Saipul (24050530060) ---
+Peran           : Mahasiswa Pemustaka FT UNY
+Sifat Pengujian : Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
+Waktu Respon    : 30/10/2026 15:16:13 (Pelaksanaan: 29/10/2026 10:00:00)
+Jawaban Terisi:
+  [7] Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
+      -> Sangat memudahkan, alur langsung ke inti masalah.
+  [8] Alasan Responden
+      -> bagus
+  [9] Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
+      -> Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
+  [11] Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
+      -> Ya, sangat membantu mempertahankan data yang sudah diisi.
+  [13] M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M1
-[JAWABAN]: lebih mudah
-
-[PERTANYAAN]: M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
+      -> 5
+  [14] Alasan Penilaian M1
+      -> lebih mudah
+  [16] M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M2
-[JAWABAN]: masuk akal
-
-[PERTANYAAN]: M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
+      -> 5
+  [17] Alasan Penilaian M2
+      -> masuk akal
+  [19] M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
+      -> 5
 
 ================================================================================
 
---- RESPONDENT #2: Dapa (199712052023022002) ---
-Peran: Pustakawan Pengelola Tunggal
-Sifat: Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
-Waktu: 29/10/2026 15:44:00
-
-[PERTANYAAN]: Seberapa efektif fitur pemisahan akses login khusus pustakawan dalam mengamankan data inventaris dari akses pihak luar?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Jelaskan alasan detail mengapa Anda memberikan skor tersebut pada efektivitas pemisahan akses login pustakawan.
-[JAWABAN]: Hak aksesnya jadi jelas terpisah. Mahasiswa cuma bisa lapor atau lihat data publik tanpa risiko salah klik atau sengaja ngedit database inventaris.
-
-[PERTANYAAN]: Seberapa jelas tampilan dasbor antrean tiket laporan dalam membantu Anda memprioritaskan penanganan buku rusak?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Uraikan alasan di balik penilaian Anda terhadap kejelasan dasbor antrean tiket dan penentuan prioritas perbaikan buku.
-[JAWABAN]: Indikator warnanya ngebantu banget bedain mana tiket yang udah lewat batas waktu (SLA merah) sama yang masih antre biasa, jadi nggak perlu nebak-nebak mana yang harus digarap duluan.
-
-[PERTANYAAN]: Seberapa besar bantuan fitur timer quiet hour 60 menit dalam memberikan waktu fokus administrasi tanpa interupsi pengunjung?
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Berikan penjelasan mengapa Anda menilai fitur timer quiet hour dengan skor tersebut dalam menjaga fokus kerja Anda.
-[JAWABAN]: Ngasi batasan waktu kerja fokus yang konkret. Cuma tetep butuh dukungan pengumuman fisik di loket biar mahasiswa di lokasi beneran paham dan nggak langsung nyelonong nanya.
-
-[PERTANYAAN]: Seberapa efektif mekanisme modal verifikasi fisik (checklist ganda) dalam mencegah penyelesaian tiket secara prematur?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Jelaskan alasan Anda terkait efektivitas kontrol internal verifikasi fisik buku sebelum menutup tiket laporan.
-[JAWABAN]: Ngemaksa pustakawan buat beneran megang fisik bukunya dulu sebelum status tiket diselesaikan, jadi ngehindarin tiket asal ditutup padahal bukunya belum beres dicek.
-
-[PERTANYAAN]: Seberapa besar kemudahan yang Anda rasakan dari tombol salin barcode untuk integrasi langsung ke sistem sirkulasi SLiMS?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Uraikan alasan detail mengapa fitur integrasi SLiMS mendapatkan skor kemudahan tersebut dalam tugas harian Anda.
-[JAWABAN]: Jauh lebih cepet tinggal sekali klik salin lalu tempel di SLiMS, nggak perlu ketik manual angka barcode panjang yang rawan typo.
-
-[PERTANYAAN]: Seberapa jauh sistem web ini berhasil mengurangi beban komunikasi penanganan perpanjangan buku melalui WhatsApp pribadi?
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Jelaskan alasan dan pengalaman nyata Anda terkait penurunan gangguan chat WhatsApp setelah menggunakan sistem ini.
-[JAWABAN]: Notifikasi perpanjangan udah masuk ke satu pintu di web. Chat WA pribadi yang masuk di luar jam kerja berkurang drastis, meski sesekali masih ada 1-2 mahasiswa yang nge-chat langsung.
-
-[PERTANYAAN]: Seberapa baik sistem membantu mengatasi masalah penumpukan fisik buku rusak dan salah susun di meja kerja sirkulasi?
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Berikan penjelasan mengenai alasan penilaian Anda terhadap penyelesaian masalah penumpukan buku di meja sirkulasi.
-[JAWABAN]: Buku langsung diarahkan ke rak transit sesuai alur sistem, jadi meja sirkulasi utama nggak lagi jadi tempat pembuangan tumpukan buku rusak.
-
-[PERTANYAAN]: Seberapa akurat informasi status ketersediaan buku yang diperbarui pada katalog OPAC SLiMS melalui bantuan web ini?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Uraikan alasan Anda terkait tingkat akurasi pembaruan status ketersediaan koleksi buku di perpustakaan.
-[JAWABAN]: Status buku rusak langsung terlacak dan di-update berkala, jadi mahasiswa yang cari di OPAC nggak kecele nemu buku yang ternyata lagi rusak atau hilang.
-
-[PERTANYAAN]: Seberapa besar perlindungan waktu kerja administratif yang Anda rasakan sebagai pustakawan tunggal setelah penerapan web?
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Jelaskan alasan mendalam mengapa Anda memberikan skor tersebut terhadap perlindungan waktu kerja administratif Anda.
-[JAWABAN]: Ada jeda waktu resmi buat nyelesaiin tugas adm tanpa terus-terusan kepotong antrean loket atau spam chat, ritme kerja jadi jauh lebih teratur.
-
-[PERTANYAAN]: Seberapa besar tingkat kemudahan keseluruhan sistem web ini dalam membantu Anda menyelesaikan seluruh permasalahan operasional perpustakaan?
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Berikan kesimpulan dan penjelasan komprehensif mengenai kontribusi web ini terhadap efisiensi kerja Anda secara keseluruhan.
-[JAWABAN]: Sistem ini sangat ngebantu ngerapihin alur kerja pustakawan tunggal. Mulai dari urusan komplain buku rusak, antrean perpanjangan, sampai persiapan data akreditasi jadi jauh lebih ringkas dan terpusat di satu tempat.
+--- RESPONDEN #2: Dapa (199712052023022002) ---
+Peran           : Pustakawan Pengelola Tunggal
+Sifat Pengujian : Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
+Waktu Respon    : 30/10/2026 16:29:33 (Pelaksanaan: 29/10/2026 15:44:00)
+Jawaban Terisi:
+  [22] Seberapa efektif fitur pemisahan akses login khusus pustakawan dalam mengamankan data inventaris dari akses pihak luar?
+      -> 5
+  [23] Jelaskan alasan detail mengapa Anda memberikan skor tersebut pada efektivitas pemisahan akses login pustakawan.
+      -> Hak aksesnya jadi jelas terpisah. Mahasiswa cuma bisa lapor atau lihat data publik tanpa risiko salah klik atau sengaja ngedit database inventaris.
+  [24] Seberapa jelas tampilan dasbor antrean tiket laporan dalam membantu Anda memprioritaskan penanganan buku rusak?
+      -> 5
+  [25] Uraikan alasan di balik penilaian Anda terhadap kejelasan dasbor antrean tiket dan penentuan prioritas perbaikan buku.
+      -> Indikator warnanya ngebantu banget bedain mana tiket yang udah lewat batas waktu (SLA merah) sama yang masih antre biasa, jadi nggak perlu nebak-nebak mana yang harus digarap duluan.
+  [26] Seberapa besar bantuan fitur timer quiet hour 60 menit dalam memberikan waktu fokus administrasi tanpa interupsi pengunjung?
+      -> 4
+  [27] Berikan penjelasan mengapa Anda menilai fitur timer quiet hour dengan skor tersebut dalam menjaga fokus kerja Anda.
+      -> Ngasi batasan waktu kerja fokus yang konkret. Cuma tetep butuh dukungan pengumuman fisik di loket biar mahasiswa di lokasi beneran paham dan nggak langsung nyelonong nanya.
+  [28] Seberapa efektif mekanisme modal verifikasi fisik (checklist ganda) dalam mencegah penyelesaian tiket secara prematur?
+      -> 5
+  [29] Jelaskan alasan Anda terkait efektivitas kontrol internal verifikasi fisik buku sebelum menutup tiket laporan.
+      -> Ngemaksa pustakawan buat beneran megang fisik bukunya dulu sebelum status tiket diselesaikan, jadi ngehindarin tiket asal ditutup padahal bukunya belum beres dicek.
+  [30] Seberapa besar kemudahan yang Anda rasakan dari tombol salin barcode untuk integrasi langsung ke sistem sirkulasi SLiMS?
+      -> 5
+  [31] Uraikan alasan detail mengapa fitur integrasi SLiMS mendapatkan skor kemudahan tersebut dalam tugas harian Anda.
+      -> Jauh lebih cepet tinggal sekali klik salin lalu tempel di SLiMS, nggak perlu ketik manual angka barcode panjang yang rawan typo.
+  [32] Seberapa jauh sistem web ini berhasil mengurangi beban komunikasi penanganan perpanjangan buku melalui WhatsApp pribadi?
+      -> 4
+  [33] Jelaskan alasan dan pengalaman nyata Anda terkait penurunan gangguan chat WhatsApp setelah menggunakan sistem ini.
+      -> Notifikasi perpanjangan udah masuk ke satu pintu di web. Chat WA pribadi yang masuk di luar jam kerja berkurang drastis, meski sesekali masih ada 1-2 mahasiswa yang nge-chat langsung.
+  [34] Seberapa baik sistem membantu mengatasi masalah penumpukan fisik buku rusak dan salah susun di meja kerja sirkulasi?
+      -> 4
+  [35] Berikan penjelasan mengenai alasan penilaian Anda terhadap penyelesaian masalah penumpukan buku di meja sirkulasi.
+      -> Buku langsung diarahkan ke rak transit sesuai alur sistem, jadi meja sirkulasi utama nggak lagi jadi tempat pembuangan tumpukan buku rusak.
+  [36] Seberapa akurat informasi status ketersediaan buku yang diperbarui pada katalog OPAC SLiMS melalui bantuan web ini?
+      -> 5
+  [37] Uraikan alasan Anda terkait tingkat akurasi pembaruan status ketersediaan koleksi buku di perpustakaan.
+      -> Status buku rusak langsung terlacak dan di-update berkala, jadi mahasiswa yang cari di OPAC nggak kecele nemu buku yang ternyata lagi rusak atau hilang.
+  [38] Seberapa besar perlindungan waktu kerja administratif yang Anda rasakan sebagai pustakawan tunggal setelah penerapan web?
+      -> 4
+  [39] Jelaskan alasan mendalam mengapa Anda memberikan skor tersebut terhadap perlindungan waktu kerja administratif Anda.
+      -> Ada jeda waktu resmi buat nyelesaiin tugas adm tanpa terus-terusan kepotong antrean loket atau spam chat, ritme kerja jadi jauh lebih teratur.
+  [40] Seberapa besar tingkat kemudahan keseluruhan sistem web ini dalam membantu Anda menyelesaikan seluruh permasalahan operasional perpustakaan?
+      -> 5
+  [41] Berikan kesimpulan dan penjelasan komprehensif mengenai kontribusi web ini terhadap efisiensi kerja Anda secara keseluruhan.
+      -> Sistem ini sangat ngebantu ngerapihin alur kerja pustakawan tunggal. Mulai dari urusan komplain buku rusak, antrean perpanjangan, sampai persiapan data akreditasi jadi jauh lebih ringkas dan terpusat di satu tempat.
 
 ================================================================================
 
---- RESPONDENT #3: Wildan (24050530051) ---
-Peran: Mahasiswa Pemustaka FT UNY
-Sifat: Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
-Waktu: 30/10/2026 16:25:00
-
-[PERTANYAAN]: Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
-[JAWABAN]: Sangat memudahkan, alur langsung ke inti masalah.
-
-[PERTANYAAN]: Alasan Responden
-[JAWABAN]: Nggak ribet harus login dulu, apalagi kalau lagi buru-buru atau lupa password SSO. Tinggal scan QR langsung beres lapor.
-
-[PERTANYAAN]: Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
-[JAWABAN]: Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
-
-[PERTANYAAN]: Dasar Informasi pada Layar
-[JAWABAN]: Diagram visualnya langsung nunjukin denah/posisi rak transit tingkat 2 secara gamblang.
-
-[PERTANYAAN]: Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
-[JAWABAN]: Ya, sangat membantu mempertahankan data yang sudah diisi.
-
-[PERTANYAAN]: Masukan
-[JAWABAN]: Tampilannya udah user-friendly, teks peringatan warna merahnya kontras dan langsung kelihatan mana kolom yang kurang.
-
-[PERTANYAAN]: M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
+--- RESPONDEN #3: Wildan (24050530051) ---
+Peran           : Mahasiswa Pemustaka FT UNY
+Sifat Pengujian : Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
+Waktu Respon    : 30/10/2026 16:32:15 (Pelaksanaan: 30/10/2026 16:25:00)
+Jawaban Terisi:
+  [7] Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
+      -> Sangat memudahkan, alur langsung ke inti masalah.
+  [8] Alasan Responden
+      -> Nggak ribet harus login dulu, apalagi kalau lagi buru-buru atau lupa password SSO. Tinggal scan QR langsung beres lapor.
+  [9] Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
+      -> Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
+  [10] Dasar Informasi pada Layar
+      -> Diagram visualnya langsung nunjukin denah/posisi rak transit tingkat 2 secara gamblang.
+  [11] Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
+      -> Ya, sangat membantu mempertahankan data yang sudah diisi.
+  [12] Masukan
+      -> Tampilannya udah user-friendly, teks peringatan warna merahnya kontras dan langsung kelihatan mana kolom yang kurang.
+  [13] M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M1
-[JAWABAN]: Mahasiswa nggak perlu ikutan antre di loket sirkulasi cuma buat ngasihin buku rusak, tinggal lapor lewat HP dan taruh di rak transit.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M1
-[JAWABAN]: Perlu stiker pengingat tambahan di beberapa sudut meja baca biar makin banyak yang notice fitur ini.
-
-[PERTANYAAN]: M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
+      -> 5
+  [14] Alasan Penilaian M1
+      -> Mahasiswa nggak perlu ikutan antre di loket sirkulasi cuma buat ngasihin buku rusak, tinggal lapor lewat HP dan taruh di rak transit.
+  [15] Hal yang Masih Kurang pada M1
+      -> Perlu stiker pengingat tambahan di beberapa sudut meja baca biar makin banyak yang notice fitur ini.
+  [16] M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Alasan Penilaian M2
-[JAWABAN]: Udah ada wadah khusus buat balikin/lapor buku yang salah tempat, jadi meja baca nggak berantakan.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M2
-[JAWABAN]: Masih tergantung kesadaran mahasiswa buat mindahin buku ke rak transit, kadang ada yang tetep ditinggal begitu aja di meja.
-
-[PERTANYAAN]: M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
+      -> 4
+  [17] Alasan Penilaian M2
+      -> Udah ada wadah khusus buat balikin/lapor buku yang salah tempat, jadi meja baca nggak berantakan.
+  [18] Hal yang Masih Kurang pada M2
+      -> Masih tergantung kesadaran mahasiswa buat mindahin buku ke rak transit, kadang ada yang tetep ditinggal begitu aja di meja.
+  [19] M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
-
-[PERTANYAAN]:   Alasan Penilaian M3  
-[JAWABAN]: Alur perpanjangan mandiri lewat sistem bikin mahasiswa nggak sungkan lagi nge-chat nomor pribadi petugas di luar jam kerja.
-
-[PERTANYAAN]:   Hal yang Masih Kurang pada M3  
-[JAWABAN]: Bisa ditambahin konfirmasi/notifikasi otomatis (email/pop-up) kalau perpanjangan masa pinjamnya beneran udah berhasil disetujui.
+      -> 4
+  [20]   Alasan Penilaian M3  
+      -> Alur perpanjangan mandiri lewat sistem bikin mahasiswa nggak sungkan lagi nge-chat nomor pribadi petugas di luar jam kerja.
+  [21]   Hal yang Masih Kurang pada M3  
+      -> Bisa ditambahin konfirmasi/notifikasi otomatis (email/pop-up) kalau perpanjangan masa pinjamnya beneran udah berhasil disetujui.
 
 ================================================================================
 
---- RESPONDENT #4: rahmat  (23050530032) ---
-Peran: Mahasiswa Pemustaka FT UNY
-Sifat: Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
-Waktu: 27/10/2026 13:05:00
-
-[PERTANYAAN]: Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
-[JAWABAN]: Sangat memudahkan, alur langsung ke inti masalah.
-
-[PERTANYAAN]: Alasan Responden
-[JAWABAN]: karena terlalu rumit jika harus sso dulu
-
-[PERTANYAAN]: Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
-[JAWABAN]: Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
-
-[PERTANYAAN]: Dasar Informasi pada Layar
-[JAWABAN]: sudah sangat jelas menurut sayaa
-
-[PERTANYAAN]: Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
-[JAWABAN]: Ya, sangat membantu mempertahankan data yang sudah diisi.
-
-[PERTANYAAN]: Masukan
-[JAWABAN]: menurut saya hal ini sudah sangat membantu
-
-[PERTANYAAN]: M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
+--- RESPONDEN #4: rahmat  (23050530032) ---
+Peran           : Mahasiswa Pemustaka FT UNY
+Sifat Pengujian : Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
+Waktu Respon    : 30/10/2026 16:33:11 (Pelaksanaan: 27/10/2026 13:05:00)
+Jawaban Terisi:
+  [7] Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
+      -> Sangat memudahkan, alur langsung ke inti masalah.
+  [8] Alasan Responden
+      -> karena terlalu rumit jika harus sso dulu
+  [9] Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
+      -> Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
+  [10] Dasar Informasi pada Layar
+      -> sudah sangat jelas menurut sayaa
+  [11] Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
+      -> Ya, sangat membantu mempertahankan data yang sudah diisi.
+  [12] Masukan
+      -> menurut saya hal ini sudah sangat membantu
+  [13] M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M1
-[JAWABAN]: karena ada nya program ini hal tersebut bisa di atasi
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M1
-[JAWABAN]: menurut saya sudah cukup 
-
-[PERTANYAAN]: M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
+      -> 5
+  [14] Alasan Penilaian M1
+      -> karena ada nya program ini hal tersebut bisa di atasi
+  [15] Hal yang Masih Kurang pada M1
+      -> menurut saya sudah cukup
+  [16] M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M2
-[JAWABAN]: dengan adanya program ini hal tersebut akan teratasi karena mahasiswa akan memiliki dorongan untuk menaruh nya ke rak
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M2
-[JAWABAN]: sudah cukup
-
-[PERTANYAAN]: M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
+      -> 5
+  [17] Alasan Penilaian M2
+      -> dengan adanya program ini hal tersebut akan teratasi karena mahasiswa akan memiliki dorongan untuk menaruh nya ke rak
+  [18] Hal yang Masih Kurang pada M2
+      -> sudah cukup
+  [19] M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
-
-[PERTANYAAN]:   Alasan Penilaian M3  
-[JAWABAN]: sedikit membantu tetapi terkadang merasa tidak enak ke bapak nya karena takut terganggu
-
-[PERTANYAAN]:   Hal yang Masih Kurang pada M3  
-[JAWABAN]: merasa kurang enak
+      -> 4
+  [20]   Alasan Penilaian M3  
+      -> sedikit membantu tetapi terkadang merasa tidak enak ke bapak nya karena takut terganggu
+  [21]   Hal yang Masih Kurang pada M3  
+      -> merasa kurang enak
 
 ================================================================================
 
---- RESPONDENT #5: ahmad zaky (24050530048) ---
-Peran: Mahasiswa Pemustaka FT UNY
-Sifat: Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
-Waktu: 28/10/2026 9:23:00
-
-[PERTANYAAN]: Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
-[JAWABAN]: Sangat memudahkan, alur langsung ke inti masalah.
-
-[PERTANYAAN]: Alasan Responden
-[JAWABAN]: Tidak adanya menu login membuat proses pelaporan lebih cepat dan praktis. Mahasiswa tidak perlu mengingat atau memasukkan akun SSO terlebih dahulu sehingga dapat langsung melaporkan kerusakan buku.
-
-[PERTANYAAN]: Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
-[JAWABAN]: Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
-
-[PERTANYAAN]: Dasar Informasi pada Layar
-[JAWABAN]: Diagram membantu mahasiswa memahami lokasi penyerahan buku yang rusak. Dengan adanya petunjuk visual, mahasiswa tidak perlu bingung menentukan tempat penyimpanan buku sehingga risiko buku tercampur dengan koleksi yang masih layak dapat dikurangi.
-
-[PERTANYAAN]: Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
-[JAWABAN]: Ya, sangat membantu mempertahankan data yang sudah diisi.
-
-[PERTANYAAN]: Masukan
-[JAWABAN]: Fitur peringatan sudah membantu pengguna mengetahui bagian yang belum diisi. Sebaiknya pesan kesalahan dibuat lebih jelas dan menunjukkan secara langsung kolom mana yang harus diperbaiki.
-
-[PERTANYAAN]: M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
+--- RESPONDEN #5: ahmad zaky (24050530048) ---
+Peran           : Mahasiswa Pemustaka FT UNY
+Sifat Pengujian : Simulasi Peran (Role-play Simulation) bersama Teman Sebaya
+Waktu Respon    : 30/10/2026 16:37:57 (Pelaksanaan: 28/10/2026 9:23:00)
+Jawaban Terisi:
+  [7] Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
+      -> Sangat memudahkan, alur langsung ke inti masalah.
+  [8] Alasan Responden
+      -> Tidak adanya menu login membuat proses pelaporan lebih cepat dan praktis. Mahasiswa tidak perlu mengingat atau memasukkan akun SSO terlebih dahulu sehingga dapat langsung melaporkan kerusakan buku.
+  [9] Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
+      -> Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
+  [10] Dasar Informasi pada Layar
+      -> Diagram membantu mahasiswa memahami lokasi penyerahan buku yang rusak. Dengan adanya petunjuk visual, mahasiswa tidak perlu bingung menentukan tempat penyimpanan buku sehingga risiko buku tercampur dengan koleksi yang masih layak dapat dikurangi.
+  [11] Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
+      -> Ya, sangat membantu mempertahankan data yang sudah diisi.
+  [12] Masukan
+      -> Fitur peringatan sudah membantu pengguna mengetahui bagian yang belum diisi. Sebaiknya pesan kesalahan dibuat lebih jelas dan menunjukkan secara langsung kolom mana yang harus diperbaiki.
+  [13] M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M1
-[JAWABAN]: Sistem pelaporan melalui QR Code memungkinkan mahasiswa melaporkan kerusakan buku secara mandiri tanpa harus mengantre di loket sirkulasi. Proses pelaporan menjadi lebih cepat dan praktis.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M1
-[JAWABAN]: Perlu ditambahkan informasi atau notifikasi bahwa laporan telah berhasil dikirim agar mahasiswa yakin bahwa kerusakan buku sudah tercatat.
-
-[PERTANYAAN]: M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
+      -> 5
+  [14] Alasan Penilaian M1
+      -> Sistem pelaporan melalui QR Code memungkinkan mahasiswa melaporkan kerusakan buku secara mandiri tanpa harus mengantre di loket sirkulasi. Proses pelaporan menjadi lebih cepat dan praktis.
+  [15] Hal yang Masih Kurang pada M1
+      -> Perlu ditambahkan informasi atau notifikasi bahwa laporan telah berhasil dikirim agar mahasiswa yakin bahwa kerusakan buku sudah tercatat.
+  [16] M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 5.0
-
-[PERTANYAAN]: Alasan Penilaian M2
-[JAWABAN]: Adanya fasilitas pelaporan dan petunjuk lokasi Rak Transit Tingkat 2 membantu mahasiswa mengetahui tindakan yang harus dilakukan ketika menemukan buku yang tidak berada pada tempat semestinya.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M2
-[JAWABAN]: Perlu ditambahkan kategori khusus untuk buku yang salah rak serta petunjuk penanganannya agar mahasiswa tidak salah menempatkan buku.
-
-[PERTANYAAN]: M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
+      -> 5
+  [17] Alasan Penilaian M2
+      -> Adanya fasilitas pelaporan dan petunjuk lokasi Rak Transit Tingkat 2 membantu mahasiswa mengetahui tindakan yang harus dilakukan ketika menemukan buku yang tidak berada pada tempat semestinya.
+  [18] Hal yang Masih Kurang pada M2
+      -> Perlu ditambahkan kategori khusus untuk buku yang salah rak serta petunjuk penanganannya agar mahasiswa tidak salah menempatkan buku.
+  [19] M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 2.0
-
-[PERTANYAAN]:   Alasan Penilaian M3  
-[JAWABAN]: Fitur yang ditampilkan sudah membantu proses pelaporan kondisi buku
-
-[PERTANYAAN]:   Hal yang Masih Kurang pada M3  
-[JAWABAN]: sudah cukup
+      -> 2
+  [20]   Alasan Penilaian M3  
+      -> Fitur yang ditampilkan sudah membantu proses pelaporan kondisi buku
+  [21]   Hal yang Masih Kurang pada M3  
+      -> sudah cukup
 
 ================================================================================
 
---- RESPONDENT #6: Daffa (24050530037) ---
-Peran: Mahasiswa Pemustaka FT UNY
-Sifat: Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
-Waktu: 29/10/2026 12:28:00
-
-[PERTANYAAN]: Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
-[JAWABAN]: Sangat memudahkan, alur langsung ke inti masalah.
-
-[PERTANYAAN]: Alasan Responden
-[JAWABAN]: Praktis banget, tinggal scan QR langsung ke form pelaporan tanpa buang waktu loading halaman SSO.
-
-[PERTANYAAN]: Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
-[JAWABAN]: Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
-
-[PERTANYAAN]: Dasar Informasi pada Layar
-[JAWABAN]: Petunjuk gambarnya to the point, langsung kelihatan lokasi rak transitnya di sebelah mana.
-
-[PERTANYAAN]: Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
-[JAWABAN]: Ya, sangat membantu mempertahankan data yang sudah diisi.
-
-[PERTANYAAN]: Masukan
-[JAWABAN]: Fitur ini ngebantu banget biar nggak males ngulang ngetik nama dan NIM dari nol.
-
-[PERTANYAAN]: M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
+--- RESPONDEN #6: Daffa (24050530037) ---
+Peran           : Mahasiswa Pemustaka FT UNY
+Sifat Pengujian : Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
+Waktu Respon    : 30/10/2026 16:41:02 (Pelaksanaan: 29/10/2026 12:28:00)
+Jawaban Terisi:
+  [7] Saat Anda sedang belajar di meja baca dan mendapati buku yang Anda baca sobek atau terlepas sampulnya, Anda memindai stiker QR di meja. Memperhatikan layar di depan Anda, apakah ketiadaan menu login memudahkan Anda untuk langsung melapor tanpa hambatan lupa kata sandi akun SSO?
+      -> Sangat memudahkan, alur langsung ke inti masalah.
+  [8] Alasan Responden
+      -> Praktis banget, tinggal scan QR langsung ke form pelaporan tanpa buang waktu loading halaman SSO.
+  [9] Setelah mengisi barcode dan kategori kerusakan pada formulir, perhatikan diagram fisik di bawahnya. Apakah petunjuk visual tersebut membuat Anda tahu pasti ke mana fisik buku harus diserahkan agar tidak hilang atau tercampur dengan buku sehat?
+      -> Sangat jelas, buku diletakkan pada Rak Transit Tingkat 2 di dekat meja loket.
+  [10] Dasar Informasi pada Layar
+      -> Petunjuk gambarnya to the point, langsung kelihatan lokasi rak transitnya di sebelah mana.
+  [11] Saat kolom barcode dikosongkan dan tombol kirim ditekan, muncul pesan peringatan warna merah tanpa menghapus data nama dan NIM yang sudah Anda ketik. Apakah penanganan eror ini memudahkan Anda memperbaiki kesalahan tanpa mengulang dari awal?
+      -> Ya, sangat membantu mempertahankan data yang sudah diisi.
+  [12] Masukan
+      -> Fitur ini ngebantu banget biar nggak males ngulang ngetik nama dan NIM dari nol.
+  [13] M1 – Keengganan mahasiswa melapor buku rusak karena antrean loket sirkulasi yang padat
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Alasan Penilaian M1
-[JAWABAN]: Mahasiswa bisa langsung lapor dari meja baca tanpa harus ikut ngantre panjang di meja sirkulasi.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M1
-[JAWABAN]: Stiker QR kodenya dibikin lebih tahan gores biar nggak gampang rusak kena gesekan.
-
-[PERTANYAAN]: M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
+      -> 4
+  [14] Alasan Penilaian M1
+      -> Mahasiswa bisa langsung lapor dari meja baca tanpa harus ikut ngantre panjang di meja sirkulasi.
+  [15] Hal yang Masih Kurang pada M1
+      -> Stiker QR kodenya dibikin lebih tahan gores biar nggak gampang rusak kena gesekan.
+  [16] M2 – Buku yang terselip salah rak dibiarkan begitu saja di meja baca tanpa tindak lanjut
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
-
-[PERTANYAAN]: Alasan Penilaian M2
-[JAWABAN]: Jauh berkurang karena sekarang mahasiswa tahu ada rak khusus buat naruh buku yang salah tempat.
-
-[PERTANYAAN]: Hal yang Masih Kurang pada M2
-[JAWABAN]: Bisa dipasang poster kecil himbauan di tiang-tiang ruang baca biar mahasiswa makin peduli.
-
-[PERTANYAAN]: M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
+      -> 4
+  [17] Alasan Penilaian M2
+      -> Jauh berkurang karena sekarang mahasiswa tahu ada rak khusus buat naruh buku yang salah tempat.
+  [18] Hal yang Masih Kurang pada M2
+      -> Bisa dipasang poster kecil himbauan di tiang-tiang ruang baca biar mahasiswa makin peduli.
+  [19] M3 – Ketergantungan menghubungi WhatsApp pribadi pustakawan untuk perpanjangan buku
 
 1 = Tidak Mengatasi
 2 = Mengatasi Sedikit
 3 = Mengatasi Sebagian
 4 = Mengatasi Sebagian Besar
 5 = Mengatasi Sepenuhnya
-[JAWABAN]: 4.0
+      -> 4
+  [20]   Alasan Penilaian M3  
+      -> Lebih nyaman lewat web form, nggak ngerasa nggak enak ganggu nomor pribadi petugas perpustakaan.
+  [21]   Hal yang Masih Kurang pada M3  
+      -> Mungkin bisa ditambah estimasi waktu kapan perpanjangan bakal diverifikasi di sistem.
 
-[PERTANYAAN]:   Alasan Penilaian M3  
-[JAWABAN]: Lebih nyaman lewat web form, nggak ngerasa nggak enak ganggu nomor pribadi petugas perpustakaan.
+================================================================================
 
-[PERTANYAAN]:   Hal yang Masih Kurang pada M3  
-[JAWABAN]: Mungkin bisa ditambah estimasi waktu kapan perpanjangan bakal diverifikasi di sistem.
+--- RESPONDEN #7: Abdul (199205122019031045) ---
+Peran           : Pustakawan Pengelola Tunggal
+Sifat Pengujian : Pemangku Kepentingan Nyata Lapangan (Perpustakaan FT UNY)
+Waktu Respon    : 30/10/2026 17:58:42 (Pelaksanaan: 29/10/2026 13:43:00)
+Jawaban Terisi:
+  [22] Seberapa efektif fitur pemisahan akses login khusus pustakawan dalam mengamankan data inventaris dari akses pihak luar?
+      -> 5
+  [23] Jelaskan alasan detail mengapa Anda memberikan skor tersebut pada efektivitas pemisahan akses login pustakawan.
+      -> Hak aksesnya jadi jelas terpisah. Mahasiswa cuma bisa lapor atau lihat data publik tanpa risiko salah klik atau sengaja ngedit database inventaris.
+  [24] Seberapa jelas tampilan dasbor antrean tiket laporan dalam membantu Anda memprioritaskan penanganan buku rusak?
+      -> 4
+  [25] Uraikan alasan di balik penilaian Anda terhadap kejelasan dasbor antrean tiket dan penentuan prioritas perbaikan buku.
+      -> Indikator warnanya ngebantu banget bedain mana tiket yang udah lewat batas waktu (SLA merah) sama yang masih antre biasa, jadi nggak perlu nebak-nebak mana yang harus digarap duluan.
+  [26] Seberapa besar bantuan fitur timer quiet hour 60 menit dalam memberikan waktu fokus administrasi tanpa interupsi pengunjung?
+      -> 4
+  [27] Berikan penjelasan mengapa Anda menilai fitur timer quiet hour dengan skor tersebut dalam menjaga fokus kerja Anda.
+      -> Ngasi batasan waktu kerja fokus yang konkret. Cuma tetep butuh dukungan pengumuman fisik di loket biar mahasiswa di lokasi beneran paham dan nggak langsung nyelonong nanya.
+  [28] Seberapa efektif mekanisme modal verifikasi fisik (checklist ganda) dalam mencegah penyelesaian tiket secara prematur?
+      -> 4
+  [29] Jelaskan alasan Anda terkait efektivitas kontrol internal verifikasi fisik buku sebelum menutup tiket laporan.
+      -> Ngemaksa pustakawan buat beneran megang fisik bukunya dulu sebelum status tiket diselesaikan, jadi ngehindarin tiket asal ditutup padahal bukunya belum beres dicek.
+  [30] Seberapa besar kemudahan yang Anda rasakan dari tombol salin barcode untuk integrasi langsung ke sistem sirkulasi SLiMS?
+      -> 5
+  [31] Uraikan alasan detail mengapa fitur integrasi SLiMS mendapatkan skor kemudahan tersebut dalam tugas harian Anda.
+      -> Jauh lebih cepet tinggal sekali klik salin lalu tempel di SLiMS, nggak perlu ketik manual angka barcode panjang yang rawan typo.
+  [32] Seberapa jauh sistem web ini berhasil mengurangi beban komunikasi penanganan perpanjangan buku melalui WhatsApp pribadi?
+      -> 4
+  [33] Jelaskan alasan dan pengalaman nyata Anda terkait penurunan gangguan chat WhatsApp setelah menggunakan sistem ini.
+      -> Notifikasi perpanjangan udah masuk ke satu pintu di web. Chat WA pribadi yang masuk di luar jam kerja berkurang drastis, meski sesekali masih ada 1-2 mahasiswa yang nge-chat langsung.
+  [34] Seberapa baik sistem membantu mengatasi masalah penumpukan fisik buku rusak dan salah susun di meja kerja sirkulasi?
+      -> 4
+  [35] Berikan penjelasan mengenai alasan penilaian Anda terhadap penyelesaian masalah penumpukan buku di meja sirkulasi.
+      -> Buku langsung diarahkan ke rak transit sesuai alur sistem, jadi meja sirkulasi utama nggak lagi jadi tempat pembuangan tumpukan buku rusak.
+  [36] Seberapa akurat informasi status ketersediaan buku yang diperbarui pada katalog OPAC SLiMS melalui bantuan web ini?
+      -> 4
+  [37] Uraikan alasan Anda terkait tingkat akurasi pembaruan status ketersediaan koleksi buku di perpustakaan.
+      -> Status buku rusak langsung terlacak dan di-update berkala, jadi mahasiswa yang cari di OPAC nggak kecele nemu buku yang ternyata lagi rusak atau hilang.
+  [38] Seberapa besar perlindungan waktu kerja administratif yang Anda rasakan sebagai pustakawan tunggal setelah penerapan web?
+      -> 4
+  [39] Jelaskan alasan mendalam mengapa Anda memberikan skor tersebut terhadap perlindungan waktu kerja administratif Anda.
+      -> Ada jeda waktu resmi buat nyelesaiin tugas adm tanpa terus-terusan kepotong antrean loket atau spam chat, ritme kerja jadi jauh lebih teratur.
+  [41] Berikan kesimpulan dan penjelasan komprehensif mengenai kontribusi web ini terhadap efisiensi kerja Anda secara keseluruhan.
+      -> Sistem ini sangat ngebantu ngerapihin alur kerja pustakawan tunggal. Mulai dari urusan komplain buku rusak, antrean perpanjangan, sampai persiapan data akreditasi jadi jauh lebih ringkas dan terpusat di satu tempat.
+  [42] Berdasarkan hasil web sementara tersebut, berikan kritik dan saran untuk perbaikan selanjutnya
+      -> - Di meja kerja (index.html), tabel laporan buku rusak dan perpanjangan pinjam tidak memiliki kolom pencarian instan. Ketika ada mahasiswa datang ke loket menanyakan: 'Mbak, perpanjangan saya atas nama Farid (NIM 24050530015) sudah masuk belum?', saya terpaksa harus menggulir (scroll) dan membaca baris tabel satu per satu secara manual. Saat antrean loket sedang ramai di jam istirahat kuliah, cara ini sangat memakan waktu dan membuat panik.
+
+- Tombol 'Salin & Eksekusi SLiMS' pada panel perpanjangan pinjam sangat membantu mencegah salah ketik. Tapi tombol ini hanya bekerja per satu baris. Jika dalam semalam ada 15 permohonan perpanjangan yang masuk, saya harus mengklik 'Salin', pindah tab ke SLiMS, klik perpanjang, lalu kembali lagi ke SIMPEL-KOLEKSI sebanyak 15 kali bolak-balik. Ini menimbulkan kelelahan klik (click fatigue) yang tidak perlu.
+
+- Di modal verifikasi buku rusak, sistem langsung mengubah status menjadi 'Dalam Perbaikan (Repair)' di SLiMS. Padahal kondisi fisik di lapangan tidak seragam: ada buku yang cuma butuh dilem/disolasi 5 menit di meja sirkulasi (bisa langsung masuk rak normal hari itu juga), dan ada buku yang halamannya hilang atau jilidnya rontok parah sehingga harus masuk lemari karantina / binding berbulan-bulan. Mockup belum memfasilitasi pembedaan penanganan fisik ini.
+
+- Tombol Quiet Hour (60m) di layar saya sudah berjalan mundur dengan bagus. Tapi masalah utamanya ada di sisi fisik: mahasiswa di depan meja loket tidak tahu kalau saya sedang jam hening verifikasi buku. Mereka tetap berdiri, mengetuk kaca loket, atau memanggil saya. Jadi timer di layar ini belum melindungi saya dari interupsi fisik jika portal mahasiswa (layanan.html) tidak ikut menampilkan pengumuman bahwa loket tutup sementara.
+
+- Tombol Export CSV Usulan Buku Dekanat sudah bagus. Tapi pimpinan fakultas (Wakil Dekan I) biasanya tidak mau membaca berkas spreadsheet CSV mentah. Mereka menuntut lembar disposisi resmi ber-kop Fakultas Teknik UNY yang mencantumkan total estimasi anggaran dan tanda tangan pengesahan pustakawan.
 
 ================================================================================
 
