@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPEL-KOLEKSI FT UNY | Meja Kerja Pustakawan</title>
+  <meta name="description" content="Meja kerja pustakawan Perpustakaan FT UNY untuk pengelolaan laporan koleksi, perpanjangan mandiri, dan usulan referensi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-librarian">
+
+  <!-- NOTIFICATION TOAST CONTAINER -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HALAMAN UTAMA: LOGIN PUSTAKAWAN (DEFAULT VIEW KOMPUTER PUSTAKAWAN)     -->
+  <!-- ========================================================================= -->
+  <section id="viewLogin" class="app-view is-active">
+    <div class="login-wrapper">
+      <div class="login-card">
+        
+        <div class="login-brand">
+          <span class="login-badge-mark">FT</span>
+          <h3>SIMPEL-KOLEKSI</h3>
+          <p>Portal Meja Kerja Pustakawan Perpustakaan FT UNY</p>
+        </div>
+
+        <div class="login-info-pill">
+          <span>Komputer Operasional Meja Sirkulasi</span>
+        </div>
+
+        <form id="formLibrarianLogin" class="login-form">
+          <div class="form-group">
+            <label for="loginUsername">Nama Pengguna (Username)</label>
+            <input type="text" id="loginUsername" class="form-control" value="pustakawan.ft" required>
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Kata Sandi (Password)</label>
+            <input type="password" id="loginPassword" class="form-control" value="perpustakaan2026" required>
+          </div>
+
+          <div class="login-actions">
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitLogin">
+              <span>Masuk ke Meja Kerja</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="login-footer">
+          <a href="layanan.html" target="_blank" class="btn-qr-link">
+            <span>Simulasi Tampilan Scan Stiker QR Mahasiswa</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. PORTAL MEJA KERJA PUSTAKAWAN (SETELAH LOGIN - LAYOUT SIDEBAR)          -->
+  <!-- ========================================================================= -->
+  <section id="viewAdmin" class="app-view">
+    <div class="admin-layout">
+
+      <!-- SIDEBAR NAVIGASI KIRI -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <span class="s-mark">FT</span>
+            <div class="s-text">
+              <strong>SIMPEL-KOLEKSI</strong>
+              <small>Meja Kerja Pustakawan</small>
+            </div>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu Pustakawan">
+          <button type="button" class="nav-item is-active" data-panel="adminPanelDashboard" id="navDashboard">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-svg">
+              <rect x="3" y="3" width="7" height="9"></rect>
+              <rect x="14" y="3" width="7" height="5"></rect>
+              <rect x="14" y="12" width="7" height="9"></rect>
+              <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
+            <span class="nav-label">Dashboard Utama</span>
+          </button>
+
+          <button type="button" class="nav-item" data-panel="adminPanelDamage" id="navDamage">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-svg">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <line x1="10" y1="9" x2="14" y2="13"></line>
+              <line x1="14" y1="9" x2="10" y2="13"></line>
+            </svg>
+            <span class="nav-label">Laporan Buku Rusak</span>
+            <span class="nav-badge badge-coral" id="badgeDamageCount">3</span>
+          </button>
+
+          <button type="button" class="nav-item" data-panel="adminPanelExtend" id="navExtend">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-svg">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+            <span class="nav-label">Perpanjangan Pinjam</span>
+            <span class="nav-badge badge-blue" id="badgeExtendCount">2</span>
+          </button>
+
+          <button type="button" class="nav-item" data-panel="adminPanelRequest" id="navRequest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-svg">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span class="nav-label">Request Referensi</span>
+            <span class="nav-badge badge-emerald" id="badgeRequestCount">4</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="user-card-mini">
+            <div class="user-avatar">AD</div>
+            <div class="user-info">
+              <strong>Abdul / Danar, S.I.Pst</strong>
+              <small>Pustakawan Tunggal FT</small>
+            </div>
+          </div>
+          
+          <div class="sidebar-actions">
+            <a href="layanan.html" target="_blank" class="btn btn-outline-light btn-sm btn-block" style="text-decoration:none;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <span>Buka Web QR Mahasiswa</span>
+            </a>
+            <button type="button" class="btn btn-danger-soft btn-sm btn-block" id="btnLogoutAdmin">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+              <span>Keluar (Logout)</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- KONTEN UTAMA KANAN -->
+      <main class="admin-main">
+        
+        <header class="admin-topbar">
+          <div class="topbar-title-wrap">
+            <h2 id="adminHeaderTitle">Dashboard & Rangkuman Layanan</h2>
+            <span class="topbar-date font-mono" id="currentDateDisplay">Jumat, 30 Oktober 2026</span>
+          </div>
+
+          <div class="topbar-slims-status">
+            <span class="slims-dot"></span>
+            <span>Terhubung SLiMS 9 Bulian + Sinkron Banner QR Pemustaka</span>
+          </div>
+        </header>
+
+        <div class="admin-content-area">
+
+          <!-- =============================================================== -->
+          <!-- PANEL 1: DASHBOARD UTAMA                                        -->
+          <!-- =============================================================== -->
+          <div id="adminPanelDashboard" class="admin-panel is-active">
+            
+            <div class="alert-banner warning-banner">
+              <div class="alert-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <div class="alert-text">
+                <strong>Peringatan SLA Quiet Hour (SOP-001):</strong>
+                <span>Terdapat <strong>1 tiket buku rusak melewati SLA 3 hari (Label Merah)</strong> di Rak Transit Tingkat 2. Aktifkan tombol <strong>Quiet Hour (60m)</strong> untuk menyiarkan pengumuman otomatis ke layar HP mahasiswa (`layanan.html`).</span>
+              </div>
+            </div>
+
+            <div class="kpi-grid">
+              <div class="kpi-card">
+                <div class="kpi-icon-wrap bg-blue-soft text-blue">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <div class="kpi-content">
+                  <span class="kpi-label">Total Masuk Hari Ini</span>
+                  <strong class="kpi-value" id="kpiTotalToday">9</strong>
+                  <small class="kpi-sub">Laporan QR & Layanan</small>
+                </div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-icon-wrap bg-coral-soft text-coral">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                </div>
+                <div class="kpi-content">
+                  <span class="kpi-label">Menunggu Verifikasi Rak</span>
+                  <strong class="kpi-value font-mono text-coral" id="kpiDamagePending">3</strong>
+                  <small class="kpi-sub">Rak Transit Tingkat 2</small>
+                </div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-icon-wrap bg-cyan-soft" style="color:var(--cyan-500);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                </div>
+                <div class="kpi-content">
+                  <span class="kpi-label">Perpanjangan Diproses</span>
+                  <strong class="kpi-value font-mono text-blue" id="kpiExtendPending">2</strong>
+                  <small class="kpi-sub">Mendukung Batch Eksekusi</small>
+                </div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-icon-wrap bg-emerald-soft text-emerald">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div class="kpi-content">
+                  <span class="kpi-label">Usulan Referensi Masuk</span>
+                  <strong class="kpi-value font-mono text-emerald" id="kpiRequestCount">4</strong>
+                  <small class="kpi-sub">Siap Cetak Disposisi Dekanat</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-tables-grid">
+              <div class="panel-box">
+                <div class="panel-box-header">
+                  <h4>Antrean Cepat Perpanjangan Pinjam</h4>
+                  <button type="button" class="btn btn-sm btn-link" id="linkToExtendPanel">Lihat Semua &rarr;</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>NIM / Nama</th>
+                        <th>Barcode</th>
+                        <th>Aksi Cepat</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbodyQuickExtend"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="panel-box">
+                <div class="panel-box-header">
+                  <h4>Buku Rusak di Rak Transit Tingkat 2</h4>
+                  <button type="button" class="btn btn-sm btn-link" id="linkToDamagePanel">Lihat Semua &rarr;</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Tiket & SLA</th>
+                        <th>Judul Koleksi</th>
+                        <th>Kerusakan</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbodyQuickDamage"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- =============================================================== -->
+          <!-- PANEL 2: LAPORAN BUKU RUSAK (REVISI: LIVE SEARCH & QUIET HOUR)   -->
+          <!-- =============================================================== -->
+          <div id="adminPanelDamage" class="admin-panel">
+            
+            <div class="panel-action-bar">
+              <div>
+                <h3>Verifikasi & Pemutakhiran Koleksi Rusak (SOP-001)</h3>
+                <p>Dilengkapi <strong>Live Search Bar</strong>, <strong>Sinkronisasi Pengumuman Quiet Hour ke HP Pemustaka</strong>, dan <strong>Triase Perbaikan Ringan 5 Menit vs Berat</strong>.</p>
+              </div>
+              
+              <div class="bar-buttons">
+                <button type="button" class="btn btn-outline" id="btnToggleQuietHourTimer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Quiet Hour (60m) + Broadcast ke QR</span>
+                </button>
+                <button type="button" class="btn btn-primary" id="btnExportDamageCsv">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Export CSV Buku Rusak</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quiet Hour Session Bar (Synchronized to layanan.html!) -->
+            <div id="quietHourBar" class="quiet-hour-box is-hidden">
+              <div class="qh-status">
+                <span class="qh-live-badge">SESI QUIET HOUR AKTIF & DISIARKAN KE LAYANAN.HTML</span>
+                <span>Portal QR Mahasiswa kini menampilkan banner penutupan sementara loket tatap muka agar pustakawan bebas interupsi fisik.</span>
+              </div>
+              <div class="qh-timer font-mono" id="qhCountdownDisplay">60:00</div>
+            </div>
+
+            <!-- REVISI KUISIONER #1: LIVE SEARCH BAR BUKU RUSAK -->
+            <div class="table-toolbar-v4">
+              <div class="search-box-v4">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="search" id="searchDamageInput" placeholder="Cari instan NIM, Nama Pelapor (misal: Farid), Barcode, atau Judul Buku...">
+              </div>
+              <div class="filter-pills-bar" style="margin-bottom:0;">
+                <button type="button" class="filter-pill is-active" data-filter-dmg="all">Semua Laporan</button>
+                <button type="button" class="filter-pill" data-filter-dmg="PENDING">Menunggu Verifikasi Rak (3)</button>
+                <button type="button" class="filter-pill" data-filter-dmg="IN_REPAIR">Karantina / Perbaikan Berat</button>
+                <button type="button" class="filter-pill" data-filter-dmg="RESOLVED">Selesai / Kembali ke Rak</button>
+              </div>
+            </div>
+
+            <div class="panel-box">
+              <div class="table-responsive">
+                <table class="data-table" id="tableDamageReports">
+                  <thead>
+                    <tr>
+                      <th>ID Tiket & SLA</th>
+                      <th>Tanggal</th>
+                      <th>Barcode & Judul</th>
+                      <th>Kategori Masalah</th>
+                      <th>Pelapor (NIM)</th>
+                      <th>Posisi Fisik</th>
+                      <th>Status & Triase SLiMS</th>
+                      <th>Aksi Verifikasi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbodyDamageReports"></tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- =============================================================== -->
+          <!-- PANEL 3: PERPANJANGAN PINJAM (REVISI: LIVE SEARCH & BATCH EXEC)  -->
+          <!-- =============================================================== -->
+          <div id="adminPanelExtend" class="admin-panel">
+            
+            <div class="panel-action-bar">
+              <div>
+                <h3>Layanan Mandiri Perpanjangan Masa Pinjam (Anti Click-Fatigue)</h3>
+                <p>Dilengkapi <strong>Pencarian Instan NIM/Nama</strong> dan <strong>Eksekusi Massal (Batch Selection)</strong> agar pustakawan tidak perlu klik bolak-balik satu per satu.</p>
+              </div>
+            </div>
+
+            <!-- REVISI KUISIONER #1 & #2: LIVE SEARCH + BATCH CHECKBOX EXECUTION -->
+            <div class="table-toolbar-v4">
+              <div class="search-box-v4">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="search" id="searchExtendInput" placeholder="Cari instan Nama Mahasiswa, NIM/NIP, atau Barcode Buku...">
+              </div>
+
+              <div class="batch-actions-v4">
+                <span class="batch-counter-pill" id="batchSelectedCounter">0 dipilih</span>
+                <button type="button" class="btn btn-primary btn-sm" id="btnBatchExecuteExtend">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                  <span>Salin Semua Barcode & Eksekusi Massal SLiMS</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="filter-pills-bar">
+              <button type="button" class="filter-pill is-active" data-filter-ext="all">Semua Permintaan</button>
+              <button type="button" class="filter-pill" data-filter-ext="PENDING">Menunggu Eksekusi</button>
+              <button type="button" class="filter-pill" data-filter-ext="PROCESSED">Sudah Diperpanjang di SLiMS</button>
+            </div>
+
+            <div class="panel-box">
+              <div class="table-responsive">
+                <table class="data-table" id="tableExtendRequests">
+                  <thead>
+                    <tr>
+                      <th style="width:36px;">
+                        <input type="checkbox" id="chkSelectAllExtend" title="Pilih semua permohonan pending">
+                      </th>
+                      <th>ID Layanan</th>
+                      <th>Waktu Masuk</th>
+                      <th>ID Anggota (NIM/NIP)</th>
+                      <th>Nama Pemohon</th>
+                      <th>Barcode Buku</th>
+                      <th>Judul Buku</th>
+                      <th>No. WhatsApp</th>
+                      <th>Status Eksekusi</th>
+                      <th>Aksi Pustakawan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbodyExtendRequests"></tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- =============================================================== -->
+          <!-- PANEL 4: REQUEST REFERENSI BARU (REVISI: DISPOSISI BER-KOP FT)   -->
+          <!-- =============================================================== -->
+          <div id="adminPanelRequest" class="admin-panel">
+            
+            <div class="panel-action-bar">
+              <div>
+                <h3>Permintaan Referensi & Usulan Buku Baru (Koleksi Pemustaka)</h3>
+                <p>Dilengkapi fitur <strong>Cetak Lembar Disposisi Resmi Ber-Kop FT UNY</strong> lengkap dengan estimasi anggaran dan kolom tanda tangan Wakil Dekan I.</p>
+              </div>
+              
+              <div class="bar-buttons">
+                <button type="button" class="btn btn-primary" id="btnOpenDisposisiModal">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  <span>Cetak Lembar Disposisi Ber-Kop FT UNY</span>
+                </button>
+                <button type="button" class="btn btn-emerald" id="btnExportRequestCsv">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Export CSV Borang Kriteria 5</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-toolbar-v4">
+              <div class="search-box-v4">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="search" id="searchRequestInput" placeholder="Cari Judul Buku, Topik Skripsi, Prodi, atau Nama Pengusul...">
+              </div>
+              <div class="filter-pills-bar" style="margin-bottom:0;">
+                <button type="button" class="filter-pill is-active" data-filter-req="all">Semua Usulan</button>
+                <button type="button" class="filter-pill" data-filter-req="PENDING_REVIEW">Menunggu Telaah</button>
+                <button type="button" class="filter-pill" data-filter-req="IN_PROCUREMENT">Diajukan ke Pagu Belanja 2027</button>
+                <button type="button" class="filter-pill" data-filter-req="AVAILABLE_WAREHOUSE">Tersedia di Gudang</button>
+              </div>
+            </div>
+
+            <div class="panel-box">
+              <div class="table-responsive">
+                <table class="data-table" id="tableReferenceRequests">
+                  <thead>
+                    <tr>
+                      <th>ID Permintaan</th>
+                      <th>Tanggal</th>
+                      <th>Pemohon (NIM/NIP)</th>
+                      <th>Program Studi</th>
+                      <th>Judul Buku / Topik Referensi</th>
+                      <th>Keperluan & Estimasi Harga</th>
+                      <th>Kontak WA</th>
+                      <th>Status Tindak Lanjut</th>
+                      <th>Tindakan Pustakawan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbodyReferenceRequests"></tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 1: VERIFIKASI FISIK BUKU RUSAK + TRIASE 5 MENIT VS KARANTINA BERAT  -->
+  <!-- ========================================================================= -->
+  <div id="modalVerifyDamage" class="modal-backdrop is-hidden" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="badge-pill">Verifikasi & Triase Fisik (SOP-001)</span>
+            <h3 id="modalVerifyTitle">Verifikasi Koleksi: TKT-202610-001</h3>
+          </div>
+          <button type="button" class="modal-close" id="btnCloseVerifyModal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="verify-detail-grid">
+            <div class="v-group">
+              <span class="v-label">Judul Koleksi:</span>
+              <strong id="modalBookTitle">-</strong>
+            </div>
+            <div class="v-group">
+              <span class="v-label">Nomor Barcode:</span>
+              <span class="font-mono text-blue font-bold" id="modalBarcode">-</span>
+            </div>
+            <div class="v-group">
+              <span class="v-label">Pelapor:</span>
+              <span id="modalReporter">-</span>
+            </div>
+            <div class="v-group">
+              <span class="v-label">Kategori Masalah:</span>
+              <span class="tag-status" id="modalDamageType">-</span>
+            </div>
+          </div>
+
+          <div class="checklist-box">
+            <h4>Checklist 2-Tahap Tata Kelola (SOP-001):</h4>
+            <label class="check-item">
+              <input type="checkbox" id="chkPhysicalCheck">
+              <span><strong>1. Verifikasi Fisik Selesai:</strong> Buku fisik telah diambil dari Rak Transit Tingkat 2 dan kondisi kerusakan telah diperiksa langsung.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" id="chkSlimsSync">
+              <span><strong>2. Pemutakhiran SLiMS:</strong> Barcode telah dicocokkan pada modul Katalogisasi/Bibliografi SLiMS 9 Bulian.</span>
+            </label>
+          </div>
+
+          <!-- REVISI KUISIONER PUSTAKAWAN #3: TRIASE PENANGANAN FISIK (RINGAN 5 MENIT VS KARANTINA BERAT) -->
+          <div class="triage-box-v4">
+            <h4>Keputusan Triase Penanganan Fisik:</h4>
+            <div class="triage-options-grid">
+              <label class="triage-option-card">
+                <input type="radio" name="triageDecision" value="LIGHT_REPAIR" checked>
+                <div>
+                  <strong>A. Perbaikan Ringan di Meja Loket (Selesai 5 Menit)</strong>
+                  <small>Cukup dilem/disolasi ringan atau dikembalikan ke rak DDC yang benar. Buku langsung kembali ke <em>Rak Koleksi Aktif</em> hari ini & status SLiMS <strong>Tersedia (Available)</strong>.</small>
+                </div>
+              </label>
+
+              <label class="triage-option-card">
+                <input type="radio" name="triageDecision" value="HEAVY_QUARANTINE">
+                <div>
+                  <strong>B. Kerusakan Berat / Masuk Lemari Karantina & Penjilidan (Binding)</strong>
+                  <small>Halaman hilang atau punggung jilid rontok parah. Buku masuk <em>Lemari Karantina Binding</em> & status SLiMS diubah menjadi <strong>Dalam Perbaikan (Repair)</strong>.</small>
+                </div>
+              </label>
+
+              <label class="triage-option-card">
+                <input type="radio" name="triageDecision" value="MISSING_WEEDING">
+                <div>
+                  <strong>C. Fisik Raib / Penyiangan Aset (Weeding)</strong>
+                  <small>Buku tidak ditemukan setelah verifikasi lorong rak. Status SLiMS diubah menjadi <strong>Hilang (Missing)</strong>.</small>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="btnCancelVerify">Batal</button>
+          <button type="button" class="btn btn-primary" id="btnConfirmVerify">
+            <span>Konfirmasi Triase & Perbarui Status SLiMS</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 2: LEMBAR DISPOSISI RESMI BER-KOP FT UNY (REVISI KUISIONER #5)      -->
+  <!-- ========================================================================= -->
+  <div id="modalDisposisiDekanat" class="modal-backdrop is-hidden" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-wide">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="badge-pill">Dokumen Resmi Pengajuan Anggaran ke Wakil Dekan I</span>
+            <h3>Pratinjau Lembar Disposisi Pengadaan Buku Ber-Kop FT UNY</h3>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.65rem;">
+            <button type="button" class="btn btn-primary btn-sm" id="btnPrintDisposisiTop" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.4rem 0.85rem; font-size:0.8rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span>Cetak PDF</span>
+            </button>
+            <button type="button" class="modal-close" id="btnCloseDisposisiModal" aria-label="Tutup">&times;</button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="disposisi-paper" id="printableDisposisiArea">
+            <div class="kop-surat-ft">
+              <div>
+                <h4>Kementerian Pendidikan Tinggi, Sains, dan Teknologi</h4>
+                <h3>Universitas Negeri Yogyakarta — Fakultas Teknik</h3>
+                <h4>Unit Pelaksana Teknis Perpustakaan Fakultas Teknik</h4>
+                <p>Kampus Karangmalang, Yogyakarta 55281 | Telp. (0274) 586168 | Sistem Pendukung: SIMPEL-KOLEKSI FT</p>
+              </div>
+            </div>
+
+            <div style="text-align:center; margin-bottom:1rem;">
+              <strong style="font-size:1rem; text-decoration:underline;">LEMBAR DISPOSISI & USULAN PENGADAAN BUKU REFERENSI BARU</strong><br>
+              <small>Nomor Dokumen: 042/UN34.15/PERPUS-FT/X/2026 | Dasar: Pemenuhan Borang Akreditasi LAM-INFOKOM Kriteria 5</small>
+            </div>
+
+            <p style="font-size:0.84rem; margin:0 0 0.75rem 0;">
+              Yth. <strong>Wakil Dekan Bidang Akademik, Kemahasiswaan, dan Alumni (Wadek I) FT UNY</strong>,<br>
+              Berdasarkan rekapitulasi usulan referensi sivitas akademika dan evaluasi rasio keterpakaian koleksi SLiMS (Prodi PTI mencapai <strong>94,1%</strong>), bersama ini kami ajukan daftar pengadaan buku prioritas Tahun Anggaran 2027:
+            </p>
+
+            <table class="disposisi-table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>ID Usulan</th>
+                  <th>Program Studi Pengusul</th>
+                  <th>Judul Buku / Topik Referensi</th>
+                  <th>Keperluan Akademik</th>
+                  <th>Estimasi Pagu (3 Eks)</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyDisposisiItems"></tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="5" style="text-align:right;">Total Estimasi Anggaran Pengadaan Prioritas:</th>
+                  <th id="totalDisposisiBudget">Rp 3.450.000</th>
+                </tr>
+              </tfoot>
+            </table>
+
+            <div class="disposisi-signatures">
+              <div class="sig-block">
+                <span>Menyetujui / Disposisi Pagu Anggaran,<br><strong>Wakil Dekan Bidang Akademik FT UNY</strong></span>
+                <div class="sig-space"></div>
+                <strong>( Prof. Dr. Eng. Ir. Wakil Dekan I, M.T. )</strong><br>
+                <small>NIP. 19740812 200003 1 002</small>
+              </div>
+
+              <div class="sig-block">
+                <span>Yogyakarta, 30 Oktober 2026<br>Diajukan oleh, <strong>Pustakawan Pengelola FT UNY</strong></span>
+                <div class="sig-space"></div>
+                <strong>( Abdul / Danar, S.I.Pst. )</strong><br>
+                <small>NIP. 19920512 201903 1 045</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="btnCancelDisposisi">Tutup</button>
+          <button type="button" class="btn btn-primary" id="btnPrintDisposisi">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Cetak / Simpan PDF Disposisi Resmi</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -30,10 +30,7 @@ tags:
 ## MANAJEMEN SISTEM INFORMASI (PTF60234)
 ### PERTEMUAN 8: Perancangan Alur Pengguna dan Wireframe Sistem Informasi
 
-
-
-
-
+```text
 Disusun Oleh :
 Kelompok 3
 
@@ -45,10 +42,7 @@ PROGRAM STUDI PENDIDIKAN TEKNIK INFORMATIKA - S1
 FAKULTAS TEKNIK
 UNIVERSITAS NEGERI YOGYAKARTA
 2026
-
-
-
-
+```
 
 ---
 
@@ -93,10 +87,7 @@ Lintasan kritis tersebut menegaskan bahwa keberhasilan sistem informasi ditentuk
 ### 3.2. Metodologi Seleksi Layar Prioritas Berbasis Jalur Kritis
 Sesuai arahan evaluasi Dr. Ratna Wardani pada [[catatan_4]], perancangan sistem informasi wajib membuktikan keterhubungan vertikal lintas tiga tingkatan manajemen (*vertical organizational alignment*). Berdasarkan prinsip tersebut, Kelompok 3 merancang rangkaian antarmuka yang saling mengunci dalam satu siklus informasi tertutup (*closed-loop governance workflow*):
 
-
-
-
-mermaid
+```mermaid
 flowchart TD
     subgraph S_OPS ["Tingkat Operasional: Pemustaka & Pustakawan Tunggal"]
         L1A["Layar L1-A<br>Portal Seleksi Layanan Mandiri<br>(Mobile Landing 390x844)"]
@@ -133,10 +124,7 @@ flowchart TD
     L2B -->|Navigasi Modul| L2E
     L2C -->|Pemicu Tindakan Verifikasi| L3
     L2E -.->|Agregasi Data Sirkulasi & Usulan| L4
-
-
-
-
+```
 
 1. **Rangkaian Layar Pemustaka (Mobile Responsive 390x844):** Terdiri atas Layar L1-A (Gerbang Seleksi Layanan Mandiri), L1-B (Formulir Pelaporan Kerusakan Fisik dan Panduan Rak Transit), L1-C (Formulir Pengajuan Perpanjangan Masa Pinjam SLiMS), dan L1-D (Formulir Partisipasi Usulan Koleksi Baru untuk Akreditasi). Seluruh antarmuka ini menyelesaikan simpul kritis aktivitas C (Pembuatan Form QR Code).
 2. **Rangkaian Layar Meja Kerja Pustakawan (Desktop Layout 1920x1080):** Merupakan kokpit operasional terpadu yang membebaskan pustakawan dari ketergantungan pencatatan manual. Rangkaian ini mencakup Layar L2-A (Gerbang Autentikasi Pengelola), L2-B (Dashboard Status Operasional & KPI Rangkuman), L2-C (Workspace Verifikasi Koleksi Rusak berbasis Kepatuhan SOP-001), L2-D (Konsol Eksekusi Cepat Perpanjangan SLiMS), serta L2-E (Konsolidasi Usulan Koleksi Baru untuk Usulan Pagu Belanja Dekanat).
@@ -156,17 +144,40 @@ Perancangan seluruh layar wireframe ditinjau secara ketat melalui kerangka teori
 
 ## 4. Hasil/Artefak Praktikum
 
-### 3.4 Use‑Case Diagram (Ringkasan Interaksi)
+### 4.1. Alur Pengguna (User Flow) & Use-Case Lintas Peran
 
+Berikut adalah pemetaan interaksi pengguna (*Use-Case Diagram* dan *Sequence Diagram*) yang menggambarkan hak akses serta urutan layar yang dilalui oleh setiap peran pemangku kepentingan untuk menuntaskan tanggung jawab informasinya:
 
-### 4.1. Alur Pengguna (User Flow) Lintas Peran
+```mermaid
+flowchart LR
+    subgraph ACT ["Aktor Pemangku Kepentingan"]
+        M["👤 Mahasiswa / Pemustaka<br>(Tingkat Operasional)"]
+        P["👤 Pustakawan Tunggal<br>(Tingkat Operasional)"]
+        D["👤 Tim Akreditasi & Dekanat<br>(Manajerial & Strategis)"]
+    end
 
-Berikut adalah pemetaan alur pengguna yang menggambarkan urutan layar yang dilalui oleh setiap peran pemangku kepentingan untuk menuntaskan tanggung jawab informasinya:
+    subgraph SYS ["Batas Sistem: SIMPEL-KOLEKSI FT UNY"]
+        UC1(["Lapor Buku Rusak & Salah Rak (L1-B)"])
+        UC2(["Ajukan Perpanjangan Mandiri +7 Hari (L1-C)"])
+        UC3(["Request Referensi & Usulan Buku (L1-D)"])
+        UC4(["Verifikasi Fisik Rak Transit & Quiet Hour (L2-C & L3)"])
+        UC5(["Eksekusi Cepat Perpanjangan SLiMS (L2-D)"])
+        UC6(["Konsolidasi Pagu Belanja & Ekspor CSV Borang (L2-E & L4)"])
+    end
 
+    M --> UC1
+    M --> UC2
+    M --> UC3
+    P --> UC4
+    P --> UC5
+    P --> UC6
+    D --> UC6
+    UC1 -.->|Trigger SLA| UC4
+    UC2 -.->|Antrean Sirkulasi| UC5
+    UC3 -.->|Agregasi Usulan| UC6
+```
 
-
-
-mermaid
+```mermaid
 sequenceDiagram
     autonumber
     actor M as Mahasiswa (Pemustaka)
@@ -227,10 +238,7 @@ sequenceDiagram
     D->>L4: Evaluasi tren rasio pemanfaatan koleksi per program studi
     D->>L4: Unduh tabel Kriteria 5 LAM-INFOKOM format Excel
     D->>L4: Tetapkan alokasi anggaran belanja buku tahunan berbasis bukti riil
-
-
-
-
+```
 
 #### Tabel Lembar Kerja Bagian A: Alur Pengguna (*User Flow Table*)
 
@@ -490,10 +498,7 @@ Layar L2-E menghubungkan tingkatan operasional perpustakaan dengan tingkatan str
 
 Layar L3 berwujud jendela sembul (*modal dialog pop-up*) yang muncul di atas Layar L2-C saat pustakawan mengklik tombol periksa tiket buku rusak pada sesi *Quiet Hour*.
 
-
-
-
-
+```text
 ┌────────────────────────────────────────────────────────────────────────┐
 │ VERIFIKASI FISIK & PEMUTAKHIRAN STATUS SLIMS                     [ X ] │
 ├────────────────────────────────────────────────────────────────────────┤
@@ -519,10 +524,7 @@ Layar L3 berwujud jendela sembul (*modal dialog pop-up*) yang muncul di atas Lay
 ├────────────────────────────────────────────────────────────────────────┤
 │ [ Batalkan ]                             [ Selesaikan Tiket & Update ] │
 └────────────────────────────────────────────────────────────────────────┘
-
-
-
-
+```
 
 *Gambar 8.10 Skema Layout Modal Layar L3: Checklist Verifikasi Fisik dan Pemutakhiran SLiMS.*
 
@@ -532,10 +534,7 @@ Layar L3 berwujud jendela sembul (*modal dialog pop-up*) yang muncul di atas Lay
 
 Layar L4 dirancang untuk pemangku kepentingan tingkat manajerial (Tim Akreditasi Program Studi) dan tingkat strategis (Dekanat Fakultas Teknik UNY).
 
-
-
-
-
+```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │ [FT UNY] SIMPEL-KOLEKSI | Dashboard Eksekutif & Akreditasi        [Unduh Borang Kriteria 5]│
 ├────────────────────────────────────────────────────────────────────────────────────────┤
@@ -557,10 +556,7 @@ Layar L4 dirancang untuk pemangku kepentingan tingkat manajerial (Tim Akreditasi
 │  banyaknya buku pemrograman rusak merekomendasikan alokasi 35% pagu belanja tahunan     │
 │  difokuskan pada literatur rumpun informatika dan komputer untuk akreditasi LAM-INFOKOM"│
 └────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-
-
+```
 
 *Gambar 8.11 Skema Layout Layar L4: Dashboard Eksekutif dan Generator Borang Akreditasi.*
 
@@ -570,10 +566,7 @@ Layar L4 dirancang untuk pemangku kepentingan tingkat manajerial (Tim Akreditasi
 
 Layar L5 merupakan cetak biru penataan spasial fasilitas fisik di gedung Perpustakaan FT UNY guna memastikan alur pergerakan pengguna digital selaras dengan tata letak perabot perpustakaan.
 
-
-
-
-
+```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │ CETAK BIRU TATA RUANG FASILITAS FISIK PERPUSTAKAAN FT UNY           [Standar RACK-001] │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
@@ -596,10 +589,7 @@ Layar L5 merupakan cetak biru penataan spasial fasilitas fisik di gedung Perpust
 │                                                                                        │
 │ [LORONG RAK UTAMA: DDC 000 - 900]           [AREA MEJA BACA & STIKER QR MEJA]          │
 └────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-
-
+```
 
 *Gambar 8.12 Skema Spasial Layar L5: Penataan Fisik Rak Transit dan Meja Sirkulasi.*
 
