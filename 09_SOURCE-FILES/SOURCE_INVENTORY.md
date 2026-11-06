@@ -39,11 +39,12 @@ Total berkas repositori: **97 berkas** terverifikasi penuh (*100% complete cover
 
 ---
 
-## 06_CATATAN-KELAS (Transkrip Bimbingan & Arahan Kuliah Dr. Ratna Wardani - 4 Berkas)
+## 06_CATATAN-KELAS (Transkrip Bimbingan & Arahan Kuliah Dr. Ratna Wardani - 5 Berkas)
 - [x] **SRC-CAT-01**: [[catatan_1]] (Penegasan Struktur Organisasi, Ketergantungan Fakultas-Universitas & Pencegahan Pemborosan Anggaran)
 - [x] **SRC-CAT-02**: [[catatan_2]] (Beban Kerja 3 Peran Pustakawan Tunggal, Ruang Lingkup Fisik & Anggaran Tahunan Buku Fakultas)
 - [x] **SRC-CAT-03**: [[catatan_3]] (Doktrin Pure Governance: Gejala vs Akar Masalah, Bahaya Bikin Aplikasi Tanpa SOP, Struktur Asli Organisasi)
 - [x] **SRC-CAT-04**: [[catatan_4]] (Rasionalisasi Pengaruh Keterlambatan ke Dekanat, Jam Kerja Quiet Hour & Investigasi Masalah Sistemik)
+- [x] **SRC-CAT-05**: [[catatan_5]] (Optimalisasi Pekerja, SOP Pra-Sistem Analogi SIAKAD, Usulan Buku Real-Time & Otomasi Weeding)
 
 ---
 

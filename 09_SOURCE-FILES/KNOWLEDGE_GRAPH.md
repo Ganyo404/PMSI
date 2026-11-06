@@ -34,6 +34,7 @@ graph TD
     C2["[[catatan_2]]"]
     C3["[[catatan_3]]"]
     C4["[[catatan_4]]"]
+    C5["[[catatan_5]]"]
 
     %% Referensi & Playbook
     REF1["[[Data_Perpustakaan_FT_UNY]]"]
@@ -72,6 +73,7 @@ graph TD
     DB --> CS1 & CS2 & KUR
     DB --> J1 & J2 & J3 & J4
     DB --> REF1 & REF2 & AGN
+    DB --> C1 & C2 & C3 & C4 & C5
 
     %% Relationships Teori ke Laporan
     M1 --> L1
@@ -101,6 +103,7 @@ graph TD
     C2 --> L2
     C3 --> L3
     C4 --> L4 & L5 & L6 & L7
+    C5 --> L4 & L5 & L6 & L7
 
     %% Literatur Ilmiah ke Tata Kelola
     J1 -.-> L4 & L5

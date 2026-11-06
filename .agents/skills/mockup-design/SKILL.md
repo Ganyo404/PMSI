@@ -107,5 +107,5 @@ Saat pengguna memberikan masukan perbaikan antarmuka:
 ---
 
 ## 🔗 Navigasi Graf
-> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[collaborative-brainstorming]] | [[system-blueprint]] | [[ui-design]] | [[anti-ui-slop]] | [[08_ARTEFAK/mockup/README|Dokumentasi Mockup]]
+> 🔗 **Terkoneksi dengan**: [[Dashboard]] | [[collaborative-brainstorming]] | [[system-blueprint]] | [[ui-design]] | [[anti-ui-slop]] | [[08_ARTEFAK/mockup-3/README|Dokumentasi Mockup-3]]
 
