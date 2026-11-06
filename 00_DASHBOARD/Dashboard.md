@@ -56,6 +56,7 @@ Umpan balik, diskusi kelas, dan arahan evaluasi Dr. Ratna Wardani:
 - **Catatan 2:** [[catatan_2|Catatan 2: Klarifikasi Kebutuhan Informasi Multi-Stakeholder]]
 - **Catatan 3:** [[catatan_3|Catatan 3: Pemilahan Gejala Masalah vs Akar Tata Kelola]]
 - **Catatan 4:** [[catatan_4|Catatan 4: Hubungan Organisasi Fakultas, Anggaran & Quiet Hour]]
+- **Catatan 5:** [[catatan_5|Catatan 5: Optimalisasi Pekerja, SOP Pra-Sistem & Otomasi Weeding]]
 
 ---
 

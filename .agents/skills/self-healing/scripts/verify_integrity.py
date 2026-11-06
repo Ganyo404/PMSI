@@ -18,7 +18,9 @@ from pathlib import Path
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
-WORKSPACE_ROOT = Path(r"c:\Kuliah\Semester 5\Manajemen Sistem Informasi (sms 5)\Praktikum\PMSI-main")
+WORKSPACE_ROOT = Path(os.environ.get("WORKSPACE_ROOT", r"c:\PMSI"))
+if not WORKSPACE_ROOT.exists():
+    WORKSPACE_ROOT = Path.cwd()
 
 
 AI_SLOP_WORDS = [
