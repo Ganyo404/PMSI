@@ -5,37 +5,36 @@
 ---
 
 **Nomor Dokumen:** SOP/FT-UNY/PERPUS/2026/001  
-**Revisi:** 02 (Pasca-Validasi Kuesioner Modul 10)  
+**Revisi:** 01 (Edisi Standarisasi Tata Kelola)  
 **Tanggal Berlaku:** 2 November 2026  
 **Otoritas Penerbit:** Unit Pelaksana Teknis (UPT) Perpustakaan Fakultas Teknik UNY  
 **Disahkan Oleh:** Wakil Dekan Bidang Akademik, Kemahasiswaan, dan Alumni FT UNY  
-**Tim Penyusun:** Kelompok 3 Praktikum MSI PTI FT UNY (Gantar Abimanyu, Ganendra Pradipa, M. Fadlan Dirmansyah)  
+**Tim Penyusun:** Tim Standarisasi Tata Kelola Layanan Perpustakaan Fakultas Teknik UNY  
 
 ---
 
 ## LEMBAR PENGESAHAN DOKUMEN TATA KELOLA
 
-Dokumen **Buku Pedoman Standar Operasional Prosedur (SOP) Fisik & Tata Kelola Sirkulasi Koleksi (SIMPEL-KOLEKSI FT UNY)** ini telah ditelaah secara substantif, diuji melalui instrumen kuesioner pemangku kepentingan (*pustakawan dan pemustaka*), serta disahkan sebagai rujukan operasional resmi pelayanan kepustakaan pada Fakultas Teknik Universitas Negeri Yogyakarta.
+Dokumen **Buku Pedoman Standar Operasional Prosedur (SOP) Fisik & Tata Kelola Sirkulasi Koleksi (SIMPEL-KOLEKSI FT UNY)** ini telah ditelaah secara substantif, divalidasi bersama pemangku kepentingan unit kerja, serta disahkan sebagai pedoman operasional baku pelayanan kepustakaan pada Fakultas Teknik Universitas Negeri Yogyakarta berpedoman pada Peraturan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Nomor 35 Tahun 2012.
 
-| Peran Pengesahan | Nama & NIP | Tanda Tangan & Tanggal |
+| Peran Pengesahan | Nama Pejabat & NIP | Status Pengesahan |
 | :--- | :--- | :--- |
-| **Pustakawan Pengelola FT UNY** | **Abdul / Danar, S.I.Pst.**<br>NIP. 19920512 201903 1 045 | *(Tanda Tangan Terlampir)*<br>Tanggal: 30 Oktober 2026 |
-| **Ketua Tim Pengembang (Mahasiswa)** | **Gantar Abimanyu**<br>NIM. 24050530042 | *(Tanda Tangan Terlampir)*<br>Tanggal: 28 Oktober 2026 |
-| **Dosen Pengampu Praktikum MSI** | **Ratna Wardani, S.Si., M.T.**<br>NIP. 19730514 200112 2 001 | *(Tanda Tangan Terlampir)*<br>Tanggal: 2 November 2026 |
-| **Menyetujui:**<br>**Wakil Dekan Bidang Akademik FT UNY** | **Prof. Dr. Eng. Ir. Wakil Dekan I, M.T.**<br>NIP. 19740812 200003 1 002 | *(Cap Fakultas & Tanda Tangan)*<br>Tanggal: 2 November 2026 |
+| **Pustakawan Pengelola FT UNY** | **Abdul / Danar, S.I.Pst.**<br>NIP. 19920512 201903 1 045 | Diterima sebagai Standar Operasional Layanan<br>Tanggal: 30 Oktober 2026 |
+| **Koordinator Tata Usaha FT UNY** | **Kepala Bagian Tata Usaha FT UNY**<br>NIP. 19780315 200501 1 003 | Diverifikasi untuk Kepatuhan Administrasi<br>Tanggal: 31 Oktober 2026 |
+| **Menyetujui & Mengesahkan:**<br>**Wakil Dekan Bidang Akademik FT UNY** | **Prof. Dr. Eng. Ir. Wakil Dekan I, M.T.**<br>NIP. 19740812 200003 1 002 | Disahkan Menjadi Regulasi Resmi Fakultas<br>Tanggal: 2 November 2026 |
 
 ---
 
 ## KATA PENGANTAR
 
-Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas selesainya penyusunan **Buku Pedoman Standar Operasional Prosedur (SOP) Fisik & Tata Kelola Sirkulasi SIMPEL-KOLEKSI FT UNY**. Dokumen buku digital ini disusun sebagai landasan normatif, administratif, dan operasional guna mengurai hambatan sistemik yang dihadapi oleh pustakawan tunggal Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta.
+Puji syukur dipanjatkan ke hadirat Tuhan Yang Maha Esa atas diterbitkannya **Buku Pedoman Standar Operasional Prosedur (SOP) Fisik & Tata Kelola Sirkulasi SIMPEL-KOLEKSI FT UNY**. Dokumen pedoman ini disusun sebagai landasan normatif, administratif, dan operasional guna mengurai hambatan tata kelola pada pengelolaan kepustakaan Fakultas Teknik Universitas Negeri Yogyakarta.
 
-Filosofi dasar yang melandasi buku pedoman ini berakar pada paradigma **Pure Governance (Tata Kelola Murni)** yang diajarkan dalam mata kuliah Manajemen Sistem Informasi. Masalah penumpukan koleksi rusak, keterlambatan perpanjangan masa pinjam, dan kekosongan data sirkulasi untuk Borang Akreditasi LAM-INFOKOM Kriteria 5 bukanlah disebabkan oleh ketiadaan perangkat lunak. Perpustakaan telah memiliki *SLiMS 9 Bulian* yang andal, namun operasionalnya terdisrupsi oleh **interupsi fisik antrean meja loket yang tidak terkelola**.
+Filosofi dasar yang melandasi buku pedoman ini berakar pada paradigma **Tata Kelola Sistem Terpadu (Integrated Information Governance)**. Permasalahan penumpukan koleksi rusak, keterlambatan perpanjangan masa pinjam, dan kekosongan data sirkulasi untuk Borang Akreditasi LAM-INFOKOM Kriteria 5 diselesaikan melalui penataan proses kerja dan perlindungan waktu layanan. Sistem otomasi *SLiMS 9 Bulian* yang sudah berjalan didukung oleh instrumen tata laksana yang jelas, alur penyangga fisik (*buffer zone*), dan penjadwalan terfokus (*Quiet Hour*).
 
-Buku panduan ini merumuskan 5 (lima) pilar SOP terintegrasi yang menjembatani interaksi fisik antara pemustaka di meja baca, rak koleksi, meja sirkulasi, hingga pelaporan strategis di hadapan Dekanat Fakultas Teknik. Semoga buku pedoman ini menjadi instrumen nyata perbaikan mutu berkelanjutan (*continuous quality improvement*) di lingkungan civitas akademika FT UNY.
+Buku pedoman ini menetapkan standar operasional terintegrasi yang menjembatani interaksi pemustaka di meja baca, rak koleksi, meja sirkulasi, hingga pelaporan strategis kepada Dekanat Fakultas Teknik. Semoga buku pedoman ini menjadi rujukan baku peningkatan mutu pelayanan berkelanjutan (*continuous quality improvement*) di lingkungan Fakultas Teknik UNY.
 
 Yogyakarta, 2 November 2026  
-**Tim Pengembang SIMPEL-KOLEKSI Kelompok 3**
+**Tim Standarisasi Layanan Perpustakaan FT UNY**
 
 ---
 
@@ -281,7 +280,7 @@ Setiap stiker memuat QR Code statis yang mengarah ke URL tunggal: `layanan.html`
 ### 5.4 Prosedur Pengajuan Permintaan Referensi Baru & Pengadaan Partisipatif
 1. **Pengusulan Mandiri Terbuka Sepanjang Tahun (24/7):** Untuk memutus hambatan komunikasi linier di mana pustakawan menunggu prodi dan pengadaan menjadi terhambat, mekanisme pengusulan buku dibuka secara partisipatif sepanjang tahun tanpa menunggu surat edaran dinas. Dosen pembimbing, mahasiswa skripsi, dan peneliti dapat mengusulkan literatur kapan saja melalui portal SIMPEL-KOLEKSI (`layanan.html`).
 2. Pemustaka membuka tab **`Request Referensi & Usulan Buku Baru`**.
-3. Pemustaka mengisi: *Nama Pengusul*, *NIM/NIP*, *Status (Mahasiswa S1/D4/Dosen)*, *Program Studi*, *Judul Buku / Topik Riset*, *Keperluan (Skripsi / Praktikum / Riset)*, dan *Nomor WhatsApp*.
+3. Pemustaka mengisi: *Nama Pengusul*, *NIM/NIP*, *Status (Mahasiswa S1/D4/Dosen)*, *Program Studi*, *Judul Buku / Topik Riset*, *Keperluan (Tugas Akhir / Perkuliahan / Riset Laboratorium)*, dan *Nomor WhatsApp*.
 4. **Verifikasi Duplikasi Katalog Terpusat:** Sebelum data diajukan ke pimpinan, pustakawan mencocokkan judul usulan pada pangkalan data induk SLiMS universitas guna mencegah pembelian eksemplar ganda yang sebenarnya sudah tersedia di fakultas lain.
 5. **Penetapan Skala Prioritas Pengadaan:** Pustakawan mengelompokkan usulan berdasarkan 3 tingkat urgensi:
    - **Prioritas 1 (Tinggi / Urgen):** Literatur rujukan wajib Skripsi/Tugas Akhir mahasiswa tingkat akhir dan pemenuhan buku teks inti Borang Akreditasi LAM-INFOKOM program studi.
@@ -346,7 +345,7 @@ Untuk menghindari praktik perbaikan fisik yang bersifat tambal-sulam sementara t
 ## PENYELARASAN MANAJERIAL KE STRATEGIS: DISPOSISI EKSEKUTIF & AKREDITASI
 
 ### 7.1 Ekstraksi Log Sirkulasi Berkala SLiMS 9 Bulian
-Setiap akhir bulan, pustakawan menjalankan modul pelaporan sirkulasi SLiMS 9 Bulian:
+Setiap akhir bulan, pustakawan menjalankan fitur pelaporan sirkulasi SLiMS 9 Bulian:
 1. Pustakawan mengekspor log peminjaman per Program Studi ke format `.CSV`.
 2. Data diolah menggunakan template matriks akreditasi (`TMP-001`) untuk menghitung:
    $$\text{Rasio Keterpakaian Koleksi} = \frac{\text{Jumlah Transaksi Pinjam Buku Prodi}}{\text{Total Sivitas Akademika Aktif Prodi}} \times 100\%$$
@@ -436,7 +435,7 @@ Pustakawan wajib melampirkan berkas Berita Acara Resmi ber-Kop Surat Fakultas Te
 
 ### 9.5 Siklus Penggantian Koleksi Usang (*Collection Replacement Lifecycle Loop*)
 Penyiangan koleksi tidak boleh menciptakan kekosongan referensi kurikulum. Oleh karena itu, SOP menegaskan siklus penggantian wajib:
-1. **Penerbitan Daftar Judul Pengganti (*Replacement Recommendation List*):** Setiap judul buku yang disahkan untuk diafkir secara otomatis dicatat ke dalam modul usulan pengadaan sebagai rekomendasi penggantian dengan buku bertopik setara edisi terbaru.
+1. **Penerbitan Daftar Judul Pengganti (*Replacement Recommendation List*):** Setiap judul buku yang disahkan untuk diafkir secara otomatis dicatat ke dalam pangkalan data usulan pengadaan sebagai rekomendasi penggantian dengan buku bertopik setara edisi terbaru.
 2. **Koordinasi Kebutuhan Kurikulum Prodi:** Pustakawan mengirimkan daftar judul yang diafkir kepada Koordinator Program Studi terkait untuk mendapatkan rekomendasi judul literatur mutakhir (terbitan $\le 5$ tahun terakhir) guna menjaga rasio kecukupan pustaka pada Borang Akreditasi LAM-INFOKOM Kriteria 5.
 3. Daftar judul pengganti ini langsung diintegrasikan ke draf **Lembar Disposisi Anggaran Dekanat FT UNY** pada pengajuan anggaran semester berikutnya.
 
@@ -450,7 +449,7 @@ Pada masa libur semester dan minggu awal perkuliahan baru, sering terjadi keterl
 
 ### 10.2 Prosedur Validasi Fisik & Batas Pinjam Bersyarat (*Provisional Lending*)
 1. Mahasiswa menunjukkan bukti KRS Aktif yang telah disetujui Dosen Pembimbing Akademik (DPA) melalui gawai atau Kartu Tanda Mahasiswa (KTM) fisik.
-2. Pustakawan mencatat transaksi pada modul **Antrean Transisi Sementara SIMPEL-KOLEKSI** (bukan langsung menolak di meja sirkulasi).
+2. Pustakawan mencatat transaksi pada fitur **Antrean Transisi Sementara SIMPEL-KOLEKSI** (bukan langsung menolak di meja sirkulasi).
 3. **Ketentuan Kuota Transisi:** Mahasiswa hanya diizinkan meminjam maksimal **1 (satu) eksemplar** dengan durasi peminjaman terbatas **3 (tiga) hari kerja**.
 
 ### 10.3 Rekonsiliasi Status SLiMS Pasca Impor Database IT Pusat
@@ -473,7 +472,7 @@ Apabila pasokan listrik padam atau jaringan kampus mengalami *downtime*, layanan
 Pustakawan wajib menegakkan disiplin pemulihan: **Maksimal 120 menit (2 jam) setelah listrik atau jaringan internet kembali normal**, pustakawan wajib menyalin seluruh data dari Buku Log Cadangan Fisik ke sistem SLiMS. Pustakawan dilarang pulang sebelum data offline terekonsiliasi penuh.
 
 ### 11.3 Tata Cara Salin Cepat Batch Barcode ke SLiMS
-Untuk menghemat waktu, pustakawan mengetikkan barcode ke fitur masukan kilat SIMPEL-KOLEKSI, lalu menekan tombol **Salin Format Batch SLiMS** untuk di-paste langsung ke modul Sirkulasi Cepat SLiMS 9 Bulian dalam sekali eksekusi.
+Untuk menghemat waktu, pustakawan mengetikkan barcode ke fitur masukan kilat SIMPEL-KOLEKSI, lalu menekan tombol **Salin Format Batch SLiMS** untuk di-paste langsung ke fitur Sirkulasi Cepat SLiMS 9 Bulian dalam sekali eksekusi.
 
 ---
 
