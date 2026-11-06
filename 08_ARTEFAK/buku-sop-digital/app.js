@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. In-Sheet Navigation Buttons (.btn-sheet-nav)
-  document.querySelectorAll('.btn-sheet-nav').forEach(btn => {
+  // 4. In-Sheet Navigation Buttons (.btn-sheet-nav & .btn-nav-page)
+  document.querySelectorAll('.btn-sheet-nav, .btn-nav-page').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-target');
       const idx = paperSheets.findIndex(s => s.id === targetId);
