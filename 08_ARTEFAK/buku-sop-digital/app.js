@@ -195,6 +195,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Initialize
-  updateActiveState('sheetCover');
+  if (window.location.hash) {
+    const hashId = window.location.hash.substring(1);
+    const hashIdx = paperSheets.findIndex(s => s.id === hashId);
+    if (hashIdx !== -1) {
+      goToSheet(hashIdx);
+    } else {
+      updateActiveState('sheetCover');
+    }
+  } else {
+    updateActiveState('sheetCover');
+  }
 
 });
