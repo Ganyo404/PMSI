@@ -307,7 +307,7 @@ Pada saat pelaksanaan Quiet Hour, pustakawan dilarang memperlakukan seluruh buku
 flowchart TD
     Start["Pustakawan Memeriksa Buku di Rak Transit Tk. 2"] --> Inspect{"Tingkat Kerusakan Fisik?"}
     
-    Inspect -->|"Sobek Kecil < 3 Lembar /<br/>Salah Rak Saja"| OptA["Opsi A: Perbaikan Ringan (5 Menit di Loket)<br/>• Dilem / Isolasi Mandiri<br/>• Status SLiMS: Tetap Tersedia (Available)<br/>• Buku langsung kembali ke Rak Aktif"]
+    Inspect -->|"Sobek Ringan Maksimal 3 Lembar /<br/>Salah Rak Saja"| OptA["Opsi A: Perbaikan Ringan (5 Menit di Loket)<br/>• Dilem / Isolasi Mandiri<br/>• Status SLiMS: Tetap Tersedia (Available)<br/>• Buku langsung kembali ke Rak Aktif"]
     
     Inspect -->|"Jilid Patah / Lepas Parah /<br/>Halaman Rontok"| OptB["Opsi B: Kerusakan Berat (Karantina Binding)<br/>• Masuk Lemari Karantina Penjilidan<br/>• Status SLiMS: Dalam Perbaikan (Repair)<br/>• Dijadwalkan Penjilidan Kolektif"]
     
