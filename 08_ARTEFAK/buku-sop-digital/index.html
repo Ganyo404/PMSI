@@ -7,7 +7,7 @@
   <meta name="description" content="Buku pedoman digital Standar Operasional Prosedur (SOP) fisik dan tata kelola sirkulasi SIMPEL-KOLEKSI Perpustakaan Fakultas Teknik UNY.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,37 +15,50 @@
   <!-- ========================================================================= -->
   <!-- TOPBAR DIGITAL READER                                                     -->
   <!-- ========================================================================= -->
-  <header class="reader-topbar">
+  <!-- ========================================================================= -->
+  <!-- BILAH MEJA BACA AKADEMIS (MINIMALIST ARCHIVAL CONTROLS)                   -->
+  <!-- ========================================================================= -->
+    <header class="reader-topbar">
     <div class="topbar-left">
       <button type="button" class="btn-sidebar-toggle" id="btnToggleSidebar" aria-label="Buka/Tutup Daftar Isi">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         <span>Daftar Isi</span>
       </button>
 
       <div class="book-meta-badge">
-        <span class="book-tag">Buku Digital Resmi</span>
+        <span class="book-tag">Pedoman Resmi</span>
         <div>
-          <div class="book-title-header">Pedoman SOP Fisik & Tata Kelola Sirkulasi SIMPEL-KOLEKSI</div>
+          <div class="book-title-header">Pedoman SOP Fisik SIMPEL-KOLEKSI &bull; FT UNY</div>
           <div class="book-doc-no">Dokumen: SOP/FT-UNY/PERPUS/2026/001 &bull; Rev. 02</div>
         </div>
       </div>
     </div>
 
+    <div class="topbar-center">
+      <button type="button" class="turner-btn" id="btnPrevSheet" title="Lembar Sebelumnya">
+        <span>&larr;</span> <span>Sebelumnya</span>
+      </button>
+      <div class="turner-indicator-text" id="turnerIndicator">Lembar 1 dari 17</div>
+      <button type="button" class="turner-btn" id="btnNextSheet" title="Lembar Selanjutnya">
+        <span>Selanjutnya</span> <span>&rarr;</span>
+      </button>
+    </div>
+
     <div class="topbar-right">
       <div class="reader-control-group">
-        <button type="button" class="btn-tool" id="btnFontMinus" title="Kecilkan Huruf">A-</button>
-        <button type="button" class="btn-tool" id="btnFontPlus" title="Besarkan Huruf">A+</button>
+        <button type="button" class="btn-tool" id="btnFontMinus" title="Kecilkan Teks">A-</button>
+        <button type="button" class="btn-tool" id="btnFontPlus" title="Besarkan Teks">A+</button>
       </div>
 
       <div class="reader-control-group">
-        <button type="button" class="btn-tool is-active" data-theme="light" title="Mode Siang">Terang</button>
-        <button type="button" class="btn-tool" data-theme="sepia" title="Mode Buku Kertas Sepia">Sepia</button>
-        <button type="button" class="btn-tool" data-theme="dark" title="Mode Malam">Gelap</button>
+        <button type="button" class="btn-tool is-active" data-theme="light" title="Kertas Putih Alami">Terang</button>
+        <button type="button" class="btn-tool" data-theme="sepia" title="Kertas Sepia Klasik">Sepia</button>
+        <button type="button" class="btn-tool" data-theme="dark" title="Mode Malam Redup">Gelap</button>
       </div>
 
       <button type="button" class="btn-print-book" id="btnPrintBook" title="Cetak atau Simpan PDF Resmi">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-        <span>Cetak Buku PDF</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        <span>Cetak PDF</span>
       </button>
     </div>
   </header>
@@ -68,7 +81,11 @@
         <div class="toc-section-title">Dokumen Resmi</div>
         <button type="button" class="toc-nav-item is-active" data-target="sheetCover">
           <span class="toc-num">&bull;</span>
-          <span>Sampul & Lembar Pengesahan</span>
+          <span>Sampul Buku Hardcover Mewah</span>
+        </button>
+        <button type="button" class="toc-nav-item" data-target="sheetPengesahan">
+          <span class="toc-num">&bull;</span>
+          <span>Lembar Pengesahan & Stempel Dekanat</span>
         </button>
         <button type="button" class="toc-nav-item" data-target="sheetPengantar">
           <span class="toc-num">&bull;</span>
@@ -146,86 +163,168 @@
       <!-- ===================================================================== -->
       <!-- LEMBAR 0: SAMPUL BUKU & PENGESAHAN                                    -->
       <!-- ===================================================================== -->
-      <article class="paper-sheet paper-cover" id="sheetCover">
-        <div class="cover-emblem">FT</div>
-        <div class="cover-univ-title">Kementerian Pendidikan Tinggi, Sains, dan Teknologi</div>
-        <div class="cover-faculty-title">Universitas Negeri Yogyakarta &bull; Fakultas Teknik</div>
-        <div class="cover-divider"></div>
+            <!-- ===================================================================== -->
+      <!-- LEMBAR 0: SAMPUL BUKU HARDCOVER MEWAH (ROYAL NAVY & GOLD FOIL)        -->
+      <!-- ===================================================================== -->
+            <article class="paper-sheet paper-cover" id="sheetCover">
+        <div class="cover-crest-clean">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" stroke="#0d3b66" stroke-width="2.2"/>
+  <circle cx="50" cy="50" r="41" stroke="#0d3b66" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <path d="M50 14 C43 28 34 37 20 42 C32 46 41 54 44 68 C47 54 55 46 68 42 C54 37 47 28 50 14 Z" fill="none" stroke="#0d3b66" stroke-width="1.8"/>
+  <circle cx="50" cy="46" r="8" stroke="#0d3b66" stroke-width="1.8"/>
+  <circle cx="50" cy="46" r="3" fill="#0d3b66"/>
+  <path d="M34 76 C42 73 48 74 50 77 C52 74 58 73 66 76 Z" fill="#0d3b66"/>
+</svg>
+        </div>
 
-        <h1 class="cover-main-title">BUKU PEDOMAN STANDAR OPERASIONAL PROSEDUR (SOP) FISIK</h1>
-        <h2 class="cover-sub-title">Tata Kelola Sirkulasi Koleksi & Buffer Zone Meja Kerja (SIMPEL-KOLEKSI)</h2>
+        <div class="cover-kemen-title">Kementerian Pendidikan Tinggi, Sains, dan Teknologi</div>
+        <div class="cover-univ-title">Universitas Negeri Yogyakarta</div>
+        <div class="cover-faculty-title">Fakultas Teknik</div>
+
+        <div class="cover-rule-double"></div>
+
+        <div class="cover-doc-type">Buku Pedoman Standar Resmi</div>
+        <h1 class="cover-main-title">STANDAR OPERASIONAL PROSEDUR (SOP) FISIK</h1>
+        <p class="cover-sub-title">Tata Kelola Sirkulasi Koleksi, Buffer Zone Meja Kerja Pustakawan Tunggal, dan Rekapitulasi Otomasi Sistem (SIMPEL-KOLEKSI)</p>
 
         <div class="cover-meta-grid">
-          <div class="meta-item">
+          <div class="cover-meta-item">
             <strong>Nomor Registrasi Dokumen:</strong>
             <span>SOP/FT-UNY/PERPUS/2026/001</span>
           </div>
-          <div class="meta-item">
+          <div class="cover-meta-item">
             <strong>Tingkat Kesiapan & Revisi:</strong>
             <span>Revisi 02 (Pasca-Validasi Modul 10)</span>
           </div>
-          <div class="meta-item">
+          <div class="cover-meta-item">
             <strong>Unit Penerbit Resmi:</strong>
-            <span>UPT Perpustakaan Fakultas Teknik UNY</span>
+            <span>UPT Perpustakaan FT UNY</span>
           </div>
-          <div class="meta-item">
+          <div class="cover-meta-item">
             <strong>Tanggal Penetapan Berlaku:</strong>
             <span>2 November 2026</span>
           </div>
         </div>
 
-        <div style="margin-top:2rem; border-top:1px solid var(--paper-border); padding-top:1.5rem;">
-          <h4 style="font-size:0.9rem; text-transform:uppercase; margin-bottom:1rem; color:var(--slate-700);">Lembar Pengesahan Pejabat Berwenang:</h4>
-          
-          <table class="sop-table" style="font-size:0.8rem;">
-            <thead>
-              <tr>
-                <th>Jabatan / Peran</th>
-                <th>Nama Pejabat & NIP</th>
-                <th>Status Persetujuan</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Wakil Dekan Bidang Akademik FT UNY</strong></td>
-                <td>Prof. Dr. Eng. Ir. Wakil Dekan I, M.T.<br><small class="font-mono">NIP. 19740812 200003 1 002</small></td>
-                <td><span style="color:#10b981; font-weight:700;">✓ Disahkan Menjadi Regulasi Fakultas</span></td>
-              </tr>
-              <tr>
-                <td><strong>Dosen Pengampu Praktikum MSI</strong></td>
-                <td>Ratna Wardani, S.Si., M.T.<br><small class="font-mono">NIP. 19730514 200112 2 001</small></td>
-                <td><span style="color:#10b981; font-weight:700;">✓ Disetujui Sebagai Luaran Responsi</span></td>
-              </tr>
-              <tr>
-                <td><strong>Pustakawan Pengelola Meja Sirkulasi</strong></td>
-                <td>Abdul / Danar, S.I.Pst.<br><small class="font-mono">NIP. 19920512 201903 1 045</small></td>
-                <td><span style="color:#10b981; font-weight:700;">✓ Diterima Sebagai Pedoman Operasional</span></td>
-              </tr>
-              <tr>
-                <td><strong>Ketua Tim Pengembang (Kelompok 3)</strong></td>
-                <td>Gantar Abimanyu<br><small class="font-mono">NIM. 24050530042</small></td>
-                <td><span style="color:#10b981; font-weight:700;">✓ Diserahkan Resmi</span></td>
-              </tr>
-            </tbody>
-          </table>
+        <button type="button" class="cover-open-btn btn-sheet-nav" data-target="sheetPengesahan">
+          <span>Mulai Membaca Pedoman</span> &rarr;
+        </button>
+
+        <footer class="sheet-unified-footer" style="margin-top:3rem;">
+          <span style="font-size:0.75rem; color:var(--text-muted);">Sampul Depan</span>
+          <div class="sheet-page-info">
+            <span class="page-num">Dokumen Resmi</span> &bull; <span>FT UNY</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetPengesahan">Halaman Selanjutnya &rarr;</button>
+        </footer>
+      </article>
+
+      <!-- ===================================================================== -->
+      <!-- LEMBAR 1: LEMBAR PENGESAHAN DENGAN STEMPEL DINAS RESMI                -->
+      <!-- ===================================================================== -->
+            <article class="paper-sheet" id="sheetPengesahan">
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>Lembar Pengesahan Regulasi</span>
         </div>
 
-        <div class="paper-footer-nav">
-          <span>Halaman Sampul & Pengesahan</span>
-          <button type="button" class="btn-nav-page" data-target="sheetPengantar">
-            <span>Lanjut: Kata Pengantar</span> &rarr;
-          </button>
+        <div class="kop-surat-wrapper">
+          <div class="kop-logo-box">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" stroke="#0d3b66" stroke-width="2.2"/>
+  <circle cx="50" cy="50" r="41" stroke="#0d3b66" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <path d="M50 14 C43 28 34 37 20 42 C32 46 41 54 44 68 C47 54 55 46 68 42 C54 37 47 28 50 14 Z" fill="none" stroke="#0d3b66" stroke-width="1.8"/>
+  <circle cx="50" cy="46" r="8" stroke="#0d3b66" stroke-width="1.8"/>
+  <circle cx="50" cy="46" r="3" fill="#0d3b66"/>
+  <path d="M34 76 C42 73 48 74 50 77 C52 74 58 73 66 76 Z" fill="#0d3b66"/>
+</svg>
+          </div>
+          <div class="kop-text-box">
+            <h4>Kementerian Pendidikan Tinggi, Sains, dan Teknologi</h4>
+            <h3>Universitas Negeri Yogyakarta &bull; Fakultas Teknik</h3>
+            <p>Jalan Colombo Nomor 1, Karangmalang, Caturtunggal, Depok, Sleman, D.I. Yogyakarta 55281<br>Laman: ft.uny.ac.id | Pos-el: ft@uny.ac.id | Telepon: (0274) 586168 ext. 231</p>
+          </div>
         </div>
+
+        <div class="chapter-header">
+          <span class="chapter-roman">Ketetapan Dekanat</span>
+          <h2 class="chapter-title">Lembar Pengesahan Regulasi Operasional</h2>
+        </div>
+
+        <p>Naskah <strong>Buku Pedoman Standar Operasional Prosedur (SOP) Fisik dan Tata Kelola Sirkulasi Koleksi SIMPEL-KOLEKSI</strong> ini telah diperiksa, diuji-petik pada meja sirkulasi, dan disahkan oleh Dekanat Fakultas Teknik Universitas Negeri Yogyakarta sebagai regulasi operasional kepustakaan resmi:</p>
+
+        <table class="sop-table" style="margin-top:1.5rem; font-size:0.86rem;">
+          <thead>
+            <tr>
+              <th>Jabatan / Otoritas</th>
+              <th>Nama Pejabat & Identitas</th>
+              <th>Status Verifikasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Wakil Dekan Bidang Akademik FT UNY</strong></td>
+              <td>Prof. Dr. Eng. Ir. Wakil Dekan I, M.T.<br><small class="font-mono" style="color:var(--text-muted);">NIP. 19740812 200003 1 002</small></td>
+              <td><strong style="color:var(--uny-navy);">Disahkan Sebagai Regulasi Fakultas</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Dosen Pengampu Praktikum MSI</strong></td>
+              <td>Ratna Wardani, S.Si., M.T.<br><small class="font-mono" style="color:var(--text-muted);">NIP. 19730514 200112 2 001</small></td>
+              <td><strong style="color:var(--uny-navy);">Disetujui Sebagai Luaran Responsi</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Pustakawan Pengelola Meja Sirkulasi</strong></td>
+              <td>Abdul / Danar, S.I.Pst.<br><small class="font-mono" style="color:var(--text-muted);">NIP. 19920512 201903 1 045</small></td>
+              <td><strong style="color:var(--uny-navy);">Diterima Sebagai Panduan Kerja</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Ketua Tim Pengembang (Kelompok 3)</strong></td>
+              <td>Gantar Abimanyu<br><small class="font-mono" style="color:var(--text-muted);">NIM. 24050530042</small></td>
+              <td><strong style="color:var(--uny-navy);">Diserahkan Resmi</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="signature-grid" style="margin-top:2.5rem;">
+          <div class="sig-cell">
+            <span>Mengesahkan atas nama Dekan,<br><strong>Wakil Dekan Bidang Akademik</strong></span>
+            <div class="sig-spacer"></div>
+            <strong>Prof. Dr. Eng. Ir. Wakil Dekan I, M.T.</strong><br>
+            <small class="font-mono">NIP. 19740812 200003 1 002</small>
+          </div>
+          <div class="sig-cell">
+            <span>Dosen Pengampu Praktik MSI,<br><strong>Departemen Pendidikan Teknik Elektro</strong></span>
+            <div class="sig-spacer"></div>
+            <strong>Ratna Wardani, S.Si., M.T.</strong><br>
+            <small class="font-mono">NIP. 19730514 200112 2 001</small>
+          </div>
+        </div>
+
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetCover">&larr; Sampul</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 1</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetPengantar">Kata Pengantar &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- LEMBAR 1: KATA PENGANTAR                                              -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetPengantar">
-        <span class="chapter-badge">Prolog Dokumen</span>
-        <h2 class="chapter-title">Kata Pengantar & Landasan Filosofis</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>Prolog & Landasan Filosofis</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">Prolog Dokumen</span>
+          <h2 class="chapter-title">Kata Pengantar & Landasan Filosofis</h2>
+          
+        </div>
 
-        <p>Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas tersusunnya <strong>Buku Pedoman Standar Operasional Prosedur (SOP) Fisik dan Tata Kelola Sirkulasi SIMPEL-KOLEKSI</strong> di lingkungan Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta.</p>
+        <p >Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas tersusunnya <strong>Buku Pedoman Standar Operasional Prosedur (SOP) Fisik dan Tata Kelola Sirkulasi SIMPEL-KOLEKSI</strong> di lingkungan Perpustakaan Fakultas Teknik Universitas Negeri Yogyakarta.</p>
 
         <p>Buku digital ini bukan sekadar naskah teoritis, melainkan instrumen nyata yang menjawab beban kerja riil pustakawan tunggal FT UNY. Di bawah bimbingan Ibu <strong>Ratna Wardani, S.Si., M.T.</strong> pada mata kuliah Manajemen Sistem Informasi, kelompok kami membedah permasalahan pelayanan kepustakaan bukan dengan pendekatan konsumtif (*membeli atau membuat aplikasi baru yang redundan*), melainkan dengan prinsip <strong>Pure Governance (Tata Kelola Murni)</strong>.</p>
 
@@ -250,22 +349,31 @@
             <small class="font-mono">NIM. 24050530042</small>
           </div>
         </div>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetCover">&larr; Sampul</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab1">Bab I: Pendahuluan &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetPengesahan">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 2</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab1">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB I: PENDAHULUAN                                                    -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab1">
-        <span class="chapter-badge">BAB I</span>
-        <h2 class="chapter-title">Pendahuluan & Paradigma Tata Kelola</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB I: Pendahuluan & Paradigma Tata Kelola</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB I</span>
+          <h2 class="chapter-title">Pendahuluan & Paradigma Tata Kelola</h2>
+          
+        </div>
 
         <h3>1.1 Latar Belakang Masalah Operasional Pustakawan Tunggal</h3>
-        <p>Perpustakaan Fakultas Teknik UNY melayani lebih dari 3.000 mahasiswa aktif yang tersebar di 6 jurusan teknik. Namun, operasional meja sirkulasi harian hanya ditangani oleh <strong>1 (satu) orang pustakawan fungsional</strong>. Setiap harinya, meja sirkulasi melayani rata-rata 52 pemustaka tatap muka.</p>
+        <p >Perpustakaan Fakultas Teknik UNY melayani lebih dari 3.000 mahasiswa aktif yang tersebar di 6 jurusan teknik. Namun, operasional meja sirkulasi harian hanya ditangani oleh <strong>1 (satu) orang pustakawan fungsional</strong>. Setiap harinya, meja sirkulasi melayani rata-rata 52 pemustaka tatap muka.</p>
 
         <p>Beban kerja ganda antara melayani peminjaman langsung dan mengolah buku bermasalah memicu sejumlah kendala kritis:</p>
         <ul>
@@ -307,21 +415,30 @@
             </tr>
           </tbody>
         </table>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetPengantar">&larr; Kata Pengantar</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab2">Bab II: RACI Matrix &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetPengantar">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 3</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab2">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB II: RACI MATRIX                                                   -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab2">
-        <span class="chapter-badge">BAB II</span>
-        <h2 class="chapter-title">Matriks Akuntabilitas RACI Pemangku Kepentingan</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB II: Matriks Akuntabilitas RACI</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB II</span>
+          <h2 class="chapter-title">Matriks Akuntabilitas RACI Pemangku Kepentingan</h2>
+          
+        </div>
 
-        <p>Pemberlakuan SOP membutuhkan kepastian peran agar tidak terjadi saling lempar tanggung jawab. Matriks RACI di bawah ini mendefinisikan pembagian peran pada setiap aktivitas tata kelola:</p>
+        <p >Pemberlakuan SOP membutuhkan kepastian peran agar tidak terjadi saling lempar tanggung jawab. Matriks RACI di bawah ini mendefinisikan pembagian peran pada setiap aktivitas tata kelola:</p>
 
         <table class="sop-table">
           <thead>
@@ -402,26 +519,35 @@
           </tbody>
         </table>
 
-        <div class="sop-callout warning">
+        <div class="sop-callout">
           <strong>Prinsip Tunggal Accountable (No Double-A):</strong>
           Dalam standar tata kelola MSI Bu Ratna, setiap aktivitas hanya boleh memiliki tepat 1 (satu) pihak yang <em>Accountable</em> (pemilik tanggung jawab mutlak). Tidak boleh ada aktivitas tanpa penanggung jawab atau memiliki 2 penanggung jawab sekaligus.
         </div>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab1">&larr; Bab I</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab3">Bab III: SOP-001 Quiet Hour &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab1">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 5</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab3">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB III: SOP-001 QUIET HOUR                                           -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab3">
-        <span class="chapter-badge">BAB III &bull; SOP-001</span>
-        <h2 class="chapter-title">SOP Pengelolaan Sesi Jam Tenang (Quiet Hour)</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB III: SOP-001 Jam Tenang (Quiet Hour)</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB III &bull; SOP-001</span>
+          <h2 class="chapter-title">SOP Pengelolaan Sesi Jam Tenang (Quiet Hour)</h2>
+          
+        </div>
 
         <h3>3.1 Ketentuan Baku Jadwal Quiet Hour</h3>
-        <p><strong>Quiet Hour</strong> adalah waktu resmi berdurasi <strong>60 (enam puluh) menit</strong> di mana loket layanan tatap muka dihentikan sementara agar pustakawan dapat memproses tumpukan fisik dan pangkalan data SLiMS tanpa interupsi.</p>
+        <p ><strong>Quiet Hour</strong> adalah waktu resmi berdurasi <strong>60 (enam puluh) menit</strong> di mana loket layanan tatap muka dihentikan sementara agar pustakawan dapat memproses tumpukan fisik dan pangkalan data SLiMS tanpa interupsi.</p>
 
         <ul>
           <li><strong>Waktu Pelaksanaan:</strong> Setiap hari <strong>Jumat pukul 08.00 – 09.00 WIB</strong> (jam terendah transaksi peminjaman fisik).</li>
@@ -435,30 +561,39 @@
           <li>Timer 60 menit berjalan mundur pada layar komputer pustakawan.</li>
           <li>Portal mandiri mahasiswa (`layanan.html`) seketika memunculkan <strong>Banner Pengumuman Darurat Berdenyut</strong>. Mahasiswa diarahkan untuk mengisi formulir QR dan menaruh buku di Rak Transit tanpa mengetuk loket.</li>
         </ol>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab2">&larr; Bab II</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab4">Bab IV: SOP-002 Rak Transit &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab2">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 7</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab4">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB IV: SOP-002 RAK TRANSIT (RACK-001)                               -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab4">
-        <span class="chapter-badge">BAB IV &bull; SOP-002 / RACK-001</span>
-        <h2 class="chapter-title">SOP Tata Kelola Fisik Buffer Zone Rak Transit</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB IV: SOP-002 Buffer Zone Rak Transit</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB IV &bull; SOP-002 / RACK-001</span>
+          <h2 class="chapter-title">SOP Tata Kelola Fisik Buffer Zone Rak Transit</h2>
+          
+        </div>
 
-        <p>Fasilitas <strong>Rak Transit (RACK-001)</strong> diletakkan tepat di samping meja sirkulasi untuk memutus penumpukan buku di lantai. Rak dibagi tegas menjadi 2 tingkatan fisik:</p>
+        <p >Fasilitas <strong>Rak Transit (RACK-001)</strong> diletakkan tepat di samping meja sirkulasi untuk memutus penumpukan buku di lantai. Rak dibagi tegas menjadi 2 tingkatan fisik:</p>
 
         <div class="rack-visual-box">
-          <div class="rack-tier-row tier-damaged">
-            <h5>[TINGKAT 2] ZONA MERAH: BUFFER ZONE BUKU RUSAK & SALAH RAK (QR)</h5>
-            <p>Khusus buku yang sobek, jilidan lepas, atau ditemukan terselip di lorong rak lain. Mahasiswa wajib melapor via QR sebelum meletakkan buku di sini. Diaudit oleh pustakawan setiap sesi Quiet Hour.</p>
+          <div class="rack-tier-row">
+            <h5>Tingkat 2 (Rak Atas): Penampungan Koleksi Rusak & Salah Rak</h5>
+            <p>Khusus koleksi buku yang sobek, jilidan lepas, atau ditemukan terselip di lorong rak jurusan lain. Pemustaka melapor secara mandiri melalui pemindaian stiker QR sebelum meletakkan buku di rak ini. Pustakawan memeriksa fisik buku setiap sesi Quiet Hour.</p>
           </div>
           <div class="rack-tier-row">
-            <h5>[TINGKAT 1] ZONA HIJAU: PENGEMBALIAN SELESAI BACA DI TEMPAT</h5>
-            <p>Untuk buku utuh normal yang selesai dibaca di ruang baca. Mahasiswa dilarang mengembalikan sendiri ke lorong rak DDC untuk menghindari salah letak. Petugas melakukan *shelving* sore hari.</p>
+            <h5>Tingkat 1 (Rak Bawah): Pengembalian Koleksi Selesai Baca di Tempat</h5>
+            <p>Khusus koleksi utuh normal yang selesai dibaca di ruang baca. Pemustaka dilarang mengembalikan sendiri ke lorong rak DDC guna mencegah salah penempatan. Petugas perpustakaan melakukan penataan kembali (shelving) ke rak aktif pada sore hari.</p>
           </div>
         </div>
 
@@ -467,22 +602,31 @@
           <li><strong>Bagi Pemustaka:</strong> Wajib meletakkan buku dengan punggung menghadap ke luar agar nomor panggil (call number) dan barcode mudah diperiksa.</li>
           <li><strong>Bagi Pustakawan:</strong> Buku di Tingkat 2 memiliki batas toleransi maksimal di rak selama <strong>3 hari kerja (SLA 3 Hari)</strong>. Jika melewati batas, sistem menandai tiket dengan label merah kritis.</li>
         </ul>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab3">&larr; Bab III</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab5">Bab V: SOP-003 Layanan QR &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab3">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 10</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab5">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB V: SOP-003 LAYANAN MANDIRI QR                                     -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab5">
-        <span class="chapter-badge">BAB V &bull; SOP-003 / FORM-001</span>
-        <h2 class="chapter-title">SOP Layanan Mandiri Pemustaka Berbasis Akses QR Code</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB V: SOP-003 Layanan Mandiri QR Code</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB V &bull; SOP-003 / FORM-001</span>
+          <h2 class="chapter-title">SOP Layanan Mandiri Pemustaka Berbasis Akses QR Code</h2>
+          
+        </div>
 
         <h3>5.1 Penyebaran Stiker QR di Ruang Perpustakaan</h3>
-        <p>Stiker QR vinil tahan gores dipasang permanen pada 3 titik utama:</p>
+        <p >Stiker QR vinil tahan gores dipasang permanen pada 3 titik utama:</p>
         <ol>
           <li>Setiap meja baca individu dan komunal (12 meja).</li>
           <li>Setiap tiang ujung lorong rak koleksi prodi.</li>
@@ -498,8 +642,7 @@
           <li>Buku fisik <strong>tidak perlu dibawa ke meja sirkulasi</strong>.</li>
           <li>Pustakawan mengeksekusi perpanjangan secara massal (*batch selection*) di SLiMS setiap pagi pk 08.30 WIB. Konfirmasi otomatis dikirimkan ke WhatsApp pemustaka.</li>
         </ul>
-
-        <h3>5.4 Pengadaan Koleksi Partisipatif Sepanjang Tahun & Skala Prioritas</h3>
+<h3>5.4 Pengadaan Koleksi Partisipatif Sepanjang Tahun & Skala Prioritas</h3>
         <p>Memutus hambatan ketergantungan surat dinas prodi yang sering tidak berbalas, sivitas akademika dapat mengusulkan buku kapan saja melalui formulir digital 24/7. Pustakawan memverifikasi duplikasi SLiMS dan mengelompokkan usulan ke dalam 3 skala prioritas:</p>
         <ol>
           <li><strong>Prioritas 1 (Tinggi):</strong> Kebutuhan Skripsi/Tugas Akhir dan pemenuhan borang akreditasi LAM-INFOKOM.</li>
@@ -507,59 +650,78 @@
           <li><strong>Prioritas 3 (Umum):</strong> Pengayaan literasi populer dan wawasan umum.</li>
         </ol>
 
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab4">&larr; Bab IV</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab6">Bab VI: SOP-004 Triase Fisik &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab4">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 14</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab6">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB VI: SOP-004 TRIASE FISIK 3-OPSI                                  -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab6">
-        <span class="chapter-badge">BAB VI &bull; SOP-004</span>
-        <h2 class="chapter-title">SOP Protokol Triase Kerusakan Koleksi</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB VI: SOP-004 Triase Kerusakan Koleksi 3-Opsi</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB VI &bull; SOP-004</span>
+          <h2 class="chapter-title">SOP Protokol Triase Kerusakan Koleksi</h2>
+          
+        </div>
 
-        <p>Saat memeriksa buku di Rak Transit Tingkat 2 pada sesi Quiet Hour, pustakawan membagi penanganan menjadi 3 jalur triase:</p>
+        <p >Saat memeriksa buku di Rak Transit Tingkat 2 pada sesi Quiet Hour, pustakawan membagi penanganan menjadi 3 jalur triase:</p>
 
         <div class="triase-grid">
-          <div class="triase-card opt-a">
-            <h5>Opsi A: Perbaikan Ringan (5 Menit di Loket)</h5>
-            <small><strong>Kondisi:</strong> Sobek kecil &le; 3 lembar atau hanya salah lorong rak DDC.</small>
-            <small style="margin-top:0.4rem; color:#059669; font-weight:700;">Aksi: Dilem/selotip di loket. Status SLiMS tetap "Tersedia (Available)". Buku langsung kembali ke rak aktif hari ini.</small>
+          <div class="triase-card">
+            <h5>Jalur A: Perbaikan Ringan (5 Menit di Loket)</h5>
+            <p><strong>Kriteria Kerusakan:</strong> Sobek kecil &le; 3 lembar atau hanya salah penempatan di lorong rak DDC.</p>
+            <p style="margin-top:0.5rem; font-size:0.86rem; color:var(--text-muted); line-height:1.45;"><strong>Tindakan Pustakawan:</strong> Perbaikan langsung di meja sirkulasi menggunakan lem/selotip arsip. Status SLiMS tetap <em>Tersedia (Available)</em> dan buku dapat langsung kembali ke rak aktif pada hari yang sama.</p>
           </div>
 
-          <div class="triase-card opt-b">
-            <h5>Opsi B: Kerusakan Berat (Karantina Binding)</h5>
-            <small><strong>Kondisi:</strong> Jilidan patah parah, lembar lepas &gt; 10 halaman.</small>
-            <small style="margin-top:0.4rem; color:#0284c7; font-weight:700;">Aksi: Masuk lemari karantina binding. Status SLiMS diubah ke "Dalam Perbaikan (Repair)". Katalog OPAC mengumumkan perbaikan.</small>
+          <div class="triase-card">
+            <h5>Jalur B: Kerusakan Berat (Karantina Binding)</h5>
+            <p><strong>Kriteria Kerusakan:</strong> Punggung jilidan lepas, punggung buku patah parah, atau lembaran lepas &gt; 10 halaman.</p>
+            <p style="margin-top:0.5rem; font-size:0.86rem; color:var(--text-muted); line-height:1.45;"><strong>Tindakan Pustakawan:</strong> Buku dialihkan ke lemari karantina ruang perbaikan. Pustakawan memutakhirkan status SLiMS menjadi <em>Dalam Perbaikan (Repair)</em> agar pemustaka di OPAC terinformasi.</p>
           </div>
 
-          <div class="triase-card opt-c">
-            <h5>Opsi C: Penyiangan / Afkir (Weeding)</h5>
-            <small><strong>Kondisi:</strong> Fisik raib setelah 3x cek rak atau rusak lapuk total.</small>
-            <small style="margin-top:0.4rem; color:#dc2626; font-weight:700;">Aksi: Status SLiMS diubah ke "Hilang (Missing)". Judul diusulkan masuk pagu pengadaan belanja Dekanat.</small>
+          <div class="triase-card">
+            <h5>Jalur C: Usul Penyiangan / Afkir (Weeding)</h5>
+            <p><strong>Kriteria Kerusakan:</strong> Fisik buku hilang setelah 3 kali siklus pencarian rak, atau kondisi fisik rusak lapuk total.</p>
+            <p style="margin-top:0.5rem; font-size:0.86rem; color:var(--text-muted); line-height:1.45;"><strong>Tindakan Pustakawan:</strong> Status SLiMS diubah menjadi <em>Hilang (Missing)</em> atau <em>Afkir</em>. Judul buku otomatis direkapitulasi untuk diajukan ke dalam pagu pengadaan belanja Dekanat.</p>
           </div>
         </div>
-
-        <h3>6.2 Log Riwayat Kerusakan & Aturan Kerusakan Berulang</h3>
+<h3>6.2 Log Riwayat Kerusakan & Aturan Kerusakan Berulang</h3>
         <p>Setiap tindakan triase dicatat pada pangkalan data riwayat koleksi. Jika suatu eksemplar buku tercatat mengalami kerusakan berulang <strong>&ge; 2 kali dalam 1 tahun ajaran</strong>, pustakawan dilarang melakukan perbaikan ringan (Opsi A). Buku wajib langsung dialihkan ke <strong>Opsi B (Binding Total)</strong> atau <strong>Opsi C (Penggantian Baru)</strong>.</p>
 
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab5">&larr; Bab V</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab7">Bab VII: SOP-005 Disposisi Wadek I &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab5">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 18</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab7">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB VII: SOP-005 DISPOSISI DEKANAT                                   -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab7">
-        <span class="chapter-badge">BAB VII &bull; SOP-005</span>
-        <h2 class="chapter-title">SOP Disposisi Eksekutif & Borang Akreditasi LAM-INFOKOM</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB VII: SOP-005 Penyelarasan Disposisi Dekanat</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB VII &bull; SOP-005</span>
+          <h2 class="chapter-title">SOP Disposisi Eksekutif & Borang Akreditasi LAM-INFOKOM</h2>
+          
+        </div>
 
         <h3>7.1 Penerbitan Lembar Disposisi Ber-Kop Surat FT UNY</h3>
-        <p>Untuk mengajukan belanja buku referensi baru hasil usulan mahasiswa dan dosen, pustakawan tidak menggunakan file CSV mentah, melainkan mencetak <strong>Lembar Disposisi Resmi Ber-Kop FT UNY</strong> yang memuat:</p>
+        <p >Untuk mengajukan belanja buku referensi baru hasil usulan mahasiswa dan dosen, pustakawan tidak menggunakan file CSV mentah, melainkan mencetak <strong>Lembar Disposisi Resmi Ber-Kop FT UNY</strong> yang memuat:</p>
         <ul>
           <li>Kop resmi Fakultas Teknik UNY dan Unit Perpustakaan.</li>
           <li>Nomor Naskah Dinas: <span class="font-mono">042/UN34.15/PERPUS-FT/X/2026</span>.</li>
@@ -574,22 +736,31 @@
           Rasio Pemanfaatan Koleksi = (Total Eksemplar Terpinjam / Total Mahasiswa Aktif) &times; 100%
         </div>
         <p>Angka ini menjadi dasar justifikasi Wakil Dekan I untuk menandatangani pagu anggaran belanja buku tahun berikutnya.</p>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab6">&larr; Bab VI</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab8">Bab VIII: Audit & Pengawasan &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab6">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 22</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab8">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB VIII: PENGAWASAN & AUDIT MUTU                                    -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab8">
-        <span class="chapter-badge">BAB VIII</span>
-        <h2 class="chapter-title">Pengawasan, Audit Mutu, & Sanksi Kepatuhan</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB VIII: Pengawasan, Audit Mutu, & Sanksi Kepatuhan</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB VIII</span>
+          <h2 class="chapter-title">Pengawasan, Audit Mutu, & Sanksi Kepatuhan</h2>
+          
+        </div>
 
         <h3>8.1 Pengawasan Rutin</h3>
-        <p>Kepala Perpustakaan FT UNY melakukan audit internal setiap hari Senin pagi dengan memeriksa:</p>
+        <p >Kepala Perpustakaan FT UNY melakukan audit internal setiap hari Senin pagi dengan memeriksa:</p>
         <ol>
           <li>Apakah terdapat buku di Rak Transit Tingkat 2 yang melebihi batas toleransi 3 hari kerja (Label Kritis Merah).</li>
           <li>Apakah seluruh permohonan perpanjangan pinjam mandiri telah dieksekusi dalam waktu &le; 24 jam kerja.</li>
@@ -597,22 +768,31 @@
 
         <h3>8.2 Sanksi Kepatuhan Pemustaka</h3>
         <p>Mahasiswa yang dengan sengaja merusak buku, mencoret, atau menyembunyikan koleksi di ruang baca tanpa melaporkan melalui formulir QR dikenai sanksi penangguhan hak peminjaman selama 14 hari kerja.</p>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab7">&larr; Bab VII</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab9">Bab IX &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab7">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 26</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab9">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB IX: SOP-006 PENYIANGAN & KURASI BUKU USANG (WEEDING)             -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab9">
-        <span class="chapter-badge">BAB IX</span>
-        <h2 class="chapter-title">SOP-006: Penyiangan & Kurasi Buku Usang (Weeding & BMN Deaccessioning)</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB IX: SOP-006 Penyiangan Koleksi Usang (Weeding)</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB IX</span>
+          <h2 class="chapter-title">SOP-006: Penyiangan & Kurasi Buku Usang (Weeding & BMN Deaccessioning)</h2>
+          
+        </div>
 
         <h3>9.1 Kriteria Seleksi Teknis Koleksi Kedaluwarsa</h3>
-        <p>Guna mencegah penumpukan 2.349 koleksi textbook yang tidak lagi relevan dengan kurikulum teknik terkini, pustakawan wajib menerapkan 3 kriteria kuantitatif:</p>
+        <p >Guna mencegah penumpukan 2.349 koleksi textbook yang tidak lagi relevan dengan kurikulum teknik terkini, pustakawan wajib menerapkan 3 kriteria kuantitatif:</p>
         <ul>
           <li><strong>Usia Koleksi:</strong> Buku teks ilmu teknik/komputer yang telah berusia &ge; 10 tahun sejak cetak pertama.</li>
           <li><strong>Frekuensi Sirkulasi Nol:</strong> Tidak pernah tercatat dipinjam (&ge; 4 semester berturut-turut di SLiMS).</li>
@@ -631,25 +811,34 @@ Pustakawan FT UNY (Filter SLiMS) &rarr; Wadek I FT (Validasi Kurikulum) &rarr; U
           <li><strong>Hibah Sekolah Binaan:</strong> Buku dasar terapan dihibahkan resmi melalui SK Dekanat kepada SMK binaan FT UNY.</li>
           <li><strong>Pencacahan Daur Ulang:</strong> Buku rusak parah dicacah fisik dengan berita acara disaksikan staf BMN universitas.</li>
         </ol>
-
-        <h3>9.4 Siklus Penggantian Koleksi Usang (Replacement Lifecycle Loop)</h3>
+<h3>9.4 Siklus Penggantian Koleksi Usang (Replacement Lifecycle Loop)</h3>
         <p>Buku yang disetujui disiangi/diafkir otomatis dialirkan ke dalam <strong>Daftar Usulan Judul Pengganti Versi Mutakhir</strong> pada pengajuan pagu belanja Dekanat semester berikutnya, guna menjaga rasio kecukupan buku pada borang akreditasi prodi.</p>
 
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab8">&larr; Bab VIII</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab10">Bab X &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab8">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 30</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab10">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB X: SOP-007 TRANSISI SEMESTER (SIAKAD ROLLOVER GAP)                -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab10">
-        <span class="chapter-badge">BAB X</span>
-        <h2 class="chapter-title">SOP-007: Protokol Peminjaman Bersyarat Transisi Semester (SIAKAD Rollover Gap)</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB X: SOP-007 Peminjaman Bersyarat Transisi</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB X</span>
+          <h2 class="chapter-title">SOP-007: Protokol Peminjaman Bersyarat Transisi Semester (SIAKAD Rollover Gap)</h2>
+          
+        </div>
 
         <h3>10.1 Penanganan Disinkronisasi Data Keanggotaan</h3>
-        <p>Pada masa transisi pergantian semester atau libur menjelang tahun ajaran baru, mahasiswa aktif yang telah registrasi di SIAKAD seringkali berstatus <em>Tidak Aktif</em> di SLiMS akibat siklus impor data IT Pusat. Pustakawan dilarang menolak mahasiswa di loket sirkulasi.</p>
+        <p >Pada masa transisi pergantian semester atau libur menjelang tahun ajaran baru, mahasiswa aktif yang telah registrasi di SIAKAD seringkali berstatus <em>Tidak Aktif</em> di SLiMS akibat siklus impor data IT Pusat. Pustakawan dilarang menolak mahasiswa di loket sirkulasi.</p>
 
         <h3>10.2 Prosedur Validasi Fisik & Batas Pinjam Bersyarat</h3>
         <ol>
@@ -658,57 +847,84 @@ Pustakawan FT UNY (Filter SLiMS) &rarr; Wadek I FT (Validasi Kurikulum) &rarr; U
           <li><strong>Kuota Terbatas:</strong> Maksimal 1 (satu) eksemplar buku dengan batas pinjam 3 (tiga) hari kerja.</li>
           <li>Setelah IT Pusat selesai sinkronisasi, status dialihkan ke peminjaman normal 7 hari tanpa penalti keterlambatan.</li>
         </ol>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab9">&larr; Bab IX</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab11">Bab XI &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab9">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 34</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab11">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB XI: SOP-008 KONTINGENSI MATI LISTRIK & RECOVERY                    -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab11">
-        <span class="chapter-badge">BAB XI</span>
-        <h2 class="chapter-title">SOP-008: Kontingensi Mati Listrik & Pemulihan Sistem (Offline Blackout Recovery)</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB XI: SOP-008 Kontingensi Mati Listrik & Pemulihan</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB XI</span>
+          <h2 class="chapter-title">SOP-008: Kontingensi Mati Listrik & Pemulihan Sistem (Offline Blackout Recovery)</h2>
+          
+        </div>
 
         <h3>11.1 Format Baku Buku Log Darurat Sirkulasi Loket</h3>
-        <p>Bila jaringan kampus terputus atau terjadi pemadaman listrik, layanan tetap berjalan menggunakan <strong>Buku Log Cadangan Sampul Merah</strong> dengan kolom wajib: Tanggal/Jam, Barcode Buku, NIM/Nama Peminjam, Nomor WhatsApp, dan Paraf.</p>
+        <p >Bila jaringan kampus terputus atau terjadi pemadaman listrik, layanan tetap berjalan menggunakan <strong>Buku Log Cadangan Sampul Merah</strong> dengan kolom wajib: Tanggal/Jam, Barcode Buku, NIM/Nama Peminjam, Nomor WhatsApp, dan Paraf.</p>
 
         <h3>11.2 Batas Waktu Pemulihan (Data Recovery SLA Maksimal 120 Menit)</h3>
         <p>Maksimal <strong>120 menit (2 jam) setelah listrik menyala</strong>, pustakawan wajib menyalin seluruh data dari Buku Log Cadangan Fisik ke SLiMS menggunakan fitur <em>Salin Batch SLiMS</em> di SIMPEL-KOLEKSI.</p>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab10">&larr; Bab X</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab12">Bab XII &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab10">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 38</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab12">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB XII: SOP-009 SUPERVISI MAGANG/PKL                                 -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab12">
-        <span class="chapter-badge">BAB XII</span>
-        <h2 class="chapter-title">SOP-009: Supervisi & Kontrol Mutu Tenaga Bantuan Magang/PKL (Intern QC Gate)</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB XII: SOP-009 Supervisi Tenaga Bantuan Magang</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB XII</span>
+          <h2 class="chapter-title">SOP-009: Supervisi & Kontrol Mutu Tenaga Bantuan Magang/PKL (Intern QC Gate)</h2>
+          
+        </div>
 
         <h3>12.1 Penyekatan Wewenang Akun Master SLiMS</h3>
-        <p>Mahasiswa magang/PKL <strong>dilarang keras</strong> memegang akun pengubah master katalog di SLiMS guna mencegah kesalahan fatal penomoran eksemplar atau penghapusan data.</p>
+        <p >Mahasiswa magang/PKL <strong>dilarang keras</strong> memegang akun pengubah master katalog di SLiMS guna mencegah kesalahan fatal penomoran eksemplar atau penghapusan data.</p>
 
         <h3>12.2 Prosedur Entri Draf & Validasi Tunggal Pustakawan</h3>
         <p>Tenaga magang hanya bertugas menyisir fisik rak dan menginput temuan ke SIMPEL-KOLEKSI sebagai <code>DRAFT_INTERN</code>. Pustakawan utama bertindak sebagai validator tunggal yang menekan tombol disposisi resmi ke SLiMS.</p>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab11">&larr; Bab XI</button>
-          <button type="button" class="btn-nav-page" data-target="sheetBab13">Bab XIII &rarr;</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab11">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 42</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab13">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- BAB XIII: SOP-010 PEMELIHARAAN SARANA FISIK QR                         -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetBab13">
-        <span class="chapter-badge">BAB XIII</span>
-        <h2 class="chapter-title">SOP-010: Pemeliharaan Sarana Fisik Dudukan Akrilik & Stiker QR Code</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>BAB XIII: SOP-010 Pemeliharaan Sarana Fisik QR Akrilik</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">BAB XIII</span>
+          <h2 class="chapter-title">SOP-010: Pemeliharaan Sarana Fisik Dudukan Akrilik & Stiker QR Code</h2>
+          
+        </div>
 
         <h3>13.1 Standar Material Sarana Fisik QR Code</h3>
         <ul>
@@ -717,20 +933,29 @@ Pustakawan FT UNY (Filter SLiMS) &rarr; Wadek I FT (Validasi Kurikulum) &rarr; U
         </ul>
 
         <h3>13.2 Jadwal Audit Kelayakan Bulanan</h3>
-        <p>Setiap awal bulan kalender, pustakawan melakukan uji pindai acak kamera ponsel pada 5 titik dudukan meja. Stiker yang buram atau rusak wajib diganti baru dalam 1 x 24 jam kerja.</p>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab12">&larr; Bab XII</button>
-          <button type="button" class="btn-nav-page" data-target="sheetLampiran">Lampiran &rarr;</button>
-        </div>
+        <p >Setiap awal bulan kalender, pustakawan melakukan uji pindai acak kamera ponsel pada 5 titik dudukan meja. Stiker yang buram atau rusak wajib diganti baru dalam 1 x 24 jam kerja.</p>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab12">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 46</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetLampiran">Halaman Selanjutnya &rarr;</button>
+        </footer>
       </article>
 
       <!-- ===================================================================== -->
       <!-- LAMPIRAN                                                              -->
       <!-- ===================================================================== -->
       <article class="paper-sheet" id="sheetLampiran">
-        <span class="chapter-badge">LAMPIRAN</span>
-        <h2 class="chapter-title">Matriks Perbandingan Prosedur Lama vs Baru</h2>
+        <div class="page-running-head">
+          <span>Kementerian Pendidikan Tinggi, Sains, dan Teknologi &bull; FT UNY</span>
+          <span>Lampiran: Matriks Komparasi Prosedur & Pengesahan</span>
+        </div>
+        <div class="chapter-header">
+          <span class="chapter-roman">LAMPIRAN</span>
+          <h2 class="chapter-title">Matriks Perbandingan Prosedur Lama vs Baru</h2>
+          
+        </div>
 
         <table class="sop-table">
           <thead>
@@ -788,16 +1013,24 @@ Pustakawan FT UNY (Filter SLiMS) &rarr; Wadek I FT (Validasi Kurikulum) &rarr; U
             <small class="font-mono">NIP. 19920512 201903 1 045</small>
           </div>
         </div>
-
-        <div class="paper-footer-nav">
-          <button type="button" class="btn-nav-page" data-target="sheetBab8">&larr; Bab VIII</button>
-          <button type="button" class="btn-nav-page" data-target="sheetCover">&uarr; Kembali ke Sampul Depan</button>
-        </div>
+        <footer class="sheet-unified-footer">
+          <button type="button" class="btn-sheet-nav" data-target="sheetBab13">&larr; Halaman Sebelumnya</button>
+          <div class="sheet-page-info">
+            <span class="page-num">Halaman 50</span> &bull; <span>SOP/FT-UNY/PERPUS/2026/001</span>
+          </div>
+          <button type="button" class="btn-sheet-nav" data-target="sheetCover">Kembali ke Sampul &rarr;</button>
+        </footer>
       </article>
 
     </main>
   </div>
 
   <script src="app.js"></script>
+
+  <!-- ========================================================================= -->
+  <!-- PEMBALIK HALAMAN DI ATAS MEJA BACA (DESK FLOATING PAGE TURNER)            -->
+  <!-- ========================================================================= -->
+  
+
 </body>
 </html>
