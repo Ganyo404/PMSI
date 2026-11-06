@@ -278,10 +278,16 @@ Setiap stiker memuat QR Code statis yang mengarah ke URL tunggal: `layanan.html`
    - Maksimal perpanjangan mandiri adalah 1 (satu) kali per eksemplar. Jika ingin memperpanjang kedua kalinya, buku wajib dibawa ke loket untuk pemeriksaan fisik.
 4. Pemustaka menekan **`[Ajukan Perpanjangan Pinjam SLiMS]`**. Tiket terbit dengan kode `EXT-YYYYMM-XXX` dengan SLA maksimal 1x24 jam kerja.
 
-### 5.4 Prosedur Pengajuan Permintaan Referensi Baru
-1. Pemustaka membuka tab **`Request Referensi & Usulan Buku Baru`**.
-2. Pemustaka mengisi: *Nama Pengusul*, *NIM/NIP*, *Status (Mahasiswa S1/D4/Dosen)*, *Program Studi*, *Judul Buku / Topik Riset*, *Keperluan (Skripsi / Praktikum / Riset)*, dan *Nomor WhatsApp*.
-3. Laporan tercatat dengan ID `REQ-YYYYMM-XXX` dan langsung dikompilasi ke draf **Lembar Disposisi Anggaran Dekanat**.
+### 5.4 Prosedur Pengajuan Permintaan Referensi Baru & Pengadaan Partisipatif
+1. **Pengusulan Mandiri Terbuka Sepanjang Tahun (24/7):** Untuk memutus hambatan komunikasi linier di mana pustakawan menunggu prodi dan pengadaan menjadi terhambat, mekanisme pengusulan buku dibuka secara partisipatif sepanjang tahun tanpa menunggu surat edaran dinas. Dosen pembimbing, mahasiswa skripsi, dan peneliti dapat mengusulkan literatur kapan saja melalui portal SIMPEL-KOLEKSI (`layanan.html`).
+2. Pemustaka membuka tab **`Request Referensi & Usulan Buku Baru`**.
+3. Pemustaka mengisi: *Nama Pengusul*, *NIM/NIP*, *Status (Mahasiswa S1/D4/Dosen)*, *Program Studi*, *Judul Buku / Topik Riset*, *Keperluan (Skripsi / Praktikum / Riset)*, dan *Nomor WhatsApp*.
+4. **Verifikasi Duplikasi Katalog Terpusat:** Sebelum data diajukan ke pimpinan, pustakawan mencocokkan judul usulan pada pangkalan data induk SLiMS universitas guna mencegah pembelian eksemplar ganda yang sebenarnya sudah tersedia di fakultas lain.
+5. **Penetapan Skala Prioritas Pengadaan:** Pustakawan mengelompokkan usulan berdasarkan 3 tingkat urgensi:
+   - **Prioritas 1 (Tinggi / Urgen):** Literatur rujukan wajib Skripsi/Tugas Akhir mahasiswa tingkat akhir dan pemenuhan buku teks inti Borang Akreditasi LAM-INFOKOM program studi.
+   - **Prioritas 2 (Sedang):** Buku teks pengayaan materi perkuliahan teori mingguan.
+   - **Prioritas 3 (Rendah):** Bahan bacaan literasi umum, minat bakat, dan buku populer.
+6. Laporan tercatat dengan ID `REQ-YYYYMM-XXX` dan secara otomatis dikompilasi ke draf **Lembar Disposisi Anggaran Dekanat Ber-Kop Surat FT UNY** pada setiap siklus rapat anggaran fakultas.
 
 ### 5.5 Standar Waktu Layanan (Service Level Agreement / SLA)
 
@@ -327,6 +333,12 @@ flowchart TD
 - **Kriteria Fisik:** Fisik buku tidak ditemukan setelah penyisiran 3 kali lorong rak, atau kondisi buku terkena jamur/air parah sehingga tidak layak pakai.
 - **Tindakan SLiMS:** Status eksemplar diubah menjadi **`Hilang (Missing)`**.
 - **Tindakan Lanjutan:** Dimasukkan ke dalam Berita Acara Penyiangan Koleksi dan otomatis diusulkan pengadaannya pada Lembar Disposisi Dekanat.
+
+### 6.2 Prosedur Pencatatan Riwayat Kondisi Buku & Mitigasi Kerusakan Berulang
+Untuk menghindari praktik perbaikan fisik yang bersifat tambal-sulam sementara tanpa evaluasi ketahanan jangka panjang, tata kerja pencatatan riwayat diatur sebagai berikut:
+1. **Pencatatan Riwayat Kondisi (*Condition History Log*):** Setiap tindakan triase dicatat pada pangkalan data riwayat buku dengan merekam: *Tanggal Verifikasi*, *Barcode Koleksi*, *Jenis Kerusakan*, *ID Pustakawan Pemeriksa*, dan *Opsi Tindakan*.
+2. **Aturan Mitigasi Kerusakan Berulang (*Recurrent Damage Rule*):** Apabila suatu eksemplar buku tercatat mengalami kerusakan berulang $\ge 2$ kali dalam kurun waktu 1 (satu) tahun ajaran berjalan, pustakawan **dilarang melakukan Opsi A (Perbaikan Ringan di Loket)**.
+3. Eksemplar tersebut wajib langsung dialihkan ke **Opsi B (Karantina Penjilidan Ulang Total / Re-binding)** atau diputuskan masuk **Opsi C (Diusulkan Penggantian Eksemplar Baru)** pada Lembar Disposisi Anggaran Dekanat FT UNY.
 
 ---
 
@@ -421,6 +433,12 @@ Pustakawan wajib melampirkan berkas Berita Acara Resmi ber-Kop Surat Fakultas Te
 1. **Retur ke Gudang Arsip Cadangan (Deposit Storage):** Disimpan untuk kebutuhan pelacakan histori keilmuan atau akreditasi masa lampau (maksimal 1 eksemplar master).
 2. **Hibah Komunitas / Sekolah Kejuruan Binaan:** Buku teknik terapan yang masih memiliki nilai dasar dapat dihibahkan resmi melalui persetujuan Dekanat kepada SMK binaan FT UNY.
 3. **Pencacahan Berita Acara (Pemusnahan Terbuka):** Buku rusak total dan tidak terbaca dimusnahkan secara fisik dengan disaksikan petugas BMN universitas.
+
+### 9.5 Siklus Penggantian Koleksi Usang (*Collection Replacement Lifecycle Loop*)
+Penyiangan koleksi tidak boleh menciptakan kekosongan referensi kurikulum. Oleh karena itu, SOP menegaskan siklus penggantian wajib:
+1. **Penerbitan Daftar Judul Pengganti (*Replacement Recommendation List*):** Setiap judul buku yang disahkan untuk diafkir secara otomatis dicatat ke dalam modul usulan pengadaan sebagai rekomendasi penggantian dengan buku bertopik setara edisi terbaru.
+2. **Koordinasi Kebutuhan Kurikulum Prodi:** Pustakawan mengirimkan daftar judul yang diafkir kepada Koordinator Program Studi terkait untuk mendapatkan rekomendasi judul literatur mutakhir (terbitan $\le 5$ tahun terakhir) guna menjaga rasio kecukupan pustaka pada Borang Akreditasi LAM-INFOKOM Kriteria 5.
+3. Daftar judul pengganti ini langsung diintegrasikan ke draf **Lembar Disposisi Anggaran Dekanat FT UNY** pada pengajuan anggaran semester berikutnya.
 
 ---
 
