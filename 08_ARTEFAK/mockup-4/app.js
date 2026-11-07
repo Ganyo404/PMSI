@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
         damageType: 'Halaman Sobek / Rusak',
         reporterName: 'Farid Hidayat',
         reporterNim: '24050530015',
-        notes: 'Halaman 45-50 lepas sebagian, butuh dilem cepat',
+        notes: 'Halaman 45-50 lepas sebagian, butuh perbaikan menyeluruh',
         physicalLocation: 'Rak Transit Tk. 2',
         status: 'PENDING',
-        slimsStatus: 'Tersedia (Perlu Triase)'
+        slimsStatus: 'Tersedia (Perlu Triase)',
+        isRecurrentDamage: true,
+        recurrentCount: 2
       },
       {
         id: 'TKT-202610-002',
@@ -46,7 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
         notes: 'Punggung jilidan patah parah, perlu binding ulang',
         physicalLocation: 'Rak Transit Tk. 2',
         status: 'PENDING',
-        slimsStatus: 'Tersedia (Perlu Triase)'
+        slimsStatus: 'Tersedia (Perlu Triase)',
+        isRecurrentDamage: false,
+        recurrentCount: 1
       },
       {
         id: 'TKT-202610-003',
@@ -62,7 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
         notes: 'Terselip di rak Teknik Mesin (DDC 621)',
         physicalLocation: 'Rak Transit Tk. 2',
         status: 'PENDING',
-        slimsStatus: 'Salah Lokasi Rak'
+        slimsStatus: 'Salah Lokasi Rak',
+        isRecurrentDamage: false,
+        recurrentCount: 1
       },
       {
         id: 'TKT-202610-004',
@@ -78,7 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
         notes: 'Triase Berat: Masuk lemari karantina binding',
         physicalLocation: 'Lemari Karantina Binding',
         status: 'IN_REPAIR',
-        slimsStatus: 'Dalam Perbaikan (Repair)'
+        slimsStatus: 'Dalam Perbaikan (Repair)',
+        isRecurrentDamage: false,
+        recurrentCount: 1
       },
       {
         id: 'TKT-202610-005',
@@ -94,7 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
         notes: 'Triase Ringan: Sudah disolasi 5 menit di loket & kembali ke rak',
         physicalLocation: 'Rak Koleksi Aktif',
         status: 'RESOLVED',
-        slimsStatus: 'Tersedia (Available)'
+        slimsStatus: 'Tersedia (Available)',
+        isRecurrentDamage: false,
+        recurrentCount: 1
       }
     ],
 
@@ -144,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
         prodi: 'Pendidikan Teknik Informatika',
         bookTopic: 'Pemrograman Deep Learning Menggunakan PyTorch (Zhang, 2024)',
         purpose: 'Tugas Akhir / Skripsi',
+        priority: 'PRIORITAS_1',
+        isWeedingReplacement: false,
         estPrice: 950000,
         whatsapp: '081299887766',
         status: 'IN_PROCUREMENT',
@@ -158,6 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
         prodi: 'Pendidikan Teknik Elektro',
         bookTopic: 'Internet of Things: Arsitektur Sensor dan Protokol MQTT',
         purpose: 'Riset / Penelitian Dosen',
+        priority: 'PRIORITAS_1',
+        isWeedingReplacement: false,
         estPrice: 850000,
         whatsapp: '081122334455',
         status: 'IN_PROCUREMENT',
@@ -171,7 +185,9 @@ document.addEventListener('DOMContentLoaded', () => {
         role: 'Mahasiswa S1',
         prodi: 'Pendidikan Teknik Mesin',
         bookTopic: 'Standar Uji Pengelasan Baja dan Fabrikasi Presisi',
-        purpose: 'Praktikum & Modul Kuliah',
+        purpose: 'Mata Kuliah Praktik Bengkel',
+        priority: 'PRIORITAS_2',
+        isWeedingReplacement: false,
         estPrice: 750000,
         whatsapp: '087812345678',
         status: 'AVAILABLE_WAREHOUSE',
@@ -186,10 +202,128 @@ document.addEventListener('DOMContentLoaded', () => {
         prodi: 'Pendidikan Teknik Informatika',
         bookTopic: 'Modern Computer Vision: Transformers and Diffusion Models',
         purpose: 'Tugas Akhir / Skripsi',
+        priority: 'PRIORITAS_1',
+        isWeedingReplacement: false,
         estPrice: 900000,
         whatsapp: '085811223344',
         status: 'IN_PROCUREMENT',
         actionNote: 'Prioritas belanja akreditasi LAM-INFOKOM Kriteria 5'
+      },
+      {
+        id: 'REQ-202610-005',
+        date: '27/10/2026 10:15',
+        memberId: 'SISTEM-WEEDING',
+        memberName: 'Sistem SIMPEL-KOLEKSI (Asisten Penyiangan)',
+        role: 'Kurasi Kurikulum',
+        prodi: 'Pendidikan Teknik Informatika',
+        bookTopic: 'Arsitektur Fullstack Modern: Next.js 14, Node.js & PostgreSQL (2025)',
+        purpose: 'Penggantian Koleksi Usang PHP 4 (FT-INF-2013-088)',
+        priority: 'PRIORITAS_1',
+        isWeedingReplacement: true,
+        estPrice: 950000,
+        whatsapp: '-',
+        status: 'IN_PROCUREMENT',
+        actionNote: 'Otomatis dialirkan dari Penyiangan Koleksi Usang untuk menjaga rasio Borang LAM-INFOKOM Kriteria 5'
+      }
+    ],
+
+    conditionHistory: {
+      'B004125': [
+        { date: '15/04/2026 10:30', inspector: 'Abdul / Danar, S.I.Pst', damage: 'Halaman 10-15 Terlepas', action: 'Opsi A: Perbaikan Ringan (5 Menit)', note: 'Dilem mika di meja loket sirkulasi' },
+        { date: '26/10/2026 09:15', inspector: 'Abdul / Danar, S.I.Pst', damage: 'Halaman 45-50 Lepas & Punggung Patah', action: 'Tercatat Rusak Kembali (Ke-2)', note: 'Memicu aturan mitigasi kerusakan berulang (SOP Bab 6.2). Opsi A dikunci.' }
+      ],
+      'FT-INF-2024-072': [
+        { date: '28/10/2026 14:20', inspector: 'Abdul / Danar, S.I.Pst', damage: 'Jilidan Rusak / Sampul Lepas', action: 'Masuk Karantina Binding', note: 'Kerusakan perdana, dijadwalkan binding kolektif' }
+      ],
+      'B001980': [
+        { date: '29/10/2026 11:05', inspector: 'Abdul / Danar, S.I.Pst', damage: 'Salah Rak / Nyasar', action: 'Dikembalikan ke DDC 005.1', note: 'Penyisiran lorong rak' }
+      ]
+    },
+
+    weedingCandidates: [
+      {
+        barcode: 'FT-ELK-2012-004',
+        title: 'Pemrograman Dasar Turbo Pascal 7.0 dan Struktur Data',
+        author: 'Ir. Suhartono, M.T.',
+        callNumber: '005.13 SUH p',
+        year: 2012,
+        prodi: 'Pendidikan Teknik Elektro',
+        lastBorrowed: '14/05/2018 (Dorman 8 Semester)',
+        borrowCount: 0,
+        dormantSemesters: 8,
+        criteria: 'Dorman 8 Semester & Bahasa Pemrograman Deprecated',
+        status: 'RECOMMENDED_WEEDING',
+        replacementTitle: 'Pemrograman Python Modern & Analisis Data Terapan (2024)'
+      },
+      {
+        barcode: 'FT-INF-2013-088',
+        title: 'Membangun Web Dinamis dengan PHP 4 dan MySQL 3.23',
+        author: 'Budi Raharjo',
+        callNumber: '005.7 RAH m',
+        year: 2013,
+        prodi: 'Pendidikan Teknik Informatika',
+        lastBorrowed: '20/11/2019 (Dorman 6 Semester)',
+        borrowCount: 0,
+        dormantSemesters: 6,
+        criteria: 'Usia Terbitan > 10 Tahun & Standar PHP Lama Telah Deprecated',
+        status: 'REPLACED_PROCUREMENT',
+        replacementTitle: 'Arsitektur Fullstack Modern: Next.js 14, Node.js & PostgreSQL (2025)'
+      },
+      {
+        barcode: 'FT-MES-2010-019',
+        title: 'Petunjuk Gambar Teknik Mesin Manual (Mesin Gambar)',
+        author: 'Drs. Haryanto',
+        callNumber: '621.8 HAR p',
+        year: 2010,
+        prodi: 'Pendidikan Teknik Mesin',
+        lastBorrowed: '12/03/2021 (Dorman 4 Semester)',
+        borrowCount: 1,
+        dormantSemesters: 4,
+        criteria: 'Dorman 4 Semester & Digantikan Software CAD/CAM',
+        status: 'REVIEW_PRODI',
+        replacementTitle: 'Desain Mekanikal Berbasis 3D CAD: SolidWorks & Inventor Modern (2024)'
+      },
+      {
+        barcode: 'FT-SIP-2011-042',
+        title: 'Perencanaan Beton Bertulang Berdasarkan SK SNI T-15-1991-03',
+        author: 'Prof. Wiratman',
+        callNumber: '624.1 WIR p',
+        year: 2011,
+        prodi: 'Pendidikan Teknik Sipil & Perencanaan',
+        lastBorrowed: '05/10/2019 (Dorman 7 Semester)',
+        borrowCount: 0,
+        dormantSemesters: 7,
+        criteria: 'Standar SNI Lama Telah Dicabut (Diganti SNI 2847:2019)',
+        status: 'RECOMMENDED_WEEDING',
+        replacementTitle: 'Struktur Beton Bertulang Gedung Tahan Gempa Sesuai SNI 2847:2019 (2023)'
+      },
+      {
+        barcode: 'FT-OTO-2009-011',
+        title: 'Sistem Karburator Konvensional Mobil Bensin & Penyetelan Manual',
+        author: 'Drs. Budi Santoso, M.Pd.',
+        callNumber: '629.25 SAN s',
+        year: 2009,
+        prodi: 'Pendidikan Teknik Otomotif',
+        lastBorrowed: '11/02/2018 (Dorman 9 Semester)',
+        borrowCount: 0,
+        dormantSemesters: 9,
+        criteria: 'Usia 17 Tahun & Teknologi Karburator Digantikan Sistem Injeksi/EV',
+        status: 'RECOMMENDED_WEEDING',
+        replacementTitle: 'Teknologi Kendaraan Listrik (EV) & Manajemen Baterai Modern (2024)'
+      },
+      {
+        barcode: 'FT-ELK-2008-034',
+        title: 'Instalasi Antena Yagi & Pemancar Radio Tabung Analog',
+        author: 'Ir. Hendra Gunawan',
+        callNumber: '621.384 GUN i',
+        year: 2008,
+        prodi: 'Pendidikan Teknik Elektro',
+        lastBorrowed: '04/09/2017 (Dorman 10 Semester)',
+        borrowCount: 0,
+        dormantSemesters: 10,
+        criteria: 'Usia 18 Tahun & Frekuensi Radio Tabung Analog Telah Usang',
+        status: 'RECOMMENDED_WEEDING',
+        replacementTitle: 'Sistem Telekomunikasi Digital 5G & Jaringan Sensor Nirkabel (2024)'
       }
     ]
   };
@@ -197,7 +331,24 @@ document.addEventListener('DOMContentLoaded', () => {
   function loadState() {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (!parsed.weedingCandidates || parsed.weedingCandidates.length < 6) {
+          parsed.weedingCandidates = JSON.parse(JSON.stringify(defaultInitialData.weedingCandidates));
+        }
+        if (!parsed.conditionHistory) {
+          parsed.conditionHistory = JSON.parse(JSON.stringify(defaultInitialData.conditionHistory));
+        }
+        // Sanitize legacy purpose values from localStorage
+        if (parsed.referenceRequests && Array.isArray(parsed.referenceRequests)) {
+          parsed.referenceRequests.forEach(req => {
+            if (req.purpose && req.purpose.includes('Modul')) {
+              req.purpose = 'Mata Kuliah Praktik Bengkel';
+            }
+          });
+        }
+        return parsed;
+      }
     } catch (e) {
       console.warn('LocalStorage error:', e);
     }
@@ -223,9 +374,16 @@ document.addEventListener('DOMContentLoaded', () => {
     dmgFilter: 'all',
     extFilter: 'all',
     reqFilter: 'all',
+    reqPriorityFilter: 'all',
+    weedingFilter: 'all',
+    weedingYearFilter: 'all',
+    weedingDormantFilter: 'all',
+    weedingTopicFilter: 'all',
+    weedingSort: 'default',
     dmgSearch: '',
     extSearch: '',
     reqSearch: '',
+    weedingSearch: '',
     selectedExtendIds: new Set()
   };
 
@@ -333,6 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (panelId === 'adminPanelDamage') headerTitle.textContent = 'Laporan Buku Rusak & Triase Fisik SLiMS';
       if (panelId === 'adminPanelExtend') headerTitle.textContent = 'Perpanjangan Pinjam Mandiri (Batch Eksekusi)';
       if (panelId === 'adminPanelRequest') headerTitle.textContent = 'Request Referensi & Lembar Disposisi Dekanat';
+      if (panelId === 'adminPanelWeeding') headerTitle.textContent = 'Asisten Penyiangan Koleksi & Pemutakhiran Kurikulum (Weeding)';
     }
   }
 
@@ -626,22 +785,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const pendingDamage = db.damageReports.filter(r => r.status === 'PENDING').length;
     const pendingExtend = db.extendRequests.filter(r => r.status === 'PENDING').length;
     const requestCount = db.referenceRequests.length;
+    const weedingCount = (db.weedingCandidates || []).filter(w => w.status === 'RECOMMENDED_WEEDING').length;
+    const weedingTotal = (db.weedingCandidates || []).length;
+    const weedingReplaced = (db.weedingCandidates || []).filter(w => w.status === 'REPLACED_PROCUREMENT').length;
+    const weedingReview = (db.weedingCandidates || []).filter(w => w.status === 'REVIEW_PRODI').length;
 
     const bDmg = document.getElementById('badgeDamageCount');
     const bExt = document.getElementById('badgeExtendCount');
     const bReq = document.getElementById('badgeRequestCount');
+    const bWeed = document.getElementById('badgeWeedingCount');
     if (bDmg) bDmg.textContent = pendingDamage;
     if (bExt) bExt.textContent = pendingExtend;
     if (bReq) bReq.textContent = requestCount;
+    if (bWeed) bWeed.textContent = weedingCount;
 
     const elToday = document.getElementById('kpiTotalToday');
     const elDamage = document.getElementById('kpiDamagePending');
     const elExtend = document.getElementById('kpiExtendPending');
     const elRequest = document.getElementById('kpiRequestCount');
+    const elWeed = document.getElementById('kpiWeedingCount');
     if (elToday) elToday.textContent = todayCount;
     if (elDamage) elDamage.textContent = pendingDamage;
     if (elExtend) elExtend.textContent = pendingExtend;
     if (elRequest) elRequest.textContent = requestCount;
+    if (elWeed) elWeed.textContent = weedingCount;
+
+    // Weeding Panel KPIs
+    const elWeedCand = document.getElementById('kpiWeedingCandidateCount');
+    const elWeedAfkir = document.getElementById('kpiWeedingAfkirCount');
+    const elWeedRep = document.getElementById('kpiWeedingReplacedCount');
+    if (elWeedCand) elWeedCand.textContent = weedingTotal;
+    if (elWeedAfkir) elWeedAfkir.textContent = weedingCount;
+    if (elWeedRep) elWeedRep.textContent = weedingReplaced;
+
+    // Weeding Filter Pills
+    const elPillAll = document.getElementById('pillWeedAll');
+    const elPillAfkir = document.getElementById('pillWeedAfkir');
+    const elPillReview = document.getElementById('pillWeedReview');
+    const elPillReplaced = document.getElementById('pillWeedReplaced');
+    if (elPillAll) elPillAll.textContent = `Semua Koleksi (${weedingTotal})`;
+    if (elPillAfkir) elPillAfkir.textContent = `Siap Afkir BMN (${weedingCount})`;
+    if (elPillReview) elPillReview.textContent = `Perlu Konfirmasi Prodi (${weedingReview})`;
+    if (elPillReplaced) elPillReplaced.textContent = `Sudah Dialirkan (${weedingReplaced})`;
   }
 
   function renderDamageTable() {
@@ -674,11 +859,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (item.status === 'IN_REPAIR') badgeClass = 'status-repair';
       if (item.status === 'RESOLVED') badgeClass = 'status-resolved';
 
+      const recurrentBadge = item.isRecurrentDamage ? `
+        <span class="badge-recurrent" title="Buku rusak ≥2x dalam 1 tahun akademik. Wajib karantina binding!">⚠️ Rusak Berulang (Ke-${item.recurrentCount || 2})</span>
+      ` : '';
+
       return `
         <tr>
           <td>
             <strong class="font-mono">${item.id}</strong><br>
             <span class="nav-badge ${item.slaClass || 'badge-blue'}" style="display:inline-block; margin-top:3px; font-size:0.65rem;">${item.slaBadge || 'SLA Normal'}</span>
+            ${recurrentBadge}
           </td>
           <td><small class="font-mono">${item.date}</small></td>
           <td>
@@ -693,13 +883,18 @@ document.addEventListener('DOMContentLoaded', () => {
             <small style="font-size:0.7rem; color:#64748b;">${item.notes || ''}</small>
           </td>
           <td>
-            ${item.status !== 'RESOLVED' ? `
-              <button type="button" class="btn btn-sm btn-outline btn-verify-damage" data-id="${item.id}">
-                Triase & Verifikasi
+            <div style="display:flex; flex-direction:column; gap:4px;">
+              ${item.status !== 'RESOLVED' ? `
+                <button type="button" class="btn btn-sm btn-outline btn-verify-damage" data-id="${item.id}">
+                  Triase & Verifikasi
+                </button>
+              ` : `
+                <span style="color:var(--emerald-600); font-weight:700; font-size:0.75rem;">✓ Selesai</span>
+              `}
+              <button type="button" class="btn btn-sm btn-ghost btn-view-history" data-barcode="${item.barcode}" title="Lihat Rekam Jejak Kerusakan Koleksi">
+                📜 Riwayat
               </button>
-            ` : `
-              <span style="color:var(--emerald-600); font-weight:700; font-size:0.75rem;">✓ Selesai</span>
-            `}
+            </div>
           </td>
         </tr>
       `;
@@ -707,6 +902,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.btn-verify-damage').forEach(btn => {
       btn.addEventListener('click', () => openVerifyModal(btn.getAttribute('data-id')));
+    });
+
+    document.querySelectorAll('.btn-view-history').forEach(btn => {
+      btn.addEventListener('click', () => openConditionHistoryModal(btn.getAttribute('data-barcode')));
     });
   }
 
@@ -849,6 +1048,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (uiState.reqFilter !== 'all') {
       items = items.filter(r => r.status === uiState.reqFilter);
     }
+    if (uiState.reqPriorityFilter && uiState.reqPriorityFilter !== 'all') {
+      items = items.filter(r => r.priority === uiState.reqPriorityFilter);
+    }
     if (uiState.reqSearch) {
       const q = uiState.reqSearch.toLowerCase();
       items = items.filter(r =>
@@ -860,7 +1062,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (items.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="9" style="text-align:center; padding: 2.2rem; color: var(--slate-400);"><em>Tidak ditemukan usulan referensi yang cocok dengan pencarian/filter.</em></td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding: 2.2rem; color: var(--slate-400);"><em>Tidak ditemukan usulan referensi yang cocok dengan pencarian/filter.</em></td></tr>`;
       return;
     }
 
@@ -875,11 +1077,26 @@ document.addEventListener('DOMContentLoaded', () => {
         statusText = 'Tersedia di Gudang';
       }
 
+      let priorityBadge = '<span class="badge-priority-p2">P2: Praktik</span>';
+      if (item.priority === 'PRIORITAS_1') {
+        priorityBadge = '<span class="badge-priority-p1">P1: Skripsi / Akreditasi</span>';
+      } else if (item.priority === 'PRIORITAS_3') {
+        priorityBadge = '<span class="badge-priority-p3">P3: Pengayaan Umum</span>';
+      }
+
+      const weedingOriginTag = item.isWeedingReplacement ? `
+        <span class="badge-weeding-origin" title="Otomatis dialirkan dari Penyiangan Koleksi Usang">♻️ Subtitusi Weeding</span>
+      ` : '';
+
       const priceFormatted = 'Rp ' + (item.estPrice || 850000).toLocaleString('id-ID');
 
       return `
         <tr>
-          <td><strong class="font-mono">${item.id}</strong></td>
+          <td>
+            <strong class="font-mono">${item.id}</strong><br>
+            ${priorityBadge}
+            ${weedingOriginTag}
+          </td>
           <td><small class="font-mono">${item.date}</small></td>
           <td>
             <strong>${item.memberName}</strong><br>
@@ -954,10 +1171,189 @@ document.addEventListener('DOMContentLoaded', () => {
     renderDamageTable();
     renderExtendTable();
     renderReferenceTable();
+    renderWeedingTable();
     renderDashboardQuickTables();
   }
 
-  // Live Search Input Listeners (Kritik Pustakawan #1)
+  // =========================================================================
+  // E. PILAR C: ASISTEN PENYIANGAN KOLEKSI & WEEDING REPLACEMENT
+  // =========================================================================
+  function renderWeedingTable() {
+    const tbody = document.getElementById('tbodyWeedingCandidates');
+    if (!tbody) return;
+
+    db = loadState();
+    let items = db.weedingCandidates || [];
+
+    // Filter by Status Pill (Semua, Siap Afkir BMN, Perlu Konfirmasi Prodi, Sudah Dialirkan)
+    if (uiState.weedingFilter && uiState.weedingFilter !== 'all') {
+      items = items.filter(w => w.status === uiState.weedingFilter);
+    }
+
+    // Filter by Tahun Terbitan (Kedaluwarsa Keilmuan)
+    if (uiState.weedingYearFilter && uiState.weedingYearFilter !== 'all') {
+      if (uiState.weedingYearFilter === 'gt10') {
+        items = items.filter(w => (w.year || 2020) <= 2016);
+      } else if (uiState.weedingYearFilter === 'gt15') {
+        items = items.filter(w => (w.year || 2020) <= 2011);
+      } else if (uiState.weedingYearFilter === 'recent') {
+        items = items.filter(w => (w.year || 2020) > 2016 && (w.year || 2020) <= 2021);
+      }
+    }
+
+    // Filter by Frekuensi Pinjam SLiMS (Dorman)
+    if (uiState.weedingDormantFilter && uiState.weedingDormantFilter !== 'all') {
+      if (uiState.weedingDormantFilter === 'gte4') {
+        items = items.filter(w => (w.dormantSemesters || 0) >= 4);
+      } else if (uiState.weedingDormantFilter === 'gte8') {
+        items = items.filter(w => (w.dormantSemesters || 0) >= 8);
+      }
+    }
+
+    // Filter by Status Relevansi Kurikulum
+    if (uiState.weedingTopicFilter && uiState.weedingTopicFilter !== 'all') {
+      if (uiState.weedingTopicFilter === 'deprecated') {
+        items = items.filter(w => {
+          const c = ((w.criteria || '') + ' ' + (w.title || '')).toLowerCase();
+          return c.includes('deprecated') || c.includes('pascal') || c.includes('php');
+        });
+      } else if (uiState.weedingTopicFilter === 'sni') {
+        items = items.filter(w => ((w.criteria || '') + ' ' + (w.title || '')).toLowerCase().includes('sni'));
+      } else if (uiState.weedingTopicFilter === 'tech') {
+        items = items.filter(w => {
+          const c = ((w.criteria || '') + ' ' + (w.title || '')).toLowerCase();
+          return c.includes('karburator') || c.includes('analog') || c.includes('manual') || c.includes('cad');
+        });
+      }
+    }
+
+    // Live Search
+    if (uiState.weedingSearch) {
+      const q = uiState.weedingSearch.toLowerCase();
+      items = items.filter(w =>
+        (w.barcode && w.barcode.toLowerCase().includes(q)) ||
+        (w.title && w.title.toLowerCase().includes(q)) ||
+        (w.prodi && w.prodi.toLowerCase().includes(q)) ||
+        (w.criteria && w.criteria.toLowerCase().includes(q)) ||
+        (w.replacementTitle && w.replacementTitle.toLowerCase().includes(q))
+      );
+    }
+
+    // Sorting
+    if (uiState.weedingSort === 'auto') {
+      // Algoritma Otomatis SOP-006: Bobot = (dormantSemesters * 2) + (2026 - year)
+      items.sort((a, b) => {
+        const scoreA = ((a.dormantSemesters || 0) * 2) + (2026 - (a.year || 2020));
+        const scoreB = ((b.dormantSemesters || 0) * 2) + (2026 - (b.year || 2020));
+        return scoreB - scoreA;
+      });
+    } else if (uiState.weedingSort === 'dormant_desc') {
+      items.sort((a, b) => (b.dormantSemesters || 0) - (a.dormantSemesters || 0));
+    } else if (uiState.weedingSort === 'year_asc') {
+      items.sort((a, b) => (a.year || 2020) - (b.year || 2020));
+    } else if (uiState.weedingSort === 'year_desc') {
+      items.sort((a, b) => (b.year || 2020) - (a.year || 2020));
+    }
+
+    if (items.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding: 2.5rem 1.5rem; color: #64748b; background:#ffffff;"><em>Tidak ada koleksi usang yang sesuai kriteria penyaringan & audit tahun. Coba reset filter.</em></td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = items.map(item => {
+      let statusBadge = '<span class="badge-status status-pending" style="display:inline-block; margin-bottom:0.35rem;">Rekomendasi Penyiangan</span>';
+      if (item.status === 'REVIEW_PRODI') {
+        statusBadge = '<span class="badge-status status-repair" style="display:inline-block; margin-bottom:0.35rem;">Review Kurikulum Prodi</span>';
+      } else if (item.status === 'REPLACED_PROCUREMENT') {
+        statusBadge = '<span class="badge-status status-slims-done" style="display:inline-block; margin-bottom:0.35rem;">✓ Masuk Pengadaan P1</span>';
+      }
+
+      const ageYears = 2026 - (item.year || 2020);
+
+      return `
+        <tr>
+          <td>
+            <strong class="font-mono" style="color:#0f172a; font-size:0.85rem;">${item.barcode}</strong><br>
+            <small style="color:#475569;">Terbit: <strong>${item.year}</strong> (${ageYears} th lalu)</small><br>
+            <span class="tag-dormant" style="display:inline-block; margin-top:0.3rem;">${item.dormantSemesters} Smtr Dorman</span>
+          </td>
+          <td>
+            <strong style="color:#0f172a;">${item.title}</strong><br>
+            <small class="font-mono" style="color:#64748b;">${item.author} | ${item.callNumber}</small>
+          </td>
+          <td>
+            <span style="font-weight:600; color:#0f172a; font-size:0.82rem;">${item.prodi}</span>
+          </td>
+          <td>
+            <div style="font-size:0.8rem; color:#1e293b; font-weight:600;">Frekuensi Pinjam: 0x</div>
+            <small style="color:#64748b;">${item.lastBorrowed || 'Tidak ada riwayat sirkulasi'}</small>
+          </td>
+          <td>
+            <div style="font-size:0.8rem; color:#334155; line-height:1.45;">${item.criteria}</div>
+          </td>
+          <td>
+            <div style="font-size:0.82rem; font-weight:600; color:#0d3b66; line-height:1.4;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:-1px; margin-right:4px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              ${item.replacementTitle}
+            </div>
+          </td>
+          <td>
+            <div>${statusBadge}</div>
+            ${item.status !== 'REPLACED_PROCUREMENT' ? `
+              <button type="button" class="btn btn-sm btn-primary btn-weeding-replace" data-barcode="${item.barcode}" style="background:#0d3b66; border-color:#0d3b66; color:#ffffff; font-weight:700; font-size:0.75rem; width:100%; white-space:nowrap; padding:0.35rem 0.6rem; cursor:pointer;">
+                + Alirkan ke Pengadaan P1
+              </button>
+            ` : `
+              <span style="color:#0d3b66; font-weight:700; font-size:0.78rem; display:inline-flex; align-items:center; gap:0.3rem;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Terhubung Disposisi
+              </span>
+            `}
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    document.querySelectorAll('.btn-weeding-replace').forEach(btn => {
+      btn.addEventListener('click', () => executeWeedingReplacement(btn.getAttribute('data-barcode')));
+    });
+  }
+
+  function executeWeedingReplacement(barcode) {
+    db = loadState();
+    const candidate = (db.weedingCandidates || []).find(w => w.barcode === barcode);
+    if (!candidate) return;
+
+    candidate.status = 'REPLACED_PROCUREMENT';
+
+    const newId = `REQ-202610-0${db.referenceRequests.length + 1}`;
+    const now = new Date();
+    const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth() + 1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+    db.referenceRequests.unshift({
+      id: newId,
+      date: dateStr,
+      memberId: 'SISTEM-WEEDING',
+      memberName: 'Sistem SIMPEL-KOLEKSI (Asisten Penyiangan)',
+      role: 'Kurasi Kurikulum',
+      prodi: candidate.prodi,
+      bookTopic: candidate.replacementTitle,
+      purpose: `Substitusi Koleksi Usang (${candidate.title.substring(0, 32)}... [${candidate.barcode}])`,
+      priority: 'PRIORITAS_1',
+      isWeedingReplacement: true,
+      estPrice: 950000,
+      whatsapp: '-',
+      status: 'IN_PROCUREMENT',
+      actionNote: `Otomatis dialirkan dari Penyiangan Koleksi Usang ${candidate.barcode} guna mempertahankan pemenuhan Borang LAM-INFOKOM Kriteria 5`
+    });
+
+    saveState(db);
+    renderAllAdminTables();
+    updateKPICards();
+    showToast(`Koleksi usang ${barcode} berhasil dialirkan ke Pengadaan Baru Prioritas 1 (Borang Kriteria 5)!`, 'success');
+  }
+
+  // Live Search & Filter Listeners
   document.getElementById('searchDamageInput')?.addEventListener('input', (e) => {
     uiState.dmgSearch = e.target.value.trim();
     renderDamageTable();
@@ -970,6 +1366,119 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('searchRequestInput')?.addEventListener('input', (e) => {
     uiState.reqSearch = e.target.value.trim();
+    renderReferenceTable();
+  });
+
+  document.getElementById('searchWeedingInput')?.addEventListener('input', (e) => {
+    uiState.weedingSearch = e.target.value.trim();
+    renderWeedingTable();
+  });
+
+  // Filter Pills for Weeding Assistant (Fix unclickable buttons: Semua Koleksi, Siap Afkir BMN, Perlu Konfirmasi Prodi, Sudah Dialirkan)
+  document.querySelectorAll('[data-filter-weed]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-weed]').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      uiState.weedingFilter = btn.getAttribute('data-filter-weed');
+      renderWeedingTable();
+    });
+  });
+
+  // Dropdown filter: Year (< 2016, < 2011, 2016-2021)
+  document.getElementById('filterWeedingYear')?.addEventListener('change', (e) => {
+    uiState.weedingYearFilter = e.target.value;
+    renderWeedingTable();
+  });
+
+  // Dropdown filter: Dormant Semesters (SLiMS circulation)
+  document.getElementById('filterWeedingDormant')?.addEventListener('change', (e) => {
+    uiState.weedingDormantFilter = e.target.value;
+    renderWeedingTable();
+  });
+
+  // Dropdown filter: Topic / Curriculum Relevance
+  document.getElementById('filterWeedingTopic')?.addEventListener('change', (e) => {
+    uiState.weedingTopicFilter = e.target.value;
+    renderWeedingTable();
+  });
+
+  // Sort dropdown
+  document.getElementById('selectWeedingSort')?.addEventListener('change', (e) => {
+    uiState.weedingSort = e.target.value;
+    renderWeedingTable();
+  });
+
+  // 1-Click Quick Audit Chips
+  document.querySelectorAll('.btn-quick-audit').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const type = chip.getAttribute('data-audit-filter');
+      const yearSel = document.getElementById('filterWeedingYear');
+      const dormSel = document.getElementById('filterWeedingDormant');
+      const topicSel = document.getElementById('filterWeedingTopic');
+
+      if (type === 'gt10_zero') {
+        uiState.weedingYearFilter = 'gt10';
+        uiState.weedingDormantFilter = 'gte4';
+        uiState.weedingTopicFilter = 'all';
+        if (yearSel) yearSel.value = 'gt10';
+        if (dormSel) dormSel.value = 'gte4';
+        if (topicSel) topicSel.value = 'all';
+        showToast('Filter Cepat: Menampilkan buku terbitan > 10 tahun lalu & riwayat sirkulasi 0.', 'info');
+      } else if (type === 'dormant8') {
+        uiState.weedingYearFilter = 'all';
+        uiState.weedingDormantFilter = 'gte8';
+        uiState.weedingTopicFilter = 'all';
+        if (yearSel) yearSel.value = 'all';
+        if (dormSel) dormSel.value = 'gte8';
+        if (topicSel) topicSel.value = 'all';
+        showToast('Filter Cepat: Menampilkan koleksi dorman kritis (≥ 8 semester).', 'info');
+      } else if (type === 'deprecated_prog') {
+        uiState.weedingYearFilter = 'all';
+        uiState.weedingDormantFilter = 'all';
+        uiState.weedingTopicFilter = 'deprecated';
+        if (yearSel) yearSel.value = 'all';
+        if (dormSel) dormSel.value = 'all';
+        if (topicSel) topicSel.value = 'deprecated';
+        showToast('Filter Cepat: Menampilkan koleksi bahasa pemrograman deprecated (Pascal & PHP 4).', 'info');
+      } else if (type === 'reset') {
+        uiState.weedingYearFilter = 'all';
+        uiState.weedingDormantFilter = 'all';
+        uiState.weedingTopicFilter = 'all';
+        uiState.weedingSort = 'default';
+        uiState.weedingFilter = 'all';
+        if (yearSel) yearSel.value = 'all';
+        if (dormSel) dormSel.value = 'all';
+        if (topicSel) topicSel.value = 'all';
+        const sortSel = document.getElementById('selectWeedingSort');
+        if (sortSel) sortSel.value = 'default';
+        document.querySelectorAll('[data-filter-weed]').forEach(b => b.classList.remove('is-active'));
+        document.querySelector('[data-filter-weed="all"]')?.classList.add('is-active');
+        showToast('Semua filter kurasi penyiangan telah direset.', 'info');
+      }
+      renderWeedingTable();
+    });
+  });
+
+  // Tombol Audit Relevansi Otomatis
+  document.getElementById('btnRunRelevanceAudit')?.addEventListener('click', () => {
+    uiState.weedingSort = 'auto';
+    const sortSel = document.getElementById('selectWeedingSort');
+    if (sortSel) sortSel.value = 'auto';
+    renderWeedingTable();
+    showToast('Audit Relevansi Otomatis: Koleksi paling usang dan dorman diurutkan ke posisi teratas.', 'success');
+  });
+
+  // Tombol Sortir Otomatis SOP-006
+  document.getElementById('btnAutoSortWeeding')?.addEventListener('click', () => {
+    uiState.weedingSort = 'auto';
+    const sortSel = document.getElementById('selectWeedingSort');
+    if (sortSel) sortSel.value = 'auto';
+    renderWeedingTable();
+    showToast('Algoritma Kurasi SOP-006 Aktif: Urutan diprioritaskan otomatis.', 'info');
+  });
+
+  document.getElementById('filterReqPriority')?.addEventListener('change', (e) => {
+    uiState.reqPriorityFilter = e.target.value;
     renderReferenceTable();
   });
 
@@ -991,8 +1500,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('chkPhysicalCheck').checked = false;
     document.getElementById('chkSlimsSync').checked = false;
 
+    const alertRecurrent = document.getElementById('alertRecurrentDamage');
     const lightRadio = document.querySelector('input[name="triageDecision"][value="LIGHT_REPAIR"]');
-    if (lightRadio) lightRadio.checked = true;
+    const heavyRadio = document.querySelector('input[name="triageDecision"][value="HEAVY_QUARANTINE"]');
+
+    if (report.isRecurrentDamage) {
+      if (alertRecurrent) alertRecurrent.classList.remove('is-hidden');
+      if (lightRadio) {
+        lightRadio.disabled = true;
+        lightRadio.checked = false;
+        lightRadio.closest('.triage-option')?.classList.add('is-disabled');
+      }
+      if (heavyRadio) heavyRadio.checked = true;
+    } else {
+      if (alertRecurrent) alertRecurrent.classList.add('is-hidden');
+      if (lightRadio) {
+        lightRadio.disabled = false;
+        lightRadio.checked = true;
+        lightRadio.closest('.triage-option')?.classList.remove('is-disabled');
+      }
+    }
 
     document.getElementById('modalVerifyDamage')?.classList.remove('is-hidden');
   }
@@ -1038,6 +1565,25 @@ document.addEventListener('DOMContentLoaded', () => {
         report.slaClass = 'badge-coral';
         report.notes = 'Triase Raib: Status katalog OPAC diubah ke Hilang';
       }
+
+      // Catat ke Riwayat Kondisi Koleksi (Pilar B - Rekam Jejak)
+      if (!db.conditionHistory) db.conditionHistory = {};
+      if (!db.conditionHistory[report.barcode]) db.conditionHistory[report.barcode] = [];
+
+      const now = new Date();
+      const dateStr = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth() + 1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+      let actionText = 'Opsi A: Perbaikan Ringan (5 Menit)';
+      if (triageVal === 'HEAVY_QUARANTINE') actionText = 'Opsi B: Masuk Karantina Penjilidan';
+      else if (triageVal === 'LOST_WEEDING') actionText = 'Opsi C: Afkir / Usulan Weeding';
+
+      db.conditionHistory[report.barcode].unshift({
+        date: dateStr,
+        inspector: 'Abdul / Danar, S.I.Pst',
+        damage: report.damageType,
+        action: actionText,
+        note: report.notes
+      });
 
       saveState(db);
       closeVerifyModal();
@@ -1180,6 +1726,179 @@ document.addEventListener('DOMContentLoaded', () => {
     pom.setAttribute('download', filename);
     pom.click();
     URL.revokeObjectURL(url);
+  }
+
+  // =========================================================================
+  // MODAL 3: BERITA ACARA REKOMENDASI PENYIANGAN KOLEKSI BMN (SOP-006)
+  // =========================================================================
+  function openBeritaAcaraWeedingModal() {
+    db = loadState();
+    const tbody = document.getElementById('tbodyWeedingPrintItems');
+    if (!tbody) return;
+
+    const candidates = db.weedingCandidates || [];
+    tbody.innerHTML = candidates.map((item, idx) => `
+      <tr>
+        <td>${idx + 1}</td>
+        <td class="font-mono"><strong>${item.barcode}</strong><br><small>${item.callNumber}</small></td>
+        <td><strong>${item.title}</strong><br><small>${item.author}</small></td>
+        <td class="font-mono">${item.year}</td>
+        <td>${item.dormantSemesters} Semester Dorman</td>
+        <td>${item.criteria}</td>
+        <td style="color:#047857; font-weight:600;">${item.replacementTitle}</td>
+      </tr>
+    `).join('');
+
+    document.getElementById('modalBeritaAcaraWeeding')?.classList.remove('is-hidden');
+  }
+
+  function closeBeritaAcaraWeedingModal() {
+    document.getElementById('modalBeritaAcaraWeeding')?.classList.add('is-hidden');
+  }
+
+  document.getElementById('btnPrintBeritaAcaraWeeding')?.addEventListener('click', openBeritaAcaraWeedingModal);
+  document.getElementById('btnCloseWeedingModal')?.addEventListener('click', closeBeritaAcaraWeedingModal);
+  document.getElementById('btnCancelWeedingModal')?.addEventListener('click', closeBeritaAcaraWeedingModal);
+  document.getElementById('btnPrintWeedingTop')?.addEventListener('click', () => window.print());
+  document.getElementById('btnPrintWeedingAction')?.addEventListener('click', () => window.print());
+
+  // =========================================================================
+  // MODAL 4: RIWAYAT KONDISI KOLEKSI & LOG KERUSAKAN (SOP BAB 6.2)
+  // =========================================================================
+  function openConditionHistoryModal(barcode) {
+    db = loadState();
+    const historyList = (db.conditionHistory && db.conditionHistory[barcode]) ? db.conditionHistory[barcode] : [];
+
+    let bookTitle = 'Buku Koleksi Perpustakaan';
+    const report = db.damageReports.find(r => r.barcode === barcode);
+    if (report) bookTitle = report.title;
+
+    const titleEl = document.getElementById('historyBookTitle');
+    const barcodeEl = document.getElementById('historyBarcode');
+    const tbody = document.getElementById('tbodyConditionHistory');
+
+    if (titleEl) titleEl.textContent = bookTitle;
+    if (barcodeEl) barcodeEl.textContent = barcode;
+
+    if (tbody) {
+      if (historyList.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:1.5rem; color:var(--slate-400);"><em>Belum ada catatan riwayat triase untuk barcode ${barcode}.</em></td></tr>`;
+      } else {
+        tbody.innerHTML = historyList.map(h => `
+          <tr>
+            <td class="font-mono"><small>${h.date}</small></td>
+            <td><strong>${h.inspector}</strong></td>
+            <td><span class="badge-status status-repair">${h.damage}</span></td>
+            <td><strong style="color:var(--navy-900);">${h.action}</strong></td>
+            <td><small>${h.note || '-'}</small></td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    document.getElementById('modalConditionHistory')?.classList.remove('is-hidden');
+  }
+
+  function closeConditionHistoryModal() {
+    document.getElementById('modalConditionHistory')?.classList.add('is-hidden');
+  }
+
+  document.getElementById('btnCloseHistoryModal')?.addEventListener('click', closeConditionHistoryModal);
+  document.getElementById('btnCancelHistoryModal')?.addEventListener('click', closeConditionHistoryModal);
+
+  // =========================================================================
+  // PILAR D: LACAK STATUS TIKET MANDIRI OLEH PEMUSTAKA (LAYANAN.HTML)
+  // =========================================================================
+  const btnTrack = document.getElementById('btnTrackTicket');
+  if (btnTrack) {
+    btnTrack.addEventListener('click', () => {
+      const qInput = document.getElementById('inputTrackQuery');
+      const resBox = document.getElementById('trackerResultBox');
+      if (!qInput || !resBox) return;
+
+      const q = qInput.value.trim().toLowerCase();
+      if (!q) {
+        showToast('Ketik Nomor Tiket (misal: TKT-202610-001) atau Barcode terlebih dahulu!', 'warning');
+        return;
+      }
+
+      db = loadState();
+      const dmg = db.damageReports.find(r => r.id.toLowerCase() === q || r.barcode.toLowerCase() === q);
+      const ext = db.extendRequests.find(r => r.id.toLowerCase() === q || r.barcode.toLowerCase() === q);
+      const req = db.referenceRequests.find(r => r.id.toLowerCase() === q || r.bookTopic.toLowerCase().includes(q));
+
+      resBox.style.display = 'block';
+
+      if (dmg) {
+        let statusBadge = '<span class="badge-status status-pending">Menunggu Triase Rak Transit</span>';
+        let actionDesc = 'Buku sedang berada di Rak Transit Tingkat 2. Akan diperiksa saat sesi Quiet Hour Jumat pk 08.00–09.00 WIB.';
+        if (dmg.status === 'IN_REPAIR') {
+          statusBadge = '<span class="badge-status status-repair">Dalam Perbaikan (Karantina Binding)</span>';
+          actionDesc = 'Koleksi masuk lemari karantina untuk penjilidan berkala. Status katalog SLiMS: Repair.';
+        } else if (dmg.status === 'RESOLVED') {
+          statusBadge = '<span class="badge-status status-slims-done">✓ Selesai Diperbaiki & Tersedia</span>';
+          actionDesc = 'Buku telah selesai diperbaiki (lem/isolasi) dan telah dikembalikan ke rak koleksi aktif.';
+        }
+
+        resBox.innerHTML = `
+          <div style="padding:1.1rem; background:white; border-radius:8px; border-left:4px solid var(--navy-800); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+              <strong class="font-mono" style="color:var(--navy-900); font-size:1rem;">${dmg.id}</strong>
+              ${statusBadge}
+            </div>
+            <div style="font-weight:700; color:var(--navy-900); font-size:0.95rem; margin-bottom:4px;">${dmg.title}</div>
+            <div style="font-size:0.8rem; color:var(--slate-600); margin-bottom:8px;">Barcode: <strong class="font-mono text-blue">${dmg.barcode}</strong> | Pelapor: <strong>${dmg.reporterName}</strong></div>
+            <div style="font-size:0.82rem; background:#f1f5f9; padding:8px 12px; border-radius:6px; color:#334155; line-height:1.45;">
+              <strong>Progres Terkini:</strong> ${actionDesc}
+            </div>
+          </div>
+        `;
+        showToast(`Status tiket ${dmg.id} ditemukan!`, 'success');
+      } else if (ext) {
+        let statusBadge = ext.status === 'PENDING' ? '<span class="badge-status status-pending">Menunggu Eksekusi Batch SLiMS</span>' : '<span class="badge-status status-slims-done">✓ Masa Pinjam Berhasil Diperpanjang +7 Hari</span>';
+        let actionDesc = ext.status === 'PENDING' ? 'Permohonan Anda dalam antrean eksekusi massal pustakawan (SLA maks 1x24 jam).' : 'SLiMS telah diperbarui. Pustakawan telah memproses perpanjangan tanpa perlu bawa buku fisik ke loket.';
+
+        resBox.innerHTML = `
+          <div style="padding:1.1rem; background:white; border-radius:8px; border-left:4px solid var(--emerald-600); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+              <strong class="font-mono" style="color:var(--navy-900); font-size:1rem;">${ext.id}</strong>
+              ${statusBadge}
+            </div>
+            <div style="font-weight:700; color:var(--navy-900); font-size:0.95rem; margin-bottom:4px;">${ext.title}</div>
+            <div style="font-size:0.8rem; color:var(--slate-600); margin-bottom:8px;">Barcode: <strong class="font-mono text-blue">${ext.barcode}</strong> | Pemohon: <strong>${ext.memberName}</strong> (${ext.memberId})</div>
+            <div style="font-size:0.82rem; background:#f0fdf4; padding:8px 12px; border-radius:6px; color:#166534; line-height:1.45;">
+              <strong>Keterangan:</strong> ${actionDesc}
+            </div>
+          </div>
+        `;
+        showToast(`Status perpanjangan ${ext.id} ditemukan!`, 'success');
+      } else if (req) {
+        let statusBadge = req.status === 'IN_PROCUREMENT' ? '<span class="badge-status status-repair">Masuk Draf Disposisi Dekanat</span>' : '<span class="badge-status status-pending">Menunggu Telaah Pustakawan</span>';
+        let actionDesc = req.status === 'IN_PROCUREMENT' ? 'Judul telah dimasukkan ke Lembar Disposisi Dekanat FT UNY untuk pengadaan buku baru.' : 'Pustakawan sedang memeriksa ketersediaan di gudang atau menyusun prioritas kebutuhan prodi.';
+
+        resBox.innerHTML = `
+          <div style="padding:1.1rem; background:white; border-radius:8px; border-left:4px solid #f59e0b; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+              <strong class="font-mono" style="color:var(--navy-900); font-size:1rem;">${req.id}</strong>
+              ${statusBadge}
+            </div>
+            <div style="font-weight:700; color:var(--navy-900); font-size:0.95rem; margin-bottom:4px;">${req.bookTopic}</div>
+            <div style="font-size:0.8rem; color:var(--slate-600); margin-bottom:8px;">Pengusul: <strong>${req.memberName}</strong> (${req.prodi}) | Keperluan: ${req.purpose}</div>
+            <div style="font-size:0.82rem; background:#fffbeb; padding:8px 12px; border-radius:6px; color:#92400e; line-height:1.45;">
+              <strong>Catatan Disposisi:</strong> ${actionDesc}
+            </div>
+          </div>
+        `;
+        showToast(`Status usulan ${req.id} ditemukan!`, 'success');
+      } else {
+        resBox.innerHTML = `
+          <div style="padding:1.1rem; background:#fef2f2; border-radius:8px; border:1px solid #fecaca; color:#991b1b; text-align:center;">
+            <strong>Data Tiket atau Barcode tidak ditemukan.</strong><br>
+            <small>Pastikan format nomor tiket benar (contoh: <code>TKT-202610-001</code>) atau nomor barcode buku yang Anda laporkan (contoh: <code>B004125</code>).</small>
+          </div>
+        `;
+      }
+    });
   }
 
   document.getElementById('btnCloseVerifyModal')?.addEventListener('click', closeVerifyModal);
