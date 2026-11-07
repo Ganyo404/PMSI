@@ -121,6 +121,24 @@
 
         </div>
 
+        <!-- FITUR MANDIRI MAHASISWA: LACAK STATUS TIKET MANDIRI -->
+        <div class="ticket-tracker-card">
+          <div class="tracker-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <div>
+              <h4>Lacak Status Tiket Mandiri (Tanpa Antre Loket)</h4>
+              <p>Pantau progres penanganan buku di Rak Transit, perpanjangan SLiMS, atau status usulan buku baru Anda secara real-time.</p>
+            </div>
+          </div>
+          <div class="tracker-search-box">
+            <input type="text" id="inputTrackQuery" class="form-control font-mono" placeholder="Ketik Nomor Tiket (misal: TKT-202610-001) atau Barcode (B004125)...">
+            <button type="button" class="btn btn-primary" id="btnTrackTicket">
+              <span>Lacak Progres</span>
+            </button>
+          </div>
+          <div id="trackerResultBox" class="tracker-result-box" style="display:none;"></div>
+        </div>
+
         <div class="public-help-box">
           <div class="help-content">
             <strong>Informasi Penyerahan Buku Fisik & Rak Transit (RACK-001):</strong>

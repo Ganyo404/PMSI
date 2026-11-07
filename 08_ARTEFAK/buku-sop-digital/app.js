@@ -114,21 +114,22 @@ document.addEventListener('DOMContentLoaded', () => {
     contentScroll.addEventListener('scroll', () => {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
-        let bestIndex = 0;
-        let minDiff = Infinity;
+        let bestIndex = -1;
+        let bestVisibleHeight = 0;
+        const containerRect = contentScroll.getBoundingClientRect();
 
         paperSheets.forEach((sheet, idx) => {
           const rect = sheet.getBoundingClientRect();
-          const diff = Math.abs(rect.top - 70);
-          if (rect.top <= 250 && rect.bottom >= 100) {
-            if (diff < minDiff) {
-              minDiff = diff;
-              bestIndex = idx;
-            }
+          const visibleTop = Math.max(rect.top, containerRect.top);
+          const visibleBottom = Math.min(rect.bottom, containerRect.bottom);
+          const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+          if (visibleHeight > bestVisibleHeight) {
+            bestVisibleHeight = visibleHeight;
+            bestIndex = idx;
           }
         });
 
-        if (bestIndex !== currentSheetIndex) {
+        if (bestIndex !== -1 && bestIndex !== currentSheetIndex) {
           currentSheetIndex = bestIndex;
           updateActiveState(paperSheets[currentSheetIndex].id);
         }
