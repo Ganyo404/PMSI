@@ -74,9 +74,16 @@ flowchart LR
         MACHINE --> ROOT
         MATERIAL --> ROOT
     ```
-  * **Ringkasan 5-Whys:** Status OPAC tidak akurat $\leftarrow$ Input SLiMS tertunda $\leftarrow$ Pustakawan terinterupsi antrean loket $\leftarrow$ Tidak ada pemisahan jam kerja fokus & zona fisik penampung buku (*Work System failure*, bukan kegagalan kode SLiMS).
+  * **Alur Diagnosis 3 Kolom: Gejala Terpadu $\rightarrow$ Mekanisme $\rightarrow$ Akar Masalah (Siap Masuk 1 Slide PPT):**
+
+    | 1. GEJALA (*Symptoms*)<br>*(Gabungan Eksplisit & Implisit)* | $\longrightarrow$ | 2. MEKANISME (*Mechanism*)<br>*(Proses Penyebab di Lapangan)* | $\longrightarrow$ | 3. AKAR MASALAH (*Root Causes*)<br>*(Kondisi Tata Kelola Sistem)* |
+    | :--- | :---: | :--- | :---: | :--- |
+    | • **OPAC vs Rak Tidak Sinkron:** Tertulis *"Tersedia"* di SLiMS, tapi fisik buku rusak, terselip, atau menumpuk di loket.<br>• **Laporan Tercecer:** Masuk via lisan, WA pribadi, & memo kertas tanpa rekam jejak (*audit trail*).<br>• **Data Akreditasi Tertinggal:** Rekap **LAM-INFOKOM Kriteria 5** & usulan buku **Dekanat** berisiko bias (*lagging*). | $\longrightarrow$ | • **Beban 3 Fungsi pada 1 Staf:** 1 pustakawan melayani **52 transaksi tatap muka/hari** (sirkulasi, referensi, *digilib*).<br>• **Interupsi Konstan Loket:** Antrean fisik memotong fokus verifikasi buku & entri SLiMS (*context switching*).<br>• **Update Bersifat Insidental:** Input SLiMS ditunda menunggu jam sepi tanpa kepastian SLA. | $\longrightarrow$ | *(Constraint: 1 Pustakawan Tunggal)*<br>1. **Ketiadaan SOP & Jadwal Fokus:** Belum ada aturan baku, SLA, & *Quiet Hour*.<br>2. **Saluran Laporan Belum Terpusat:** Belum ada form mandiri standar.<br>3. **Ketiadaan *Buffer Zone* Fisik:** Belum ada Rak Transit (`RACK-001`).<br>4. **Ketiadaan Monitoring Status:** Belum ada log tindak lanjut & template ekstraksi. |
+
+  * **Simpulan 1 Kalimat Akar Masalah Sistemik (Highlight Box PPT):**
+    > *"Belum terdapat tata kelola alur kerja terpadu (SOP pemutakhiran terfokus, kanal pelaporan mandiri terpusat, buffer zone rak transit fisik, dan audit trail penyelesaian) yang adaptif terhadap kapasitas pustakawan tunggal."*
 * **Naskah Lisan Resmi (Verbatim):**
-  > "Pada Modul 3, kami membedah persoalan tersebut menggunakan Diagram Fishbone 4M dan 5-Whys. Dari sisi Machine, perangkat lunak SLiMS 9 Bulian sebenarnya sehat. Masalah sesungguhnya berada pada dimensi Man, Method, dan Material: satu pustakawan tunggal terinterupsi konstan oleh antrean loket, laporan kerusakan tercecer lewat WhatsApp dan lisan, serta tidak ada zona penyangga fisik buku kembali."
+  > "Pada Modul 3, kami membedah masalah melalui alur Gejala, Mekanisme, hingga Akar Masalah. Gejala utamanya terlihat dari status buku di OPAC yang tidak sinkron dengan fisik rak, laporan kerusakan yang tercecer di WA atau lisan, hingga tertundanya data rekap akreditasi. Mekanisme penyebabnya adalah interupsi konstan 52 transaksi per hari pada satu pustakawan tunggal yang merangkap tiga layanan, sehingga update SLiMS selalu tertunda menunggu jam sepi. Dengan memosisikan 1 pustakawan sebagai batasan operasional, kami menemukan empat akar masalah tata kelola: ketiadaan SOP dan jadwal fokus, belum adanya kanal pelaporan terpusat, ketiadaan rak transit fisik, serta belum adanya monitoring tindak lanjut."
 
 ---
 
@@ -124,11 +131,14 @@ flowchart LR
             T3 --> T4["4. Audit Weeding SOP-006 &\nDisposisi Resmi Kop FT UNY"]
         end
     ```
-  * **Tabel Ringkas Perubahan Alur 4 Proses Utama:**
-    1. **Pelaporan Rusak / Salah Rak:** *Sebelum:* Lisan/WA tercecer, buku di bawah meja $\rightarrow$ *Sesudah:* Form QR 4-field + **Rak Transit Tingkat 2 (`RACK-001`)** + Triase 3-Opsi (`SLA <= 3 hari verifikasi`).
-    2. **Perpanjangan Pinjam:** *Sebelum:* Mahasiswa wajib antre di loket, input manual 1-per-1 $\rightarrow$ *Sesudah:* Ajuan mandiri tanpa bawa buku + **Eksekusi Massal (*Batch Selection*) pk 08.30 WIB**.
-    3. **Kurasi Buku Usang:** *Sebelum:* Tidak ada pemilahan buku jadul ($\ge 10$ th) $\rightarrow$ *Sesudah:* Filter otomatis tahun & dorman (**SOP-006**) yang langsung mengalir ke pengadaan pengganti P1.
-    4. **Usulan Buku & Anggaran:** *Sebelum:* Menunggu surat dinas prodi yang sering tak berbalas $\rightarrow$ *Sesudah:* Usulan partisipatif 24/7 (P1/P2/P3) $\rightarrow$ **Lembar Disposisi Ber-Kop FT UNY** untuk Wadek I.
+  * **Tabel Komparasi Mekanisme Sebelum (*As-Is*) vs Mekanisme Sesudah (*To-Be*):**
+
+    | Dimensi Proses | Mekanisme Sebelum Perubahan (*As-Is*) | Mekanisme Sesudah Perubahan (*To-Be* — SIMPEL-KOLEKSI) | Dampak Perbaikan Proses |
+    | :--- | :--- | :--- | :--- |
+    | **1. Pelaporan & Triase Buku Rusak** | Lapor via lisan/WA pribadi/memo; buku rusak menumpuk di bawah meja loket tanpa kejelasan tindak lanjut. | Mahasiswa scan **QR Mandiri (`FORM-001`)** + taruh fisik buku di **Rak Transit Tk. 2 (`RACK-001`)** $\rightarrow$ Pustakawan jalankan **Triase 3-Opsi (`SOP-004`)**. | Meja loket bebas tumpukan; verifikasi fisik tuntas sesuai **SLA $\le 3$ hari** & update SLiMS **$\le 7$ hari**. |
+    | **2. Perpanjangan Pinjam & Waktu Kerja** | Mahasiswa wajib antre di loket bawa buku; pustakawan terinterupsi 52x/hari & input SLiMS 1-per-1 saat jam sepi. | Ajuan daring mandiri (+7 hari) $\rightarrow$ **Eksekusi Massal (*Batch Selection*) pk 08.30 WIB** + proteksi **`SOP-001 Quiet Hour` (Jumat 08.00–09.00)**. | Menghilangkan antrean loket & *click-fatigue*; waktu pemutakhiran SLiMS terlindungi resmi. |
+    | **3. Kurasi Buku Usang (*Weeding*)** | Buku teknik terbitan >10 tahun & sirkulasi `0x` dibiarkan memenuhi rak karena belum ada penyaringan berkala. | **Asisten Penyiangan (`SOP-006`)** memfilter otomatis tahun terbit (< 2016 / < 2011) & semester dorman ($\ge 4 / \ge 8$ smtr) $\rightarrow$ **Berita Acara BMN**. | Ruang rak efisien; koleksi kedaluwarsa langsung terdeteksi dan dialirkan ke usulan buku pengganti P1. |
+    | **4. Monitoring, Akreditasi, & Anggaran** | Tanpa *audit trail*; usulan buku menunggu surat tahunan prodi; rekap **LAM-INFOKOM Kriteria 5** lambat & manual. | Log tiket terekam terpusat; ekstraksi CSV SLiMS via **`TMP-001`**; usulan 24/7 (P1/P2/P3) dicetak jadi **Lembar Disposisi Ber-Kop FT UNY** (`SOP-005`). | Data akreditasi Kriteria 5 akurat & siap audit; pengesahan anggaran **Wadek I** berbasis bukti riil. |
 * **Naskah Lisan Resmi (Verbatim):**
   > "Slide ini memperlihatkan inti rekayasa proses bisnis kami: perbandingan alur sebelum dan sesudah intervensi SIMPEL-KOLEKSI. Sebelum perubahan, seluruh keluhan, pengembalian, dan perpanjangan bertumpuk di meja loket sehingga memicu kelelahan klik dan penundaan input SLiMS. Sesudah perubahan, beban pencatatan awal dialihkan ke pemustaka melalui QR dan Rak Transit RACK-001, sementara pustakawan memprosesnya secara massal pada jam tenang yang terproteksi."
 
