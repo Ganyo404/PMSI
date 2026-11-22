@@ -1,0 +1,382 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="50%" stop-color="#1C2541"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGradOp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="cardGradSys" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#172554" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="cardGradOut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Pill Gradients -->
+    <linearGradient id="pillOp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="pillSys" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="pillOut" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#F59E0B" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#38BDF8" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Markers for Arrows -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#60A5FA"/>
+    </marker>
+    <marker id="arrowIndigo" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#818CF8"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#34D399"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FBBF24"/>
+    </marker>
+  </defs>
+
+  <style>
+    .font-title { font-family: 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+    .font-sub { font-family: 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif; font-weight: 600; }
+    .font-body { font-family: 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif; font-weight: 400; }
+    .font-code { font-family: 'Cascadia Code', Consolas, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Grid Overlay -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40"/>
+    </pattern>
+    <rect width="1920" height="1080" fill="url(#grid)"/>
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="220" height="34" rx="17" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="110" y="23" class="font-sub" font-size="14" fill="#FBBF24" text-anchor="middle" letter-spacing="2">MODUL 5 • ARSITEKTUR INFORMASI</text>
+
+    <text x="0" y="80" class="font-title" font-size="38" fill="#F8FAFC" letter-spacing="0.5">GRAND DESIGN TATA KELOLA SIRKULASI &amp; MONITORING KOLEKSI</text>
+    <text x="0" y="115" class="font-sub" font-size="18" fill="#94A3B8">Integrasi Aliran Informasi Sosio-Teknis: Pemustaka → Pustakawan Tunggal → SLiMS 9 Bulian → Dekanat &amp; Akreditasi FT UNY</text>
+  </g>
+
+  <!-- 3 MAJOR COLUMNS (TIERS) -->
+
+  <!-- ==================== COLUMN 1: ALIRAN MASUK (OPERASIONAL) ==================== -->
+  <g transform="translate(80, 200)">
+    <!-- Column Card Background -->
+    <rect width="520" height="810" rx="24" fill="url(#cardGradOp)" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header Pill -->
+    <rect x="30" y="-18" width="460" height="40" rx="20" fill="url(#pillOp)" filter="url(#shadow)"/>
+    <text x="260" y="8" class="font-title" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">TIER 1: ALIRAN MASUK &amp; TEMUAN FISIK</text>
+
+    <!-- Node 1.1: Pemustaka -->
+    <g transform="translate(30, 50)">
+      <rect width="460" height="160" rx="16" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="24" fill="#3B82F6" fill-opacity="0.2" stroke="#60A5FA" stroke-width="2"/>
+      <!-- User Icon -->
+      <path d="M42,60 C42,54 46,52 50,52 C54,52 58,54 58,60 Z M50,48 C46.7,48 44,45.3 44,42 C44,38.7 46.7,36 50,36 C53.3,36 56,38.7 56,42 C56,45.3 53.3,48 50,48 Z" fill="#60A5FA"/>
+      
+      <text x="90" y="45" class="font-title" font-size="18" fill="#F8FAFC">Aktor: Pemustaka &amp; Pengunjung</text>
+      <text x="90" y="68" class="font-sub" font-size="13" fill="#94A3B8">Mahasiswa, Dosen FT UNY (~52 kunjungan/hari)</text>
+      
+      <line x1="30" y1="95" x2="430" y2="95" stroke="#334155" stroke-width="1"/>
+      <text x="40" y="120" class="font-sub" font-size="13" fill="#38BDF8">Aktivitas Temuan:</text>
+      <text x="40" y="142" class="font-body" font-size="13" fill="#CBD5E1">Menemukan buku rusak (robek/coret) atau salah rak saat membaca</text>
+    </g>
+
+    <!-- Flow Arrow 1 Down -->
+    <g transform="translate(260, 215)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#60A5FA" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrowBlue)"/>
+      <rect x="-95" y="8" width="190" height="24" rx="12" fill="#0F172A" stroke="#3B82F6" stroke-width="1"/>
+      <text x="0" y="24" class="font-code" font-size="11" fill="#93C5FD" text-anchor="middle">Scan QR di Ujung Lorong</text>
+    </g>
+
+    <!-- Node 1.2: Form Mandiri QR -->
+    <g transform="translate(30, 265)">
+      <rect width="460" height="210" rx="16" fill="#1E293B" stroke="#38BDF8" stroke-width="2" filter="url(#glowCyan)"/>
+      <!-- QR Icon badge -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#0284C7" fill-opacity="0.25" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="20" fill="#38BDF8" text-anchor="middle">QR</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Form Pelaporan Mandiri QR</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#38BDF8">FORM-001 • Waktu Isi &lt; 1 Menit</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#334155" stroke-width="1"/>
+
+      <!-- 4 Fields Pills -->
+      <g transform="translate(30, 105)">
+        <rect x="0" y="0" width="190" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+        <text x="15" y="21" class="font-sub" font-size="12" fill="#E2E8F0">1. Barcode / Judul Buku</text>
+
+        <rect x="210" y="0" width="190" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+        <text x="15" y="21" class="font-sub" font-size="12" fill="#E2E8F0">2. Lokasi Rak Fisik</text>
+
+        <rect x="0" y="42" width="190" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+        <text x="15" y="21" class="font-sub" font-size="12" fill="#E2E8F0">3. Jenis Kerusakan</text>
+
+        <rect x="210" y="42" width="190" height="32" rx="8" fill="#0F172A" stroke="#334155"/>
+        <text x="15" y="21" class="font-sub" font-size="12" fill="#E2E8F0">4. Bukti Foto (Opsional)</text>
+      </g>
+      <text x="40" y="195" class="font-body" font-size="12" fill="#94A3B8">Data langsung masuk otomatis ke Spreadsheet Log Laporan</text>
+    </g>
+
+    <!-- Flow Arrow 2 Down -->
+    <g transform="translate(260, 480)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#60A5FA" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrowBlue)"/>
+      <rect x="-95" y="8" width="190" height="24" rx="12" fill="#0F172A" stroke="#3B82F6" stroke-width="1"/>
+      <text x="0" y="24" class="font-code" font-size="11" fill="#93C5FD" text-anchor="middle">Letakkan Fisik Buku</text>
+    </g>
+
+    <!-- Node 1.3: Buffer Zone / Rak Transit -->
+    <g transform="translate(30, 530)">
+      <rect width="460" height="240" rx="16" fill="#1E293B" stroke="#F59E0B" stroke-width="1.8"/>
+      <!-- Rack Badge -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#D97706" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="18" fill="#FBBF24" text-anchor="middle">RAK</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#F8FAFC">Rak Transit / Buffer Zone</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#FBBF24">RACK-001 • Buffer Pemisahan Fisik</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#334155" stroke-width="1"/>
+
+      <!-- 3 Compartments -->
+      <g transform="translate(30, 105)">
+        <rect x="0" y="0" width="400" height="34" rx="6" fill="#451A03" stroke="#B45309" stroke-width="1"/>
+        <text x="15" y="22" class="font-title" font-size="12" fill="#FDE68A">Sekat A: Rusak Ringan (Jilid Lepas / Robek Kecil)</text>
+
+        <rect x="0" y="42" width="400" height="34" rx="6" fill="#7F1D1D" stroke="#DC2626" stroke-width="1"/>
+        <text x="15" y="22" class="font-title" font-size="12" fill="#FECACA">Sekat B: Rusak Berat (Halaman Hilang / Basah / Jamur)</text>
+
+        <rect x="0" y="84" width="400" height="34" rx="6" fill="#14532D" stroke="#16A34A" stroke-width="1"/>
+        <text x="15" y="22" class="font-title" font-size="12" fill="#BBF7D0">Sekat C: Verifikasi Salah Letak (Misshelved)</text>
+      </g>
+      <text x="40" y="230" class="font-sub" font-size="12" fill="#F59E0B">★ Manfaat: Mencegah buku rusak dipinjam ulang oleh pemustaka lain</text>
+    </g>
+  </g>
+
+  <!-- ==================== COLUMN 2: VERIFIKASI & SISTEM UTAMA ==================== -->
+  <g transform="translate(700, 200)">
+    <!-- Column Card Background -->
+    <rect width="520" height="810" rx="24" fill="url(#cardGradSys)" stroke="#6366F1" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header Pill -->
+    <rect x="30" y="-18" width="460" height="40" rx="20" fill="url(#pillSys)" filter="url(#shadow)"/>
+    <text x="260" y="8" class="font-title" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">TIER 2: VERIFIKASI &amp; SISTEM UTAMA</text>
+
+    <!-- Node 2.1: Pustakawan & Quiet Hour -->
+    <g transform="translate(30, 50)">
+      <rect width="460" height="210" rx="16" fill="#0F172A" stroke="#818CF8" stroke-width="1.8"/>
+      <!-- Librarian Icon -->
+      <circle cx="50" cy="50" r="24" fill="#6366F1" fill-opacity="0.25" stroke="#A5B4FC" stroke-width="2"/>
+      <path d="M42,60 C42,54 46,52 50,52 C54,52 58,54 58,60 Z M50,48 C46.7,48 44,45.3 44,42 C44,38.7 46.7,36 50,36 C53.3,36 56,38.7 56,42 C56,45.3 53.3,48 50,48 Z" fill="#A5B4FC"/>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Pustakawan Tunggal FT UNY</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#A5B4FC">SOP-001 • Pengendali Sirkulasi 3 Layanan</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#334155" stroke-width="1"/>
+
+      <!-- Quiet Hour Block -->
+      <g transform="translate(30, 105)">
+        <rect width="400" height="60" rx="10" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.2"/>
+        <text x="20" y="26" class="font-title" font-size="14" fill="#C7D2FE">Jadwal Quiet Hour (Batch Processing)</text>
+        <text x="20" y="48" class="font-body" font-size="12" fill="#E0E7FF">30–60 menit/minggu (Pagi pkl 08.00–08.30 sebelum ramai)</text>
+      </g>
+      <text x="40" y="195" class="font-sub" font-size="12" fill="#38BDF8">SLA: Verifikasi fisik buku di Rak Transit ≤ 3 Hari Kerja</text>
+    </g>
+
+    <!-- Flow Arrow Middle Down -->
+    <g transform="translate(260, 265)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#818CF8" stroke-width="3" marker-end="url(#arrowIndigo)"/>
+      <rect x="-105" y="8" width="210" height="24" rx="12" fill="#0F172A" stroke="#6366F1" stroke-width="1"/>
+      <text x="0" y="24" class="font-code" font-size="11" fill="#C7D2FE" text-anchor="middle">Input Status Baru di Quiet Hour</text>
+    </g>
+
+    <!-- Node 2.2: SLiMS 9 Bulian -->
+    <g transform="translate(30, 315)">
+      <rect width="460" height="250" rx="16" fill="#0F172A" stroke="#A855F7" stroke-width="2" filter="url(#shadow)"/>
+      <!-- SLiMS Badge -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#9333EA" fill-opacity="0.25" stroke="#C084FC" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="16" fill="#C084FC" text-anchor="middle">SLiMS</text>
+
+      <text x="90" y="45" class="font-title" font-size="19" fill="#FFFFFF">SLiMS 9 Bulian (Sistem Inti)</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#C084FC">Database Koleksi &amp; Sirkulasi Perpustakaan FT</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#334155" stroke-width="1"/>
+
+      <!-- Item Status Update -->
+      <text x="40" y="115" class="font-sub" font-size="13" fill="#E9D5FF">Modifikasi Status Item Koleksi (Item Status):</text>
+      <g transform="translate(30, 128)">
+        <rect x="0" y="0" width="125" height="36" rx="8" fill="#451A03" stroke="#F59E0B"/>
+        <text x="62" y="23" class="font-sub" font-size="12" fill="#FDE68A" text-anchor="middle">Perbaikan</text>
+
+        <rect x="135" y="0" width="125" height="36" rx="8" fill="#7F1D1D" stroke="#EF4444"/>
+        <text x="197" y="23" class="font-sub" font-size="12" fill="#FECACA" text-anchor="middle">Rusak / Hilang</text>
+
+        <rect x="270" y="0" width="130" height="36" rx="8" fill="#064E3B" stroke="#10B981"/>
+        <text x="335" y="23" class="font-sub" font-size="12" fill="#A7F3D0" text-anchor="middle">Tersedia (Rak)</text>
+      </g>
+
+      <rect x="30" y="180" width="400" height="50" rx="8" fill="#18181B" stroke="#3F3F46"/>
+      <text x="45" y="202" class="font-sub" font-size="12" fill="#F8FAFC">Sinkronisasi Real-Time ke OPAC (Katalog Online)</text>
+      <text x="45" y="220" class="font-body" font-size="11" fill="#A1A1AA">Mencegah Ghost Inventory • SLA Update: ≤ 7 Hari Kerja</text>
+    </g>
+
+    <!-- Flow Arrow Middle Down 2 -->
+    <g transform="translate(260, 570)">
+      <line x1="0" y1="0" x2="0" y2="35" stroke="#818CF8" stroke-width="3" marker-end="url(#arrowIndigo)"/>
+      <rect x="-85" y="6" width="170" height="24" rx="12" fill="#0F172A" stroke="#6366F1" stroke-width="1"/>
+      <text x="0" y="22" class="font-code" font-size="11" fill="#C7D2FE" text-anchor="middle">Ekstraksi CSV Rutin</text>
+    </g>
+
+    <!-- Node 2.3: Template Ekstraksi -->
+    <g transform="translate(30, 615)">
+      <rect width="460" height="155" rx="16" fill="#0F172A" stroke="#6366F1" stroke-width="1.5"/>
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#4F46E5" fill-opacity="0.25" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="16" fill="#818CF8" text-anchor="middle">CSV</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Template Ekstraksi Data SLiMS</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#818CF8">TMP-001 • Standarisasi Agregasi Data</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#334155" stroke-width="1"/>
+      <text x="40" y="115" class="font-body" font-size="12" fill="#CBD5E1">Menjembatani data transaksi mentah SLiMS menjadi rekap bulanan</text>
+      <text x="40" y="135" class="font-sub" font-size="12" fill="#38BDF8">Tanpa perlu instalasi software baru atau modifikasi source code SLiMS</text>
+    </g>
+  </g>
+
+  <!-- ==================== COLUMN 3: ALIRAN KELUAR & STRATEGIS ==================== -->
+  <g transform="translate(1320, 200)">
+    <!-- Column Card Background -->
+    <rect width="520" height="810" rx="24" fill="url(#cardGradOut)" stroke="#10B981" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- Header Pill -->
+    <rect x="30" y="-18" width="460" height="40" rx="20" fill="url(#pillOut)" filter="url(#shadow)"/>
+    <text x="260" y="8" class="font-title" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">TIER 3: OUTPUT, MANAJERIAL &amp; STRATEGIS</text>
+
+    <!-- Node 3.1: Dashboard Monitoring (Kepala Perpus) -->
+    <g transform="translate(30, 50)">
+      <rect width="460" height="210" rx="16" fill="#064E3B" fill-opacity="0.6" stroke="#34D399" stroke-width="1.8"/>
+      <!-- Dash Icon -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#059669" fill-opacity="0.3" stroke="#34D399" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="18" fill="#34D399" text-anchor="middle">KPI</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Level Manajerial: Kepala Perpustakaan</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#34D399">DASH-001 • Dashboard Monitoring &amp; Rekap</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#065F46" stroke-width="1"/>
+
+      <text x="40" y="115" class="font-sub" font-size="13" fill="#A7F3D0">Fungsi Pengawasan &amp; Keputusan Manajerial:</text>
+      <text x="40" y="140" class="font-body" font-size="12" fill="#E2E8F0">• Monitoring kepatuhan SLA verifikasi (target ≤3 hari)</text>
+      <text x="40" y="162" class="font-body" font-size="12" fill="#E2E8F0">• Rekap tren buku rusak bulanan per klasifikasi (DDC)</text>
+      <text x="40" y="184" class="font-body" font-size="12" fill="#E2E8F0">• Keputusan penarikan koleksi afkir (Weeding Policy)</text>
+    </g>
+
+    <!-- Flow Arrow Out 1 Down -->
+    <g transform="translate(260, 265)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#34D399" stroke-width="3" marker-end="url(#arrowGreen)"/>
+      <rect x="-85" y="8" width="170" height="24" rx="12" fill="#022C22" stroke="#10B981" stroke-width="1"/>
+      <text x="0" y="24" class="font-code" font-size="11" fill="#A7F3D0" text-anchor="middle">Agregasi Laporan Tahunan</text>
+    </g>
+
+    <!-- Node 3.2: Akreditasi LAM-INFOKOM Kriteria 5 -->
+    <g transform="translate(30, 315)">
+      <rect width="460" height="210" rx="16" fill="#064E3B" fill-opacity="0.6" stroke="#F59E0B" stroke-width="1.8" filter="url(#glowGold)"/>
+      <!-- Cert Icon -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#D97706" fill-opacity="0.3" stroke="#FBBF24" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="16" fill="#FBBF24" text-anchor="middle">BORANG</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Tim Akreditasi Prodi FT UNY</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#FBBF24">LAM-INFOKOM / BAN-PT • Kriteria 5</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#78350F" stroke-width="1"/>
+
+      <text x="40" y="115" class="font-sub" font-size="13" fill="#FDE68A">Kebutuhan Bukti Fisik Akreditasi:</text>
+      <text x="40" y="140" class="font-body" font-size="12" fill="#E2E8F0">• Bukti ketersediaan buku teks &amp; referensi prodi</text>
+      <text x="40" y="162" class="font-body" font-size="12" fill="#E2E8F0">• Rekap pemanfaatan &amp; sirkulasi koleksi per semester</text>
+      <text x="40" y="184" class="font-body" font-size="12" fill="#E2E8F0">• Dokumen validitas data katalog (terbebas dari ghost stock)</text>
+    </g>
+
+    <!-- Flow Arrow Out 2 Down -->
+    <g transform="translate(260, 530)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#34D399" stroke-width="3" marker-end="url(#arrowGreen)"/>
+      <rect x="-85" y="8" width="170" height="24" rx="12" fill="#022C22" stroke="#10B981" stroke-width="1"/>
+      <text x="0" y="24" class="font-code" font-size="11" fill="#A7F3D0" text-anchor="middle">Justifikasi Anggaran</text>
+    </g>
+
+    <!-- Node 3.3: Dekanat FT UNY -->
+    <g transform="translate(30, 580)">
+      <rect width="460" height="190" rx="16" fill="#064E3B" fill-opacity="0.6" stroke="#38BDF8" stroke-width="1.8"/>
+      <!-- Building Icon -->
+      <rect x="25" y="25" width="48" height="48" rx="10" fill="#0284C7" fill-opacity="0.3" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="49" y="55" class="font-title" font-size="16" fill="#38BDF8" text-anchor="middle">DEKAN</text>
+
+      <text x="90" y="45" class="font-title" font-size="18" fill="#FFFFFF">Level Strategis: Dekanat FT UNY</text>
+      <text x="90" y="68" class="font-code" font-size="12" fill="#38BDF8">Pimpinan Fakultas • Pengambil Kebijakan</text>
+
+      <line x1="30" y1="90" x2="430" y2="90" stroke="#0C4A6E" stroke-width="1"/>
+
+      <text x="40" y="115" class="font-sub" font-size="13" fill="#BAE6FD">Evidence-Based Procurement (Pengadaan Buku):</text>
+      <text x="40" y="140" class="font-body" font-size="12" fill="#E2E8F0">• Dasar persetujuan anggaran penggantian buku rusak</text>
+      <text x="40" y="162" class="font-body" font-size="12" fill="#E2E8F0">• Alokasi pengadaan koleksi baru berbasis data sirkulasi riil</text>
+    </g>
+  </g>
+
+  <!-- ==================== HORIZONTAL CROSS-TIER ARROWS ==================== -->
+  
+  <!-- Tier 1 to Tier 2 (QR Data -> Pustakawan) -->
+  <path d="M 490 370 L 640 370 L 640 155 L 720 155" fill="none" stroke="#60A5FA" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrowBlue)"/>
+  <rect x="525" y="345" width="130" height="24" rx="6" fill="#0F172A" stroke="#3B82F6"/>
+  <text x="590" y="361" class="font-code" font-size="11" fill="#93C5FD" text-anchor="middle">Log Notifikasi Masuk</text>
+
+  <!-- Tier 1 to Tier 2 (Buffer Zone -> Pustakawan Quiet Hour) -->
+  <path d="M 490 650 L 660 650 L 660 190 L 720 190" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrowGold)"/>
+  <rect x="535" y="625" width="145" height="24" rx="6" fill="#0F172A" stroke="#F59E0B"/>
+  <text x="607" y="641" class="font-code" font-size="11" fill="#FDE68A" text-anchor="middle">Buku Fisik Siap Cek</text>
+
+  <!-- Tier 2 to Tier 3 (TMP-001 -> Dashboard & Borang) -->
+  <path d="M 1220 690 L 1270 690 L 1270 155 L 1340 155" fill="none" stroke="#34D399" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <rect x="1235" y="390" width="120" height="42" rx="6" fill="#0F172A" stroke="#10B981"/>
+  <text x="1295" y="408" class="font-code" font-size="11" fill="#A7F3D0" text-anchor="middle">Data Bersih</text>
+  <text x="1295" y="424" class="font-code" font-size="10" fill="#6EE7B7" text-anchor="middle">Siap Agregasi</text>
+
+  <!-- Direct Link to Akreditasi -->
+  <path d="M 1270 420 L 1340 420" fill="none" stroke="#F59E0B" stroke-width="2.5" marker-end="url(#arrowGold)"/>
+
+  <!-- FOOTER BANNER -->
+  <g transform="translate(80, 1025)">
+    <rect width="1760" height="40" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="25" class="font-sub" font-size="13" fill="#64748B">SIMPEL-KOLEKSI • Sistem Informasi Manajemen Pemutakhiran dan Monitoring Data Koleksi Perpustakaan FT UNY</text>
+    <text x="1730" y="25" class="font-sub" font-size="13" fill="#38BDF8" text-anchor="end">Kelompok 3 PTI F1: Gantar Abimanyu • Ganendra Pradipa • M Fadlan Dirmansyah</text>
+  </g>
+</svg>
